@@ -1,4 +1,4 @@
-C = require("astrotheme.colors")
+C = {}
 local util = require("astrotheme.lib.util")
 local config = require("astrotheme.config")
 
@@ -7,6 +7,8 @@ local M = {}
 function M.load(theme)
   theme = theme or config.default.theme
   util.reload(config.options, theme)
+
+  C = util.set_palettes(config.options, "astrotheme.colors")
 
   local highlights = {}
   highlights = util.get_hl_modules(highlights, "astrotheme.groups", {

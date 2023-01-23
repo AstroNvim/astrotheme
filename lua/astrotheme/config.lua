@@ -3,12 +3,14 @@ local M = {}
 M.options = {}
 
 M.default = {
+  theme = "astrodark",
   termguicolors = true,
   background = "dark",
 
   palette = {},
   highlights = {},
 
+  plugin_default = "auto",
   plugins = {
     ["aerial.nvim"] = true,
     ["beacon.nvim"] = true,

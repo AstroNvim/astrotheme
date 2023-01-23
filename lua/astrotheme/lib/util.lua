@@ -41,8 +41,9 @@ function M.get_hl_modules(highlights, path, modules)
   return highlights
 end
 
-function M.get_palettes(opts, palettes)
-  vim.tbl_deep_extend("force", palettes, opts.palettes)
+function M.set_palettes(opts, palette)
+  local new_palette = vim.tbl_deep_extend("force", require(palette) or opts.theme, opts.palette)
+  return new_palette
 end
 
 function M.set_highlights(opts, highlights)
