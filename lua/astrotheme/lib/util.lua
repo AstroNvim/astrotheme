@@ -8,7 +8,7 @@ function M.reload(opts, theme)
     vim.cmd.syntax "reset"
   end
   vim.o.termguicolors = opts.termiguicolors
-  vim.g.colors_name = theme or "astro-night"
+  vim.g.colors_name = theme or "astrodark"
 end
 
 function M.get_plugin_list(opts)
