@@ -3,7 +3,6 @@ local M = {}
 M.options = {}
 
 M.default = {
-  theme = "astro-night",
   termguicolors = true,
   background = "dark",
 
