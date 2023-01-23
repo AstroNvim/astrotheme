@@ -14,6 +14,7 @@ function M.load(theme)
   highlights = util.get_hl_modules(highlights, "astrotheme.groups", {
     "base",
     "lsp",
+    "astronvim",
   })
 
   local plugin_list = util.get_plugin_list(config.default)
