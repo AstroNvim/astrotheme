@@ -79,4 +79,4 @@ local colors = {
   pkg = "#d39ede",
 }
 
-return astronvim.user_plugin_opts("default_theme.colors", colors)
+return colors

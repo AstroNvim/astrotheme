@@ -1,6 +1,7 @@
 local base = {
   Normal = { fg = C.fg, bg = C.bg },
   NormalNC = { fg = C.fg, bg = C.black },
+
   Comment = { fg = C.grey_2, bg = C.none },
   Constant = { fg = C.yellow, bg = C.none },
   String = { fg = C.green, bg = C.none },
@@ -64,18 +65,29 @@ local base = {
   SpellCap = { undercurl = true },
   SpellLocal = { undercurl = true },
   SpellRare = { undercurl = true },
+
   StatusLine = { fg = C.fg, bg = C.grey_4 },
   StatusLineNC = { fg = C.grey, bg = C.none },
   StatusLineTerm = { fg = C.fg, bg = C.grey_4 },
   StatusLineTermNC = { fg = C.grey_4, bg = C.none },
+  StatusNormal = { fg = C.grey_4, bg = C.blue },
+  StatusInsert = { fg = C.grey_4, bg = C.green },
+  StatusVisual = { fg = C.grey_4, bg = C.purple },
+  StatusReplace = { fg = C.grey_4, bg = C.red },
+  StatusCommand = { fg = C.grey_4, bg = C.orange },
+
   WinBar = { fg = C.grey_2, bg = C.bg },
   WinBarNC = { fg = C.grey, bg = C.black },
+
   TabLine = { fg = C.grey, bg = C.none },
   TabLineSel = { fg = C.fg, bg = C.none },
   TabLineFill = { fg = C.none, bg = C.grey_3 },
+
   Terminal = { fg = C.fg, bg = C.grey_3 },
+
   Visual = { fg = C.none, bg = C.grey_5 },
   VisualNOS = { fg = C.grey_5, bg = C.none },
+
   WarningMsg = { fg = C.yellow, bg = C.none },
   WildMenu = { fg = C.grey_3, bg = C.blue },
   EndOfBuffer = { fg = C.bg, bg = C.none },
