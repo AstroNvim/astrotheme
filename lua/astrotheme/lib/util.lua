@@ -39,12 +39,12 @@ function M.get_hl_modules(highlights, path, modules)
 end
 
 function M.set_palettes(opts, palette)
-  local new_palette = vim.tbl_deep_extend("force", require(palette) or opts.theme, opts.palette)
+  local new_palette = vim.tbl_deep_extend("force", require(palette), opts.palette.astrodark)
   return new_palette
 end
 
 function M.set_highlights(opts, highlights)
-  highlights = vim.tbl_deep_extend("force", highlights, opts.highlights)
+  highlights = vim.tbl_deep_extend("force", highlights, opts.highlights.astrodark)
   for group, spec in pairs(highlights) do
     for key, value in pairs(spec) do
       if type(value) == table then spec[key] = value:toHex() end
