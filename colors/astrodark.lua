@@ -1,1 +1,1 @@
-require("astrotheme").load("astrodark")
+require("astrotheme").load "astrodark"

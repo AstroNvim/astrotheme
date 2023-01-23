@@ -1,14 +1,10 @@
 local M = {}
 
 function M.reload(opts, theme)
-  if vim.g.colors_name then
-    vim.cmd.highlight "clear"
-  end
-  if vim.fn.exists "syntax_on" then
-    vim.cmd.syntax "reset"
-  end
+  if vim.g.colors_name then vim.cmd.highlight "clear" end
+  if vim.fn.exists "syntax_on" then vim.cmd.syntax "reset" end
   vim.o.termguicolors = opts.termiguicolors
-  vim.g.colors_name = theme or "astrodark"
+  vim.g.colors_name = theme
 end
 
 function M.get_plugin_list(opts)
@@ -17,26 +13,27 @@ function M.get_plugin_list(opts)
 
   local plugins = {}
 
-  if installed_plugins then
-    for plugin, value in pairs(installed_plugins) do
-      table.insert(plugins, plugin)
-    end
-  else
-    for plugin, value in pairs(opts.plugins) do
-      if value then
-        table.insert(plugins, plugin)
+  for _, plugin in pairs(require "astrotheme.groups.plugins") do
+    local load = opts.plugins[plugin]
+    if load == nil then load = opts.plugin_default end
+    if load == "auto" then
+      if installed_plugins then
+        load = installed_plugins[plugin] ~= nil
+      else
+        load = true
       end
     end
+
+    if load then table.insert(plugins, plugin) end
   end
+
   return plugins
 end
 
 function M.get_hl_modules(highlights, path, modules)
   for _, module in ipairs(modules) do
     local file_avail, file = pcall(require, path .. "." .. module)
-    if file_avail then
-      highlights = vim.tbl_deep_extend("force", file, highlights)
-    end
+    if file_avail then highlights = vim.tbl_deep_extend("force", file, highlights) end
   end
   return highlights
 end
@@ -50,9 +47,7 @@ function M.set_highlights(opts, highlights)
   highlights = vim.tbl_deep_extend("force", highlights, opts.highlights)
   for group, spec in pairs(highlights) do
     for key, value in pairs(spec) do
-      if type(value) == table then
-        spec[key] = value:toHex()
-      end
+      if type(value) == table then spec[key] = value:toHex() end
     end
     vim.api.nvim_set_hl(0, group, spec)
   end

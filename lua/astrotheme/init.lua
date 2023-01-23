@@ -1,34 +1,31 @@
 C = {}
+local config = {}
 local util = require("astrotheme.lib.util")
-local config = require("astrotheme.config")
 
 local M = {}
 
 function M.load(theme)
-  theme = theme or config.default.theme
-  util.reload(config.options, theme)
+	util.reload(config.options, theme)
 
-  C = util.set_palettes(config.options, "astrotheme.colors")
+	C = util.set_palettes(config.options, "astrotheme.colors")
 
-  local highlights = {}
-  highlights = util.get_hl_modules(highlights, "astrotheme.groups", {
-    "base",
-    "lsp",
-    "astronvim",
-  })
+	local highlights = {}
+	highlights = util.get_hl_modules(highlights, "astrotheme.groups", {
+		"base",
+		"lsp",
+		"astronvim",
+	})
 
-  local plugin_list = util.get_plugin_list(config.default)
-  highlights = util.get_hl_modules(highlights, "astrotheme.groups.plugins", plugin_list)
+	highlights = util.get_hl_modules(highlights, "astrotheme.groups.plugins", config.options.plugins)
 
-  util.set_highlights(config.options, highlights)
-  util.set_terminal_colors()
+	util.set_highlights(config.options, highlights)
+	util.set_terminal_colors()
 end
 
 function M.setup(opts)
-  opts = opts or {}
-  opts = vim.tbl_deep_extend("force", config.default, opts)
-  config.options = opts
-  M.load()
+	opts = require("astrotheme.lib.config").user_config(opts)
+	opts.plugins = util.get_plugin_list(opts)
+	config.options = opts
 end
 
 return M
