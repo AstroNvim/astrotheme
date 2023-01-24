@@ -13,7 +13,7 @@ function M.get_plugin_list(opts)
 
   local plugins = {}
 
-  for _, plugin in pairs(require "astrotheme.groups.plugins") do
+  for plugin, module in pairs(require "astrotheme.groups.plugins") do
     local load = opts.plugins[plugin]
     if load == nil then load = opts.plugin_default end
     if load == "auto" then
@@ -24,7 +24,7 @@ function M.get_plugin_list(opts)
       end
     end
 
-    if load then table.insert(plugins, plugin) end
+    if load then table.insert(plugins, module) end
   end
 
   return plugins
