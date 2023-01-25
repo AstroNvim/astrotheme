@@ -32,6 +32,7 @@ colorscheme astrodark
 ```lua
 require("astrotheme").setup({
   termguicolors = true, -- Bool value, toggles if termguicolors are set by AstroTheme.
+
   terminal_color = true, -- Bool value, toggles if terminal_colors are set by AstroTheme.
 
   plugin_default = "auto", -- Sets how all plugins will be loaded
@@ -40,8 +41,7 @@ require("astrotheme").setup({
                            -- false: Disables all plugins.
 
   plugins = {              -- Allows for individual plugin overides using plugin name and value from above.
-    bufferline = false,
-
+    ["bufferline.nvim"] = false,
   }
 
   palettes = {
@@ -56,12 +56,16 @@ require("astrotheme").setup({
   },
 
   highlights = {
-    global = {             -- Add or modify hl groups globaly, theme set hl groups take priority.
-      PluginColor4 = {fg = C.my_grey, bg = C.none }
+    global = {             -- Add or modify hl groups globaly, theme specific hl groups take priority.
+      modify_hl_groups = function(hl, c)
+        hl.PluginColor4 = {fg = c.my_grey, bg = c.none }
+      end
+      ["@String"] = {fg = "#ff00ff bg = "NONE"}
     },
     astrodark = {
-      modify_hl_groups = function(hl) -- modify_hl_groups function allows you to modify hl groups, works with global.
-        hl.Comment.fg = C.my_color
+      -- first parameter is the highlight table and the second parameter is the color palette table
+      modify_hl_groups = function(hl, c) -- modify_hl_groups function allows you to modify hl groups,
+        hl.Comment.fg = c.my_color
         hl.Comment.italic = true
       end,
       ["@String"] = {fg = "#ff00ff bg = "NONE"}
