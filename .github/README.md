@@ -8,9 +8,9 @@
 
 ## ✨ Features
 
+- **Automatic** plugin detection and highlight setting (Packer and lazy.nvim supported)
 - Override or modify **_EVERYTHING._**
 - Global & Theme specific overrides
-- Load only the plugin highlights you need.
 - Vim terminal colors
 - Heirline highlights
 - Lualine support
