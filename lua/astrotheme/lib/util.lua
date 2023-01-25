@@ -39,15 +39,26 @@ function M.get_hl_modules(highlights, path, modules)
 end
 
 function M.set_palettes(opts, theme)
-  return vim.tbl_deep_extend("force", require("astrotheme.palettes." .. theme), opts.palette[theme])
+  local palette
+  palette = vim.tbl_deep_extend("force", require("astrotheme.palettes." .. theme), opts.palettes.global)
+  return vim.tbl_deep_extend("force", palette, opts.palettes[theme])
 end
 
 function M.set_highlights(opts, highlights, theme)
+  local opts_hl_glob = opts.highlights.global
+  if opts_hl_glob.modify_hl_groups then
+    opts_hl_glob.modify_hl_groups(highlights, C)
+    opts_hl_glob.modify_hl_groups = nil
+  end
+
+  highlights = vim.tbl_deep_extend("force", highlights, opts_hl_glob)
+
   local opts_hl = opts.highlights[theme]
   if opts_hl.modify_hl_groups then
     opts_hl.modify_hl_groups(highlights, C)
     opts_hl.modify_hl_groups = nil
   end
+
   highlights = vim.tbl_deep_extend("force", highlights, opts_hl)
   for group, spec in pairs(highlights) do
     for key, value in pairs(spec) do

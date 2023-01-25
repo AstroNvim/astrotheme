@@ -4,15 +4,19 @@ M.default = {
   terminal_colors = true,
   background = "dark",
 
-  palette = { astrodark = {} },
-  highlights = { astrodark = {} },
+  palettes = {
+    global = {},
+    astrodark = {},
+  },
+  highlights = {
+    global = {},
+    astrodark = {},
+  },
 
   plugin_default = "auto",
   plugins = {},
 }
 
-function M.user_config(opts)
-  return vim.tbl_deep_extend("force", M.default, opts or {})
-end
+function M.user_config(opts) return vim.tbl_deep_extend("force", M.default, opts or {}) end
 
 return M
