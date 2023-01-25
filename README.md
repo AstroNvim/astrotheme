@@ -10,8 +10,9 @@
 * Override or modify ___EVERYTHING.___
 * Global & Theme specific overrides
 * Load only the plugin highlights you need.
-* Vim terminal colors.
-* Heirline & Lualine highlights
+* Vim terminal colors
+* Heirline highlights
+* Lualine support
 
 ## 🎨 Palettes
 
@@ -66,6 +67,9 @@ require("astrotheme").setup({
   }
 })
 ```
+
+## ⚡ Requirements
+* Neovim >= 0.8
 
 ## 🔌 Supported Plugins
 * [aerial](https://github.com/stevearc/aerial.nvim)
