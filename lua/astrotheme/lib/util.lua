@@ -3,7 +3,7 @@ local M = {}
 function M.reload(opts, theme)
   if vim.g.colors_name then vim.cmd.highlight "clear" end
   if vim.fn.exists "syntax_on" then vim.cmd.syntax "reset" end
-  vim.o.termguicolors = opts.termiguicolors
+  vim.o.termguicolors = opts.termguicolors
   vim.g.colors_name = theme
 end
 

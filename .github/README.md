@@ -7,16 +7,18 @@
 <p align="center">The default colorscheme used by <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a> an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins  </p>
 
 ## ✨ Features
-* Override or modify ___EVERYTHING.___
-* Global & Theme specific overrides
-* Load only the plugin highlights you need.
-* Vim terminal colors
-* Heirline highlights
-* Lualine support
+
+- Override or modify **_EVERYTHING._**
+- Global & Theme specific overrides
+- Load only the plugin highlights you need.
+- Vim terminal colors
+- Heirline highlights
+- Lualine support
 
 ## 🎨 Palettes
 
 ### AstroDark
+
 <p align="center">
 <img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/overview.png"/>
 </p>
@@ -25,23 +27,23 @@
 colorscheme astrodark
 ```
 
-
-
 ## 🛠 Options
+
 ```lua
 require("astrotheme").setup({
-  terminal_color = true    -- Bool value, toggles if termguicolors are set by AstroTheme.
-  
+  termguicolors = true, -- Bool value, toggles if termguicolors are set by AstroTheme.
+  terminal_color = true, -- Bool value, toggles if terminal_colors are set by AstroTheme.
+
   plugin_default = "auto", -- Sets how all plugins will be loaded
                            -- "auto": Uses lazy / packer enabled plugins to load highlights.
                            -- true: Enables all plugins highlights.
                            -- false: Disables all plugins.
-  
+
   plugins = {              -- Allows for individual plugin overides using plugin name and value from above.
     bufferline = false,
-  
+
   }
-  
+
   palettes = {
     global = {             -- Globaly accessible palettes, theme palettes take priority.
       my_grey = "#ebebeb"
@@ -52,7 +54,7 @@ require("astrotheme").setup({
       my_color = "#000000" -- Overrides global.my_color
     },
   },
-  
+
   highlights = {
     global = {             -- Add or modify hl groups globaly, theme set hl groups take priority.
       PluginColor4 = {fg = C.my_grey, bg = C.none }
@@ -69,37 +71,43 @@ require("astrotheme").setup({
 ```
 
 ## ⚡ Requirements
-* Neovim >= 0.8
+
+- Neovim >= 0.8
 
 ## 🔌 Supported Plugins
-* [aerial](https://github.com/stevearc/aerial.nvim)
-* [beacon](https://github.com/DanilaMihailov/beacon.nvim)
-* [bufferline](https://github.com/akinsho/bufferline.nvim)
-* [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
-* [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
-* [hop](https://github.com/phaazon/hop.nvim/)
-* [indent_blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
-* [lightspeed](https://github.com/ggandor/lightspeed.nvim)
-* [lualine](https://github.com/nvim-lualine/lualine.nvim)
-* [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
-* [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-* [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
-* [nvim-notify](https://github.com/rcarriga/nvim-notify)
-* [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
-* [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-* [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
-* [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-* [telescope](https://github.com/nvim-telescope/telescope.nvim)
-* [vimwiki](https://github.com/vimwiki/vimwiki)
-* [which-key](https://github.com/folke/which-key.nvim)
+
+- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
+- [beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+- [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [hop.nvim](https://github.com/phaazon/hop.nvim/)
+- [indent_blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)
+- [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+- [nvim-ts-rainbow2](https://github.com/HiPhish/nvim-ts-rainbow2)
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [vimwiki](https://github.com/vimwiki/vimwiki)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## 📦 Installation
+
 Lazy:
+
 ```lua
 { "AstroNvim/astrotheme" }
 ```
+
 Packer:
+
 ```lua
  use "AstroNvim/astrotheme"
 ```
-
