@@ -1,17 +1,17 @@
 return {
   normal = {
-    a = { fg = C.bg, bg = C.blue, gui = "bold" },
-    b = { fg = C.white, bg = C.gray },
-    c = { fg = C.white, bg = C.gray },
+    a = { fg = C.base, bg = C.blue, gui = "bold" },
+    b = { fg = C.surface2, bg = C.subtext0 },
+    c = { fg = C.surface2, bg = C.subtext0 },
   },
-  insert = { a = { fg = C.bg, bg = C.green, gui = "bold" } },
-  visual = { a = { fg = C.bg, bg = C.purple, gui = "bold" } },
-  replace = { a = { fg = C.bg, bg = C.red, gui = "bold" } },
-  command = { a = { fg = C.bg, bg = C.yellow, gui = "bold" } },
-  terminal = { a = { fg = C.bg, bg = C.green, gui = "bold" } },
+  insert = { a = { fg = C.base, bg = C.green, gui = "bold" } },
+  visual = { a = { fg = C.base, bg = C.purple, gui = "bold" } },
+  replace = { a = { fg = C.base, bg = C.red, gui = "bold" } },
+  command = { a = { fg = C.base, bg = C.yellow, gui = "bold" } },
+  terminal = { a = { fg = C.base, bg = C.green, gui = "bold" } },
   inactive = {
-    a = { fg = C.gray, bg = C.black, gui = "bold" },
-    b = { fg = C.gray, bg = C.black },
-    c = { fg = C.gray, bg = C.black },
+    a = { fg = C.subtext0, bg = C.mantle, gui = "bold" },
+    b = { fg = C.subtext0, bg = C.mantle },
+    c = { fg = C.subtext0, bg = C.mantle },
   },
 }
