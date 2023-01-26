@@ -1,9 +1,9 @@
 return {
-  CmpItemAbbr = { fg = C.fg },
-  CmpItemAbbrDefault = { fg = C.fg },
-  CmpItemAbbrDeprecated = { fg = C.grey_2 },
-  CmpItemAbbrMatch = { fg = C.white },
-  CmpItemAbbrMatchFuzzy = { fg = C.white },
+  CmpItemAbbr = { fg = C.base },
+  CmpItemAbbrDefault = { fg = C.base },
+  CmpItemAbbrDeprecated = { fg = C.subtext1 },
+  CmpItemAbbrMatch = { fg = C.surface2 },
+  CmpItemAbbrMatchFuzzy = { fg = C.surface2 },
   CmpItemKind = { fg = C.yellow },
   CmpItemKindClass = { link = "@type" },
   CmpItemKindColor = { link = "@constant" },
@@ -30,5 +30,5 @@ return {
   CmpItemKindUnit = { link = "@constant" },
   CmpItemKindValue = { link = "@constant" },
   CmpItemKindVariable = { link = "@variable" },
-  CmpItemMenuDefault = { fg = C.fg },
+  CmpItemMenuDefault = { fg = C.mantle },
 }
