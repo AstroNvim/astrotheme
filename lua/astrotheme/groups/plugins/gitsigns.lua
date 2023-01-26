@@ -1,7 +1,7 @@
 return {
   GitSignsAdd = { fg = C.green, bg = C.none },
-  GitSignsChange = { fg = C.orange_1, bg = C.none },
-  GitSignsDelete = { fg = C.red_1, bg = C.none },
+  GitSignsChange = { fg = C.dark_orange, bg = C.none },
+  GitSignsDelete = { fg = C.dark_red, bg = C.none },
   MoreMsg = { fg = C.green, bold = true },
-  ModeMsg = { fg = C.grey, bold = true },
+  ModeMsg = { fg = C.subtext0, bold = true },
 }
