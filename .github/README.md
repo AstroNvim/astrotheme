@@ -42,15 +42,15 @@ require("astrotheme").setup({
 
   plugins = {              -- Allows for individual plugin overides using plugin name and value from above.
     ["bufferline.nvim"] = false,
-  }
+  },
 
   palettes = {
     global = {             -- Globaly accessible palettes, theme palettes take priority.
-      my_grey = "#ebebeb"
+      my_grey = "#ebebeb",
       my_color = "#ffffff"
     },
     astrodark = {          -- Extend or modify astrodarks palette colors
-      red = "#800010"      -- Overrides astrodarks red color
+      red = "#800010",      -- Overrides astrodarks red color
       my_color = "#000000" -- Overrides global.my_color
     },
   },
@@ -59,8 +59,8 @@ require("astrotheme").setup({
     global = {             -- Add or modify hl groups globaly, theme specific hl groups take priority.
       modify_hl_groups = function(hl, c)
         hl.PluginColor4 = {fg = c.my_grey, bg = c.none }
-      end
-      ["@String"] = {fg = "#ff00ff bg = "NONE"}
+      end,
+      ["@String"] = {fg = "#ff00ff", bg = "NONE"},
     },
     astrodark = {
       -- first parameter is the highlight table and the second parameter is the color palette table
@@ -68,9 +68,9 @@ require("astrotheme").setup({
         hl.Comment.fg = c.my_color
         hl.Comment.italic = true
       end,
-      ["@String"] = {fg = "#ff00ff bg = "NONE"}
-    }
-  }
+      ["@String"] = {fg = "#ff00ff", bg = "NONE"},
+    },
+  },
 })
 ```
 
