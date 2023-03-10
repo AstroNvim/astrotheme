@@ -1,5 +1,5 @@
 return {
-  CmpItemAbbr = { fg = C.base },
+  CmpItemAbbr = { fg = C.text },
   CmpItemAbbrDefault = { fg = C.base },
   CmpItemAbbrDeprecated = { fg = C.subtext1 },
   CmpItemAbbrMatch = { fg = C.surface2 },
