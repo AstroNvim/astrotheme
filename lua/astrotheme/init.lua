@@ -5,6 +5,7 @@ local util = require "astrotheme.lib.util"
 local M = {}
 
 function M.load(theme)
+  if not theme then theme = config.palette end
   util.reload(config, theme)
 
   C = util.set_palettes(config, theme)
