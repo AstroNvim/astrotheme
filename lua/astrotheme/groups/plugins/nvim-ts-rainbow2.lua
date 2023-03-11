@@ -1,9 +1,13 @@
-return {
-  TSRainbowRed = { fg = "Gold" },
-  TSRainbowYellow = { fg = "Orchid" },
-  TSRainbowBlue = { fg = "LightSkyBlue" },
-  TSRainbowOrange = { fg = "Gold" },
-  TSRainbowGreen = { fg = "Orchid" },
-  TSRainbowViolet = { fg = "LightSkyBlue" },
-  TSRainbowCyan = { fg = "Orchid" },
-}
+local function callback()
+  return {
+    TSRainbowRed = { fg = C.red },
+    TSRainbowYellow = { fg = C.yellow },
+    TSRainbowBlue = { fg = C.blue },
+    TSRainbowOrange = { fg = C.orange },
+    TSRainbowGreen = { fg = C.green },
+    TSRainbowViolet = { fg = C.purple },
+    TSRainbowCyan = { fg = C.cyan },
+  }
+end
+
+return callback

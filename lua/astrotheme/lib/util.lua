@@ -33,14 +33,15 @@ end
 function M.get_hl_modules(highlights, path, modules)
   for _, module in ipairs(modules) do
     local file_avail, file = pcall(require, path .. "." .. module)
+    if type(file) == "function" then file = file() end
     if file_avail then highlights = vim.tbl_deep_extend("force", file, highlights) end
   end
   return highlights
 end
 
 function M.set_palettes(opts, theme)
-  local palette
-  palette = vim.tbl_deep_extend("force", require("astrotheme.palettes." .. theme), opts.palettes.global)
+  local palette = require("astrotheme.palettes." .. theme)
+  palette = vim.tbl_deep_extend("force", palette, opts.palettes.global)
   return vim.tbl_deep_extend("force", palette, opts.palettes[theme])
 end
 
