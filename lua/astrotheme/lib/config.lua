@@ -5,16 +5,16 @@ M.default = {
   termguicolors = true,
   terminal_colors = true,
   background = "dark",
-
   palettes = {
     global = {},
     astrodark = {},
+    astrolight = {},
   },
   highlights = {
     global = {},
     astrodark = {},
+    astrolight = {},
   },
-
   plugin_default = "auto",
   plugins = {},
 }
