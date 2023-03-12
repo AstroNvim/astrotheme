@@ -1,5 +1,9 @@
-return {
-  WhichKeyFloat = { fg = C.fg },
-  WhichKeyDesc = { fg = C.purple_1 },
-  WhichKeyGroup = { fg = C.blue },
-}
+local function callback()
+  return {
+    WhichKeyFloat = { fg = C.fg },
+    WhichKeyDesc = { fg = C.purple },
+    WhichKeyGroup = { fg = C.blue },
+  }
+end
+
+return callback
