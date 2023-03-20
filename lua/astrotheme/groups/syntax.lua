@@ -39,9 +39,15 @@ local syntax_groups = {
   Typedef = { fg = C.yellow, bg = C.none }, -- A typedef
   -- Special
   Special = { fg = C.blue, bg = C.none }, -- any special symbol
+  SpecialChar = { fg = C.blue, bg = C.none }, -- special character in a constant
+  Tag = { fg = C.blue, bg = C.none }, -- you can use CTRL-] on this
+  Delimiter = { fg = C.blue, bg = C.none }, -- character that needs attention
   SpecialComment = { fg = C.grey, bg = C.none }, -- special things inside a comment
+  Debug = { fg = C.blue, bg = C.none }, -- debugging statements
   -- Underlined
   Underlined = { fg = C.cyan, bg = C.none }, -- text that stands out, HTML links
+  -- Ignore
+  Ignore = { fg = C.none, bg = C.none }, -- left blank, hidden  |hl-Ignore|
   -- Error
   Error = { fg = C.red, bg = C.none }, -- any erroneous construct
   -- Todo
