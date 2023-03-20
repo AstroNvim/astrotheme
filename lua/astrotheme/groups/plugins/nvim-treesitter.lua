@@ -56,6 +56,7 @@ local function callback()
     ["@title.markdown"] = { fg = C.red },
     ["@type"] = { fg = C.blue },
     ["@type.builtin"] = { fg = C.blue },
+    ["@type.qualifier.typescript"] = { link = "@keyword" },
     ["@type.rust"] = { fg = C.yellow },
     ["@variable"] = { fg = C.red },
     ["@variable.builtin"] = { fg = C.yellow },
