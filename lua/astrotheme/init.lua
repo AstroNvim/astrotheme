@@ -15,6 +15,7 @@ function M.load(theme)
     "base",
     "syntax",
     "lsp",
+    "filetypes.typescript",
     "astronvim",
   })
 
