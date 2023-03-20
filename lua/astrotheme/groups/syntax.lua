@@ -18,6 +18,8 @@ local syntax_groups = {
   Number = { fg = C.orange, bg = C.none }, -- a number constant: 234, 0xff
   Boolean = { fg = C.blue, bg = C.none }, -- a boolean constant: TRUE, false
   Float = { fg = C.yellow, bg = C.none }, -- a floating point constant: 2.3e10
+  -- Identifier
+  Identifier = { fg = C.red, bg = C.none }, -- any variable name
   -- Statement
   Statement = { fg = C.purple, bg = C.none }, -- any statement
   Conditional = { fg = C.light_purple, bg = C.none }, -- if, then, else, endif, switch, etc.
