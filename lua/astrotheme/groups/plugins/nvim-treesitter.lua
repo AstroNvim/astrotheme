@@ -30,7 +30,6 @@ local function callback()
     ["@namespace.rust"] = { fg = C.yellow },
     ["@none.markdown"] = { fg = C.text },
     ["@number"] = { fg = C.orange },
-    ["@operator"] = { fg = C.cyan },
     ["@parameter"] = { fg = C.red },
     ["@parameter.reference"] = { fg = C.cyan },
     ["@property"] = { fg = C.yellow },
