@@ -1,10 +1,10 @@
 local M = {}
 
-function M.reload(opts, theme)
+function M.reload(opts)
   if vim.g.colors_name then vim.cmd.highlight "clear" end
   if vim.fn.exists "syntax_on" then vim.cmd.syntax "reset" end
   vim.o.termguicolors = opts.termguicolors
-  vim.g.colors_name = theme
+  vim.g.colors_name = "astrotheme"
 end
 
 function M.get_plugin_list(opts)
@@ -39,10 +39,10 @@ function M.get_hl_modules(highlights, path, modules)
   return highlights
 end
 
-function M.set_palettes(opts, theme)
-  local palette = require("astrotheme.palettes." .. theme)
+function M.set_palettes(opts)
+  local palette = require("astrotheme.palettes." .. opts.palette)
   palette = vim.tbl_deep_extend("force", palette, opts.palettes.global)
-  return vim.tbl_deep_extend("force", palette, opts.palettes[theme])
+  return vim.tbl_deep_extend("force", palette, opts.palettes[opts.palette])
 end
 
 function M.set_highlights(opts, highlights, theme)
