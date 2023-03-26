@@ -26,10 +26,12 @@ local function callback()
     -- Ref: :help lsp-semantic-highlight
     ["@lsp.type.builtinType"] = { fg = C.yellow, bg = C.none },
     ["@lsp.type.keyword"] = { link = "Keyword" },
+    ["@lsp.type.operator"] = { link = "Operator" },
     ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = C.cyan, bg = C.none },
     ["@lsp.typemod.function.defaultLibrary"] = { fg = C.cyan, bg = C.none },
     ["@lsp.typemod.function.global"] = { fg = C.cyan, bg = C.none },
     ["@lsp.typemod.method.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.method.reference"] = { link = "Function" },
     ["@lsp.typemod.method.trait"] = { link = "Function" },
     ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "Keyword" },
     ["@lsp.typemod.variable.defaultLibrary"] = { fg = C.yellow, bg = C.none },
