@@ -22,6 +22,18 @@ local function callback()
     LspReferenceText = { fg = C.none, bg = C.surface1 },
     LspReferenceWrite = { fg = C.none, bg = C.surface1 },
     ProviderTruncateLine = { fg = C.overlay0 },
+    -- LSP Semantic Tokens
+    -- Ref: :help lsp-semantic-highlight
+    ["@lsp.type.builtinType"] = { fg = C.yellow, bg = C.none },
+    ["@lsp.type.keyword"] = { link = "Keyword" },
+    ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.function.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.function.global"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.method.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.method.trait"] = { link = "Function" },
+    ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "Keyword" },
+    ["@lsp.typemod.variable.defaultLibrary"] = { fg = C.yellow, bg = C.none },
+    ["@lsp.typemod.variable.readonly"] = { link = "Constant" },
   }
 end
 
