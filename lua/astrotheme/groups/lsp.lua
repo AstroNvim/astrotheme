@@ -22,24 +22,20 @@ local function callback()
     LspReferenceText = { fg = C.none, bg = C.surface1 },
     LspReferenceWrite = { fg = C.none, bg = C.surface1 },
     ProviderTruncateLine = { fg = C.overlay0 },
-    ["@lsp.type.enum"] = { link = "@type" },
-    ["@lsp.type.keyword"] = { link = "@keyword" },
-    ["@lsp.type.interface"] = { link = "@interface" },
-    ["@lsp.type.method"] = { link = "@function" },
-    ["@lsp.type.namespace"] = { link = "@namespace" },
-    ["@lsp.type.parameter"] = { link = "@parameter" },
-    ["@lsp.type.property"] = { link = "@property" },
-    ["@lsp.type.class"] = { link = "@namespace" },
-    ["@lsp.type.decorator"] = { link = "@method" },
-    ["@lsp.type.enumMember"] = { link = "@constant" },
-    ["@lsp.type.function"] = { link = "@function" },
-    ["@lsp.type.macro"] = { link = "@function.macro" },
-    ["@lsp.type.type"] = { link = "@type" },
-    ["@lsp.type.typeParameter"] = { link = "@parameter" },
-    ["@lsp.type.variable"] = {}, -- use treesitter styles for regular variables
-    ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
-    ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
-    ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+    -- LSP Semantic Tokens
+    -- Ref: :help lsp-semantic-highlight
+    ["@lsp.type.builtinType"] = { fg = C.yellow, bg = C.none },
+    ["@lsp.type.keyword"] = { link = "Keyword" },
+    ["@lsp.type.operator"] = { link = "Operator" },
+    ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.function.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.function.global"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.method.defaultLibrary"] = { fg = C.cyan, bg = C.none },
+    ["@lsp.typemod.method.reference"] = { link = "Function" },
+    ["@lsp.typemod.method.trait"] = { link = "Function" },
+    ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "Keyword" },
+    ["@lsp.typemod.variable.defaultLibrary"] = { fg = C.yellow, bg = C.none },
+    ["@lsp.typemod.variable.readonly"] = { link = "Constant" },
   }
 end
 
