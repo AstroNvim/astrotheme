@@ -1,3 +1,5 @@
+local C = require("astrotheme.lib.util").set_palettes(require("astrotheme").config)
+
 return {
   normal = {
     a = { fg = C.bg, bg = C.blue, gui = "bold" },
