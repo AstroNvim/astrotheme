@@ -22,16 +22,6 @@ function M.load(theme)
 
   util.set_highlights(config, highlights, theme)
   if config.terminal_colors then util.set_terminal_colors() end
-
-  for _, source in ipairs {
-    "astrotheme.autocmds",
-  } do
-    local status_ok, fault = pcall(require, source)
-    if not status_ok then
-      vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault)
-      return
-    end
-  end
 end
 
 function M.setup(opts)
