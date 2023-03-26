@@ -33,7 +33,7 @@ local syntax_groups = {
   PreProc = { fg = C.yellow, bg = C.none }, -- generic Preprocessor
   Include = { fg = C.purple, bg = C.none }, -- preprocessor #include
   Define = { fg = C.purple, bg = C.none }, -- preprocessor #define
-  Macro = { fg = C.purple, bg = C.none }, -- same as Define
+  Macro = { fg = C.orange, bg = C.none }, -- same as Define
   PreCondit = { fg = C.blue, bg = C.none }, -- preprocessor #if, #else, #endif, etc.
   -- Type
   Type = { fg = C.blue, bg = C.none }, -- int, long, char, etc.
