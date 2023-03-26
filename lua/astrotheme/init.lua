@@ -13,6 +13,7 @@ function M.load(theme)
   local highlights = {}
   highlights = util.get_hl_modules(highlights, "astrotheme.groups", {
     "base",
+    "syntax",
     "lsp",
     "astronvim",
   })
