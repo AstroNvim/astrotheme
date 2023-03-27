@@ -70,24 +70,24 @@ function M.set_highlights(opts, highlights, theme)
 end
 
 function M.set_terminal_colors()
-  vim.g.terminal_color_0 = C.bg
+  vim.g.terminal_color_0 = C.base
   vim.g.terminal_color_1 = C.red
-  vim.g.terminal_color_2 = C.green_1
-  vim.g.terminal_color_3 = C.yellow_1
+  vim.g.terminal_color_2 = C.light_green
+  vim.g.terminal_color_3 = C.dark_yellow
   vim.g.terminal_color_4 = C.blue
-  vim.g.terminal_color_5 = C.purple_1
+  vim.g.terminal_color_5 = C.purple
   vim.g.terminal_color_6 = C.cyan
-  vim.g.terminal_color_7 = C.white
-  vim.g.terminal_color_8 = C.white_1
-  vim.g.terminal_color_9 = C.red_5
+  vim.g.terminal_color_7 = C.surface2
+  vim.g.terminal_color_8 = C.surface1
+  vim.g.terminal_color_9 = C.dark_red
   vim.g.terminal_color_10 = C.green
   vim.g.terminal_color_11 = C.yellow
-  vim.g.terminal_color_12 = C.blue_4
-  vim.g.terminal_color_13 = C.purple_2
-  vim.g.terminal_color_14 = C.cyan_1
-  vim.g.terminal_color_15 = C.fg
-  vim.g.terminal_color_background = C.bg
-  vim.g.terminal_color_foreground = C.fg
+  vim.g.terminal_color_12 = C.light_blue
+  vim.g.terminal_color_13 = C.light_purple
+  vim.g.terminal_color_14 = C.light_cyan
+  vim.g.terminal_color_15 = C.text
+  vim.g.terminal_color_background = C.base
+  vim.g.terminal_color_foreground = C.text
 end
 
 return M

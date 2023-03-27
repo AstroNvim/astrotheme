@@ -2,18 +2,18 @@ local C = require("astrotheme.lib.util").set_palettes(require("astrotheme").conf
 
 return {
   normal = {
-    a = { fg = C.bg, bg = C.blue, gui = "bold" },
-    b = { fg = C.white, bg = C.gray },
-    c = { fg = C.white, bg = C.gray },
+    a = { fg = C.overlay1, bg = C.blue, gui = "bold" },
+    b = { fg = C.overlay1, bg = C.overlay0 },
+    c = { fg = C.overlay1, bg = C.overlay0 },
   },
-  insert = { a = { fg = C.bg, bg = C.green, gui = "bold" } },
-  visual = { a = { fg = C.bg, bg = C.purple, gui = "bold" } },
-  replace = { a = { fg = C.bg, bg = C.red, gui = "bold" } },
-  command = { a = { fg = C.bg, bg = C.yellow, gui = "bold" } },
-  terminal = { a = { fg = C.bg, bg = C.green, gui = "bold" } },
+  insert = { a = { fg = C.overlay1, bg = C.green, gui = "bold" } },
+  visual = { a = { fg = C.overlay1, bg = C.purple, gui = "bold" } },
+  replace = { a = { fg = C.overlay1, bg = C.red, gui = "bold" } },
+  command = { a = { fg = C.overlay1, bg = C.yellow, gui = "bold" } },
+  terminal = { a = { fg = C.overlay1, bg = C.green, gui = "bold" } },
   inactive = {
-    a = { fg = C.gray, bg = C.black, gui = "bold" },
-    b = { fg = C.gray, bg = C.black },
-    c = { fg = C.gray, bg = C.black },
+    a = { fg = C.overlay0, bg = C.overlay1, gui = "bold" },
+    b = { fg = C.overlay0, bg = C.overlay1 },
+    c = { fg = C.overlay0, bg = C.overlay1 },
   },
 }
