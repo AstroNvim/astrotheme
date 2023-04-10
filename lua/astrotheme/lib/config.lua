@@ -4,6 +4,12 @@ M.default = {
   palette = "astrodark",
   termguicolors = true,
   terminal_colors = true,
+  style = {
+    inactive = false,
+    transparent = false,
+    floating = true,
+    italic_comments = true,
+  },
   background = "dark",
   palettes = {
     global = {},
