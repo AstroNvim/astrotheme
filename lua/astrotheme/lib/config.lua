@@ -15,11 +15,13 @@ M.default = {
     global = {},
     astrodark = {},
     astrolight = {},
+    astromars = {},
   },
   highlights = {
     global = {},
     astrodark = {},
     astrolight = {},
+    astromars = {},
   },
   plugin_default = "auto",
   plugins = {},
