@@ -1,5 +1,6 @@
 local colors = {
-  --- WCAG AA ---
+  none = "NONE",
+  -------------------
   red = "#D50B15",
   blue = "#427080",
   green = "#547538",
@@ -8,15 +9,6 @@ local colors = {
   cyan = "#32765A",
   orange = "#C63306",
   -------------------
-  --- WCAG AAA ---
-  -- red = "#A1080F",
-  -- blue = "#325158",
-  -- green = "#3B5629",
-  -- yellow = "#6F4506",
-  -- purple = "#872170",
-  -- cyan = "#235341",
-  -- orange = "#922707",
-  -------------------
   dark_red = "#F54751",
   light_blue = "#6FADB5",
   light_green = "#73A14D",
@@ -24,19 +16,26 @@ local colors = {
   light_purple = "#D34BB3",
   light_cyan = "#5CBA94",
   dark_orange = "#F9744C",
-  text = "#A5787C", -- carrot
-  subtext1 = "#C19194", -- headings
-  subtext0 = "#DDACAF",
-  overlay2 = "#FBDADA",
-  overlay1 = "#F1CBCB", -- status
-  overlay0 = "#E1BDBF",
-  surface2 = "#BDA6A1",
-  surface1 = "#D8C1BC",
-  surface0 = "#F5DDD8", -- current line
-  base = "#FFF2EC",
-  mantle = "#FFF2EC", -- inactive
-  crust = "#FFF2EC", -- neo-tree
+  -------------------
+  base = "#FFEFE9",
+  crust = "#FFE2D6", -- neo-tree
+  mantle = "#FED5CB", -- inactive
+  -- mantle = "#C3E0EB",
+  -------------------
+  surface0 = "#FAC7BE", -- current line
+  surface1 = "#F0B9B0",
+  surface2 = "#E1ABA3",
+  -------------------
+  overlay0 = "#C1928D",
+  overlay1 = "#B28581", -- status
+  overlay2 = "#A57874",
+  -------------------
+  text = "#704745", -- carrot
+  subtext0 = "#905C5A",
+  subtext1 = "#83504E", -- headings
+  -------------------
   -- icon colors
+  -------------------
   c = "#519aba",
   css = "#61afef",
   deb = "#a1b7ee",
