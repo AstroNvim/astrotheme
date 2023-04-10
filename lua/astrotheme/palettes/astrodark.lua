@@ -7,6 +7,7 @@ local colors = {
   purple = "#c678dd",
   cyan = "#56b6c2",
   orange = "#d19a66",
+  -------------------
   dark_red = "#ec5f67",
   light_blue = "#90c7f3",
   light_green = "#89b06d",
@@ -14,19 +15,25 @@ local colors = {
   light_purple = "#a9a1e1",
   light_cyan = "#88cbd4",
   dark_orange = "#ff9640",
-  text = "#abb2bf",
-  subtext1 = "#777d86",
-  subtext0 = "#4b5263",
-  overlay2 = "#282c34",
-  overlay1 = "#2c323c",
-  overlay0 = "#c9c9c9",
-  surface2 = "#dedede",
-  surface1 = "#3e4452",
-  surface0 = "#252931",
+  -------------------
   base = "#1e222a",
-  mantle = "#181a1f",
   crust = "#1f1f25",
+  mantle = "#181a1f",
+  -------------------
+  surface0 = "#252931",
+  surface1 = "#3e4452",
+  surface2 = "#dedede",
+  -------------------
+  overlay0 = "#c9c9c9",
+  overlay1 = "#2c323c",
+  overlay2 = "#282c34",
+  -------------------
+  text = "#abb2bf",
+  subtext0 = "#4b5263",
+  subtext1 = "#777d86",
+  -------------------
   -- icon colors
+  -------------------
   c = "#519aba",
   css = "#61afef",
   deb = "#a1b7ee",
