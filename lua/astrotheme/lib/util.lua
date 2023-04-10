@@ -31,9 +31,10 @@ function M.get_plugin_list(opts)
 end
 
 function M.get_hl_modules(highlights, path, modules)
+  local opts = require("astrotheme").config.style
   for _, module in ipairs(modules) do
     local file_avail, file = pcall(require, path .. "." .. module)
-    if type(file) == "function" then file = file() end
+    if type(file) == "function" then file = file(opts) end
     if file_avail then highlights = vim.tbl_deep_extend("force", file, highlights) end
   end
   return highlights
