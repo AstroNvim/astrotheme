@@ -1,4 +1,4 @@
-local function callback()
+local function callback(opts)
   return {
     TelescopeResultsTitle = { fg = C.green },
     TelescopePromptTitle = { fg = C.blue },
@@ -11,10 +11,10 @@ local function callback()
     TelescopeSelection = { bg = C.surface1 },
     TelescopeMultiSelection = { fg = C.blue },
     TelescopeMultiIcon = { fg = C.blue },
-    TelescopeNormal = { fg = C.text, bg = C.base },
-    TelescopePreviewNormal = { fg = C.text, bg = C.base },
-    TelescopePromptNormal = { fg = C.text, bg = C.base },
-    TelescopeResultsNormal = { fg = C.text, bg = C.base },
+    TelescopeNormal = { fg = C.text, bg = opts.floating and C.mantle or C.base },
+    TelescopePreviewNormal = { fg = C.text, bg = opts.floating and C.mantle or C.base },
+    TelescopePromptNormal = { fg = C.text, bg = opts.floating and C.mantle or C.base },
+    TelescopeResultsNormal = { fg = C.text, bg = opts.floating and C.mantle or C.base },
     TelescopeBorder = { fg = C.text },
     TelescopeTitle = { fg = C.text },
     TelescopePromptCounter = { fg = C.subtext0 },
