@@ -20,11 +20,11 @@ local function callback()
     Boolean = { fg = C.blue, bg = C.none }, -- a boolean constant: TRUE, false
     Float = { fg = C.yellow, bg = C.none }, -- a floating point constant: 2.3e10
     -- Identifier
-    Identifier = { fg = C.red, bg = C.none }, -- any variable name
+    Identifier = { fg = C.text, bg = C.none }, -- any variable name
     Function = { fg = C.blue, bg = C.none }, -- function name (also: methods for classes)
     -- Statement
     Statement = { fg = C.purple, bg = C.none }, -- any statement
-    Conditional = { fg = C.light_purple, bg = C.none }, -- if, then, else, endif, switch, etc.
+    Conditional = { fg = C.purple, bg = C.none }, -- if, then, else, endif, switch, etc.
     Repeat = { fg = C.purple, bg = C.none }, -- for, do, while, etc.
     Label = { fg = C.blue, bg = C.none }, -- case, default, etc.
     Operator = { fg = C.text, bg = C.none }, -- "sizeof", "+", "*", etc.
@@ -49,7 +49,7 @@ local function callback()
     SpecialComment = { fg = C.subtext0, bg = C.none }, -- special things inside a comment
     Debug = { fg = C.blue, bg = C.none }, -- debugging statements
     -- Underlined
-    Underlined = { fg = C.cyan, bg = C.none }, -- text that stands out, HTML links
+    Underlined = { fg = C.cyan, bg = C.none, underline = true }, -- text that stands out, HTML links
     -- Ignore
     Ignore = { fg = C.none, bg = C.none }, -- left blank, hidden  |hl-Ignore|
     -- Error
