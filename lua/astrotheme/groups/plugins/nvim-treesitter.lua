@@ -43,6 +43,7 @@ local function callback()
     ["@string.escape"] = { fg = C.red },
     ["@string.regex"] = { fg = C.green },
     ["@tag"] = { fg = C.red },
+    ["@tag.attribute"] = { fg = C.cyan },
     ["@tag.delimiter"] = { fg = C.text },
     ["@text"] = { fg = C.text },
     ["@text.emphasis"] = { fg = C.purple, italic = true },
