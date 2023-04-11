@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/AstroNvim/astrotheme/compare/v1.3.0...v1.4.0) (2023-04-11)
+
+
+### Features
+
+* **treesitter:** major syntax theme rework for better readability ([#24](https://github.com/AstroNvim/astrotheme/issues/24)) ([90ea2ed](https://github.com/AstroNvim/astrotheme/commit/90ea2edae1c07d45c6cea9133279e53d87236d34))
+
 ## [1.3.0](https://github.com/AstroNvim/astrotheme/compare/v1.2.1...v1.3.0) (2023-04-11)
 
 
