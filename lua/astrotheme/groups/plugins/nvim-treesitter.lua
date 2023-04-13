@@ -3,68 +3,111 @@ local function callback()
 
     -- misc
     ["@comment"] = { link = "Comment" },
-    ["@define"] = { link = "Define" },
+    ["@comment.documentation"] = { link = "@comment" },
     ["@error"] = { link = "Error" },
-    ["@operator"] = { link = "Operator" },
+    ["@none"] = { link = "@Comment" },
     ["@preproc"] = { link = "PreProc" },
-
-    -- data types
-    ["@boolean"] = { link = "Boolean" },
-    ["@number"] = { link = "Number" },
-    ["@float"] = { link = "Float" },
-    ["@string"] = { link = "String" },
-    ["@string.escape"] = { fg = C.red },
-    ["@string.regex"] = { link = "String" },
-    ["@string.special"] = { link = "String" },
-    ["@character"] = { link = "Character" },
-    ["@character.special"] = { link = "SpecialChar" },
-
-    ["@annotation"] = { fg = C.yellow },
-    ["@attribute"] = { fg = C.red },
-
-    -- function
-    ["@constructor"] = { fg = C.yellow },
-    ["@function"] = { link = "Function" },
-    ["@function.builtin"] = { fg = C.cyan },
-    ["@function.call"] = { link = "@function" },
-    ["@function.macro"] = { fg = C.yellow },
-    ["@method"] = { fg = C.cyan },
-    ["@method.call"] = { link = "@method" },
-
-    -- identifiers
-    ["@constant"] = { link = "Constant" },
-    ["@constant.builtin"] = { fg = C.orange },
-    ["@constant.macro"] = { fg = C.red },
-
-    ["@namespace"] = { link = "Keyword" },
-    ["@symbol"] = { link = "Special" },
-
-    ["@variable"] = { link = "Identifier" },
-    ["@variable.builtin"] = { fg = C.red },
-
-    ["@property"] = { link = "@variable.builtin" },
-
-    -- keyword
-    ["@conditional"] = { link = "Conditional" },
-    ["@exception"] = { link = "Exception" },
-    ["@include"] = { link = "Include" },
-
-    ["@keyword"] = { link = "Keyword" },
-    ["@keyword.export"] = { link = "Keyword" },
-    ["@keyword.function"] = { link = "Keyword" },
-    ["@keyword.operator"] = { link = "Keyword" },
-    ["@keyword.return"] = { link = "Keyword" },
-
-    ["@label"] = { link = "Label" },
-    ["@parameter"] = { fg = C.orange },
-    ["@parameter.reference"] = { fg = C.cyan },
-
-    ["@repeat"] = { link = "Repeat" },
+    ["@define"] = { link = "Define" },
+    ["@operator"] = { link = "Operator" },
 
     -- punctuation
     ["@punctuation.bracket"] = { fg = C.text },
     ["@punctuation.delimiter"] = { fg = C.text },
-    ["@punctuation.special"] = { fg = C.text },
+    ["@punctuation.special"] = { link = "Special" },
+
+    -- literals
+    ["@string"] = { link = "String" },
+    ["@string.escape"] = { fg = C.red },
+    ["@string.regex"] = { link = "String" },
+    ["@string.special"] = { link = "String" },
+
+    ["@character"] = { link = "Character" },
+    ["@character.special"] = { link = "SpecialChar" },
+
+    ["@boolean"] = { link = "Boolean" },
+    ["@number"] = { link = "Number" },
+    ["@float"] = { link = "Float" },
+
+    -- function
+    ["@function"] = { link = "Function" },
+    ["@function.builtin"] = { fg = C.cyan },
+    ["@function.call"] = { link = "@function" },
+    ["@function.macro"] = { fg = C.yellow },
+
+    ["@method"] = { fg = C.cyan },
+    ["@method.call"] = { link = "@method" },
+
+    ["@constructor"] = { fg = C.yellow },
+    ["@parameter"] = { fg = C.orange },
+
+    -- keyword
+    ["@keyword"] = { link = "Keyword" },
+    ["@keyword.corotine"] = { link = "Keyword" },
+    ["@keyword.function"] = { link = "Keyword" },
+    ["@keyword.operator"] = { link = "Keyword" },
+    ["@keyword.return"] = { link = "Keyword" },
+    ["@keyword.export"] = { link = "Keyword" },
+
+    ["@conditional"] = { link = "Conditional" },
+    ["@conditional.ternary"] = { link = "@conditional" },
+
+    ["@repeat"] = { link = "Repeat" },
+    ["@debug"] = { link = "Debug" },
+    ["@label"] = { link = "Label" },
+    ["@include"] = { link = "Include" },
+    ["@exception"] = { link = "Exception" },
+
+    -- types
+    ["@type"] = { link = "Type" },
+    ["@type.builtin"] = { link = "@type" },
+    ["@type.definition"] = { link = "@type" },
+    ["@type.qualifier"] = { link = "@type" },
+
+    ["@storageclass"] = { link = "StorageClass" },
+    ["@attribute"] = { fg = C.yellow },
+    ["@field"] = { link = "@variable.builtin" },
+    ["@property"] = { link = "@variable.builtin" },
+
+    -- identifiers
+    ["@variable"] = { link = "Identifier" },
+    ["@variable.builtin"] = { fg = C.red },
+
+    ["@constant"] = { link = "Constant" },
+    ["@constant.builtin"] = { link = "@constant" },
+    ["@constant.macro"] = { link = "@constant" },
+
+    ["@namespace"] = { link = "Keyword" },
+    ["@symbol"] = { link = "Special" },
+
+    -- text
+    ["@text"] = { fg = C.text },
+    ["@text.strong"] = { fg = C.blue, bold = true },
+    ["@text.emphasis"] = { fg = C.purple, italic = true },
+    ["@text.underline"] = { link = "Underline" },
+    ["@text.strike"] = { fg = C.green, strikethrough = true },
+    ["@text.title"] = { fg = C.text, bold = true },
+    ["@text.literal"] = { fg = C.text },
+    ["@text.quote"] = { fg = C.text, italic = true },
+    ["@text.uri"] = { fg = C.green, italic = true, underline = true },
+    ["@text.math"] = { fg = C.blue },
+    ["@text.environment"] = { fg = C.orange },
+    ["@text.environment.name"] = { fg = C.blue },
+    ["@text.reference"] = { fg = C.yellow, bold = true },
+
+    ["@text.todo"] = { fg = C.base, bg = C.yellow },
+    ["@text.note"] = { fg = C.base, bg = C.blue },
+    ["@text.todo.note"] = { link = "@text.note" },
+    ["@text.warning"] = { fg = C.base, bg = C.yellow },
+    ["@text.todo.warning"] = { link = "@text.warning" },
+    ["@text.danger"] = { fg = C.base, bg = C.red },
+    ["@text.todo.danger"] = { link = "@text.danger" },
+    ["@text.unchecked"] = { fg = C.overlay1 },
+    ["@text.todo.unchecked"] = { link = "@text.unchecked" },
+    ["@text.checked"] = { fg = C.green },
+    ["@text.todo.checked"] = { link = "@text.checked" },
+
+    ["@text.diff.add"] = { link = "DiffAdded" },
+    ["@text.diff.delete"] = { link = "DiffDelete" },
 
     -- tag
     ["@tag"] = { fg = C.red },
@@ -72,6 +115,8 @@ local function callback()
     ["@tag.delimiter"] = { fg = C.text },
 
     -- semantic tokens
+    -- NOTE: these can not be found in the documentation are are specific
+    ["@annotation"] = { fg = C.yellow },
     ["@class"] = { fg = C.blue },
     ["@decorator"] = { fg = C.orange },
     ["@enum"] = { fg = C.cyan },
@@ -82,39 +127,6 @@ local function callback()
     ["@regexp"] = { fg = C.cyan },
     ["@struct"] = { fg = C.blue },
     ["@typeParameter"] = { fg = C.yellow },
-
-    -- text
-    ["@text"] = { fg = C.text },
-    ["@text.emphasis"] = { fg = C.purple, italic = true },
-    ["@text.environment"] = { fg = C.orange },
-    ["@text.environment.name"] = { fg = C.blue },
-    ["@text.literal"] = { fg = C.text },
-    ["@text.math"] = { fg = C.blue },
-    ["@text.reference"] = { fg = C.yellow, bold = true },
-    ["@text.strong"] = { fg = C.blue, bold = true },
-    ["@text.strike"] = { fg = C.green, strikethrough = true },
-    ["@text.title"] = { fg = C.text, bold = true },
-    ["@text.underline"] = { link = "Underline" },
-    ["@text.uri"] = { fg = C.green, italic = true, underline = true },
-
-    ["@text.todo"] = { fg = C.base, bg = C.yellow },
-    ["@text.todo.checked"] = { fg = C.green },
-    ["@text.todo.danger"] = { fg = C.base, bg = C.red },
-    ["@text.todo.note"] = { fg = C.base, bg = C.blue },
-    ["@text.todo.unchecked"] = { fg = C.overlay1 },
-    ["@text.todo.warning"] = { fg = C.base, bg = C.yellow },
-
-    ["@text.diff.add"] = { link = "DiffAdded" },
-    ["@text.diff.delete"] = { link = "DiffDelete" },
-
-    -- type
-    ["@field"] = { fg = C.red },
-    ["@storageclass"] = { link = "StorageClass" },
-
-    ["@type"] = { link = "Type" },
-    ["@type.builtin"] = { link = "@type" },
-    ["@type.definition"] = { link = "@type" },
-    ["@type.qualifier"] = { link = "@type" },
 
     -----------------------
     -- Language Specific --
@@ -162,7 +174,7 @@ local function callback()
     ["@type.rust"] = { fg = C.yellow },
 
     -- toml
-    ["@property.toml"] = { fg = C.blue },
+    ["@property.toml"] = { fg = C.red },
 
     -- typescript
     ["@type.qualifier.typescript"] = { link = "Keyword" },
@@ -172,8 +184,9 @@ local function callback()
     ["@tag.attribute.tsx"] = { fg = C.purple, italic = true },
 
     -- yaml
-    ["@field.yaml"] = { fg = C.blue },
+    ["@field.yaml"] = { fg = C.red },
   }
+  -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 end
 
 return callback
