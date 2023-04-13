@@ -1,13 +1,13 @@
 local colors = {
   none = "NONE",
   -------------------
-  red = "#D05E60",
-  blue = "#81A3AF",
-  green = "#7EA857",
-  yellow = "#F99600",
-  purple = "#CF85BD",
-  cyan = "#78BBA1",
-  orange = "#DF8663",
+  red = "#E67C83",
+  blue = "#82A3B0",
+  green = "#7FAA55",
+  yellow = "#CC9300",
+  purple = "#D085BD",
+  cyan = "#57AD8C",
+  orange = "#E08664",
   -------------------
   alt_red = "#E77777",
   alt_blue = "#9CBDC9",
@@ -29,7 +29,7 @@ local colors = {
   surface1 = "#211014",
   surface2 = "#2E1B20",
   -------------------
-  text = "#92757B", -- carrot
+  text = "#AA989B", -- carrot
   subtext0 = "#3B2329",
   subtext1 = "#644B50", -- headings
   -------------------
