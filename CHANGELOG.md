@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/AstroNvim/astrotheme/compare/v1.4.0...v1.5.0) (2023-04-13)
+
+
+### Features
+
+* **treesitter:** add more hl groups and reformat to mirror docs ([#26](https://github.com/AstroNvim/astrotheme/issues/26)) ([bda69f0](https://github.com/AstroNvim/astrotheme/commit/bda69f0d6abd2f1205bb4e76634d4675ac040939))
+
 ## [1.4.0](https://github.com/AstroNvim/astrotheme/compare/v1.3.0...v1.4.0) (2023-04-11)
 
 
