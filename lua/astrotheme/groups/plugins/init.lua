@@ -20,4 +20,5 @@ return {
   ["telescope.nvim"] = "telescope",
   ["vimwiki"] = "vimwiki",
   ["which-key.nvim"] = "which-key",
+  ["noice.nvim"] = "noice",
 }
