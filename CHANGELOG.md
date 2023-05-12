@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.0](https://github.com/AstroNvim/astrotheme/compare/v1.5.0...v1.6.0) (2023-05-12)
+
+
+### Features
+
+* **base:** add cursor colors and missing cursor groups ([efd89b8](https://github.com/AstroNvim/astrotheme/commit/efd89b870234d52f0c989777de4d3a8c0edba707))
+* **lightspeed:** add missing hl groups; change some hl to links ([60f93ef](https://github.com/AstroNvim/astrotheme/commit/60f93efab5504193082acbf7cb5c3085ce17f441))
+* **noice:** add initial support for noice ([8a368f0](https://github.com/AstroNvim/astrotheme/commit/8a368f056ee60409665406df0889147c9dddf5eb))
+
 ## [1.5.0](https://github.com/AstroNvim/astrotheme/compare/v1.4.0...v1.5.0) (2023-04-13)
 
 
