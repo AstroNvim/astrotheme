@@ -34,10 +34,10 @@ local function callback()
     ["@function.call"] = { link = "@function" },
     ["@function.macro"] = { fg = C.yellow },
 
-    ["@method"] = { fg = C.cyan },
+    ["@method"] = { link = "@function" },
     ["@method.call"] = { link = "@method" },
 
-    ["@constructor"] = { fg = C.yellow },
+    ["@constructor"] = { link = "@function" },
     ["@parameter"] = { fg = C.orange },
 
     -- keyword
@@ -65,12 +65,12 @@ local function callback()
 
     ["@storageclass"] = { link = "StorageClass" },
     ["@attribute"] = { fg = C.yellow },
-    ["@field"] = { link = "@variable.builtin" },
-    ["@property"] = { link = "@variable.builtin" },
+    ["@field"] = { link = "@property" },
+    ["@property"] = { fg = C.red },
 
     -- identifiers
     ["@variable"] = { link = "Identifier" },
-    ["@variable.builtin"] = { fg = C.red },
+    ["@variable.builtin"] = { fg = C.cyan },
 
     ["@constant"] = { link = "Constant" },
     ["@constant.builtin"] = { link = "@constant" },
