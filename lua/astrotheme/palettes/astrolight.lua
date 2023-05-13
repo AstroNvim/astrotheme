@@ -17,22 +17,22 @@ local colors = {
   light_cyan = "#5CBA94",
   dark_orange = "#F9744C",
   -------------------
-  base = "#FFEFE9",
-  crust = "#FFE2D6", -- neo-tree
-  mantle = "#FED5CB", -- inactive
+  base = "#FEEEEE",
+  crust = "#F9DCD1", -- neo-tree
+  mantle = "#EBCEC3", -- inactive
   -- mantle = "#C3E0EB",
   -------------------
-  surface0 = "#FAC7BE", -- current line
-  surface1 = "#F0B9B0",
-  surface2 = "#E1ABA3",
+  surface0 = "#F5DDD8", -- current line
+  surface1 = "#D8C1BC",
+  surface2 = "#BDA6A1",
   -------------------
-  overlay0 = "#C1928D",
-  overlay1 = "#B28581", -- status
-  overlay2 = "#A57874",
+  overlay0 = "#CAA29D",
+  overlay1 = "#BD9492", -- status
+  overlay2 = "#B08885",
   -------------------
   text = "#704745", -- carrot
-  subtext0 = "#905C5A",
-  subtext1 = "#83504E", -- headings
+  subtext0 = "#83504E", -- headings
+  subtext1 = "#B58380", -- comments
   -------------------
   -- icon colors
   -------------------
