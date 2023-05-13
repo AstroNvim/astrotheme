@@ -17,7 +17,7 @@ local function callback()
     String = { fg = C.green, bg = C.none }, -- a string constant: "this is a string"
     Character = { fg = C.green, bg = C.none }, -- a character constant: 'c', '\n'
     Number = { fg = C.orange, bg = C.none }, -- a number constant: 234, 0xff
-    Boolean = { fg = C.blue, bg = C.none }, -- a boolean constant: TRUE, false
+    Boolean = { fg = C.orange, bg = C.none }, -- a boolean constant: TRUE, false
     Float = { fg = C.yellow, bg = C.none }, -- a floating point constant: 2.3e10
     -- Identifier
     Identifier = { fg = C.text, bg = C.none }, -- any variable name
