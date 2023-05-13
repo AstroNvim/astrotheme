@@ -10,8 +10,8 @@ local function callback()
     BufferLineCloseButtonSelected = { fg = C.red, bg = C.base },
     BufferLineModifiedVisible = { fg = C.text, bg = C.base },
     BufferLineModifiedSelected = { fg = C.green, bg = C.base },
-    BufferLineError = { fg = C.dark_red, bg = C.dark_red },
-    BufferLineErrorDiagnostic = { fg = C.dark_red, bg = C.dark_red },
+    BufferLineError = { fg = C.alt_red, bg = C.alt_red },
+    BufferLineErrorDiagnostic = { fg = C.alt_red, bg = C.alt_red },
   }
 end
 

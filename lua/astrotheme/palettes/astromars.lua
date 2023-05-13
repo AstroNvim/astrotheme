@@ -9,13 +9,13 @@ local colors = {
   cyan = "#78BBA1",
   orange = "#DF8663",
   -------------------
-  dark_red = "#E77777",
-  light_blue = "#9CBDC9",
-  light_green = "#9AC374",
-  dark_yellow = "#FFA31A",
-  light_purple = "#E8A1D7",
-  light_cyan = "#88C3AB",
-  dark_orange = "#FAA27F",
+  alt_red = "#E77777",
+  alt_blue = "#9CBDC9",
+  alt_green = "#9AC374",
+  alt_yellow = "#FFA31A",
+  alt_purple = "#E8A1D7",
+  alt_cyan = "#88C3AB",
+  alt_orange = "#FAA27F",
   -------------------
   base = "#0E0507",
   crust = "#12070A", -- neo-tree
