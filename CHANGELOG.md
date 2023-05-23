@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/AstroNvim/astrotheme/compare/v1.6.0...v1.6.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* **dap-ui:** change variable color to be legible ([#36](https://github.com/AstroNvim/astrotheme/issues/36)) ([5b252ec](https://github.com/AstroNvim/astrotheme/commit/5b252ec8a24b52a9c1ebef929740ace18c5a8898))
+
 ## [1.6.0](https://github.com/AstroNvim/astrotheme/compare/v1.5.0...v1.6.0) (2023-05-12)
 
 
