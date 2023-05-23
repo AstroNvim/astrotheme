@@ -1,6 +1,6 @@
 local function callback()
   return {
-    DapUIVariable = { fg = C.mantle },
+    DapUIVariable = { link = "Identifier" },
     DapUIScope = { link = "Title" },
     DapUIType = { link = "Type" },
     DapUIValue = { fg = C.red },
