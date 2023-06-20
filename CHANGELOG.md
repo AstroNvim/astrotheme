@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/AstroNvim/astrotheme/compare/v1.6.1...v1.7.0) (2023-06-20)
+
+
+### Features
+
+* **lsp:** add LspInlayHint highlight ([8bb8e20](https://github.com/AstroNvim/astrotheme/commit/8bb8e205cbbb93d9c61f7db2d07bae0f8f20d11a))
+
 ## [1.6.1](https://github.com/AstroNvim/astrotheme/compare/v1.6.0...v1.6.1) (2023-05-23)
 
 
