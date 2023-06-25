@@ -4,6 +4,7 @@ M.default = {
   palette = "astrodark",
   termguicolors = true,
   terminal_colors = true,
+  dev = false,
   style = {
     inactive = false,
     transparent = false,
