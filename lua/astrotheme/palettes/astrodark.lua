@@ -17,8 +17,9 @@ local colors = {
   alt_orange = "#ff9640",
   -------------------
   base = "#1e222a",
-  crust = "#1f1f25",
-  mantle = "#181a1f",
+  mantle = "#191C21", -- tools
+  crust = "#15181D", -- tabline
+  status = "#15181D", -- statusline
   -------------------
   surface0 = "#252931",
   surface1 = "#3e4452",
