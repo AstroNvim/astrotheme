@@ -2,7 +2,7 @@ local function callback()
   return {
     CmpItemAbbr = { fg = C.text },
     CmpItemAbbrDefault = { fg = C.base },
-    CmpItemAbbrDeprecated = { fg = C.subtext1 },
+    CmpItemAbbrDeprecated = { fg = C.red, strikethrough = true },
     CmpItemAbbrMatch = { fg = C.surface2 },
     CmpItemAbbrMatchFuzzy = { fg = C.surface2 },
     CmpItemKind = { fg = C.yellow },
