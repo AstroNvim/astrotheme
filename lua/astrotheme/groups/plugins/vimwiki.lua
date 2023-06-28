@@ -1,11 +1,11 @@
 local function callback()
   return {
     VimwikiLink = { fg = C.cyan, bg = C.none },
-    VimwikiHeaderChar = { fg = C.subtext0, bg = C.none },
+    VimwikiHeaderChar = { fg = C.subtext1, bg = C.none },
     VimwikiHR = { fg = C.yellow, bg = C.none },
     VimwikiList = { fg = C.orange, bg = C.none },
     VimwikiTag = { fg = C.orange, bg = C.none },
-    VimwikiMarkers = { fg = C.subtext0, bg = C.none },
+    VimwikiMarkers = { fg = C.subtext1, bg = C.none },
     VimwikiHeader1 = { fg = C.orange, bg = C.none, bold = true },
     VimwikiHeader2 = { fg = C.green, bg = C.none, bold = true },
     VimwikiHeader3 = { fg = C.blue, bg = C.none, bold = true },

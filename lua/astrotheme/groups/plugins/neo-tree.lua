@@ -20,7 +20,7 @@ local function callback(opts)
     },
     NeoTreeSymbolicLinkTarget = { fg = C.cyan },
     NeoTreeTabActive = { fg = C.text, bg = C.mantle, bold = true },
-    NeoTreeTabInactive = { fg = C.subtext0, bg = C.crust },
+    NeoTreeTabInactive = { fg = C.subtext1, bg = C.crust },
     NeoTreeTabSeparatorActive = { fg = C.mantle, bg = C.mantle },
     NeoTreeTabSeparatorInactive = { fg = C.crust, bg = C.crust },
     NeoTreeVertSplit = { fg = C.base, bg = C.mantle },

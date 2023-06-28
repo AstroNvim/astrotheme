@@ -4,7 +4,7 @@ local function callback()
     GitSignsChange = { fg = C.alt_orange, bg = C.none },
     GitSignsDelete = { fg = C.alt_red, bg = C.none },
     MoreMsg = { fg = C.green, bold = true },
-    ModeMsg = { fg = C.subtext0, bold = true },
+    ModeMsg = { fg = C.subtext1, bold = true },
   }
 end
 
