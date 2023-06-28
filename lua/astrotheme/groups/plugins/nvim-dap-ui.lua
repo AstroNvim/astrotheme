@@ -5,7 +5,7 @@ local function callback()
     DapUIType = { link = "Type" },
     DapUIValue = { fg = C.red },
     DapUIModifiedValue = { fg = C.alt_yellow, bold = true },
-    DapUIDecoration = { fg = C.subtext0 },
+    DapUIDecoration = { fg = C.subtext1 },
     DapUIThread = { link = "String" },
     DapUIStoppedThread = { link = "Title" },
     DapUIFrameName = { link = "Normal" },

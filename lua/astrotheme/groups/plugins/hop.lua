@@ -3,7 +3,7 @@ local function callback()
     HopNextKey = { fg = C.red, bold = true },
     HopNextKey1 = { fg = C.cyan, bold = true },
     HopNextKey2 = { fg = C.blue },
-    HopUnmatched = { fg = C.subtext0 },
+    HopUnmatched = { fg = C.subtext1 },
   }
 end
 

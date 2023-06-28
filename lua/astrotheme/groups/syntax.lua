@@ -11,7 +11,7 @@
 local function callback()
   return {
     -- Comment
-    Comment = { fg = C.subtext1, bg = C.none }, -- any comment
+    Comment = { fg = C.subtext0, bg = C.none }, -- any comment
     -- Constant
     Constant = { fg = C.yellow, bg = C.none }, -- any constant
     String = { fg = C.green, bg = C.none }, -- a string constant: "this is a string"
@@ -46,7 +46,7 @@ local function callback()
     SpecialChar = { fg = C.blue, bg = C.none }, -- special character in a constant
     Tag = { fg = C.blue, bg = C.none }, -- you can use CTRL-] on this
     Delimiter = { fg = C.blue, bg = C.none }, -- character that needs attention
-    SpecialComment = { fg = C.subtext0, bg = C.none }, -- special things inside a comment
+    SpecialComment = { fg = C.subtext1, bg = C.none }, -- special things inside a comment
     Debug = { fg = C.blue, bg = C.none }, -- debugging statements
     -- Underlined
     Underlined = { fg = C.cyan, bg = C.none, underline = true }, -- text that stands out, HTML links

@@ -21,7 +21,7 @@ local function callback()
     NotifyINFOBody = { fg = C.text },
     NotifyDEBUGBody = { fg = C.text },
     NotifyTRACEBody = { fg = C.text },
-    NotifyLogTime = { fg = C.subtext1 },
+    NotifyLogTime = { fg = C.subtext0 },
     NotifyLogTitle = { fg = C.blue },
   }
 end
