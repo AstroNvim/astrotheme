@@ -100,6 +100,7 @@ require("astrotheme").setup({
 - [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 - [nvim-ts-rainbow2](https://github.com/HiPhish/nvim-ts-rainbow2)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [rainbow-delimiters](https://github.com/HiPhish/rainbow-delimiters.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [vimwiki](https://github.com/vimwiki/vimwiki)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)

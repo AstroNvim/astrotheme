@@ -18,6 +18,7 @@ return {
   ["nvim-ts-rainbow2"] = "nvim-ts-rainbow2",
   ["nvim-web-devicons"] = "nvim-web-devicons",
   ["nvim-window-picker"] = "nvim-window-picker",
+  ["rainbow-delimiters.nvim"] = "rainbow-delimiters",
   ["symbols-outline.nvim"] = "symbols-outline",
   ["telescope.nvim"] = "telescope",
   ["vimwiki"] = "vimwiki",
