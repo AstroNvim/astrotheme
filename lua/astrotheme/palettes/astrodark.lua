@@ -1,40 +1,83 @@
-local colors = {
+local c = {
   none = "NONE",
-  red = "#e06c75",
-  blue = "#61afef",
-  green = "#98c379",
-  yellow = "#e5c06b",
-  purple = "#c678dd",
-  cyan = "#56b6c2",
-  orange = "#d19a66",
-  -------------------
-  alt_red = "#ec5f67",
-  alt_blue = "#90c7f3",
-  alt_green = "#89b06d",
-  alt_yellow = "#ebae34",
-  alt_purple = "#a9a1e1",
-  alt_cyan = "#88cbd4",
-  alt_orange = "#ff9640",
-  -------------------
-  base = "#1e222a",
-  mantle = "#191C21", -- tools
-  crust = "#15181D", -- tabline
-  status = "#15181D", -- statusline
-  -------------------
-  surface0 = "#252931",
-  surface1 = "#3e4452",
-  surface2 = "#dedede",
-  -------------------
-  overlay0 = "#c9c9c9",
-  overlay1 = "#2c323c",
-  overlay2 = "#282c34",
-  -------------------
-  text = "#abb2bf",
-  subtext0 = "#4b5263",
-  subtext1 = "#777d86",
-  -------------------
-  -- icon colors
-  -------------------
+  syntax = {},
+  ui = {},
+  term = {},
+}
+
+--------------------------------
+--- Syntax
+--------------------------------
+c.syntax.red = "#FD9298"
+c.syntax.blue = "#70B6F3"
+c.syntax.green = "#8FBE6C"
+c.syntax.yellow = "#E1A640"
+c.syntax.purple = "#D69BE6"
+c.syntax.cyan = "#45C3B9"
+c.syntax.orange = "#FB976A"
+c.syntax.text = "#AEAEAE"
+c.syntax.subtext0 = "#777777"
+c.syntax.subtext1 = "#4B4B4B"
+
+--------------------------------
+--- UI
+--------------------------------
+c.ui.red = "#f37880"
+c.ui.blue = "#44aaf9"
+c.ui.green = "#75ad47"
+c.ui.yellow = "#df9b03"
+c.ui.purple = "#cc83e3"
+c.ui.cyan = "#00b298"
+c.ui.orange = "#EB8331"
+
+c.ui.tabline = "#101114"
+c.ui.winbar = "#777777"
+c.ui.tool = "#141618"
+c.ui.base = "#181A1C"
+c.ui.statusline = "#141618"
+c.ui.split = "#141618"
+c.ui.popup = "#141618"
+c.ui.border = "#00b298"
+c.ui.current_line = "#1C1E20"
+c.ui.scrollbar = "#00b298"
+c.ui.selection = "#26343F"
+c.ui.highlight = "#242628"
+c.ui.text = "#AEAEAE"
+
+--------------------------------
+--- terminal
+--------------------------------
+c.term.black = c.ui.tabline
+c.term.bright_black = c.ui.base
+
+c.term.red = c.syntax.red
+c.term.bright_red = c.syntax.red
+
+c.term.green = c.syntax.green
+c.term.bright_green = c.syntax.green
+
+c.term.yellow = c.syntax.yellow
+c.term.bright_yellow = c.syntax.yellow
+
+c.term.blue = c.syntax.blue
+c.term.bright_blue = c.syntax.blue
+
+c.term.purple = c.syntax.purple
+c.term.bright_purple = c.syntax.purple
+
+c.term.cyan = c.syntax.cyan
+c.term.bright_cyan = c.syntax.cyan
+
+c.term.white = c.ui.base
+c.term.bright_white = c.ui.base
+
+c.term.background = c.ui.base
+c.term.foreground = c.ui.text
+
+--------------------------------
+--- Icons
+--------------------------------
+c.icon = {
   c = "#519aba",
   css = "#61afef",
   deb = "#a1b7ee",
@@ -67,4 +110,4 @@ local colors = {
   pkg = "#d39ede",
 }
 
-return colors
+return c
