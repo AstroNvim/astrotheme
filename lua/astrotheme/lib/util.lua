@@ -7,6 +7,12 @@ function M.reload(opts, theme)
   vim.g.colors_name = theme
 end
 
+function M.reload_module(module, bool)
+  bool = bool or false
+  if bool then package.loaded[module] = nil end
+  return require(module)
+end
+
 function M.get_plugin_list(opts)
   local lazy_avail, lazy_config = pcall(require, "lazy.core.config")
   local installed_plugins = lazy_avail and lazy_config.plugins or packer_plugins
