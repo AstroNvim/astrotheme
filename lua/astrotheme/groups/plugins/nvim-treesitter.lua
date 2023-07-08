@@ -96,6 +96,11 @@ local function callback()
 
     ["@text.todo"] = { fg = C.base, bg = C.yellow },
     ["@text.note"] = { fg = C.base, bg = C.blue },
+    ["@text.title.1.markdown"] = { fg = C.syntax.text, bold = true },
+    ["@text.title.2.markdown"] = { fg = C.syntax.purple, bold = true },
+    ["@text.title.3.markdown"] = { fg = C.syntax.blue, bold = true },
+    ["@text.title.4.markdown"] = { fg = C.syntax.cyan, bold = true },
+    ["@text.title.5.markdown"] = { fg = C.syntax.green, bold = true },
     ["@text.todo.note"] = { link = "@text.note" },
     ["@text.warning"] = { fg = C.base, bg = C.yellow },
     ["@text.todo.warning"] = { link = "@text.warning" },
