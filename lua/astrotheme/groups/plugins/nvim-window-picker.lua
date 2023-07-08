@@ -1,9 +1,9 @@
 local function callback()
   return {
-    WindowPickerStatusLine = { fg = C.red, bg = C.none },
-    WindowPickerStatusLineNC = { fg = C.red, bg = C.none },
-    WindowPickerWinBar = { fg = C.red, bg = C.none },
-    WindowPickerWinBarNC = { fg = C.red, bg = C.none },
+    WindowPickerStatusLine = { fg = C.ui.red, bg = C.none },
+    WindowPickerStatusLineNC = { fg = C.ui.red, bg = C.none },
+    WindowPickerWinBar = { fg = C.ui.red, bg = C.none },
+    WindowPickerWinBarNC = { fg = C.ui.red, bg = C.none },
   }
 end
 

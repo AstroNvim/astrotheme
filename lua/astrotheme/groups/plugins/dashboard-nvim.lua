@@ -1,9 +1,9 @@
 local function callback()
   return {
-    DashboardHeader = { fg = C.cyan },
-    DashboardShortcut = { fg = C.yellow },
-    DashboardFooter = { fg = C.cyan },
-    DashboardCenter = { fg = C.blue },
+    DashboardHeader = { fg = C.syntax.cyan },
+    DashboardShortcut = { fg = C.syntax.yellow },
+    DashboardFooter = { fg = C.syntax.cyan },
+    DashboardCenter = { fg = C.syntax.blue },
   }
 end
 

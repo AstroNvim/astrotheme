@@ -11,13 +11,13 @@ local function callback()
     ["@operator"] = { link = "Operator" },
 
     -- punctuation
-    ["@punctuation.bracket"] = { fg = C.text },
-    ["@punctuation.delimiter"] = { fg = C.text },
+    ["@punctuation.bracket"] = { fg = C.syntax.text },
+    ["@punctuation.delimiter"] = { fg = C.syntax.text },
     ["@punctuation.special"] = { link = "Special" },
 
     -- literals
     ["@string"] = { link = "String" },
-    ["@string.escape"] = { fg = C.red },
+    ["@string.escape"] = { fg = C.syntax.red },
     ["@string.regex"] = { link = "String" },
     ["@string.special"] = { link = "String" },
 
@@ -30,15 +30,15 @@ local function callback()
 
     -- function
     ["@function"] = { link = "Function" },
-    ["@function.builtin"] = { fg = C.cyan },
+    ["@function.builtin"] = { fg = C.syntax.cyan },
     ["@function.call"] = { link = "@function" },
-    ["@function.macro"] = { fg = C.yellow },
+    ["@function.macro"] = { fg = C.syntax.yellow },
 
     ["@method"] = { link = "@function" },
     ["@method.call"] = { link = "@method" },
 
     ["@constructor"] = { link = "@function" },
-    ["@parameter"] = { fg = C.orange },
+    ["@parameter"] = { fg = C.syntax.orange },
 
     -- keyword
     ["@keyword"] = { link = "Keyword" },
@@ -64,13 +64,13 @@ local function callback()
     ["@type.qualifier"] = { link = "@type" },
 
     ["@storageclass"] = { link = "StorageClass" },
-    ["@attribute"] = { fg = C.yellow },
+    ["@attribute"] = { fg = C.syntax.yellow },
     ["@field"] = { link = "@property" },
-    ["@property"] = { fg = C.red },
+    ["@property"] = { fg = C.syntax.red },
 
     -- identifiers
     ["@variable"] = { link = "Identifier" },
-    ["@variable.builtin"] = { fg = C.cyan },
+    ["@variable.builtin"] = { fg = C.syntax.cyan },
 
     ["@constant"] = { link = "Constant" },
     ["@constant.builtin"] = { link = "@constant" },
@@ -80,88 +80,87 @@ local function callback()
     ["@symbol"] = { link = "Special" },
 
     -- text
-    ["@text"] = { fg = C.text },
-    ["@text.strong"] = { fg = C.blue, bold = true },
-    ["@text.emphasis"] = { fg = C.purple, italic = true },
+    ["@text"] = { fg = C.syntax.text },
+    ["@text.strong"] = { fg = C.syntax.blue, bold = true },
+    ["@text.emphasis"] = { fg = C.syntax.purple, italic = true },
     ["@text.underline"] = { link = "Underline" },
-    ["@text.strike"] = { fg = C.green, strikethrough = true },
-    ["@text.title"] = { fg = C.text, bold = true },
-    ["@text.literal"] = { fg = C.text },
-    ["@text.quote"] = { fg = C.text, italic = true },
-    ["@text.uri"] = { fg = C.green, italic = true, underline = true },
-    ["@text.math"] = { fg = C.blue },
-    ["@text.environment"] = { fg = C.orange },
-    ["@text.environment.name"] = { fg = C.blue },
-    ["@text.reference"] = { fg = C.yellow, bold = true },
-
-    ["@text.todo"] = { fg = C.base, bg = C.yellow },
-    ["@text.note"] = { fg = C.base, bg = C.blue },
+    ["@text.strike"] = { fg = C.syntax.green, strikethrough = true },
+    ["@text.title"] = { fg = C.syntax.text, bold = true },
     ["@text.title.1.markdown"] = { fg = C.syntax.text, bold = true },
     ["@text.title.2.markdown"] = { fg = C.syntax.purple, bold = true },
     ["@text.title.3.markdown"] = { fg = C.syntax.blue, bold = true },
     ["@text.title.4.markdown"] = { fg = C.syntax.cyan, bold = true },
     ["@text.title.5.markdown"] = { fg = C.syntax.green, bold = true },
+    ["@text.literal"] = { fg = C.syntax.text },
+    ["@text.quote"] = { fg = C.syntax.text, italic = true },
+    ["@text.uri"] = { fg = C.syntax.green, italic = true, underline = true },
+    ["@text.math"] = { fg = C.syntax.blue },
+    ["@text.environment"] = { fg = C.syntax.orange },
+    ["@text.environment.name"] = { fg = C.syntax.blue },
+    ["@text.reference"] = { fg = C.syntax.yellow, bold = true },
+
+    ["@text.todo"] = { fg = C.ui.base, bg = C.ui.yellow },
+    ["@text.note"] = { fg = C.ui.base, bg = C.ui.blue },
     ["@text.todo.note"] = { link = "@text.note" },
-    ["@text.warning"] = { fg = C.base, bg = C.yellow },
+    ["@text.warning"] = { fg = C.ui.base, bg = C.ui.orange },
     ["@text.todo.warning"] = { link = "@text.warning" },
-    ["@text.danger"] = { fg = C.base, bg = C.red },
+    ["@text.danger"] = { fg = C.ui.base, bg = C.ui.red },
     ["@text.todo.danger"] = { link = "@text.danger" },
-    ["@text.unchecked"] = { fg = C.overlay1 },
+    ["@text.unchecked"] = { fg = C.ui.base, bg = C.ui.purple },
     ["@text.todo.unchecked"] = { link = "@text.unchecked" },
-    ["@text.checked"] = { fg = C.green },
+    ["@text.checked"] = { fg = C.ui.base, bg = C.ui.green },
     ["@text.todo.checked"] = { link = "@text.checked" },
 
     ["@text.diff.add"] = { link = "DiffAdded" },
     ["@text.diff.delete"] = { link = "DiffDelete" },
 
     -- tag
-    ["@tag"] = { fg = C.red },
-    ["@tag.attribute"] = { fg = C.cyan },
-    ["@tag.delimiter"] = { fg = C.text },
+    ["@tag"] = { fg = C.syntax.red },
+    ["@tag.attribute"] = { fg = C.syntax.cyan },
+    ["@tag.delimiter"] = { fg = C.syntax.text },
 
     -- semantic tokens
-    -- NOTE: these can not be found in the documentation are are specific
-    ["@annotation"] = { fg = C.yellow },
-    ["@class"] = { fg = C.blue },
-    ["@decorator"] = { fg = C.orange },
-    ["@enum"] = { fg = C.cyan },
-    ["@enumMember"] = { fg = C.orange },
-    ["@event"] = { fg = C.orange },
-    ["@interface"] = { fg = C.orange },
-    ["@modifier"] = { fg = C.orange },
-    ["@regexp"] = { fg = C.cyan },
-    ["@struct"] = { fg = C.blue },
-    ["@typeParameter"] = { fg = C.yellow },
+    ["@annotation"] = { fg = C.syntax.yellow },
+    ["@class"] = { fg = C.syntax.blue },
+    ["@decorator"] = { fg = C.syntax.orange },
+    ["@enum"] = { fg = C.syntax.cyan },
+    ["@enumMember"] = { fg = C.syntax.orange },
+    ["@event"] = { fg = C.syntax.orange },
+    ["@interface"] = { fg = C.syntax.orange },
+    ["@modifier"] = { fg = C.syntax.orange },
+    ["@regexp"] = { fg = C.syntax.cyan },
+    ["@struct"] = { fg = C.syntax.blue },
+    ["@typeParameter"] = { fg = C.syntax.yellow },
 
     -----------------------
     -- Language Specific --
     -----------------------
 
     -- cpp
-    ["@property.cpp"] = { fg = C.orange },
+    ["@property.cpp"] = { fg = C.syntax.orange },
 
     -- css
-    ["@number.css"] = { fg = C.cyan },
-    ["@property.css"] = { fg = C.orange },
-    ["@property.class.css"] = { fg = C.yellow },
-    ["@property.id.css"] = { fg = C.blue },
-    ["@string.plain.css"] = { fg = C.green },
-    ["@type.tag.css"] = { fg = C.purple },
-    ["@type.css"] = { fg = C.orange },
+    ["@number.css"] = { fg = C.syntax.cyan },
+    ["@property.css"] = { fg = C.syntax.orange },
+    ["@property.class.css"] = { fg = C.syntax.yellow },
+    ["@property.id.css"] = { fg = C.syntax.blue },
+    ["@string.plain.css"] = { fg = C.syntax.green },
+    ["@type.tag.css"] = { fg = C.syntax.purple },
+    ["@type.css"] = { fg = C.syntax.orange },
 
     -- json
-    ["@label.json"] = { fg = C.blue },
+    ["@label.json"] = { fg = C.syntax.blue },
 
     -- lua
-    ["@constructor.lua"] = { fg = C.orange },
+    ["@constructor.lua"] = { fg = C.syntax.orange },
     ["@variable.lua"] = { link = "@variable" },
 
     -- markdown
-    ["@literal.markdown"] = { fg = C.green },
-    ["@none.markdown"] = { fg = C.text },
-    ["@punctuation.delimiter.markdown"] = { fg = C.text },
-    ["@punctuation.special.markdown"] = { fg = C.red },
-    ["@title.markdown"] = { fg = C.red, bold = true },
+    ["@literal.markdown"] = { fg = C.syntax.green },
+    ["@none.markdown"] = { fg = C.syntax.text },
+    ["@punctuation.delimiter.markdown"] = { fg = C.syntax.text },
+    ["@punctuation.special.markdown"] = { fg = C.syntax.red },
+    ["@title.markdown"] = { fg = C.syntax.red, bold = true },
 
     -- PHP
     ["@type.qualifier.php"] = { link = "Keyword" },
@@ -169,27 +168,27 @@ local function callback()
     ["@method.call.php"] = { link = "Function" },
 
     -- Ruby
-    ["@symbol.ruby"] = { fg = C.orange },
+    ["@symbol.ruby"] = { fg = C.syntax.orange },
 
     -- rust
-    ["@constant.rust"] = { fg = C.cyan },
-    ["@function.macro.rust"] = { fg = C.orange },
-    ["@keyword.function.rust"] = { fg = C.orange },
-    ["@namespace.rust"] = { fg = C.yellow },
-    ["@type.rust"] = { fg = C.yellow },
+    ["@constant.rust"] = { fg = C.syntax.cyan },
+    ["@function.macro.rust"] = { fg = C.syntax.red },
+    ["@namespace.rust"] = { fg = C.syntax.cyan },
+    ["@type.rust"] = { fg = C.syntax.cyan },
 
     -- toml
-    ["@property.toml"] = { fg = C.red },
+    ["@property.toml"] = { fg = C.syntax.red },
 
     -- typescript
     ["@type.qualifier.typescript"] = { link = "Keyword" },
+    ["@constructor.typescript"] = { fg = C.syntax.purple },
 
     -- TSX (Typescript React)
-    ["@constructor.tsx"] = { fg = C.lavender },
-    ["@tag.attribute.tsx"] = { fg = C.purple, italic = true },
+    ["@constructor.tsx"] = { fg = C.syntax.purple },
+    ["@tag.attribute.tsx"] = { fg = C.syntax.purple, italic = true },
 
     -- yaml
-    ["@field.yaml"] = { fg = C.red },
+    ["@field.yaml"] = { fg = C.syntax.red },
   }
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 end

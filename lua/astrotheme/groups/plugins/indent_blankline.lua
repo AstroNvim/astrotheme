@@ -1,10 +1,10 @@
 local function callback()
   return {
-    IndentBlanklineSpaceChar = { fg = C.surface1, nocombine = true },
-    IndentBlanklineChar = { fg = C.surface1, nocombine = true },
-    IndentBlanklineContextStart = { fg = C.surface0, underline = true },
-    IndentBlanklineContextChar = { fg = C.surface0, nocombine = true },
-    IndentBlanklineSpaceCharBlankline = { fg = C.surface1, nocombine = true },
+    IndentBlanklineSpaceChar = { fg = C.syntax.subtext1, nocombine = true },
+    IndentBlanklineChar = { fg = C.syntax.subtext1, nocombine = true },
+    IndentBlanklineContextStart = { fg = C.syntax.subtext1, underline = true },
+    IndentBlanklineContextChar = { fg = C.syntax.subtext1, nocombine = true },
+    IndentBlanklineSpaceCharBlankline = { fg = C.syntax.subtext1, nocombine = true },
   }
 end
 
