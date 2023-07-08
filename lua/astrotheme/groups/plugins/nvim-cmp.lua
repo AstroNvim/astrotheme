@@ -1,11 +1,10 @@
 local function callback()
   return {
-    CmpItemAbbr = { fg = C.text },
-    CmpItemAbbrDefault = { fg = C.base },
-    CmpItemAbbrDeprecated = { fg = C.red, strikethrough = true },
-    CmpItemAbbrMatch = { fg = C.surface2 },
-    CmpItemAbbrMatchFuzzy = { fg = C.surface2 },
-    CmpItemKind = { fg = C.yellow },
+    CmpItemAbbr = { fg = C.syntax.text },
+    CmpItemAbbrDeprecated = { fg = C.syntax.red, strikethrough = true },
+    CmpItemAbbrMatch = { fg = C.ui.cyan },
+    CmpItemAbbrMatchFuzzy = { fg = C.ui.cyan },
+    CmpItemKind = { fg = C.syntax.yellow },
     CmpItemKindClass = { link = "@type" },
     CmpItemKindColor = { link = "@constant" },
     CmpItemKindConstant = { link = "@constant" },
@@ -25,14 +24,13 @@ local function callback()
     CmpItemKindProperty = { link = "@property" },
     CmpItemKindReference = { link = "@type" },
     CmpItemKindSnippet = { link = "@constant" },
-    CmpItemKindStruct = { link = "@type" },
+    CmpItemKimdStruct = { link = "@type" },
     CmpItemKindText = { link = "@text" },
     CmpItemKindTypeParameter = { link = "@type" },
     CmpItemKindUnit = { link = "@constant" },
     CmpItemKindValue = { link = "@constant" },
     CmpItemKindVariable = { link = "@variable" },
-    CmpItemMenuDefault = { fg = C.mantle },
+    CmpItemMenu = { bg = C.ui.popup },
   }
 end
-
 return callback

@@ -1,12 +1,12 @@
 local function callback()
   return {
-    RainbowDelimiterRed = { fg = C.red },
-    RainbowDelimiterYellow = { fg = C.yellow },
-    RainbowDelimiterBlue = { fg = C.blue },
-    RainbowDelimiterOrange = { fg = C.orange },
-    RainbowDelimiterGreen = { fg = C.green },
-    RainbowDelimiterViolet = { fg = C.purple },
-    RainbowDelimiterCyan = { fg = C.cyan },
+    RainbowDelimiterRed = { fg = C.syntax.red },
+    RainbowDelimiterYellow = { fg = C.syntax.yellow },
+    RainbowDelimiterBlue = { fg = C.syntax.blue },
+    RainbowDelimiterOrange = { fg = C.syntax.orange },
+    RainbowDelimiterGreen = { fg = C.syntax.green },
+    RainbowDelimiterViolet = { fg = C.syntax.purple },
+    RainbowDelimiterCyan = { fg = C.syntax.cyan },
   }
 end
 

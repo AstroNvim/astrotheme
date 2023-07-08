@@ -1,12 +1,12 @@
 local function callback()
   return {
-    TSRainbowRed = { fg = C.red },
-    TSRainbowYellow = { fg = C.yellow },
-    TSRainbowBlue = { fg = C.blue },
-    TSRainbowOrange = { fg = C.orange },
-    TSRainbowGreen = { fg = C.green },
-    TSRainbowViolet = { fg = C.purple },
-    TSRainbowCyan = { fg = C.cyan },
+    TSRainbowRed = { fg = C.syntax.red },
+    TSRainbowYellow = { fg = C.syntax.yellow },
+    TSRainbowBlue = { fg = C.syntax.blue },
+    TSRainbowOrange = { fg = C.syntax.orange },
+    TSRainbowGreen = { fg = C.syntax.green },
+    TSRainbowViolet = { fg = C.syntax.purple },
+    TSRainbowCyan = { fg = C.syntax.cyan },
   }
 end
 

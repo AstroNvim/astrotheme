@@ -1,12 +1,12 @@
 local function callback(opts)
   return {
-    WhichKey = { fg = C.purple },
-    WhichKeyFloat = { bg = opts.floating and C.mantle or C.base },
+    WhichKey = { fg = C.syntax.cyan },
+    WhichKeyFloat = { bg = opts.floating and C.ui.tool or C.ui.base },
     WhichKeyBorder = { fg = C.none },
-    WhichKeySeperator = { fg = C.overlay0 },
-    WhichKeyDesc = { fg = C.purple },
-    WhichKeyGroup = { fg = C.blue },
-    WhichKeyValue = { fg = C.overlay0 },
+    WhichKeySeperator = { fg = C.syntax.subtext1 },
+    WhichKeyDesc = { fg = C.syntax.purple },
+    WhichKeyGroup = { fg = C.syntax.blue },
+    WhichKeyValue = { fg = C.syntax.subtext0 },
   }
 end
 
