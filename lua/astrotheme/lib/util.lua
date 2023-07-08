@@ -79,24 +79,32 @@ function M.set_highlights(opts, highlights, theme)
 end
 
 function M.set_terminal_colors()
-  vim.g.terminal_color_0 = C.base
-  vim.g.terminal_color_1 = C.red
-  vim.g.terminal_color_2 = C.alt_green
-  vim.g.terminal_color_3 = C.alt_yellow
-  vim.g.terminal_color_4 = C.blue
-  vim.g.terminal_color_5 = C.purple
-  vim.g.terminal_color_6 = C.cyan
-  vim.g.terminal_color_7 = C.surface2
-  vim.g.terminal_color_8 = C.surface1
-  vim.g.terminal_color_9 = C.alt_red
-  vim.g.terminal_color_10 = C.green
-  vim.g.terminal_color_11 = C.yellow
-  vim.g.terminal_color_12 = C.alt_blue
-  vim.g.terminal_color_13 = C.alt_purple
-  vim.g.terminal_color_14 = C.alt_cyan
-  vim.g.terminal_color_15 = C.text
-  vim.g.terminal_color_background = C.base
-  vim.g.terminal_color_foreground = C.text
+  vim.g.terminal_color_0 = C.term.black
+  vim.g.terminal_color_8 = C.term.bright_black
+
+  vim.g.terminal_color_1 = C.term.red
+  vim.g.terminal_color_9 = C.term.bright_red
+
+  vim.g.terminal_color_2 = C.term.green
+  vim.g.terminal_color_10 = C.term.bright_green
+
+  vim.g.terminal_color_3 = C.term.yellow
+  vim.g.terminal_color_11 = C.term.bright_yellow
+
+  vim.g.terminal_color_4 = C.term.blue
+  vim.g.terminal_color_12 = C.term.bright_blue
+
+  vim.g.terminal_color_5 = C.term.purple
+  vim.g.terminal_color_13 = C.term.bright_purple
+
+  vim.g.terminal_color_6 = C.term.cyan
+  vim.g.terminal_color_14 = C.term.bright_cyan
+
+  vim.g.terminal_color_7 = C.term.white
+  vim.g.terminal_color_15 = C.term.bright_white
+
+  vim.g.terminal_color_background = C.term.background
+  vim.g.terminal_color_foreground = C.term.forground
 end
 
 return M
