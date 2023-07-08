@@ -1,41 +1,83 @@
-local colors = {
+local c = {
   none = "NONE",
-  -------------------
-  red = "#D50B15",
-  blue = "#427080",
-  green = "#547538",
-  yellow = "#965D08",
-  purple = "#B92D98",
-  cyan = "#32765A",
-  orange = "#C63306",
-  -------------------
-  alt_red = "#F54751",
-  alt_blue = "#6FADB5",
-  alt_green = "#73A14D",
-  alt_yellow = "#C28A35",
-  alt_purple = "#D34BB3",
-  alt_cyan = "#5CBA94",
-  alt_orange = "#F9744C",
-  -------------------
-  base = "#FEEEEE",
-  crust = "#F9DCD1", -- neo-tree
-  mantle = "#EBCEC3", -- inactive
-  -- mantle = "#C3E0EB",
-  -------------------
-  surface0 = "#F5DDD8", -- current line
-  surface1 = "#D8C1BC",
-  surface2 = "#BDA6A1",
-  -------------------
-  overlay0 = "#CAA29D",
-  overlay1 = "#BD9492", -- status
-  overlay2 = "#B08885",
-  -------------------
-  text = "#704745", -- carrot
-  subtext0 = "#83504E", -- headings
-  subtext1 = "#B58380", -- comments
-  -------------------
-  -- icon colors
-  -------------------
+  syntax = {},
+  ui = {},
+  term = {},
+}
+
+--------------------------------
+--- Syntax
+--------------------------------
+c.syntax.red = "#A13F37"
+c.syntax.blue = "#006E89"
+c.syntax.green = "#467118"
+c.syntax.yellow = "#805C00"
+c.syntax.purple = "#90437A"
+c.syntax.cyan = "#007652"
+c.syntax.orange = "#954D00"
+c.syntax.text = "#815654"
+c.syntax.subtext0 = "#926461"
+c.syntax.subtext1 = "#A17270"
+
+--------------------------------
+--- UI
+--------------------------------
+c.ui.red = "#D04F4E"
+c.ui.blue = "#0090A2"
+c.ui.green = "#569400"
+c.ui.yellow = "#AC7300"
+c.ui.purple = "#BD51A4"
+c.ui.cyan = "#00976C"
+c.ui.orange = "#D05312"
+
+c.ui.tabline = "#D8D6D5"
+c.ui.winbar = "#926461"
+c.ui.tool = "#F9DCD1"
+c.ui.base = "#FEEEEE"
+c.ui.statusline = "#D8D6D5"
+c.ui.split = "#D8D6D5"
+c.ui.popup = "#F9DCD1"
+c.ui.border = "#D04F4E"
+c.ui.current_line = "#CAA29D"
+c.ui.scrollbar = "#D04F4E"
+c.ui.selection = "#26343F"
+c.ui.highlight = "#F5DDD8"
+c.ui.text = "#815654"
+
+--------------------------------
+--- terminal
+--------------------------------
+c.term.black = c.ui.tabline
+c.term.bright_black = c.ui.base
+
+c.term.red = c.syntax.red
+c.term.bright_red = c.syntax.red
+
+c.term.green = c.syntax.green
+c.term.bright_green = c.syntax.green
+
+c.term.yellow = c.syntax.yellow
+c.term.bright_yellow = c.syntax.yellow
+
+c.term.blue = c.syntax.blue
+c.term.bright_blue = c.syntax.blue
+
+c.term.purple = c.syntax.purple
+c.term.bright_purple = c.syntax.purple
+
+c.term.cyan = c.syntax.cyan
+c.term.bright_cyan = c.syntax.cyan
+
+c.term.white = c.ui.base
+c.term.bright_white = c.ui.base
+
+c.term.background = c.ui.base
+c.term.foreground = c.ui.text
+
+--------------------------------
+--- Icons
+--------------------------------
+c.icon = {
   c = "#519aba",
   css = "#61afef",
   deb = "#a1b7ee",
@@ -68,4 +110,4 @@ local colors = {
   pkg = "#d39ede",
 }
 
-return colors
+return c
