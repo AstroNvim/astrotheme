@@ -7,7 +7,7 @@ local function callback(opts)
     NeoTreeFileNameOpened = { fg = C.ui.green },
     NeoTreeFloatBorder = { fg = C.ui.border },
     NeoTreeFloatTitle = { fg = C.ui.title, bg = C.ui.tool },
-    NeoTreeIndentMarker = { fg = C.ui.blue },
+    NeoTreeIndentMarker = { fg = C.syntax.subtext1 },
     NeoTreeGitAdded = { fg = C.ui.green },
     NeoTreeGitConflict = { fg = C.ui.red },
     NeoTreeGitModified = { fg = C.ui.orange },
