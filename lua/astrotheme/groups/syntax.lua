@@ -11,7 +11,7 @@
 local function callback()
   return {
     -- Comment
-    Comment = { fg = C.syntax.subtext0, bg = C.none }, -- any comment
+    Comment = { fg = C.syntax.comment, bg = C.none }, -- any comment
     -- Constant
     Constant = { fg = C.syntax.yellow, bg = C.none }, -- any constant
     String = { fg = C.syntax.green, bg = C.none }, -- a string constant: "this is a string"
