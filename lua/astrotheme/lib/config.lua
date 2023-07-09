@@ -6,9 +6,11 @@ M.default = {
   terminal_colors = true,
   dev = false,
   style = {
-    inactive = false,
+    inactive = true,
     transparent = false,
     floating = true,
+    popup = true,
+    neotree = true,
     italic_comments = true,
   },
   background = "dark",
