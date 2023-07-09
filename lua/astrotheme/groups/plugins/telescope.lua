@@ -1,11 +1,11 @@
-local function callback(opts)
+local function callback()
   return {
     ----------------
     --- Title
     ----------------
-    TelescopeResultsTitle = { fg = C.ui.cyan },
-    TelescopePromptTitle = { fg = C.ui.cyan },
-    TelescopePreviewTitle = { fg = C.ui.cyan },
+    TelescopeResultsTitle = { fg = C.ui.title },
+    TelescopePromptTitle = { fg = C.ui.title },
+    TelescopePreviewTitle = { fg = C.ui.title },
 
     ----------------
     --- Border
@@ -20,10 +20,10 @@ local function callback(opts)
     TelescopeMultiSelection = { fg = C.syntax.blue },
     TelescopeMultiIcon = { fg = C.syntax.blue },
 
-    TelescopeNormal = { fg = C.syntax.text, bg = opts.floating and C.ui.popup or C.ui.base },
-    TelescopePreviewNormal = { fg = C.syntax.text, bg = opts.floating and C.ui.popup or C.ui.base },
-    TelescopePromptNormal = { fg = C.syntax.text, bg = opts.floating and C.ui.popup or C.ui.base },
-    TelescopeResultsNormal = { fg = C.syntax.text, bg = opts.floating and C.ui.popup or C.ui.base },
+    TelescopeNormal = { link = "NormalFloat" },
+    TelescopePreviewNormal = { link = "NormalFloat" },
+    TelescopePromptNormal = { link = "NormalFloat" },
+    TelescopeResultsNormal = { link = "NormalFloat" },
 
     TelescopeBorder = { fg = C.ui.border },
     TelescopeTitle = { fg = C.syntax.text },
@@ -59,7 +59,7 @@ local function callback(opts)
     TelescopeResultsLineNr = { fg = C.syntax.subtext1 },
     TelescopeResultsIdentifier = { fg = C.syntax.blue },
     TelescopeResultsNumber = { fg = C.syntax.orange },
-    TelescopeResultsComment = { fg = C.syntax.subtext0 },
+    TelescopeResultsComment = { fg = C.syntax.comment },
     TelescopeResultsSpecialComment = { fg = C.syntax.subtext1 },
     TelescopeResultsDiffChange = { fg = C.none, bg = C.syntax.yellow },
     TelescopeResultsDiffAdd = { fg = C.none, bg = C.syntax.green },
