@@ -37,7 +37,7 @@ local function callback(opts)
     ErrorMsg = { fg = C.syntax.red, bg = C.none },
     WinSeparator = { fg = C.ui.split, bg = opts.transparent and C.none or C.ui.base, bold = false },
     Folded = { fg = C.syntax.subtext1, bg = C.none },
-    FoldColumn = { fg = C.none, bg = C.none },
+    FoldColumn = { fg = C.syntax.subtext1, bg = C.none },
     IncSearch = { fg = C.ui.base, bg = C.ui.purple },
     CurSearch = { link = "IncSearch" },
     LineNr = { fg = C.syntax.subtext1, bg = C.none },
