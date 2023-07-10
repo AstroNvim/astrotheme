@@ -11,7 +11,7 @@ local function callback()
     AerialFieldIcon = { link = "@field" },
     AerialFileIcon = { link = "@text.uri" },
     AerialFunctionIcon = { link = "@function" },
-    AerialGuide = { fg = C.syntax.subtext1 },
+    AerialGuide = { fg = C.ui.none_text },
     AerialInterfaceIcon = { link = "@type" },
     AerialKeyIcon = { link = "@type" },
     AerialLine = { fg = C.syntax.yellow, bg = C.none },
