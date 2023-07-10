@@ -13,7 +13,10 @@ M.default = {
     neotree = true,
     italic_comments = true,
   },
-  background = "dark",
+  background = {
+    light = "astrolight",
+    dark = "astrodark",
+  },
   palettes = {
     global = {},
     astrodark = {},

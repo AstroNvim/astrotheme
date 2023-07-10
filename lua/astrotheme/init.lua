@@ -4,11 +4,14 @@ local util = require "astrotheme.lib.util"
 local M = { config = {} }
 
 function M.load(theme)
-  if not theme then
-    theme = M.config.palette
-  else
-    M.config.palette = theme
+  if
+    theme
+    and theme == M.config.palette
+    and vim.o.background ~= (M.config.palette == M.config.background["light"] and "light" or "dark")
+  then
+    theme = M.config.background[vim.o.background]
   end
+  M.config.palette = theme
   util.reload(M.config, theme)
 
   C = util.set_palettes(M.config)
