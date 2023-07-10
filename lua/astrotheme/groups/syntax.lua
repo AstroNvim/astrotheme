@@ -46,16 +46,16 @@ local function callback(opts)
     SpecialChar = { fg = C.syntax.blue, bg = C.none }, -- special character in a constant
     Tag = { fg = C.syntax.blue, bg = C.none }, -- you can use CTRL-] on this
     Delimiter = { fg = C.syntax.blue, bg = C.none }, -- character that needs attention
-    SpecialComment = { fg = C.syntax.subtext1, bg = C.none }, -- special things inside a comment
-    Debug = { fg = C.syntax.blue, bg = C.none }, -- debugging statements
+    SpecialComment = { fg = C.ui.none_text, bg = C.none }, -- special things inside a comment
+    Debug = { fg = C.ui.blue, bg = C.none }, -- debugging statements
     -- Underlined
     Underlined = { fg = C.syntax.cyan, bg = C.none, underline = true }, -- text that stands out, HTML links
     -- Ignore
     Ignore = { fg = C.none, bg = C.none }, -- left blank, hidden  |hl-Ignore|
     -- Error
-    Error = { fg = C.syntax.red, bg = C.none }, -- any erroneous construct
+    Error = { fg = C.ui.red, bg = C.none }, -- any erroneous construct
     -- Todo
-    Todo = { fg = C.syntax.yellow, bg = C.none }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { fg = C.ui.yellow, bg = C.none }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   }
 end
 return callback

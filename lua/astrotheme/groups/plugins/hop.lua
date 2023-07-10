@@ -1,9 +1,9 @@
 local function callback()
   return {
-    HopNextKey = { fg = C.syntax.red, bold = true },
-    HopNextKey1 = { fg = C.syntax.cyan, bold = true },
-    HopNextKey2 = { fg = C.syntax.blue },
-    HopUnmatched = { fg = C.syntax.subtext1 },
+    HopNextKey = { fg = C.ui.red, bold = true },
+    HopNextKey1 = { fg = C.ui.cyan, bold = true },
+    HopNextKey2 = { fg = C.ui.blue },
+    HopUnmatched = { fg = C.syntax.mute },
   }
 end
 
