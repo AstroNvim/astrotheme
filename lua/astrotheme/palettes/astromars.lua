@@ -18,8 +18,7 @@ c.syntax.orange = "#EF9474"
 
 c.syntax.comment = "#967E83"
 c.syntax.text = "#B2979D"
-c.syntax.subtext0 = "#967E83"
-c.syntax.subtext1 = "#7C6469"
+c.syntax.mute = "#595C66"
 
 --------------------------------
 --- UI
@@ -32,6 +31,8 @@ c.ui.purple = "#E8A1D7"
 c.ui.cyan = "#88C3AB"
 c.ui.orange = "#FAA27F"
 
+c.ui.accent = "#9CBDC9"
+
 c.ui.tabline = "#1E0F14"
 c.ui.winbar = "#8D8184"
 c.ui.tool = "#180A10"
@@ -41,14 +42,18 @@ c.ui.statusline = "#1E0F14"
 c.ui.split = "#1E0F14"
 c.ui.popup = "#1E0F14"
 c.ui.float = "#D8D6D5"
-c.ui.title = "#88C3AB"
+c.ui.title = c.ui.accent
 c.ui.border = "#736468"
 c.ui.current_line = "#100407"
-c.ui.scrollbar = "#736468"
+c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#1B282C"
+c.ui.menu_selection = c.ui.accent
 c.ui.highlight = "#2A1F22"
-c.ui.none_text = "#181213"
+c.ui.none_text = "#36282C"
 c.ui.text = "#B2979D"
+c.ui.text_active = "#B2979D"
+c.ui.text_inactive = "#7C6469"
+c.ui.text_match = c.ui.accent
 
 --------------------------------
 --- terminal
