@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/AstroNvim/astrotheme/compare/v2.0.0...v2.0.1) (2023-07-10)
+
+
+### Bug Fixes
+
+* fix when calling `:colorscheme astrotheme` ([200c833](https://github.com/AstroNvim/astrotheme/commit/200c83352b28a69f47cc64ff07b8529f317a2585))
+
 ## [2.0.0](https://github.com/AstroNvim/astrotheme/compare/v1.7.0...v2.0.0) (2023-07-10)
 
 
