@@ -5,9 +5,11 @@ local M = { config = {} }
 
 function M.load(theme)
   if
-    theme
-    and theme == M.config.palette
-    and vim.o.background ~= (M.config.palette == M.config.background["light"] and "light" or "dark")
+    not theme
+    or (
+      theme == M.config.palette
+      and vim.o.background ~= (M.config.palette == M.config.background["light"] and "light" or "dark")
+    )
   then
     theme = M.config.background[vim.o.background]
   end
