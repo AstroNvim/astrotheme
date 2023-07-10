@@ -8,46 +8,51 @@ local c = {
 --------------------------------
 --- Syntax
 --------------------------------
-c.syntax.red = "#CD7B7F"
-c.syntax.blue = "#519CB4"
-c.syntax.green = "#7D9B5D"
-c.syntax.yellow = "#B58C3F"
-c.syntax.purple = "#BD7EAC"
-c.syntax.cyan = "#52A08C"
-c.syntax.orange = "#CD7E64"
-
-c.syntax.comment = "#777777"
-c.syntax.text = "#AEAEAE"
-c.syntax.subtext0 = "#777777"
-c.syntax.subtext1 = "#4B4B4B"
+c.syntax.red = "#FF888F"
+c.syntax.blue = "#77B9F4"
+c.syntax.green = "#93C072"
+c.syntax.yellow = "#E2A946"
+c.syntax.purple = "#D9A1E8"
+c.syntax.cyan = "#4AC5BB"
+c.syntax.orange = "#FF915E"
+c.syntax.text = "#ADB0BB"
+c.syntax.comment = "#696C76"
+c.syntax.mute = "#595C66"
 
 --------------------------------
 --- UI
 --------------------------------
-c.ui.red = "#f37880"
-c.ui.blue = "#44aaf9"
-c.ui.green = "#75ad47"
-c.ui.yellow = "#df9b03"
-c.ui.purple = "#cc83e3"
-c.ui.cyan = "#00b298"
+c.ui.red = "#F37880"
+c.ui.blue = "#50A4E9"
+c.ui.green = "#75AD47"
+c.ui.yellow = "#D09214"
+c.ui.purple = "#CC83E3"
+c.ui.cyan = "#00B298"
 c.ui.orange = "#EB8331"
 
-c.ui.tabline = "#101114"
-c.ui.winbar = "#777777"
-c.ui.tool = "#141618"
-c.ui.base = "#181A1C"
-c.ui.inactive_base = "#141618"
-c.ui.statusline = "#101114"
-c.ui.split = "#101114"
-c.ui.popup = "#141618"
-c.ui.float = "#141618"
-c.ui.title = "#00b298"
-c.ui.border = "#777777"
-c.ui.current_line = "#1C1E20"
-c.ui.scrollbar = "#00b298"
+c.ui.accent = "#EB8331"
+
+c.ui.tabline = "#111317"
+c.ui.winbar = "#797D87"
+c.ui.tool = "#16181D"
+c.ui.base = "#1A1D23"
+c.ui.inactive_base = "#16181D"
+c.ui.statusline = "#111317"
+c.ui.split = "#111317"
+c.ui.popup = "#16181D"
+c.ui.float = "#16181D"
+c.ui.title = c.ui.accent
+c.ui.border = "#7A7C7E"
+c.ui.current_line = "#1E222A"
+c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#26343F"
-c.ui.highlight = "#242628"
-c.ui.text = "#AEAEAE"
+c.ui.menu_selection = c.ui.accent
+c.ui.highlight = "#1E222A"
+c.ui.none_text = "#3A3E47"
+c.ui.text = "#797D87"
+c.ui.text_active = "#ADB0BB"
+c.ui.text_inactive = "#494D56"
+c.ui.text_match = c.ui.accent
 
 --------------------------------
 --- terminal
