@@ -33,6 +33,16 @@ colorscheme astrodark
 require("astrotheme").setup({
   palette = "astrodark", -- String of the default palette to use when calling `:colorscheme astrotheme`
 
+  style = {
+    inactive = true,        -- Bool value, toggles inactive window color.
+    transparent = false,    -- Bool value, toggles transperency.
+    floating = true,        -- Bool value, toggles floating windows background colors.
+    popup = true,           -- Bool value, toggles popup background color.
+    neotree = true,         -- Bool value, toggles neo-trees background color.
+    italic_comments = true, -- Bool value, toggles italic comments.
+  },
+
+
   termguicolors = true, -- Bool value, toggles if termguicolors are set by AstroTheme.
 
   terminal_color = true, -- Bool value, toggles if terminal_colors are set by AstroTheme.
@@ -52,7 +62,8 @@ require("astrotheme").setup({
       my_color = "#ffffff"
     },
     astrodark = {          -- Extend or modify astrodarks palette colors
-      red = "#800010",      -- Overrides astrodarks red color
+      ui.red = "#800010",      -- Overrides astrodarks red UI color
+      ui.accent = "#CC83E3"  -- Changes the accent color of astrodark.
       my_color = "#000000" -- Overrides global.my_color
     },
   },
@@ -75,6 +86,97 @@ require("astrotheme").setup({
   },
 })
 ```
+
+## 📃 Palette Properties
+<details>
+<summary>modifiable palette names</summary>
+
+```lua
+--------------------------------
+--- Syntax
+--------------------------------
+-- only syntax colors.
+
+syntax.red
+syntax.blue
+syntax.green
+syntax.yellow
+syntax.purple
+syntax.cyan
+syntax.orange
+syntax.text
+syntax.comment
+syntax.mute
+
+--------------------------------
+--- UI
+--------------------------------
+-- everything UI and none-text related.
+ui.red
+ui.blue
+ui.green
+ui.yellow
+ui.purple
+ui.cyan
+ui.orange
+
+ui.accent
+
+ui.tabline
+ui.winbar
+ui.tool
+ui.base
+ui.inactive_base
+ui.statusline
+ui.split
+ui.popup
+ui.float
+ui.title
+ui.border
+ui.current_line
+ui.scrollbar
+ui.selection
+ui.menu_selection
+ui.highlight
+ui.none_text
+ui.text
+ui.text_active
+ui.text_inactive
+ui.text_match
+
+--------------------------------
+--- terminal
+--------------------------------
+-- terminal colors.
+term.black
+term.bright_black
+
+term.red
+term.bright_red
+
+term.green
+term.bright_green
+
+term.yellow
+term.bright_yellow
+
+term.blue
+term.bright_blue
+
+term.purple
+term.bright_purple
+
+term.cyan
+term.bright_cyan
+
+term.white
+term.bright_white
+
+term.background
+term.foreground
+```
+</details>
+
 
 ## ⚡ Requirements
 
