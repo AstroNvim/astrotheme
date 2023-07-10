@@ -8,10 +8,10 @@
 --       - Character (Subgroup)
 --
 -- Ref: :help group-name
-local function callback()
+local function callback(opts)
   return {
     -- Comment
-    Comment = { fg = C.syntax.comment, bg = C.none }, -- any comment
+    Comment = { fg = C.syntax.comment, bg = C.none, italic = opts.italic_comments }, -- any comment
     -- Constant
     Constant = { fg = C.syntax.yellow, bg = C.none }, -- any constant
     String = { fg = C.syntax.green, bg = C.none }, -- a string constant: "this is a string"
