@@ -10,7 +10,7 @@ local function callback()
     DiagnosticWarn = { fg = warn },
     DiagnosticUnderlineError = { sp = error, undercurl = true },
     DiagnosticUnderlineHint = { sp = hint, undercurl = true },
-    DiagnosticUnderliyneInfo = { sp = info, undercurl = true },
+    DiagnosticUnderlineInfo = { sp = info, undercurl = true },
     DiagnosticUnderlineWarn = { sp = warn, undercurl = true },
     LspCodeLens = { fg = C.ui.none_text },
     LspCodeLensSeparator = { fg = C.ui.none_text },
