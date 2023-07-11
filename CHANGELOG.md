@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/AstroNvim/astrotheme/compare/v2.1.0...v2.1.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* **typo:** `Underliyne` to `Underline` ([#60](https://github.com/AstroNvim/astrotheme/issues/60)) ([4a7a8c1](https://github.com/AstroNvim/astrotheme/commit/4a7a8c1f3c272c34be892808e6116226b361421f))
+
 ## [2.1.0](https://github.com/AstroNvim/astrotheme/compare/v2.0.1...v2.1.0) (2023-07-11)
 
 
