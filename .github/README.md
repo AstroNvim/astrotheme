@@ -68,7 +68,7 @@ require("astrotheme").setup({
   background = { -- :h background, palettes to use when using the core vim background colors
     light = "astrolight",
     dark = "astrodark",
-  }
+  },
 
   style = {
     inactive = true,        -- Bool value, toggles inactive window color.
@@ -106,7 +106,7 @@ require("astrotheme").setup({
       syntax = {
         cyan = "#800010", -- Overrides astrodarks cyan syntax color
         comments = "#CC83E3"  -- Overrides astrodarks comment color.
-      }
+      },
       my_color = "#000000" -- Overrides global.my_color
     },
   },
