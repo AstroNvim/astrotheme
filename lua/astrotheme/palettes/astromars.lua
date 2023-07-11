@@ -16,9 +16,9 @@ c.syntax.purple = "#CD87BA"
 c.syntax.cyan = "#4FAD97"
 c.syntax.orange = "#EF9474"
 
-c.syntax.comment = "#967E83"
-c.syntax.text = "#B2979D"
-c.syntax.mute = "#595C66"
+c.syntax.comment = "#63646A"
+c.syntax.text = "#A5B2BC"
+c.syntax.mute = "#444145"
 
 --------------------------------
 --- UI
@@ -33,26 +33,26 @@ c.ui.orange = "#FAA27F"
 
 c.ui.accent = "#9CBDC9"
 
-c.ui.tabline = "#1E0F14"
+c.ui.tabline = "#281E22"
 c.ui.winbar = "#8D8184"
-c.ui.tool = "#180A10"
-c.ui.base = "#0B0204"
-c.ui.inactive_base = "#180A10"
-c.ui.statusline = "#1E0F14"
-c.ui.split = "#1E0F14"
-c.ui.popup = "#1E0F14"
-c.ui.float = "#D8D6D5"
+c.ui.tool = "#1A1113"
+c.ui.base = "#1E1517"
+c.ui.inactive_base = "#1A1113"
+c.ui.statusline = "#281E22"
+c.ui.split = "#281E22"
+c.ui.popup = "#1A1113"
+c.ui.float = "#1E1517"
 c.ui.title = c.ui.accent
 c.ui.border = "#736468"
-c.ui.current_line = "#100407"
+c.ui.current_line = "#22191B"
 c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#1B282C"
 c.ui.menu_selection = c.ui.accent
-c.ui.highlight = "#2A1F22"
-c.ui.none_text = "#36282C"
-c.ui.text = "#B2979D"
-c.ui.text_active = "#B2979D"
-c.ui.text_inactive = "#7C6469"
+c.ui.highlight = "#251D1F"
+c.ui.none_text = "#393337"
+c.ui.text = "#8B7079"
+c.ui.text_active = "#A5B2BC"
+c.ui.text_inactive = "#68545B"
 c.ui.text_match = c.ui.accent
 
 --------------------------------
