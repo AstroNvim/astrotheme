@@ -99,8 +99,14 @@ require("astrotheme").setup({
       my_color = "#ffffff"
     },
     astrodark = {          -- Extend or modify astrodarks palette colors
-      ui.red = "#800010",      -- Overrides astrodarks red UI color
-      ui.accent = "#CC83E3"  -- Changes the accent color of astrodark.
+      ui = {
+        red = "#800010", -- Overrides astrodarks red UI color
+        accent = "#CC83E3"  -- Changes the accent color of astrodark.
+      },
+      syntax = {
+        cyan = "#800010", -- Overrides astrodarks cyan syntax color
+        comments = "#CC83E3"  -- Overrides astrodarks comment color.
+      }
       my_color = "#000000" -- Overrides global.my_color
     },
   },
