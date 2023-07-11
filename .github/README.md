@@ -17,15 +17,48 @@
 
 ## 🎨 Palettes
 
-### AstroDark
-
 <p align="center">
-<img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/overview.png"/>
+<img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/themes/overview.png"/>
 </p>
 
+<details>
+<summary>AstroDark (default)</summary>
+
 ```vim
-colorscheme astrodark
+colorscheme astrodark " Dark theme (default)
 ```
+
+<p align="center">
+<img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/themes/astrodark.png"/>
+</p>
+
+</details>
+
+<details>
+<summary>AstroLight</summary>
+
+```vim
+colorscheme astrolight " Light theme
+```
+
+<p align="center">
+<img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/themes/astrolight.png"/>
+</p>
+
+</details>
+
+<details>
+<summary>AstroMars</summary>
+
+```vim
+colorscheme astromars " Red theme
+```
+
+<p align="center">
+<img src="https://github.com/AstroNvim/astronvim.github.io/raw/main/static/img/themes/astromars.png"/>
+</p>
+
+</details>
 
 ## 🛠 Options
 
