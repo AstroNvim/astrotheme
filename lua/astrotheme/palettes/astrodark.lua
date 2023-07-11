@@ -8,13 +8,13 @@ local c = {
 --------------------------------
 --- Syntax
 --------------------------------
-c.syntax.red = "#FF888F"
-c.syntax.blue = "#77B9F4"
-c.syntax.green = "#93C072"
-c.syntax.yellow = "#E2A946"
-c.syntax.purple = "#D9A1E8"
-c.syntax.cyan = "#4AC5BB"
-c.syntax.orange = "#FF915E"
+c.syntax.red = "#FE8A90"
+c.syntax.blue = "#63B7FC"
+c.syntax.green = "#89BF63"
+c.syntax.yellow = "#E1AA41"
+c.syntax.purple = "#DB98EE"
+c.syntax.cyan = "#1BC5B9"
+c.syntax.orange = "#FE915E"
 c.syntax.text = "#ADB0BB"
 c.syntax.comment = "#696C76"
 c.syntax.mute = "#595C66"
@@ -49,7 +49,7 @@ c.ui.selection = "#26343F"
 c.ui.menu_selection = c.ui.accent
 c.ui.highlight = "#1E222A"
 c.ui.none_text = "#3A3E47"
-c.ui.text = "#797D87"
+c.ui.text = "#9B9FA9"
 c.ui.text_active = "#ADB0BB"
 c.ui.text_inactive = "#494D56"
 c.ui.text_match = c.ui.accent
