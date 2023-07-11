@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.1.0](https://github.com/AstroNvim/astrotheme/compare/v2.0.1...v2.1.0) (2023-07-11)
+
+
+### Features
+
+* **astromars:** complete astromars remake ([bdf165b](https://github.com/AstroNvim/astrotheme/commit/bdf165bdcb7ca411967cdba799ca48abf6cd709d))
+
+
+### Bug Fixes
+
+* **aerial:** move all text to ui.text & add ui.accent ([3ca6be8](https://github.com/AstroNvim/astrotheme/commit/3ca6be88f13c3f1e2dd16258bf576f5880ead4be))
+* **astrodark:** re-balance syntax colors, make ui.text brighter ([b85a49d](https://github.com/AstroNvim/astrotheme/commit/b85a49d3829221a4037161394256b48e6e495155))
+
 ## [2.0.1](https://github.com/AstroNvim/astrotheme/compare/v2.0.0...v2.0.1) (2023-07-10)
 
 
