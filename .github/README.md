@@ -228,30 +228,32 @@ term.foreground
 
 ## 🔌 Supported Plugins
 
-- [aerial.nvim](https://github.com/stevearc/aerial.nvim)
-- [beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)
-- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
-- [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)
-- [flash.nvim](https://github.com/folke/flash.nvim)
-- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-- [hop.nvim](https://github.com/phaazon/hop.nvim/)
-- [indent_blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-- [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)
-- [lualine](https://github.com/nvim-lualine/lualine.nvim)
-- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
-- [nvim-notify](https://github.com/rcarriga/nvim-notify)
-- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
-- [nvim-ts-rainbow2](https://github.com/HiPhish/nvim-ts-rainbow2)
-- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker)
-- [rainbow-delimiters](https://github.com/HiPhish/rainbow-delimiters.nvim)
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [vimwiki](https://github.com/vimwiki/vimwiki)
-- [which-key.nvim](https://github.com/folke/which-key.nvim)
+| Plugin                                                                          | Key                  |
+| ------------------------------------------------------------------------------- | -------------------- |
+| [aerial.nvim](https://github.com/stevearc/aerial.nvim)                          | `aerial`             |
+| [beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)                    | `beacon`             |
+| [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                   | `bufferline`         |
+| [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)                     | `dashboard-nvim`     |
+| [flash.nvim](https://github.com/folke/flash.nvim)                               | `flash`              |
+| [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | `gitsigns`           |
+| [hop.nvim](https://github.com/phaazon/hop.nvim/)                                | `hop`                |
+| [indent_blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | `indent-blankline`   |
+| [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)                   | `lightspeed`         |
+| [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                    | `neo-tree`           |
+| [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)                 | `noice`              |
+| [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | `nvim-cmp`           |
+| [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)                          | `nvim-dap-ui`        |
+| [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | `nvim-notify`        |
+| [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)                     | `nvim-tree`          |
+| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)           | `nvim-treesitter`    |
+| [nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)                      | `nvim-ts-rainbow`    |
+| [nvim-ts-rainbow2](https://github.com/HiPhish/nvim-ts-rainbow2)                 | `nvim-ts-rainbow2`   |
+| [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)             | `nvim-web-devicons`  |
+| [nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker)              | `nvim-window-picker` |
+| [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)   | `rainbow-delimiters` |
+| [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | `telescope`          |
+| [vimwiki](https://github.com/vimwiki/vimwiki)                                   | `vimwiki`            |
+| [which-key.nvim](https://github.com/folke/which-key.nvim)                       | `which-key`          |
 
 ## 📦 Installation
 
