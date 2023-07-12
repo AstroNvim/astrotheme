@@ -10,13 +10,13 @@ local c = {
 --------------------------------
 --- Syntax
 --------------------------------
-c.syntax.red = "#FE8A90"
-c.syntax.blue = "#63B7FC"
-c.syntax.green = "#89BF63"
-c.syntax.yellow = "#E1AA41"
-c.syntax.purple = "#DB98EE"
-c.syntax.cyan = "#1BC5B9"
-c.syntax.orange = "#FE915E"
+c.syntax.red = "#FF838B"
+c.syntax.orange = "#F5983A"
+c.syntax.yellow = "#DFAB25"
+c.syntax.green = "#87C05F"
+c.syntax.cyan = "#4AC2B8"
+c.syntax.blue = "#5EB7FF"
+c.syntax.purple = "#DD97F1"
 c.syntax.text = "#ADB0BB"
 c.syntax.comment = "#696C76"
 c.syntax.mute = "#595C66"
@@ -24,15 +24,15 @@ c.syntax.mute = "#595C66"
 --------------------------------
 --- UI
 --------------------------------
-c.ui.red = "#F37880"
-c.ui.blue = "#50A4E9"
-c.ui.green = "#75AD47"
+c.ui.red = "#F8747E"
+c.ui.orange = "#EB8332"
 c.ui.yellow = "#D09214"
-c.ui.purple = "#CC83E3"
+c.ui.green = "#75AD47"
 c.ui.cyan = "#00B298"
-c.ui.orange = "#EB8331"
+c.ui.blue = "#50A4E9"
+c.ui.purple = "#CC83E3"
 
-c.ui.accent = "#EB8331"
+c.ui.accent = "#EB8332"
 
 c.ui.tabline = "#111317"
 c.ui.winbar = "#797D87"
