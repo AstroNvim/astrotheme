@@ -1,4 +1,4 @@
-local function callback()
+local function callback(opts)
   return {
 
     -- misc
@@ -30,7 +30,7 @@ local function callback()
 
     -- function
     ["@function"] = { link = "Function" },
-    ["@function.builtin"] = { fg = C.syntax.cyan },
+    ["@function.builtin"] = { fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan },
     ["@function.call"] = { link = "@function" },
     ["@function.macro"] = { fg = C.syntax.yellow },
 
@@ -38,7 +38,10 @@ local function callback()
     ["@method.call"] = { link = "@method" },
 
     ["@constructor"] = { link = "@function" },
-    ["@parameter"] = { fg = C.syntax.orange },
+    ["@parameter"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
+      -- underline = opts.simple_syntax_colors,
+    },
 
     -- keyword
     ["@keyword"] = { link = "Keyword" },
@@ -65,12 +68,17 @@ local function callback()
 
     ["@storageclass"] = { link = "StorageClass" },
     ["@attribute"] = { fg = C.syntax.yellow },
-    ["@field"] = { link = "@property" },
-    ["@property"] = { fg = C.syntax.red },
+    ["@field"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red,
+    },
+    ["@property"] = { fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red },
 
     -- identifiers
     ["@variable"] = { link = "Identifier" },
-    ["@variable.builtin"] = { fg = C.syntax.cyan },
+    ["@variable.builtin"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.cyan,
+      bold = opts.simple_syntax_colors,
+    },
 
     ["@constant"] = { link = "Constant" },
     ["@constant.builtin"] = { link = "@constant" },
