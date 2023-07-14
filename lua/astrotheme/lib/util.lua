@@ -55,25 +55,10 @@ function M.set_palettes(opts)
 end
 
 function M.set_highlights(opts, highlights, theme)
-  local opts_hl_glob = opts.highlights.global
-  if opts_hl_glob.modify_hl_groups then
-    opts_hl_glob.modify_hl_groups(highlights, C)
-    opts_hl_glob.modify_hl_groups = nil
-  end
+  pcall(opts.highlights.global.modify_hl_groups, highlights, C)
+  pcall(opts.highlights[theme].modify_hl_groups, highlights, C)
 
-  highlights = vim.tbl_deep_extend("force", highlights, opts_hl_glob)
-
-  local opts_hl = opts.highlights[theme]
-  if opts_hl.modify_hl_groups then
-    opts_hl.modify_hl_groups(highlights, C)
-    opts_hl.modify_hl_groups = nil
-  end
-
-  highlights = vim.tbl_deep_extend("force", highlights, opts_hl)
   for group, spec in pairs(highlights) do
-    for key, value in pairs(spec) do
-      if type(value) == table then spec[key] = value:toHex() end
-    end
     vim.api.nvim_set_hl(0, group, spec)
   end
 end
