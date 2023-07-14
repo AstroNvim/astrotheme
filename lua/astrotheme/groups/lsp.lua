@@ -1,4 +1,4 @@
-local function callback()
+local function callback(opts)
   local error = C.ui.red
   local hint = C.ui.cyan
   local info = C.ui.blue
@@ -23,16 +23,31 @@ local function callback()
     ["@lsp.type.keyword"] = { link = "Keyword" },
     ["@lsp.type.operator"] = { link = "Operator" },
     ["@lsp.type.parameter"] = { link = "@parameter" },
-    ["@lsp.type.property"] = { link = "@property" },
+    -- ["@lsp.type.property"] = { link = "@property" },
     ["@lsp.type.variable"] = { link = "@lsp.type.variable" },
-    ["@lsp.typemod.enumMember.defaultLibrary"] = { fg = C.syntax.cyan, bg = C.none },
-    ["@lsp.typemod.function.defaultLibrary"] = { fg = C.syntax.cyan, bg = C.none },
-    ["@lsp.typemod.function.global"] = { fg = C.syntax.cyan, bg = C.none },
-    ["@lsp.typemod.method.defaultLibrary"] = { fg = C.syntax.cyan, bg = C.none },
+    ["@lsp.typemod.enumMember.defaultLibrary"] = {
+      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
+      bg = C.none,
+    },
+    ["@lsp.typemod.function.defaultLibrary"] = {
+      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
+      bg = C.none,
+    },
+    ["@lsp.typemod.function.global"] = {
+      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
+      bg = C.none,
+    },
+    ["@lsp.typemod.method.defaultLibrary"] = {
+      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
+      bg = C.none,
+    },
     ["@lsp.typemod.method.reference"] = { link = "Function" },
     ["@lsp.typemod.method.trait"] = { link = "Function" },
     ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "Keyword" },
-    ["@lsp.typemod.variable.defaultLibrary"] = { fg = C.syntax.yellow, bg = C.none },
+    ["@lsp.typemod.variable.defaultLibrary"] = {
+      fg = opts.simple_syntax_colors and C.syntax.cyan or C.syntax.yellow,
+      bg = C.none,
+    },
     ["@lsp.typemod.variable.readonly"] = { link = "Constant" },
 
     -- rust

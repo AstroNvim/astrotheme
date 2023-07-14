@@ -13,7 +13,7 @@ local function callback(opts)
     -- Comment
     Comment = { fg = C.syntax.comment, bg = C.none, italic = opts.italic_comments }, -- any comment
     -- Constant
-    Constant = { fg = C.syntax.yellow, bg = C.none }, -- any constant
+    Constant = { fg = opts.simple_syntax_colors and C.syntax.cyan or C.syntax.yellow, bg = C.none }, -- any constant
     String = { fg = C.syntax.green, bg = C.none }, -- a string constant: "this is a string"
     Character = { fg = C.syntax.green, bg = C.none }, -- a character constant: 'c', '\n'
     Number = { fg = C.syntax.orange, bg = C.none }, -- a number constant: 234, 0xff
@@ -27,7 +27,7 @@ local function callback(opts)
     Conditional = { fg = C.syntax.purple, bg = C.none }, -- if, then, else, endif, switch, etc.
     Repeat = { fg = C.syntax.purple, bg = C.none }, -- for, do, while, etc.
     Label = { fg = C.syntax.blue, bg = C.none }, -- case, default, etc.
-    Operator = { fg = C.syntax.text, bg = C.none }, -- "sizeof", "+", "*", etc.
+    Operator = { fg = opts.simple_syntax_colors and C.syntax.purple or C.syntax.text, bg = C.none }, -- "sizeof", "+", "*", etc.
     Keyword = { fg = C.syntax.purple, bg = C.none }, -- any other keyword
     Exception = { fg = C.syntax.purple, bg = C.none }, -- try, catch, throw
     -- Preproc

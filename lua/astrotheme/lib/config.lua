@@ -12,6 +12,7 @@ M.default = {
     popup = true,
     neotree = true,
     italic_comments = true,
+    simple_syntax_colors = false,
   },
   background = {
     light = "astrolight",
