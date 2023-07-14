@@ -58,7 +58,7 @@ c.ui.text_match = c.ui.accent
 --- terminal
 --------------------------------
 c.term.black = c.ui.tabline
-c.term.bright_black = c.ui.base
+c.term.bright_black = c.ui.tabline
 
 c.term.red = c.syntax.red
 c.term.bright_red = c.syntax.red
@@ -78,8 +78,8 @@ c.term.bright_purple = c.syntax.purple
 c.term.cyan = c.syntax.cyan
 c.term.bright_cyan = c.syntax.cyan
 
-c.term.white = c.ui.base
-c.term.bright_white = c.ui.base
+c.term.white = c.ui.text
+c.term.bright_white = c.ui.text_active
 
 c.term.background = c.ui.base
 c.term.foreground = c.ui.text
