@@ -40,7 +40,7 @@ local function callback(opts)
     ["@constructor"] = { link = "@function" },
     ["@parameter"] = {
       fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
-      -- underline = opts.simple_syntax_colors,
+      -- italic = opts.simple_syntax_colors,
     },
 
     -- keyword
@@ -85,6 +85,7 @@ local function callback(opts)
     ["@constant.macro"] = { link = "@constant" },
 
     ["@namespace"] = { link = "Keyword" },
+    ["@namespace.builtin"] = { fg = C.syntax.yellow },
     ["@symbol"] = { link = "Special" },
 
     -- text
@@ -181,7 +182,8 @@ local function callback(opts)
     -- rust
     ["@constant.rust"] = { fg = C.syntax.cyan },
     ["@function.macro.rust"] = { fg = C.syntax.red },
-    ["@namespace.rust"] = { fg = C.syntax.cyan },
+    ["@namespace.rust"] = { fg = C.syntax.purple },
+    ["@punctuation.special.rust"] = { fg = C.syntax.purple },
     ["@type.rust"] = { fg = C.syntax.cyan },
 
     -- toml
