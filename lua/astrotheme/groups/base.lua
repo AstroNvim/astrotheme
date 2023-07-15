@@ -12,7 +12,8 @@ local function callback(opts)
         or (opts.inactive and C.ui.inactive_base)
         or C.ui.base,
     },
-    Title = { fg = C.ui.title, bg = C.none },
+    Title = { fg = C.ui.accent, bg = C.none, bold = true },
+    Bold = { bold = true },
     Cursor = { fg = C.ui.base, bg = C.syntax.text },
     CursorIM = { link = "Cursor" },
     lCursor = { link = "Cursor" },
@@ -38,6 +39,7 @@ local function callback(opts)
     WinSeparator = { fg = C.ui.split, bg = opts.transparent and C.none or C.ui.base, bold = false },
     Folded = { fg = C.ui.none_text, bg = C.none },
     FoldColumn = { fg = C.ui.none_text, bg = C.none },
+    Italic = { italic = true },
     IncSearch = { fg = C.ui.base, bg = C.ui.purple },
     CurSearch = { link = "IncSearch" },
     LineNr = { fg = C.ui.none_text, bg = C.none },
