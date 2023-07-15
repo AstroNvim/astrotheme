@@ -3,16 +3,16 @@ local function callback()
     ----------------
     --- Title
     ----------------
-    TelescopeResultsTitle = { fg = C.ui.title },
-    TelescopePromptTitle = { fg = C.ui.title },
-    TelescopePreviewTitle = { fg = C.ui.title },
+    TelescopeResultsTitle = { link = "FloatTitle" },
+    TelescopePromptTitle = { link = "FloatTitle" },
+    TelescopePreviewTitle = { link = "FloatTitle" },
 
     ----------------
     --- Border
     ----------------
-    TelescopeResultsBorder = { fg = C.ui.border, bg = C.ui.base },
-    TelescopePromptBorder = { fg = C.ui.border, bg = C.ui.base },
-    TelescopePreviewBorder = { fg = C.ui.border, bg = C.ui.base },
+    TelescopeResultsBorder = { link = "FloatBorder" },
+    TelescopePromptBorder = { link = "FloatBorder" },
+    TelescopePreviewBorder = { link = "FloatBorder" },
 
     TelescopeSelectionCaret = { fg = C.ui.red },
     TelescopeMatching = { fg = C.ui.text_match },

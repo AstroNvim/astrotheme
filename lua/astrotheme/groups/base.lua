@@ -82,9 +82,9 @@ local function callback(opts)
     WarningMsg = { fg = C.ui.yellow, bg = C.none },
     WildMenu = { fg = C.ui.base, bg = C.syntax.blue },
     EndOfBuffer = { fg = C.ui.base, bg = C.none },
-    FloatTitle = { fg = C.ui.title },
-    FloatBorder = { fg = C.ui.border, bg = C.ui.base },
-    Float = { fg = C.ui.border, bg = C.ui.base },
+    FloatTitle = { fg = C.ui.accent, bg = C.ui.tool, blend = 20, bold = true },
+    FloatBorder = { fg = C.ui.border, bg = C.ui.tool, blend = 20 },
+    -- Float = { fg = C.ui.border, bg = C.ui.base },
     MatchParen = { fg = C.none, bg = C.ui.highlight },
   }
 end
