@@ -19,7 +19,7 @@ local function callback(opts)
     },
     NeoTreeNormalNC = {
       fg = C.ui.text,
-      bg = (opts.transparent and C.none) or C.ui.tool,
+      bg = (opts.neotree and C.ui.tool) or (opts.transparent and C.none) or C.ui.base,
     },
     NeoTreeSymbolicLinkTarget = { fg = C.ui.cyan },
     NeoTreeTabActive = {

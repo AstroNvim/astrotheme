@@ -30,7 +30,6 @@ local function callback()
     CmpItemKindUnit = { link = "@constant" },
     CmpItemKindValue = { link = "@constant" },
     CmpItemKindVariable = { link = "@variable" },
-    CmpItemMenu = { bg = C.ui.popup },
   }
 end
 return callback

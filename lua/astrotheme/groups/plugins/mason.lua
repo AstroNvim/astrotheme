@@ -1,12 +1,12 @@
 local function callback()
   return {
-    MasonNormal = { link = "NormalFloat" },
-    MasonHeader = { link = "FloatTitle" },
+    MasonNormal = { link = "NormalPopup" },
+    MasonHeader = { link = "PopupTitle" },
     MasonHeaderSecondary = { bold = true, fg = C.ui.base, bg = C.ui.blue },
 
     MasonHighlight = { fg = C.ui.blue },
     MasonHighlightBlock = { bg = C.ui.blue, fg = C.ui.base },
-    MasonHighlightBlockBold = { bg = C.ui.blue, fg = C.ui.base, bold = true },
+    MasonHighlightBlockBold = { bg = C.ui.accent, fg = C.ui.base, bold = true },
 
     MasonHighlightSecondary = { fg = C.ui.accent },
     MasonHighlightBlockSecondary = { bg = C.ui.accent, fg = C.ui.base },
@@ -15,7 +15,7 @@ local function callback()
     MasonLink = { link = "MasonHighlight" },
 
     MasonMuted = { fg = C.ui.red },
-    MasonMutedBlock = { bg = C.ui.text_inactive, fg = C.ui.text },
+    MasonMutedBlock = { link = "CursorLine" },
     MasonMutedBlockBold = { bg = C.ui.blue, fg = C.ui.base, bold = true },
 
     MasonError = { link = "ErrorMsg" },

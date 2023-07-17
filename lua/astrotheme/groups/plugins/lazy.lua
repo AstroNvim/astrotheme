@@ -1,9 +1,9 @@
 local function callback()
   return {
-    LazyH1 = { fg = C.ui.base, bg = C.ui.accent, bold = true, italic = true }, -- home button
+    LazyH1 = { fg = C.ui.base, bg = C.ui.accent, bold = true }, -- home button
     LazyH2 = { fg = C.ui.accent, bold = true }, -- titles
     LazyComment = { link = "Comment" },
-    LazyNormal = { link = "NormalFloat" },
+    LazyNormal = { link = "NormalPopup" },
     LazyCommit = { fg = C.ui.text_inactive, bold = true }, -- commit ref
     LazyCommitIssue = { fg = C.ui.yellow },
     LazyCommitType = { fg = C.ui.accent, bold = true }, -- conventional commit type
