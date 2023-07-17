@@ -30,7 +30,7 @@ c.ui.cyan = "#00B298"
 c.ui.blue = "#50A4E9"
 c.ui.purple = "#CC83E3"
 
-c.ui.accent = "#EB8332"
+c.ui.accent = "#50A4E9"
 
 c.ui.tabline = "#111317"
 c.ui.winbar = "#797D87"
@@ -42,7 +42,7 @@ c.ui.split = "#111317"
 c.ui.popup = "#16181D"
 c.ui.float = "#16181D"
 c.ui.title = c.ui.accent
-c.ui.border = "#7A7C7E"
+c.ui.border = "#3A3E47"
 c.ui.current_line = "#1E222A"
 c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#26343F"
