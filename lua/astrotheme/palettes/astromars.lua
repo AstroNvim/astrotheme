@@ -41,7 +41,7 @@ c.ui.inactive_base = "#1A1113"
 c.ui.statusline = "#281E22"
 c.ui.split = "#281E22"
 c.ui.popup = "#1A1113"
-c.ui.float = "#1E1517"
+c.ui.float = "#1A1113"
 c.ui.title = c.ui.accent
 c.ui.border = "#736468"
 c.ui.current_line = "#22191B"
@@ -79,8 +79,8 @@ c.term.bright_purple = c.syntax.purple
 c.term.cyan = c.syntax.cyan
 c.term.bright_cyan = c.syntax.cyan
 
-c.term.white = c.ui.base
-c.term.bright_white = c.ui.base
+c.term.white = c.ui.text
+c.term.bright_white = c.ui.active_text
 
 c.term.background = c.ui.base
 c.term.foreground = c.ui.text
