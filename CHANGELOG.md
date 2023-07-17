@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.2.0](https://github.com/AstroNvim/astrotheme/compare/v2.1.1...v2.2.0) (2023-07-17)
+
+
+### Features
+
+* add better separation of float and popup windows. ([1038b4b](https://github.com/AstroNvim/astrotheme/commit/1038b4b7f9f64c15694631181e7c42df21bcf534))
+* add distinct highlights for popups and floats ([f90b51d](https://github.com/AstroNvim/astrotheme/commit/f90b51d7015421e564425ccd2c4e81921301d133))
+* add initial simple_syntax_colors option ([#66](https://github.com/AstroNvim/astrotheme/issues/66)) ([5421df0](https://github.com/AstroNvim/astrotheme/commit/5421df039acd78b1a07ff804c7427d0903bd1637))
+* **astrodark:** added wezterm theme ([#64](https://github.com/AstroNvim/astrotheme/issues/64)) ([a182b19](https://github.com/AstroNvim/astrotheme/commit/a182b195af537c278fa3f91b087329175099f973))
+* **astrodark:** change border and main accent color ([a631244](https://github.com/AstroNvim/astrotheme/commit/a63124407b3c96ce3f84d9132cc19e8416da3573))
+* **astrolight:** add better terminal colors black and white ([041c6b7](https://github.com/AstroNvim/astrotheme/commit/041c6b7070dab536ec0995981bbd22eaea515313))
+* **astromars:** add better terminal colors black and white ([9bce5cc](https://github.com/AstroNvim/astrotheme/commit/9bce5cc990f32f463cd479d15661c9137be0ff21))
+* **base:** add italic, bold highlights make title bold ([2d3ed4f](https://github.com/AstroNvim/astrotheme/commit/2d3ed4ff6ceefa231bb78c338169a6ecbdb04924))
+* **lazy:** initial lazy support ([1fab3f2](https://github.com/AstroNvim/astrotheme/commit/1fab3f2d314b7ce73123cb8e02700f6e7cc99187))
+* **mason:** initial mason support ([9f1e321](https://github.com/AstroNvim/astrotheme/commit/9f1e321629a0ab4d276b3b7c2ea4235726aa379b))
+* **nvim-treesitter:** change colors to be less random ([067d786](https://github.com/AstroNvim/astrotheme/commit/067d7867652f68445b0c6007a0f6e9a10ff03e0b))
+* **telescope:** optimize colors ([849f225](https://github.com/AstroNvim/astrotheme/commit/849f2253153a73b28c7c718c4be2048836b23964))
+* **treesitter:** change markdown title colors to be more ordered ([a4d3022](https://github.com/AstroNvim/astrotheme/commit/a4d30224b29802108302c5fbd80657eb53ef0068))
+
+
+### Bug Fixes
+
+* **astrodark:** syntax and ui color re-balance ([#67](https://github.com/AstroNvim/astrotheme/issues/67)) ([166d653](https://github.com/AstroNvim/astrotheme/commit/166d653b07bc7693cb0520f0073263a4be5a35a5))
+* **lsp:** un-comment type.property highlight ([5cea057](https://github.com/AstroNvim/astrotheme/commit/5cea0576cbbd189f7e94b82313a553c84c4bcc13))
+* **lsp:** un-commented type.property highlight ([#68](https://github.com/AstroNvim/astrotheme/issues/68)) ([5cea057](https://github.com/AstroNvim/astrotheme/commit/5cea0576cbbd189f7e94b82313a553c84c4bcc13))
+* **util:** simplify set_highlights and fix settings being cleared ([#63](https://github.com/AstroNvim/astrotheme/issues/63)) ([d9ac783](https://github.com/AstroNvim/astrotheme/commit/d9ac78300e436a384158dfc96faaeb223f012696))
+
 ## [2.1.1](https://github.com/AstroNvim/astrotheme/compare/v2.1.0...v2.1.1) (2023-07-11)
 
 
