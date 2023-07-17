@@ -78,8 +78,8 @@ c.term.bright_purple = c.syntax.purple
 c.term.cyan = c.syntax.cyan
 c.term.bright_cyan = c.syntax.cyan
 
-c.term.white = c.ui.base
-c.term.bright_white = c.ui.base
+c.term.white = c.ui.text
+c.term.bright_white = c.ui.text
 
 c.term.background = c.ui.base
 c.term.foreground = c.ui.text
