@@ -55,11 +55,17 @@ function M.set_palettes(opts)
 end
 
 function M.set_highlights(opts, highlights, theme)
-  pcall(opts.highlights.global.modify_hl_groups, highlights, C)
-  pcall(opts.highlights[theme].modify_hl_groups, highlights, C)
+  local global_hl = opts.highlights.global
+  local theme_hl = opts.highlights[theme]
 
-  for group, spec in pairs(highlights) do
-    vim.api.nvim_set_hl(0, group, spec)
+  pcall(global_hl.modify_hl_groups, highlights, C)
+  pcall(theme_hl.modify_hl_groups, highlights, C)
+
+  highlights = vim.tbl_deep_extend("force", highlights, global_hl, theme_hl)
+
+  for name, value in pairs(highlights) do
+    -- TODO: optimise in V3 by removing checks.
+    if name ~= "modify_hl_groups" then vim.api.nvim_set_hl(0, name, value) end
   end
 end
 
