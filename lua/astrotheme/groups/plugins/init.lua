@@ -25,5 +25,6 @@ return {
   ["telescope.nvim"] = "telescope",
   ["vimwiki"] = "vimwiki",
   ["which-key.nvim"] = "which-key",
+  ["window-picker"] = "nvim-window-picker", -- alias for `nvim-window-picker`
   ["noice.nvim"] = "noice",
 }
