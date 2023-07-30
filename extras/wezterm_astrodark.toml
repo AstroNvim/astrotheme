@@ -74,4 +74,6 @@ strikethrough = false
 underline = "None"
 
 [metadata]
+name = "Astrodark"
+author = 'A-lamia(https://github.com/A-Lamia)'
 aliases = []
