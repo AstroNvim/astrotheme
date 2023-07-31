@@ -18,6 +18,8 @@ local function callback(opts)
     FloatTitle = {
       fg = (opts.title_invert and C.ui.tool) or C.ui.title,
       bg = (opts.title_invert and C.ui.title)
+        or (opts.inactive and C.ui.float)
+        or (opts.transparent and opts.float and C.ui.base)
         or (opts.float and C.ui.float)
         or (opts.transparent and C.none)
         or C.ui.base,
@@ -25,13 +27,25 @@ local function callback(opts)
       bold = true,
     },
     FloatBorder = {
-      fg = (opts.border and opts.float and C.ui.border) or (opts.float and C.ui.float) or C.ui.base,
-      bg = (opts.float and C.ui.float) or (opts.transparent and C.none) or C.ui.base,
+      fg = (opts.border and opts.float and C.ui.border)
+        or (opts.transparent and opts.float and C.ui.base)
+        or (opts.float and C.ui.float)
+        or C.ui.base,
+      bg = (opts.inactive and C.ui.float)
+        or (opts.transparent and opts.float and C.ui.base)
+        or (opts.float and C.ui.float)
+        or (opts.transparent and C.none)
+        or C.ui.base,
       blend = vim.o.winblend or 0,
     },
     NormalFloat = {
       fg = C.ui.text,
-      bg = (opts.float and C.ui.float) or (opts.transparent and C.none) or C.ui.base,
+      bg = (opts.inactive and C.ui.float)
+        or (opts.transparent and opts.float and C.ui.base)
+        or (opts.float and C.ui.float)
+        or (opts.transparent and C.none)
+        or C.ui.base,
+      blend = vim.o.winblend or 0,
     },
 
     --------------------
