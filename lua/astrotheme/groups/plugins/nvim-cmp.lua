@@ -2,8 +2,8 @@ local function callback()
   return {
     CmpItemAbbr = { fg = C.ui.text },
     CmpItemAbbrDeprecated = { fg = C.syntax.red, strikethrough = true },
-    CmpItemAbbrMatch = { fg = C.ui.accent },
-    CmpItemAbbrMatchFuzzy = { fg = C.ui.accent },
+    CmpItemAbbrMatch = { fg = C.ui.text_match, bold = true },
+    CmpItemAbbrMatchFuzzy = { fg = C.ui.text_match, bold = true },
     CmpItemKind = { fg = C.syntax.yellow },
     CmpItemKindClass = { link = "@type" },
     CmpItemKindColor = { link = "@constant" },
