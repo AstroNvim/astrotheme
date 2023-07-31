@@ -53,7 +53,9 @@ c.ui.none_text = "#393337"
 c.ui.text = "#8B7079"
 c.ui.text_active = "#A5B2BC"
 c.ui.text_inactive = "#68545B"
-c.ui.text_match = c.ui.accent
+c.ui.text_match = "#ffeeee"
+
+c.ui.prompt = "#281E22"
 
 --------------------------------
 --- terminal
