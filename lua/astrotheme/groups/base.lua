@@ -167,6 +167,7 @@ local function callback(opts)
     --------------------
     Search = { fg = C.none, bg = C.ui.selection },
     IncSearch = { fg = C.ui.base, bg = C.ui.purple },
+    Substitute = { fg = C.ui.base, bg = C.ui.red, bold = true },
     CurSearch = { link = "IncSearch" },
     Visual = { fg = C.none, bg = C.ui.selection },
     VisualNOS = { fg = C.ui.selection, bg = C.none },
