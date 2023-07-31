@@ -1,7 +1,7 @@
 local function callback()
   return {
-    MasonNormal = { link = "NormalPopup" },
-    MasonHeader = { link = "PopupTitle" },
+    MasonNormal = { link = "NormalFloat" },
+    MasonHeader = { link = "FloatTitle" },
     MasonHeaderSecondary = { bold = true, fg = C.ui.base, bg = C.ui.blue },
 
     MasonHighlight = { fg = C.ui.blue },
