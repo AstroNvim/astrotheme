@@ -108,7 +108,7 @@ local function callback(opts)
     --------------------
     --- UI
     --------------------
-    Cursor = { fg = C.ui.base, bg = C.syntax.text },
+    Cursor = { fg = C.ui.base, bg = C.ui.text },
     CursorIM = { link = "Cursor" },
     lCursor = { link = "Cursor" },
 
