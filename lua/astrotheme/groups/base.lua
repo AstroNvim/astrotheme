@@ -44,7 +44,7 @@ local function callback(opts)
         or (opts.popup and C.ui.popup)
         or (opts.transparent and C.none)
         or C.ui.base,
-      blend = vim.o.winblend or 0,
+      blend = opts.title_invert and 0 or vim.o.winblend or 0,
       bold = true,
     },
     PopupBorder = {
