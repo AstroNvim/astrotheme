@@ -176,7 +176,7 @@ local function callback(opts)
     --------------------
     CursorColumn = { fg = C.none, bg = C.ui.current_line },
     ColorColumn = { fg = C.none, bg = C.ui.current_line }, -- NOTE: Find better color
-    CursorLine = { fg = C.none, bg = C.ui.current_line },
+    CursorLine = { fg = C.none, bg = opts.transparent and C.none or C.ui.current_line },
     MatchParen = { fg = C.ui.orange, bg = C.none, bold = true },
 
     --------------------
