@@ -53,6 +53,11 @@ c.ui.text = "#9B9FA9"
 c.ui.text_active = "#ADB0BB"
 c.ui.text_inactive = "#494D56"
 c.ui.text_match = c.ui.accent
+c.ui.text_match = "#e0e0ee"
+
+c.ui.prompt = "#202227"
+-- c.ui.prompt = "#20242E"
+c.ui.results = "#131519"
 
 --------------------------------
 --- terminal
