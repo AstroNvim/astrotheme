@@ -168,7 +168,6 @@ local function callback(opts)
     Search = { fg = C.none, bg = C.ui.selection },
     IncSearch = { fg = C.ui.base, bg = C.ui.purple },
     CurSearch = { link = "IncSearch" },
-    MatchParen = { fg = C.none, bg = C.ui.highlight },
     Visual = { fg = C.none, bg = C.ui.selection },
     VisualNOS = { fg = C.ui.selection, bg = C.none },
 
@@ -178,6 +177,7 @@ local function callback(opts)
     CursorColumn = { fg = C.none, bg = C.ui.current_line },
     ColorColumn = { fg = C.none, bg = C.ui.current_line }, -- NOTE: Find better color
     CursorLine = { fg = C.none, bg = C.ui.current_line },
+    MatchParen = { fg = C.ui.orange, bg = C.none, bold = true },
 
     --------------------
     --- Spell
