@@ -158,7 +158,7 @@ local function callback(opts)
     Pmenu = { fg = C.ui.text, bg = C.ui.popup },
     PmenuSel = { fg = C.ui.base, bg = C.ui.menu_selection, bold = true, blend = 0 },
     PmenuSbar = { fg = C.none, bg = C.ui.tabline },
-    PmenuThumb = { fg = C.none, bg = C.ui.scrollbar },
+    PmenuThumb = { fg = C.none, bg = C.ui.scrollbar, blend = 0 },
 
     WildMenu = { fg = C.ui.base, bg = C.syntax.blue },
 
