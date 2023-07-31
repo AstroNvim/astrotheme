@@ -21,6 +21,7 @@ return {
   ["nvim-window-picker"] = "nvim-window-picker",
   ["mason.nvim"] = "mason",
   ["rainbow-delimiters.nvim"] = "rainbow-delimiters",
+  ["spotlight.nvim"] = "spotlight",
   ["symbols-outline.nvim"] = "symbols-outline",
   ["telescope.nvim"] = "telescope",
   ["vimwiki"] = "vimwiki",
