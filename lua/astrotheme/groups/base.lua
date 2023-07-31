@@ -160,7 +160,7 @@ local function callback(opts)
     PmenuSbar = { fg = C.none, bg = C.ui.tabline },
     PmenuThumb = { fg = C.none, bg = C.ui.scrollbar, blend = 0 },
 
-    WildMenu = { fg = C.ui.base, bg = C.syntax.blue },
+    WildMenu = { fg = C.ui.base, bg = C.ui.accent },
 
     --------------------
     --- Search & Select
