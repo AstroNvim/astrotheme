@@ -69,6 +69,31 @@ function M.set_highlights(opts, highlights, theme)
   end
 end
 
+function M.live_reloading(opts)
+  if opts.dev then
+    vim.api.nvim_create_augroup("AstroTheme", { clear = true })
+    vim.api.nvim_create_autocmd("BufWritePost", {
+      -- buffer = 0,
+      pattern = "*.lua",
+      group = "AstroTheme",
+      callback = function()
+        local theme = vim.g.colors_name
+        if string.match(theme, "astro") then
+          local command = ":colorscheme " .. theme
+          vim.api.nvim_feedkeys(command, "t", true)
+          vim.api.nvim_input "<CR>"
+        end
+      end,
+    })
+  end
+end
+
+function M.set_overide(opts)
+  if opts.overide then
+    -- opts
+  end
+end
+
 function M.set_terminal_colors()
   vim.g.terminal_color_0 = C.term.black
   vim.g.terminal_color_8 = C.term.bright_black
