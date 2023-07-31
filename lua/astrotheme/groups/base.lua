@@ -156,7 +156,7 @@ local function callback(opts)
     --- Menu
     --------------------
     Pmenu = { fg = C.ui.text, bg = C.ui.popup },
-    PmenuSel = { fg = C.none, bg = C.ui.current_line },
+    PmenuSel = { fg = C.ui.base, bg = C.ui.menu_selection, bold = true, blend = 0 },
     PmenuSbar = { fg = C.none, bg = C.ui.tabline },
     PmenuThumb = { fg = C.none, bg = C.ui.scrollbar },
 
