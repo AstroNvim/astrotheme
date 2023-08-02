@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.3.0](https://github.com/AstroNvim/astrotheme/compare/v2.2.0...v2.3.0) (2023-08-01)
+
+
+### Features
+
+* **extra:** Add wezterm toml config ([#80](https://github.com/AstroNvim/astrotheme/issues/80)) ([1a070a3](https://github.com/AstroNvim/astrotheme/commit/1a070a39515d46771a7c5d1c558c4e0f88ad7ffc))
+
+
+### Bug Fixes
+
+* **plugins:** support alias for nvim-window-picker ([4a40257](https://github.com/AstroNvim/astrotheme/commit/4a402574c07c5e3a7bcfb75e437bd0038747a744))
+* **util:** fix set_highlights table merge ([#74](https://github.com/AstroNvim/astrotheme/issues/74)) ([7adf477](https://github.com/AstroNvim/astrotheme/commit/7adf477cc053d14bcb5196a7cf4a6086a5e086d0))
+
 ## [2.2.0](https://github.com/AstroNvim/astrotheme/compare/v2.1.1...v2.2.0) (2023-07-17)
 
 
