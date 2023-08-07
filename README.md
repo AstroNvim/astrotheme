@@ -271,3 +271,7 @@ Packer:
 ```lua
  use "AstroNvim/astrotheme"
 ```
+
+## 🚀 Contributing
+
+If you plan to contribute, please check the [contribution guidelines](https://github.com/AstroNvim/.github/blob/main/CONTRIBUTING.md) first.
