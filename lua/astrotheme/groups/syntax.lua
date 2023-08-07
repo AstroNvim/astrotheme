@@ -2,7 +2,7 @@
 -- While unnecessary, we define all subgroups and their highlights
 -- for completeness.
 --
--- Syntax group hierachry (e.g.):
+-- Syntax group hierarchy (e.g.):
 --   - Constant (Primary group)
 --       - String (Subgroup)
 --       - Character (Subgroup)

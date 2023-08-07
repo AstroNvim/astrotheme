@@ -95,7 +95,7 @@ function M.set_terminal_colors()
   vim.g.terminal_color_15 = C.term.bright_white
 
   vim.g.terminal_color_background = C.term.background
-  vim.g.terminal_color_foreground = C.term.forground
+  vim.g.terminal_color_foreground = C.term.foreground
 end
 
 return M
