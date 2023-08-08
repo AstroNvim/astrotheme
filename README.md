@@ -71,7 +71,7 @@ require("astrotheme").setup({
   },
 
   style = {
-    transparent = false,         -- Bool value, toggles transperency.
+    transparent = false,         -- Bool value, toggles transparency.
     inactive = true,             -- Bool value, toggles inactive window color.
     float = true,                -- Bool value, toggles floating windows background colors.
     popup = true,                -- Bool value, toggles popup background color.
@@ -92,12 +92,12 @@ require("astrotheme").setup({
                            -- true: Enables all plugins highlights.
                            -- false: Disables all plugins.
 
-  plugins = {              -- Allows for individual plugin overides using plugin name and value from above.
+  plugins = {              -- Allows for individual plugin overrides using plugin name and value from above.
     ["bufferline.nvim"] = false,
   },
 
   palettes = {
-    global = {             -- Globaly accessible palettes, theme palettes take priority.
+    global = {             -- Globally accessible palettes, theme palettes take priority.
       my_grey = "#ebebeb",
       my_color = "#ffffff"
     },
@@ -115,7 +115,7 @@ require("astrotheme").setup({
   },
 
   highlights = {
-    global = {             -- Add or modify hl groups globaly, theme specific hl groups take priority.
+    global = {             -- Add or modify hl groups globally, theme specific hl groups take priority.
       modify_hl_groups = function(hl, c)
         hl.PluginColor4 = {fg = c.my_grey, bg = c.none }
       end,
