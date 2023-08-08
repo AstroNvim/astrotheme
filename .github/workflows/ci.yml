@@ -12,3 +12,5 @@ jobs:
       plugin_name: ${{ github.event.repository.name }}
       is_production: ${{ github.event_name == 'push' }}
       docs: false
+      commit_msg: false
+      pr_title: true
