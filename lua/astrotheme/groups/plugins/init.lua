@@ -20,6 +20,7 @@ return {
   ["nvim-web-devicons"] = "nvim-web-devicons",
   ["nvim-window-picker"] = "nvim-window-picker",
   ["mason.nvim"] = "mason",
+  ["mini.starter"] = "ministarter",
   ["rainbow-delimiters.nvim"] = "rainbow-delimiters",
   ["spotlight.nvim"] = "spotlight",
   ["symbols-outline.nvim"] = "symbols-outline",
