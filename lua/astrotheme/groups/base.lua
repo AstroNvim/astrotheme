@@ -69,6 +69,7 @@ local function callback(opts)
     NormalPopup = {
       fg = C.ui.text,
       bg = (opts.inactive and C.ui.base) or (opts.popup and C.ui.popup) or (opts.transparent and C.none) or C.ui.base,
+      blend = vim.o.winblend or 0,
     },
 
     --------------------
@@ -169,9 +170,9 @@ local function callback(opts)
     --------------------
     --- Menu
     --------------------
-    Pmenu = { fg = C.ui.text, bg = C.ui.popup },
+    Pmenu = { fg = C.ui.text, bg = C.ui.float },
     PmenuSel = { fg = C.ui.base, bg = C.ui.menu_selection, bold = true, blend = 0 },
-    PmenuSbar = { fg = C.none, bg = C.ui.tabline },
+    PmenuSbar = { fg = C.none, bg = C.ui.float },
     PmenuThumb = { fg = C.none, bg = C.ui.scrollbar, blend = 0 },
 
     WildMenu = { fg = C.ui.base, bg = C.ui.accent },
