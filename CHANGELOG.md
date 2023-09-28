@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.4.0](https://github.com/AstroNvim/astrotheme/compare/v2.3.0...v2.4.0) (2023-09-28)
+
+
+### Features
+
+* **indent-blankline:** add support for indent-blankline v3 ([51ef620](https://github.com/AstroNvim/astrotheme/commit/51ef6202f2056ea3bf0b41faf522d3366e558e8a))
+
+
+### Bug Fixes
+
+* fix typos and also add spell checking ([717cbcc](https://github.com/AstroNvim/astrotheme/commit/717cbccd4b14480b113abf0578ed8490c02bb832))
+* **README:** fix typos ([#85](https://github.com/AstroNvim/astrotheme/issues/85)) ([829b24a](https://github.com/AstroNvim/astrotheme/commit/829b24a120111e10f5db3b1b8dc2485add1594db))
+* **README:** fix typos in README ([829b24a](https://github.com/AstroNvim/astrotheme/commit/829b24a120111e10f5db3b1b8dc2485add1594db))
+
 ## [2.3.0](https://github.com/AstroNvim/astrotheme/compare/v2.2.0...v2.3.0) (2023-08-01)
 
 
