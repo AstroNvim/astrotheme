@@ -1,4 +1,4 @@
-*astrotheme.txt*        For Neovim >= 0.9.0        Last change: 2023 August 08
+*astrotheme.txt*       For Neovim >= 0.9.0      Last change: 2023 September 28
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -81,19 +81,19 @@ OPTIONS                                                   *astrotheme-options*
     
       palettes = {
         global = {             -- Globally accessible palettes, theme palettes take priority.
-          my_grey = "ebebeb",
-          my_color = "ffffff"
+          my_grey = "#ebebeb",
+          my_color = "#ffffff"
         },
         astrodark = {          -- Extend or modify astrodarks palette colors
           ui = {
-            red = "800010", -- Overrides astrodarks red UI color
-            accent = "CC83E3"  -- Changes the accent color of astrodark.
+            red = "#800010", -- Overrides astrodarks red UI color
+            accent = "#CC83E3"  -- Changes the accent color of astrodark.
           },
           syntax = {
-            cyan = "800010", -- Overrides astrodarks cyan syntax color
-            comments = "CC83E3"  -- Overrides astrodarks comment color.
+            cyan = "#800010", -- Overrides astrodarks cyan syntax color
+            comments = "#CC83E3"  -- Overrides astrodarks comment color.
           },
-          my_color = "000000" -- Overrides global.my_color
+          my_color = "#000000" -- Overrides global.my_color
         },
       },
     
@@ -102,7 +102,7 @@ OPTIONS                                                   *astrotheme-options*
           modify_hl_groups = function(hl, c)
             hl.PluginColor4 = {fg = c.my_grey, bg = c.none }
           end,
-          ["@String"] = {fg = "ff00ff", bg = "NONE"},
+          ["@String"] = {fg = "#ff00ff", bg = "NONE"},
         },
         astrodark = {
           -- first parameter is the highlight table and the second parameter is the color palette table
@@ -110,7 +110,7 @@ OPTIONS                                                   *astrotheme-options*
             hl.Comment.fg = c.my_color
             hl.Comment.italic = true
           end,
-          ["@String"] = {fg = "ff00ff", bg = "NONE"},
+          ["@String"] = {fg = "#ff00ff", bg = "NONE"},
         },
       },
     })
