@@ -5,6 +5,9 @@ local function callback()
     IndentBlanklineContextChar = { fg = C.ui.text },
     IndentBlanklineSpaceCharBlankline = { fg = C.ui.none_text },
     IndentBlanklineSpaceshar = { fg = C.ui.none_text },
+    IblIndent = { fg = C.ui.none_text },
+    IblWhitespace = { fg = C.ui.none_text },
+    IblScope = { fg = C.ui.text },
   }
 end
 
