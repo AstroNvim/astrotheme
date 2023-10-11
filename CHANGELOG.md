@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.1](https://github.com/AstroNvim/astrotheme/compare/v3.0.0...v3.0.1) (2023-10-11)
+
+
+### Bug Fixes
+
+* **astrodark:** remove unnecessary color ([c16348e](https://github.com/AstroNvim/astrotheme/commit/c16348e4da90ed65b1a089dc0f7663f8c5d734b8))
+* **astrolight:** revert accidental astrolight color changes ([16d8b6f](https://github.com/AstroNvim/astrotheme/commit/16d8b6fa6fba6017746ff389d9f7f7c6dc730d4c))
+
 ## [3.0.0](https://github.com/AstroNvim/astrotheme/compare/v2.4.0...v3.0.0) (2023-10-11)
 
 
