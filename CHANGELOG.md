@@ -1,5 +1,43 @@
 # Changelog
 
+## [3.0.0](https://github.com/AstroNvim/astrotheme/compare/v2.4.0...v3.0.0) (2023-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove popup as it is to difficult to manage
+
+### Features
+
+* add mini.start support ([6490250](https://github.com/AstroNvim/astrotheme/commit/6490250bc7c05a079ad928fb9069192f7f5f5bde))
+* add transparency to notify ([cd6dc12](https://github.com/AstroNvim/astrotheme/commit/cd6dc126786d1425fa3f0b7f86eb096f3eb25562))
+* **astrodark:** update to color palette ([8861f59](https://github.com/AstroNvim/astrotheme/commit/8861f59d62e9d960d0ead63e976923a3ed0f07f7))
+* **base:** add transparency option to cursorline ([a2d4203](https://github.com/AstroNvim/astrotheme/commit/a2d42031e7c4fa940a2befa42dd3e71cc4f188d4))
+* **base:** change pmenusel to use the menu_selection property ([00c0fb6](https://github.com/AstroNvim/astrotheme/commit/00c0fb6019357eba6b0b7336cdda7075484d2fa2))
+* **base:** change wildmenu background to use accent ([1f3df14](https://github.com/AstroNvim/astrotheme/commit/1f3df149e09741ae7e3bd210d16fc91957f475db))
+* **base:** disable any blend on pmenuthumb ([e86aa42](https://github.com/AstroNvim/astrotheme/commit/e86aa423c4ca46e7cf21a3d9ccde87972b070421))
+* **base:** disable blend on title background if title_invert ([0e1833b](https://github.com/AstroNvim/astrotheme/commit/0e1833b2cb35c343eeec7dbd51f424b5caadc077))
+* **base:** make machparen stand out more, closes: [#77](https://github.com/AstroNvim/astrotheme/issues/77) ([7aee6a6](https://github.com/AstroNvim/astrotheme/commit/7aee6a6c194c2494e240dbb4bdae8404ed29c70a))
+* **base:** make substitute more bold and noticeable ([8538403](https://github.com/AstroNvim/astrotheme/commit/853840374c72ea8ca31053d30d36b38cb936f8ee))
+* **base:** move cursor to ui.text property ([a55bfc5](https://github.com/AstroNvim/astrotheme/commit/a55bfc5f3c161c216188cc983c454d59e76a5926))
+* **base:** rework logic for float highlight family ([ceb3836](https://github.com/AstroNvim/astrotheme/commit/ceb3836798313884a666a4fb614c63eb6f948b43))
+* **cmp:** move match highlights to text_match property ([0da2954](https://github.com/AstroNvim/astrotheme/commit/0da2954344317c355846f3331d406499f6a0cdbd))
+* **lazy:** move to NormalFloat ([dcb64ab](https://github.com/AstroNvim/astrotheme/commit/dcb64ab3f4c6d0c2d566497ea95c845cfceb828b))
+* **mason:** move to NormalFloat ([0ccec22](https://github.com/AstroNvim/astrotheme/commit/0ccec225c5e7e764cb57a2e8fefaaaf0ce82861e))
+* movee Pmenu to float ([4d32cd2](https://github.com/AstroNvim/astrotheme/commit/4d32cd228ebefccaf2ebea4c05967c7e5df90f36))
+* **notify:** rework logic and highlights ([6c013fc](https://github.com/AstroNvim/astrotheme/commit/6c013fcbe4b8ba61e076c529327ddfe4e2061e28))
+* **spotlight:** add support for spotlight ([5ab2612](https://github.com/AstroNvim/astrotheme/commit/5ab2612a92ed7d2057a88cf9186bed0201ba7605))
+* **spotlight:** update spotlight to work with transparency ([d8da4ef](https://github.com/AstroNvim/astrotheme/commit/d8da4ef75276b5d9e66df24884ea0278121547e3))
+* **telescope:** initial restructure to support prompt background ([3411a62](https://github.com/AstroNvim/astrotheme/commit/3411a62c37be596840557f83330716dca3ebc6ac))
+
+
+### Bug Fixes
+
+* **astrolight:** added missing prompt palette ([729ae9a](https://github.com/AstroNvim/astrotheme/commit/729ae9a100adb810b71ccb2ab14e5e0f5c28c7d5))
+* remove popup as it is to difficult to manage ([dd49c67](https://github.com/AstroNvim/astrotheme/commit/dd49c676e1a62b456a31dc3b13503aa158bcefa3))
+* **spotlight:** add syntax text ([10d45e7](https://github.com/AstroNvim/astrotheme/commit/10d45e7fd6c7af7878a950070bf29ee9d3e29627))
+* **wezterm:** update wezterm astrodark palette ([3f4a86f](https://github.com/AstroNvim/astrotheme/commit/3f4a86ff862e897c430ae07fcf15c7911606e3be))
+
 ## [2.4.0](https://github.com/AstroNvim/astrotheme/compare/v2.3.0...v2.4.0) (2023-09-28)
 
 
