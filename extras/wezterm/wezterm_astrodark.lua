@@ -41,19 +41,22 @@ c.ui.base = "#1A1D23"
 c.ui.inactive_base = "#16181D"
 c.ui.statusline = "#111317"
 c.ui.split = "#111317"
-c.ui.float = "#16181D"
+c.ui.float = "#14161B"
 c.ui.title = c.ui.accent
-c.ui.border = "#7A7C7E"
+c.ui.border = "#3A3E47"
 c.ui.current_line = "#1E222A"
 c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#26343F"
 c.ui.menu_selection = c.ui.accent
-c.ui.highlight = "#1E222A"
+c.ui.highlight = "#23272F"
 c.ui.none_text = "#3A3E47"
 c.ui.text = "#9B9FA9"
 c.ui.text_active = "#ADB0BB"
 c.ui.text_inactive = "#494D56"
-c.ui.text_match = c.ui.accent
+c.ui.text_match = "#E0E0Ee"
+
+c.ui.prompt = "#21242A"
+c.ui.results = "#131519"
 
 --------------------------------
 --- Terminal
