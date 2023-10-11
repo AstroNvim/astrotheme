@@ -88,12 +88,6 @@ function M.live_reloading(opts)
   end
 end
 
-function M.set_overide(opts)
-  if opts.overide then
-    -- opts
-  end
-end
-
 function M.set_terminal_colors()
   vim.g.terminal_color_0 = C.term.black
   vim.g.terminal_color_8 = C.term.bright_black
