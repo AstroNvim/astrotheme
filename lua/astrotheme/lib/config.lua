@@ -9,7 +9,6 @@ M.default = {
     transparent = false,
     inactive = true,
     float = true,
-    popup = true,
     neotree = true,
     border = true,
     title_invert = false,
