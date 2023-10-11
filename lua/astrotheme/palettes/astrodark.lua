@@ -54,7 +54,6 @@ c.ui.text_inactive = "#494D56"
 c.ui.text_match = "#E0E0Ee"
 
 c.ui.prompt = "#21242A"
-c.ui.results = "#131519"
 
 --------------------------------
 --- terminal
