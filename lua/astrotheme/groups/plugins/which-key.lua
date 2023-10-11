@@ -1,4 +1,4 @@
-local function callback(opts)
+local function callback()
   return {
     WhichKey = { fg = C.ui.cyan },
     WhichKeyFloat = { link = "NormalFloat" },
