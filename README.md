@@ -189,6 +189,8 @@ ui.text_active
 ui.text_inactive
 ui.text_match
 
+ui.prompt
+
 --------------------------------
 --- terminal
 --------------------------------
