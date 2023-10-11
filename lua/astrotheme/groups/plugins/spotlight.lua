@@ -25,7 +25,7 @@ local function callback(opts)
       blend = blend,
     },
     SpotlightNormalNC = {
-      fg = C.ui.inactive_base,
+      fg = C.syntax.text,
       bg = opts.transparent and C.none or C.ui.inactive_base,
       -- blend = blend,
     },
