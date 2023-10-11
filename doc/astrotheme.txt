@@ -172,6 +172,8 @@ modifiable palette names ~
     ui.text_inactive
     ui.text_match
     
+    ui.prompt
+    
     --------------------------------
     --- terminal
     --------------------------------
