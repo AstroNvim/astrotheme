@@ -16,8 +16,8 @@ c.syntax.purple = "#90437A"
 c.syntax.cyan = "#007652"
 c.syntax.orange = "#954D00"
 
-c.syntax.comment = "#A9A5A5"
-c.syntax.text = "#635F5F"
+c.syntax.comment = "#937C7A"
+c.syntax.text = "#815654"
 
 --------------------------------
 --- UI
@@ -30,30 +30,30 @@ c.ui.purple = "#BD51A4"
 c.ui.cyan = "#00976C"
 c.ui.orange = "#D05312"
 
-c.ui.accent = "#B89A9A"
+c.ui.accent = "#D04F4E"
 
-c.ui.tabline = "#D7D3D3"
-c.ui.winbar = "#D2CECE"
-c.ui.tool = "#F4F0F0"
-c.ui.base = "#FFFBFB"
-c.ui.inactive_base = "#F4F0F0"
-c.ui.statusline = "#D7D3D3"
-c.ui.split = "#E9E5E5"
-c.ui.float = "#E9E5E5"
+c.ui.tabline = "#D8D6D5"
+c.ui.winbar = "#926461"
+c.ui.tool = "#F9DCD1"
+c.ui.base = "#FEEEEE"
+c.ui.inactive_base = "#F9DCD1"
+c.ui.statusline = "#D8D6D5"
+c.ui.split = "#D8D6D5"
+c.ui.float = "#F9DCD1"
 c.ui.title = c.ui.accent
 c.ui.border = c.ui.accent
-c.ui.current_line = "#F3EFEF"
+c.ui.current_line = "#F6DDD8"
 c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#BBC9D7"
 c.ui.menu_selection = c.ui.accent
-c.ui.highlight = "#C4C0C0"
-c.ui.none_text = "#D2CECE"
-c.ui.text = "#7C7878"
-c.ui.text_active = "#C9C5C5"
-c.ui.text_inactive = "#DDD9D9"
-c.ui.text_match = "#222222"
+c.ui.highlight = "#E7CFCA"
+c.ui.none_text = "#D0B6B6"
+c.ui.text = "#9E7876"
+c.ui.text_active = "#815654"
+c.ui.text_inactive = "#937C7A"
+c.ui.text_match = c.ui.accent
 
-c.ui.prompt = "#D0CECD"
+c.ui.prompt = "#D8D6D5"
 
 --------------------------------
 --- terminal
