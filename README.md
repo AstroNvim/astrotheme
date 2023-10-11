@@ -18,7 +18,7 @@
 ## 🎨 Palettes
 
 <p align="center">
-<img src="https://docs.astronvim.com/img/themes/overview.png"/>
+<img src="https://astronvim.com/themes/overview.png"/>
 </p>
 
 <details>
@@ -29,7 +29,7 @@ colorscheme astrodark " Dark theme (default)
 ```
 
 <p align="center">
-<img src="https://docs.astronvim.com/img/themes/astrodark.png"/>
+<img src="https://astronvim.com/themes/astrodark.png"/>
 </p>
 
 </details>
@@ -42,7 +42,7 @@ colorscheme astrolight " Light theme
 ```
 
 <p align="center">
-<img src="https://docs.astronvim.com/img/themes/astrolight.png"/>
+<img src="https://astronvim.com/themes/astrolight.png"/>
 </p>
 
 </details>
@@ -55,7 +55,7 @@ colorscheme astromars " Red theme
 ```
 
 <p align="center">
-<img src="https://docs.astronvim.com/img/themes/astromars.png"/>
+<img src="https://astronvim.com/themes/astromars.png"/>
 </p>
 
 </details>
