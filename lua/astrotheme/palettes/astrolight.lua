@@ -39,7 +39,6 @@ c.ui.base = "#FEEEEE"
 c.ui.inactive_base = "#F9DCD1"
 c.ui.statusline = "#D8D6D5"
 c.ui.split = "#D8D6D5"
-c.ui.popup = "#D8D6D5"
 c.ui.float = "#D8D6D5"
 c.ui.title = c.ui.accent
 c.ui.border = c.ui.accent

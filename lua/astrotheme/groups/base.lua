@@ -49,30 +49,6 @@ local function callback(opts)
     },
 
     --------------------
-    --- Popup
-    --------------------
-    PopupTitle = {
-      fg = (opts.title_invert and C.ui.tool) or C.ui.title,
-      bg = (opts.title_invert and C.ui.title)
-        or (opts.inactive and C.ui.base)
-        or (opts.popup and C.ui.popup)
-        or (opts.transparent and C.none)
-        or C.ui.base,
-      blend = opts.title_invert and 0 or vim.o.winblend or 0,
-      bold = true,
-    },
-    PopupBorder = {
-      fg = (opts.border and C.ui.border) or (opts.inactive and C.ui.base) or (opts.popup and C.ui.popup) or C.ui.base,
-      bg = (opts.inactive and C.ui.base) or (opts.popup and C.ui.popup) or (opts.transparent and C.none) or C.ui.base,
-      blend = vim.o.winblend or 0,
-    },
-    NormalPopup = {
-      fg = C.ui.text,
-      bg = (opts.inactive and C.ui.base) or (opts.popup and C.ui.popup) or (opts.transparent and C.none) or C.ui.base,
-      blend = vim.o.winblend or 0,
-    },
-
-    --------------------
     --- Text
     --------------------
     Title = {

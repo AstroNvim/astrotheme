@@ -74,7 +74,6 @@ require("astrotheme").setup({
     transparent = false,         -- Bool value, toggles transparency.
     inactive = true,             -- Bool value, toggles inactive window color.
     float = true,                -- Bool value, toggles floating windows background colors.
-    popup = true,                -- Bool value, toggles popup background color.
     neotree = true,              -- Bool value, toggles neo-trees background color.
     border = true,               -- Bool value, toggles borders.
     title_invert = true,         -- Bool value, swaps text and background colors.
@@ -176,7 +175,6 @@ ui.base
 ui.inactive_base
 ui.statusline
 ui.split
-ui.popup
 ui.float
 ui.title
 ui.border
