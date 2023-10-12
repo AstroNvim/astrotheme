@@ -45,7 +45,8 @@ c.ui.border = "#3A3E47"
 c.ui.current_line = "#1E222A"
 c.ui.scrollbar = c.ui.accent
 c.ui.selection = "#26343F"
-c.ui.menu_selection = c.ui.accent
+-- TODO: combine menu_selection and selection
+c.ui.menu_selection = c.ui.selection
 c.ui.highlight = "#23272F"
 c.ui.none_text = "#3A3E47"
 c.ui.text = "#9B9FA9"
