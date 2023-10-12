@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.2](https://github.com/AstroNvim/astrotheme/compare/v3.0.1...v3.0.2) (2023-10-12)
+
+
+### Bug Fixes
+
+* **base:** make default `menu_selection` less bright and easier to see icons ([#92](https://github.com/AstroNvim/astrotheme/issues/92)) ([045e424](https://github.com/AstroNvim/astrotheme/commit/045e42413a19656a2b587e126030ddc0eb057193))
+* make default `menu_selection` less bright and easier to see icons ([045e424](https://github.com/AstroNvim/astrotheme/commit/045e42413a19656a2b587e126030ddc0eb057193))
+
 ## [3.0.1](https://github.com/AstroNvim/astrotheme/compare/v3.0.0...v3.0.1) (2023-10-11)
 
 
