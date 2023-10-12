@@ -2,7 +2,7 @@
 <img src="https://astronvim.com/logo/astronvim.svg" width=100/>
 </p>
 
-<h1 align="center"> AstroTheme </h1>
+<h1 align="center"> AstroTheme TEST DO NOT MERGE</h1>
 
 <p align="center">The default colorscheme used by <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a> an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins  </p>
 
