@@ -13,7 +13,6 @@
 - Global & Theme specific overrides
 - Vim terminal colors
 - Heirline highlights
-- Lualine support
 
 ## 🎨 Palettes
 
