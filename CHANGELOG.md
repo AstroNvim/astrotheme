@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/AstroNvim/astrotheme/compare/v3.0.2...v3.1.0) (2023-11-25)
+
+
+### Features
+
+* **plugins:** add neogit support ([#99](https://github.com/AstroNvim/astrotheme/issues/99)) ([9ead2d9](https://github.com/AstroNvim/astrotheme/commit/9ead2d9abe053390717a0fb0d4cd92c12017c0e0))
+
 ## [3.0.2](https://github.com/AstroNvim/astrotheme/compare/v3.0.1...v3.0.2) (2023-10-12)
 
 
