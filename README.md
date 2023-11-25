@@ -244,6 +244,7 @@ term.foreground
 | [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)                   | `lightspeed`         |
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)                    | `lualine`            |
 | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)                 | `neo-tree`           |
+| [neogit](https://github.com/NeogitOrg/neogit)                                   | `neogit`             |
 | [noice.nvim](https://github.com/folke/noice.nvim)                               | `noice`              |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | `nvim-cmp`           |
 | [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)                          | `nvim-dap-ui`        |
