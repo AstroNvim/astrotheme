@@ -1,4 +1,4 @@
-*astrotheme.txt*        For Neovim >= 0.9.0       Last change: 2023 October 12
+*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2023 November 27
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -235,9 +235,13 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
 
   lightspeed.nvim                                          lightspeed
 
-  lualine.nvim                                             neo-tree
+  lualine.nvim                                             lualine
 
-  neo-tree.nvim                                            noice
+  neo-tree.nvim                                            neo-tree
+
+  neogit                                                   neogit
+
+  noice.nvim                                               noice
 
   nvim-cmp                                                 nvim-cmp
 
