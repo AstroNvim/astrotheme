@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.2.0](https://github.com/AstroNvim/astrotheme/compare/v3.1.0...v3.2.0) (2023-12-04)
+
+
+### Features
+
+* **plugins:** add harpoon support ([#101](https://github.com/AstroNvim/astrotheme/issues/101)) ([ee55f32](https://github.com/AstroNvim/astrotheme/commit/ee55f32e385bfba21906da22380b76d212fafc15))
+
 ## [3.1.0](https://github.com/AstroNvim/astrotheme/compare/v3.0.2...v3.1.0) (2023-11-25)
 
 
