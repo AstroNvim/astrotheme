@@ -1,4 +1,4 @@
-*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2023 November 27
+*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2023 December 04
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -228,6 +228,8 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
   flash.nvim                                               flash
 
   gitsigns.nvim                                            gitsigns
+
+  harpoon                                                  harpoon
 
   hop.nvim                                                 hop
 
