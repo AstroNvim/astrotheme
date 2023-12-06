@@ -5,7 +5,6 @@ return {
   ["dashboard-nvim"] = "dashboard-nvim",
   ["flash.nvim"] = "flash",
   ["gitsigns.nvim"] = "gitsigns",
-  ["harpoon"] = "harpoon",
   ["hop.nvim"] = "hop",
   ["indent-blankline.nvim"] = "indent-blankline",
   ["neogit"] = "neogit",

@@ -239,7 +239,6 @@ term.foreground
 | [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)                     | `dashboard-nvim`     |
 | [flash.nvim](https://github.com/folke/flash.nvim)                               | `flash`              |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | `gitsigns`           |
-| [harpoon](https://github.com/ThePrimeagen/harpoon)                              | `harpoon`            |
 | [hop.nvim](https://github.com/phaazon/hop.nvim)                                 | `hop`                |
 | [indent_blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | `indent-blankline`   |
 | [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)                   | `lightspeed`         |
