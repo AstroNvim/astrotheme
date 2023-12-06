@@ -1,2 +1,5 @@
 [default.extend-words]
 noice = "noice"
+
+[files]
+extend-exclude = ["CHANGELOG.md"]
