@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     NvimTreeFolderIcon = { fg = C.syntax.blue },

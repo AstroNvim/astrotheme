@@ -8,6 +8,7 @@
 --       - Character (Subgroup)
 --
 -- Ref: :help group-name
+---@type AstroThemeCallback
 local function callback(opts)
   return {
     -- Comment

@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     DevIconC = { fg = C.icon.c },

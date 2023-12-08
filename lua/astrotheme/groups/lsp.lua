@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback(opts)
   local error = C.ui.red
   local hint = C.ui.cyan

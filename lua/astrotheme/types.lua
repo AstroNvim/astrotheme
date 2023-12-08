@@ -1,0 +1,105 @@
+--- AstroTheme Types
+
+---@alias AstroThemeColor string
+---@alias AstroThemeHighlight vim.api.keyset.highlight
+---@alias AstroThemeHighlights table<string,vim.api.keyset.highlight>
+---@alias AstroThemeCallback fun(opts: AstroThemeStyleOpts?): AstroThemeHighlights
+
+---@class AstroThemePaletteUI
+---@field red AstroThemeColor?
+---@field orange AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field green AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field accent AstroThemeColor?
+---@field tabline AstroThemeColor?
+---@field winbar AstroThemeColor?
+---@field tool AstroThemeColor?
+---@field base AstroThemeColor?
+---@field inactive_base AstroThemeColor?
+---@field statusline AstroThemeColor?
+---@field split AstroThemeColor?
+---@field float AstroThemeColor?
+---@field title AstroThemeColor?
+---@field border AstroThemeColor?
+---@field current_line AstroThemeColor?
+---@field scrollbar AstroThemeColor?
+---@field selection AstroThemeColor?
+---@field menu_selection AstroThemeColor?
+---@field highlight AstroThemeColor?
+---@field none_text AstroThemeColor?
+---@field text AstroThemeColor?
+---@field text_active AstroThemeColor?
+---@field text_inactive AstroThemeColor?
+---@field text_match AstroThemeColor?
+---@field prompt AstroThemeColor?
+
+---@class AstroThemePaletteSyntax
+---@field red AstroThemeColor?
+---@field orange AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field green AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field text AstroThemeColor?
+---@field comment AstroThemeColor?
+---@field mute AstroThemeColor?
+
+---@class AstroThemePaletteTerm
+---@field background AstroThemeColor?
+---@field foreground AstroThemeColor?
+---@field black AstroThemeColor?
+---@field bright_black AstroThemeColor?
+---@field red AstroThemeColor?
+---@field bright_red AstroThemeColor?
+---@field green AstroThemeColor?
+---@field bright_green AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field bright_yellow AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field bright_blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field bright_purple AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field bright_cyan AstroThemeColor?
+---@field white AstroThemeColor?
+---@field bright_white AstroThemeColor?
+
+---@class AstroThemePalette
+---@field icon table<string,AstroThemeColor>? Colors for filetype icons
+---@field syntax AstroThemePaletteSyntax? Colors that control syntax related highlight groups
+---@field term AstroThemePaletteTerm? Colors that control colors set for in-editor terminals
+---@field ui AstroThemePaletteUI? Colors that are used throughout the general user interface
+
+---@class AstroThemeHighlightOpts
+---@field modify_hl_groups fun(hl: AstroThemeHighlights, c: AstroThemePalette)? Function for fine control over highlight setting. The first parameter is the table of highlights to modify directly, the second is the current palette of colors
+---@field [string] AstroThemeHighlight? Set any string to a highlight definition where the string is the highlight group name
+
+---@class AstroThemeBackgroundOpts
+---@field dark string The palette to use when `background` is set to dark
+---@field light string The palette to use when `background` is set to light
+
+---@class AstroThemeStyleOpts
+---@field border boolean? Toggles borders in the user interface
+---@field float boolean? Toggles the background color of floating windows
+---@field inactive boolean? Toggles dimming inactive windows
+---@field italic_comments boolean? Toggles italic comments
+---@field neotree boolean? Toggles the neo-tree background color
+---@field simple_syntax_colors boolean? Decrease the number of colors used for syntax highlighting
+---@field title_invert boolean? Swaps the text and background colors for window titles
+---@field transparent boolean? toggle transparency
+
+---@class AstroThemeOpts
+---@field background AstroThemeBackgroundOpts? Set the default palette for dark/light background
+---@field dev boolean? Enable development mode (EXPERIMENTAL and not for general use)
+---@field highlights table<string,AstroThemeHighlightOpts>? Configure highlight groups set for a given palette
+---@field palettes table<string|"global",AstroThemePalette>? Configure colors for specific palettes or globally
+---@field palette string? The default palette to use when setting the colorscheme to astrotheme
+---@field plugin_default "auto"|true|false? Sets the default behavior for loading plugins, true/false to enable or disable completely or "auto" to detect if a plugin is available and automatically enable it
+---@field plugins table<string,boolean>? Allows of rindividual plugin enabling and disabling, takes precedence over the default
+---@field style AstroThemeStyleOpts? General style toggles for common style changes
+---@field termguicolors boolean? Toggle whether or not AstroTheme sets `termguicolors`
+---@field terminal_colors boolean? Toggle whether or not to set colorscheme for in-editor terminals

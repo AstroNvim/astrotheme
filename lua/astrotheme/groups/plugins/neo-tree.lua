@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback(opts)
   return {
     NeoTreeDirectoryIcon = { fg = C.ui.blue },

@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     VimwikiLink = { fg = C.syntax.cyan, bg = C.none },

@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     AerialNormal = { fg = C.ui.text },

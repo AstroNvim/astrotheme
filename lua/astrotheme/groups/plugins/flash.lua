@@ -1,4 +1,5 @@
 -- this is a test to see what i like
+---@type AstroThemeCallback
 local function callback()
   return {
     FlashBackdrop = { fg = C.syntax.mute },

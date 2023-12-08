@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     WindowPickerStatusLine = { fg = C.ui.red, bg = C.none },
