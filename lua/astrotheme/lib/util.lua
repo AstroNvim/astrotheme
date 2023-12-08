@@ -1,3 +1,11 @@
+---AstroTheme Utilities
+---
+---Various utilities for use within AstroTheme
+---
+---This module can be loaded with `local astrotheme_utils = require "astrotheme.lib.util"`
+---
+---copyright 2023 license GNU General Public License v3.0 @class astrocore
+---@class astrotheme.lib.util
 local M = {}
 
 --- Reload a given theme

@@ -2,7 +2,7 @@
   "neodev": {
     "library": {
       "enabled": true,
-      "plugins": true
+      "plugins": ["lazy.nvim"]
     }
   },
   "neoconf": {
@@ -14,7 +14,8 @@
   },
   "lspconfig": {
     "lua_ls": {
-      "Lua.format.enable": false
+      "Lua.format.enable": false,
+      "Lua.diagnostics.globals": ["packer_plugins"]
     }
   }
 }

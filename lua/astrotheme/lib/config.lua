@@ -1,3 +1,11 @@
+---AstroTheme Configuration
+---
+---Default configuration of AstroTheme
+---
+---This module can be loaded with `local astrotheme_config = require "astrotheme.lib.config"`
+---
+---copyright 2023 license GNU General Public License v3.0 @class astrocore
+---@class astrotheme.lib.config
 M = {}
 
 ---@type AstroThemeOpts

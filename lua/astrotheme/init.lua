@@ -1,7 +1,18 @@
+---AstroTheme
+---
+--- The default colorscheme used by AstroNvim an aesthetic and feature-rich
+--- neovim config that is extensible and easy to use with a great set of
+--- plugins
+---
+---This module can be loaded with `local astrotheme = require "astrotheme"`
+---
+---copyright 2023 license GNU General Public License v3.0 @class astrocore
+---@class astrotheme
+---@field config AstroThemeOpts
+local M = { config = {} }
+
 C = {}
 local util = require "astrotheme.lib.util"
-
-local M = { config = {} }
 
 --- Load a specific theme given a palette name
 ---@param theme string?
