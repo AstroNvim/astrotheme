@@ -1,5 +1,6 @@
 local M = {}
 
+--- Reload a given theme
 ---@param opts AstroThemeOpts
 ---@param theme string
 function M.reload(opts, theme)
@@ -9,6 +10,7 @@ function M.reload(opts, theme)
   vim.g.colors_name = theme
 end
 
+--- Reload a module
 ---@param module string
 ---@param bool boolean
 ---@return any
@@ -18,6 +20,7 @@ function M.reload_module(module, bool)
   return require(module)
 end
 
+--- Retrieve a list of all plugins to enable
 ---@param opts AstroThemeOpts
 ---@return string[]
 function M.get_plugin_list(opts)
@@ -44,6 +47,7 @@ function M.get_plugin_list(opts)
   return plugins
 end
 
+--- Compile all highlights from a list of modules
 ---@param highlights AstroThemeHighlights
 ---@param path string
 ---@param modules string[]
@@ -61,6 +65,7 @@ function M.get_hl_modules(highlights, path, modules, opts)
   return highlights
 end
 
+--- Set a palette given a AstroTheme options
 ---@param opts AstroThemeOpts
 ---@return AstroThemePalette
 function M.set_palettes(opts)
@@ -73,6 +78,7 @@ function M.set_palettes(opts)
   return palette
 end
 
+--- Set highlights in Neovim
 ---@param opts AstroThemeOpts
 ---@param highlights AstroThemeHighlights
 ---@param theme string
@@ -92,6 +98,7 @@ function M.set_highlights(opts, highlights, theme)
   end
 end
 
+--- Enable live reloading of AstroTheme for development
 ---@param opts AstroThemeOpts
 function M.live_reloading(opts)
   if opts.dev then
@@ -112,6 +119,7 @@ function M.live_reloading(opts)
   end
 end
 
+--- Set terminal colors based on the currently loaded colors
 function M.set_terminal_colors()
   vim.g.terminal_color_0 = C.term.black
   vim.g.terminal_color_8 = C.term.bright_black
