@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback(opts)
   local title = {
     fg = (opts.title_invert and C.ui.float) or C.ui.title,

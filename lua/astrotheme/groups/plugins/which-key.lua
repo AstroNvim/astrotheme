@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     WhichKey = { fg = C.ui.cyan },

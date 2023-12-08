@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback(opts)
   local bg = (opts.transparent and C.none) or C.ui.tool
 

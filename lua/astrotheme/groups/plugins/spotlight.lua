@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback(opts)
   local bg = (opts.float and C.ui.base) or (opts.transparent and C.none) or C.ui.base
   local blend = vim.o.winblend or 0

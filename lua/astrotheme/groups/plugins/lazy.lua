@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     LazyH1 = { fg = C.ui.base, bg = C.ui.accent, bold = true }, -- home button

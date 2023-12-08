@@ -1,3 +1,4 @@
+---@class AstroThemePalette
 local c = {
   none = "NONE",
   syntax = {},

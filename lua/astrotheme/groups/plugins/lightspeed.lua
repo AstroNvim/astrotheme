@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     LightspeedLabel = { fg = C.ui.red, underline = true },

@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     GitSignsAdd = { fg = C.ui.green, bg = C.none },

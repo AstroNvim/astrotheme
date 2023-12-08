@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     IndentBlanklineChar = { fg = C.ui.none_text },

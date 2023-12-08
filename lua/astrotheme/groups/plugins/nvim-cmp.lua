@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     CmpItemAbbr = { fg = C.ui.text },

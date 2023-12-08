@@ -3,6 +3,7 @@ local util = require "astrotheme.lib.util"
 
 local M = { config = {} }
 
+---@param theme string?
 function M.load(theme)
   if
     not theme
@@ -32,6 +33,7 @@ function M.load(theme)
   if M.config.terminal_colors then util.set_terminal_colors() end
 end
 
+---@param opts AstroThemeOpts
 function M.setup(opts)
   M.config = require("astrotheme.lib.config").user_config(opts)
   M.config.plugins = util.get_plugin_list(M.config)

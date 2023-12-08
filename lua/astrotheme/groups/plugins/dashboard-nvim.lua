@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     DashboardHeader = { fg = C.syntax.cyan },

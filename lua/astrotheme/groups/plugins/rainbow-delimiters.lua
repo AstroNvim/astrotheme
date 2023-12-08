@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     RainbowDelimiterRed = { fg = C.syntax.red },

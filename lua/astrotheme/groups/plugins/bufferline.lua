@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     BufferLineBufferVisible = { fg = C.ui.text_inactive, bg = C.ui.base },

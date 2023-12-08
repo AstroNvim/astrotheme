@@ -1,3 +1,4 @@
+---@type AstroThemeCallback
 local function callback()
   return {
     MiniStarterItem = { fg = C.ui.text },

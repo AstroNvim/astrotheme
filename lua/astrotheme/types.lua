@@ -1,0 +1,103 @@
+---@alias AstroThemeColor string
+---@alias AstroThemeHighlight vim.api.keyset.highlight
+---@alias AstroThemeHighlights table<string,vim.api.keyset.highlight>
+---@alias AstroThemeCallback fun(opts: AstroThemeStyleOpts?): AstroThemeHighlights
+
+---@class AstroThemePaletteUI
+---@field red AstroThemeColor?
+---@field orange AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field green AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field accent AstroThemeColor?
+---@field tabline AstroThemeColor?
+---@field winbar AstroThemeColor?
+---@field tool AstroThemeColor?
+---@field base AstroThemeColor?
+---@field inactive_base AstroThemeColor?
+---@field statusline AstroThemeColor?
+---@field split AstroThemeColor?
+---@field float AstroThemeColor?
+---@field title AstroThemeColor?
+---@field border AstroThemeColor?
+---@field current_line AstroThemeColor?
+---@field scrollbar AstroThemeColor?
+---@field selection AstroThemeColor?
+---@field menu_selection AstroThemeColor?
+---@field highlight AstroThemeColor?
+---@field none_text AstroThemeColor?
+---@field text AstroThemeColor?
+---@field text_active AstroThemeColor?
+---@field text_inactive AstroThemeColor?
+---@field text_match AstroThemeColor?
+---@field prompt AstroThemeColor?
+
+---@class AstroThemePaletteSyntax
+---@field red AstroThemeColor?
+---@field orange AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field green AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field text AstroThemeColor?
+---@field comment AstroThemeColor?
+---@field mute AstroThemeColor?
+
+---@class AstroThemePaletteTerm
+---@field background AstroThemeColor?
+---@field foreground AstroThemeColor?
+---@field black AstroThemeColor?
+---@field bright_black AstroThemeColor?
+---@field red AstroThemeColor?
+---@field bright_red AstroThemeColor?
+---@field green AstroThemeColor?
+---@field bright_green AstroThemeColor?
+---@field yellow AstroThemeColor?
+---@field bright_yellow AstroThemeColor?
+---@field blue AstroThemeColor?
+---@field bright_blue AstroThemeColor?
+---@field purple AstroThemeColor?
+---@field bright_purple AstroThemeColor?
+---@field cyan AstroThemeColor?
+---@field bright_cyan AstroThemeColor?
+---@field white AstroThemeColor?
+---@field bright_white AstroThemeColor?
+
+---@class AstroThemePalette
+---@field icon table<string,AstroThemeColor>?
+---@field syntax AstroThemePaletteSyntax?
+---@field term AstroThemePaletteTerm?
+---@field ui AstroThemePaletteUI?
+
+---@class AstroThemeHighlightOpts
+---@field modify_hl_groups fun(hl: AstroThemeHighlights, c: AstroThemePalette)?
+---@field [string] AstroThemeHighlight?
+
+---@class AstroThemeBackgroundOpts
+---@field dark string
+---@field light string
+
+---@class AstroThemeStyleOpts
+---@field border boolean?
+---@field float boolean?
+---@field inactive boolean?
+---@field italic_comments boolean?
+---@field neotree boolean?
+---@field simple_syntax_colors boolean?
+---@field title_invert boolean?
+---@field transparent boolean?
+
+---@class AstroThemeOpts
+---@field background AstroThemeBackgroundOpts?
+---@field dev boolean?
+---@field highlights table<string,AstroThemeHighlightOpts>?
+---@field palettes table<string,AstroThemePalette>?
+---@field palette string?
+---@field plugin_default "auto"|true|false?
+---@field plugins table<string,boolean>?
+---@field style AstroThemeStyleOpts?
+---@field termguicolors boolean?
+---@field terminal_colors boolean?

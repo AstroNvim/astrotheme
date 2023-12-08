@@ -1,5 +1,6 @@
 M = {}
 
+---@type AstroThemeOpts
 M.default = {
   palette = "astrodark",
   termguicolors = true,
@@ -35,6 +36,12 @@ M.default = {
   plugins = {},
 }
 
-function M.user_config(opts) return vim.tbl_deep_extend("force", M.default, opts or {}) end
+---@param opts AstroThemeOpts
+---@return AstroThemeOpts
+function M.user_config(opts)
+  local new_config = vim.tbl_deep_extend("force", M.default, opts or {})
+  ---@cast new_config AstroThemeOpts
+  return new_config
+end
 
 return M
