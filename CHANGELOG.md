@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.3.0](https://github.com/AstroNvim/astrotheme/compare/v3.2.0...v3.3.0) (2024-01-16)
+
+
+### Features
+
+* add type safety and lua language server integration ([#104](https://github.com/AstroNvim/astrotheme/issues/104)) ([3f2b6de](https://github.com/AstroNvim/astrotheme/commit/3f2b6de6ca77c12bc3a36db75c593b46fc8dcda9))
+* **plugins:** add `vim-illuminate` support ([0addc7d](https://github.com/AstroNvim/astrotheme/commit/0addc7d2990ace9cebf871225a02692f242034cf))
+
+
+### Reverts
+
+* Harpoon highlights are merged upstream ([6ba0560](https://github.com/AstroNvim/astrotheme/commit/6ba05605615f11c82dc228afd081987630d97a75))
+
 ## [3.2.0](https://github.com/AstroNvim/astrotheme/compare/v3.1.0...v3.2.0) (2023-12-04)
 
 
