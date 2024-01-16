@@ -258,6 +258,7 @@ term.foreground
 | [rainbow-delimiters.nvim](https://github.com/HiPhish/rainbow-delimiters.nvim)   | `rainbow-delimiters` |
 | [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)              | `telescope`          |
 | [vimwiki](https://github.com/vimwiki/vimwiki)                                   | `vimwiki`            |
+| [vim-illuminate](https://github.com/RRethy/vim-illuminate)                      | `vim-illuminate`     |
 | [which-key.nvim](https://github.com/folke/which-key.nvim)                       | `which-key`          |
 
 ## 📦 Installation

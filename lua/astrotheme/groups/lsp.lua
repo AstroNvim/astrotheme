@@ -16,8 +16,8 @@ local function callback(opts)
     LspCodeLens = { fg = C.ui.none_text },
     LspCodeLensSeparator = { fg = C.ui.none_text },
     LspReferenceRead = { fg = C.none, bg = C.ui.highlight },
-    LspReferenceText = { fg = C.none, bg = C.ui.highlight },
-    LspReferenceWrite = { fg = C.none, bg = C.ui.highlight },
+    LspReferenceText = { link = "LspReferenceRead" },
+    LspReferenceWrite = { link = "LspReferenceRead" },
     -- LSP Semantic Tokens
     -- Ref: :help lsp-semantics
     ["@lsp.type.builtinType"] = { fg = C.syntax.yellow, bg = C.none },
