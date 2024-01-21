@@ -1,65 +1,43 @@
 ---@type AstroThemeCallback
 local function callback(opts)
   return {
+    -- identifiers
+    ["@variable"] = { link = "Identifier" },
+    ["@variable.builtin"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.cyan,
+      bold = opts.simple_syntax_colors,
+    },
+    ["@variable.parameter"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
+    },
+    ["@variable.member"] = {
+      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red,
+    },
 
-    -- misc
-    ["@comment"] = { link = "Comment" },
-    ["@comment.documentation"] = { link = "@comment" },
-    ["@error"] = { link = "Error" },
-    ["@none"] = { link = "@Comment" },
-    ["@preproc"] = { link = "PreProc" },
-    ["@define"] = { link = "Define" },
-    ["@operator"] = { link = "Operator" },
+    ["@constant"] = { link = "Constant" },
+    ["@constant.builtin"] = { link = "@constant" },
+    ["@constant.macro"] = { link = "@constant" },
 
-    -- punctuation
-    ["@punctuation.bracket"] = { fg = C.syntax.text },
-    ["@punctuation.delimiter"] = { fg = C.syntax.text },
-    ["@punctuation.special"] = { link = "Special" },
+    ["@module"] = { link = "Keyword" },
+    ["@module.builtin"] = { fg = C.syntax.yellow },
+    ["@label"] = { link = "Label" },
 
     -- literals
     ["@string"] = { link = "String" },
+    ["@string.documentation"] = { link = "String" },
+    ["@string.regexp"] = { link = "String" },
     ["@string.escape"] = { fg = C.syntax.red },
-    ["@string.regex"] = { link = "String" },
     ["@string.special"] = { link = "String" },
+    ["@string.special.symbol"] = { link = "String" },
+    ["@string.special.url"] = { link = "@markup.link.url" },
+    ["@string.special.path"] = { link = "String" },
 
     ["@character"] = { link = "Character" },
     ["@character.special"] = { link = "SpecialChar" },
 
     ["@boolean"] = { link = "Boolean" },
     ["@number"] = { link = "Number" },
-    ["@float"] = { link = "Float" },
-
-    -- function
-    ["@function"] = { link = "Function" },
-    ["@function.builtin"] = { fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan },
-    ["@function.call"] = { link = "@function" },
-    ["@function.macro"] = { fg = C.syntax.yellow },
-
-    ["@method"] = { link = "@function" },
-    ["@method.call"] = { link = "@method" },
-
-    ["@constructor"] = { link = "@function" },
-    ["@parameter"] = {
-      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
-      -- italic = opts.simple_syntax_colors,
-    },
-
-    -- keyword
-    ["@keyword"] = { link = "Keyword" },
-    ["@keyword.corotine"] = { link = "Keyword" },
-    ["@keyword.function"] = { link = "Keyword" },
-    ["@keyword.operator"] = { link = "Keyword" },
-    ["@keyword.return"] = { link = "Keyword" },
-    ["@keyword.export"] = { link = "Keyword" },
-
-    ["@conditional"] = { link = "Conditional" },
-    ["@conditional.ternary"] = { link = "@conditional" },
-
-    ["@repeat"] = { link = "Repeat" },
-    ["@debug"] = { link = "Debug" },
-    ["@label"] = { link = "Label" },
-    ["@include"] = { link = "Include" },
-    ["@exception"] = { link = "Exception" },
+    ["@number.float"] = { link = "Float" },
 
     -- types
     ["@type"] = { link = "Type" },
@@ -67,80 +45,96 @@ local function callback(opts)
     ["@type.definition"] = { link = "@type" },
     ["@type.qualifier"] = { link = "@type" },
 
-    ["@storageclass"] = { link = "StorageClass" },
     ["@attribute"] = { fg = C.syntax.yellow },
-    ["@field"] = {
-      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red,
-    },
     ["@property"] = { fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red },
 
-    -- identifiers
-    ["@variable"] = { link = "Identifier" },
-    ["@variable.builtin"] = {
-      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.cyan,
-      bold = opts.simple_syntax_colors,
-    },
+    -- function
+    ["@function"] = { link = "Function" },
+    ["@function.builtin"] = { fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan },
+    ["@function.call"] = { link = "@function" },
+    ["@function.macro"] = { fg = C.syntax.yellow },
 
-    ["@constant"] = { link = "Constant" },
-    ["@constant.builtin"] = { link = "@constant" },
-    ["@constant.macro"] = { link = "@constant" },
+    ["@function.method"] = { link = "@function" },
+    ["@function.method.call"] = { link = "@function.method" },
 
-    ["@namespace"] = { link = "Keyword" },
-    ["@namespace.builtin"] = { fg = C.syntax.yellow },
-    ["@symbol"] = { link = "Special" },
+    ["@constructor"] = { link = "@function" },
+    ["@operator"] = { link = "Operator" },
 
-    -- text
-    ["@text"] = { fg = C.syntax.text },
-    ["@text.strong"] = { fg = C.syntax.blue, bold = true },
-    ["@text.emphasis"] = { fg = C.syntax.purple, italic = true },
-    ["@text.underline"] = { link = "Underline" },
-    ["@text.strike"] = { fg = C.syntax.green, strikethrough = true },
-    ["@text.title"] = { fg = C.syntax.text, bold = true },
-    ["@text.title.1.markdown"] = { fg = C.syntax.purple, bold = true },
-    ["@text.title.2.markdown"] = { fg = C.syntax.blue, bold = true },
-    ["@text.title.3.markdown"] = { fg = C.syntax.cyan, bold = true },
-    ["@text.title.4.markdown"] = { fg = C.syntax.green, bold = true },
-    ["@text.title.5.markdown"] = { fg = C.syntax.yellow, bold = true },
-    ["@text.literal"] = { fg = C.syntax.text },
-    ["@text.quote"] = { fg = C.syntax.text, italic = true },
-    ["@text.uri"] = { fg = C.syntax.green, italic = true, underline = true },
-    ["@text.math"] = { fg = C.syntax.blue },
-    ["@text.environment"] = { fg = C.syntax.orange },
-    ["@text.environment.name"] = { fg = C.syntax.blue },
-    ["@text.reference"] = { fg = C.syntax.yellow, bold = true },
+    -- keyword
+    ["@keyword"] = { link = "Keyword" },
+    ["@keyword.corotine"] = { link = "Keyword" },
+    ["@keyword.function"] = { link = "Keyword" },
+    ["@keyword.operator"] = { link = "Keyword" },
+    ["@keyword.import"] = { link = "Include" },
+    ["@keyword.storage"] = { link = "StorageClass" },
+    ["@keyword.repeat"] = { link = "Repeat" },
+    ["@keyword.return"] = { link = "Keyword" },
+    ["@keyword.debug"] = { link = "Debug" },
+    ["@keyword.exception"] = { link = "Exception" },
 
-    ["@text.todo"] = { fg = C.ui.base, bg = C.ui.yellow },
-    ["@text.note"] = { fg = C.ui.base, bg = C.ui.blue },
-    ["@text.todo.note"] = { link = "@text.note" },
-    ["@text.warning"] = { fg = C.ui.base, bg = C.ui.orange },
-    ["@text.todo.warning"] = { link = "@text.warning" },
-    ["@text.danger"] = { fg = C.ui.base, bg = C.ui.red },
-    ["@text.todo.danger"] = { link = "@text.danger" },
-    ["@text.unchecked"] = { fg = C.ui.base, bg = C.ui.purple },
-    ["@text.todo.unchecked"] = { link = "@text.unchecked" },
-    ["@text.checked"] = { fg = C.ui.base, bg = C.ui.green },
-    ["@text.todo.checked"] = { link = "@text.checked" },
+    ["@keyword.conditional"] = { link = "Conditional" },
+    ["@keyword.conditional.ternary"] = { link = "@keyword.conditional" },
 
-    ["@text.diff.add"] = { link = "DiffAdded" },
-    ["@text.diff.delete"] = { link = "DiffDelete" },
+    ["@keyword.directive"] = { link = "Keyword" },
+    ["@keyword.directive.define"] = { link = "Keyword" },
 
-    -- tag
+    -- punctuation
+    ["@punctuation.delimiter"] = { fg = C.syntax.text },
+    ["@punctuation.bracket"] = { fg = C.syntax.text },
+    ["@punctuation.special"] = { fg = C.syntax.text },
+
+    -- comment
+    ["@comment"] = { link = "Comment" },
+    ["@comment.documentation"] = { link = "@comment" },
+
+    ["@comment.error"] = { fg = C.ui.base, bg = C.ui.red },
+    ["@cooment.warning"] = { fg = C.ui.base, bg = C.ui.orange },
+    ["@comment.hint"] = { fg = C.ui.base, bg = C.ui.blue },
+    ["@comment.info"] = { fg = C.ui.base, bg = C.ui.cyan },
+    ["@comment.todo"] = { fg = C.ui.base, bg = C.ui.yellow },
+
+    -- markup
+    ["@markup.strong"] = { fg = C.syntax.text, bold = true },
+    ["@markup.italic"] = { fg = C.syntax.text, italic = true },
+    ["@markup.strikethrough"] = { fg = C.syntax.text, strikethrough = true },
+    ["@markup.underline"] = { link = "Underline" },
+
+    ["@markup.heading"] = { fg = C.syntax.text, bold = true },
+    ["@markup.heading.1.markdown"] = { fg = C.syntax.purple, bold = true },
+    ["@markup.heading.2.markdown"] = { fg = C.syntax.blue, bold = true },
+    ["@markup.heading.3.markdown"] = { fg = C.syntax.cyan, bold = true },
+    ["@markup.heading.4.markdown"] = { fg = C.syntax.green, bold = true },
+    ["@markup.heading.5.markdown"] = { fg = C.syntax.yellow, bold = true },
+
+    ["@markup.quote"] = { fg = C.syntax.text, italic = true },
+    ["@markup.math"] = { fg = C.syntax.blue },
+    ["@markup.environment"] = { fg = C.syntax.orange },
+
+    ["@markup.link"] = { fg = C.syntax.yellow, bold = true },
+    ["@markup.link.label"] = { link = "String" },
+    ["@markup.link.url"] = { fg = C.syntax.green, italic = true, underline = true },
+
+    ["@markup.raw"] = { fg = C.syntax.text },
+    ["@markup.raw.block"] = { fg = C.syntax.text },
+
+    ["@markup.list"] = { link = "Special" },
+    ["@markup.list.unchecked"] = { fg = C.ui.base, bg = C.ui.purple },
+    ["@markup.list.checked"] = { fg = C.ui.base, bg = C.ui.green },
+
+    ["@diff.plus"] = { link = "DiffAdded" },
+    ["@diff.minus"] = { link = "DiffDelete" },
+    ["@diff.delta"] = { link = "DiffChange" },
+
     ["@tag"] = { fg = C.syntax.red },
     ["@tag.attribute"] = { fg = C.syntax.cyan },
     ["@tag.delimiter"] = { fg = C.syntax.text },
 
-    -- semantic tokens
-    ["@annotation"] = { fg = C.syntax.yellow },
-    ["@class"] = { fg = C.syntax.blue },
-    ["@decorator"] = { fg = C.syntax.orange },
-    ["@enum"] = { fg = C.syntax.cyan },
-    ["@enumMember"] = { fg = C.syntax.orange },
-    ["@event"] = { fg = C.syntax.orange },
-    ["@interface"] = { fg = C.syntax.orange },
-    ["@modifier"] = { fg = C.syntax.orange },
-    ["@regexp"] = { fg = C.syntax.cyan },
-    ["@struct"] = { fg = C.syntax.blue },
-    ["@typeParameter"] = { fg = C.syntax.yellow },
+    -- None-highlighting captures
+    -- ["@none"] = {},
+    -- ["@conceal"] = {},
+
+    -- ["@spell"] = {},
+    -- ["@nospell"] = {},
 
     -----------------------
     -- Language Specific --
@@ -165,25 +159,18 @@ local function callback(opts)
     ["@constructor.lua"] = { fg = C.syntax.orange },
     ["@variable.lua"] = { link = "@variable" },
 
-    -- markdown
-    ["@literal.markdown"] = { fg = C.syntax.green },
-    ["@none.markdown"] = { fg = C.syntax.text },
-    ["@punctuation.delimiter.markdown"] = { fg = C.syntax.text },
-    ["@punctuation.special.markdown"] = { fg = C.syntax.red },
-    ["@title.markdown"] = { fg = C.syntax.red, bold = true },
-
     -- PHP
     ["@type.qualifier.php"] = { link = "Keyword" },
-    ["@method.php"] = { link = "Function" },
-    ["@method.call.php"] = { link = "Function" },
+    ["@function.method.php"] = { link = "Function" },
+    ["@function.method.call.php"] = { link = "Function" },
 
     -- Ruby
-    ["@symbol.ruby"] = { fg = C.syntax.orange },
+    ["@string.special.symbol.ruby"] = { fg = C.syntax.orange },
 
     -- rust
     ["@constant.rust"] = { fg = C.syntax.cyan },
     ["@function.macro.rust"] = { fg = C.syntax.red },
-    ["@namespace.rust"] = { fg = C.syntax.purple },
+    ["@module.rust"] = { fg = C.syntax.purple },
     ["@punctuation.special.rust"] = { fg = C.syntax.purple },
     ["@type.rust"] = { fg = C.syntax.cyan },
 
@@ -200,6 +187,106 @@ local function callback(opts)
 
     -- yaml
     ["@field.yaml"] = { fg = C.syntax.red },
+
+    ------------
+    -- LEGACY --
+    ------------
+
+    ["@error"] = { link = "Error" },
+    ["@string.regex"] = { link = "@string.regexp" },
+    ["@float"] = { link = "@number.float" },
+    ["@parameter"] = { link = "@variable.parameter" },
+    ["@field"] = { link = "@variable.member" },
+
+    ["@symbol"] = { link = "@string.special.symbol" },
+    ["@namespace"] = { link = "@module" },
+    ["@namespace.builtin"] = { link = "@module.builtin" },
+
+    ["@text"] = { fg = C.syntax.text },
+    ["@text.strong"] = { link = "@markup.strong" },
+    ["@text.emphasis"] = { link = "@markup.emphasis" },
+    ["@text.strike"] = { link = "@markup.strikethrough" },
+    ["@text.underline"] = { link = "@markup.underline" },
+
+    ["@text.title"] = { link = "@markup.heading" },
+    ["@text.title.1.markdown"] = { link = "@markup.heading.1.markdown" },
+    ["@text.title.2.markdown"] = { link = "@markup.heading.2.markdown" },
+    ["@text.title.3.markdown"] = { link = "@markup.heading.3.markdown" },
+    ["@text.title.4.markdown"] = { link = "@markup.heading.4.markdown" },
+    ["@text.title.5.markdown"] = { link = "@markup.heading.5.markdown" },
+
+    ["@text.quote"] = { link = "@markup.quote" },
+    ["@text.math"] = { link = "@markup.math" },
+    ["@text.environment"] = { link = "@markup.environment" },
+    ["@text.environment.name"] = { link = "@markup.environment" },
+
+    ["@text.literal"] = { link = "@markup.raw" },
+    ["@text.uri"] = { link = "@markup.link.url" },
+    ["@text.reference"] = { link = "@markup.link" },
+
+    ["@text.todo"] = { link = "@comment.todo" },
+    ["@text.note"] = { link = "@comment.hint" },
+    ["@text.todo.note"] = { link = "@text.note" },
+    ["@text.warning"] = { link = "@comment.warning" },
+    ["@text.todo.warning"] = { link = "@text.warning" },
+    ["@text.danger"] = { link = "@comment.error" },
+    ["@text.todo.danger"] = { link = "@text.danger" },
+    ["@text.unchecked"] = { link = "@markup.list.unchecked" },
+    ["@text.todo.unchecked"] = { link = "@text.unchecked" },
+    ["@text.checked"] = { link = "@markup.list.checked" },
+    ["@text.todo.checked"] = { link = "@text.checked" },
+
+    ["@text.diff.add"] = { link = "@diff.plus" },
+    ["@text.diff.delete"] = { link = "@diff.minus" },
+
+    ["@method"] = { link = "@function" },
+    ["@method.call"] = { link = "@function.method" },
+
+    ["@keyword.export"] = { link = "@keyword" },
+    ["@storageclass"] = { link = "@keyword.storageclass" },
+    ["@conditional"] = { link = "@keyword.conditional" },
+    ["@conditional.ternary"] = { link = "@keyword.conditional.ternary" },
+
+    ["@repeat"] = { link = "@keyword.repeat" },
+    ["@debug"] = { link = "@keyword.debug" },
+    ["@include"] = { link = "@keyword.include" },
+    ["@exception"] = { link = "@keyword.exception" },
+
+    ["@preproc"] = { link = "@keyword.directive" },
+    ["@define"] = { link = "@keyword.directive.define" },
+
+    -- semantic tokens
+    ["@annotation"] = { fg = C.syntax.yellow },
+    ["@class"] = { fg = C.syntax.blue },
+    ["@decorator"] = { fg = C.syntax.orange },
+    ["@enum"] = { fg = C.syntax.cyan },
+    ["@enumMember"] = { fg = C.syntax.orange },
+    ["@event"] = { fg = C.syntax.orange },
+    ["@interface"] = { fg = C.syntax.orange },
+    ["@modifier"] = { fg = C.syntax.orange },
+    ["@regexp"] = { fg = C.syntax.cyan },
+    ["@struct"] = { fg = C.syntax.blue },
+    ["@typeParameter"] = { fg = C.syntax.yellow },
+
+    -----------------------
+    -- Language Specific --
+    -----------------------
+    -- markdown
+    ["@literal.markdown"] = { fg = C.syntax.green },
+    ["@none.markdown"] = { fg = C.syntax.text },
+    ["@punctuation.delimiter.markdown"] = { link = "@punctuation.delimiter" },
+    ["@punctuation.special.markdown"] = { link = "@punctuation.special" },
+    ["@title.markdown"] = { link = "markup.heading" },
+
+    -- PHP
+    ["@method.php"] = { link = "@function.method.php" },
+    ["@method.call.php"] = { link = "@function.method.call.php" },
+
+    -- Ruby
+    ["@symbol.ruby"] = { link = "@string.special.symbol.ruby" },
+
+    -- rust
+    ["@namespace.rust"] = { link = "@module.rust" },
   }
   -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 end
