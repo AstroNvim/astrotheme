@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.3.1](https://github.com/AstroNvim/astrotheme/compare/v3.3.0...v3.3.1) (2024-01-21)
+
+
+### Bug Fixes
+
+* **treesitter:** update treesitter to use new highlight naming scheme ([#105](https://github.com/AstroNvim/astrotheme/issues/105)) ([b37ac47](https://github.com/AstroNvim/astrotheme/commit/b37ac47ad0cb4bdea3bc489597fead33b3cd8f93))
+
 ## [3.3.0](https://github.com/AstroNvim/astrotheme/compare/v3.2.0...v3.3.0) (2024-01-16)
 
 
