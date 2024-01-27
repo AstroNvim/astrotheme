@@ -4,7 +4,7 @@
 
 <h1 align="center"> AstroTheme </h1>
 
-<p align="center">The default colorscheme used by <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a> an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins  </p>
+<p align="center">The default colorscheme used by <a href="https://github.com/AstroNvim/AstroNvim">AstroNvim</a> an aesthetically pleasing and feature-rich neovim config that is extensible and easy to use with a great set of plugins  </p>
 
 ## ✨ Features
 
