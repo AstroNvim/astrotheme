@@ -6,9 +6,9 @@ astrotheme API documentation
 
 AstroTheme
 
- The default colorscheme used by AstroNvim an aesthetic and feature-rich
- neovim config that is extensible and easy to use with a great set of
- plugins
+ The default colorscheme used by AstroNvim an aesthetically pleasing and
+ feature-rich neovim config that is extensible and easy to use with a great
+ set of plugins
 
 This module can be loaded with `local astrotheme = require "astrotheme"`
 

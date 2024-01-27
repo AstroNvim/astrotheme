@@ -1,4 +1,4 @@
-*astrotheme.txt*        For Neovim >= 0.9.0       Last change: 2024 January 21
+*astrotheme.txt*        For Neovim >= 0.9.0       Last change: 2024 January 27
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -15,7 +15,7 @@ Table of Contents                               *astrotheme-table-of-contents*
   - astrotheme                                 |astrotheme-lua-api-astrotheme|
   - astrotheme.lib.config           |astrotheme-lua-api-astrotheme.lib.config|
   - astrotheme.lib.util               |astrotheme-lua-api-astrotheme.lib.util|
-AstroThemeThe default colorscheme used by AstroNvim an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins
+AstroThemeThe default colorscheme used by AstroNvim an aesthetically pleasing and feature-rich neovim config that is extensible and easy to use with a great set of plugins
 FEATURES                                                 *astrotheme-features*
 
 - **Automatic** plugin detection and highlight setting (Packer and lazy.nvim supported)
@@ -307,8 +307,9 @@ ASTROTHEME                                     *astrotheme-lua-api-astrotheme*
 
 AstroTheme
 
-The default colorscheme used by AstroNvim an aesthetic and feature-rich neovim
-config that is extensible and easy to use with a great set of plugins
+The default colorscheme used by AstroNvim an aesthetically pleasing and
+feature-rich neovim config that is extensible and easy to use with a great set
+of plugins
 
 This module can be loaded with `local astrotheme = require "astrotheme"`
 
