@@ -10,9 +10,7 @@ local function callback(opts)
     ["@variable.parameter"] = {
       fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
     },
-    ["@variable.member"] = {
-      fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red,
-    },
+    ["@variable.member"] = { link = "@property" },
 
     ["@constant"] = { link = "Constant" },
     ["@constant.builtin"] = { link = "@constant" },
