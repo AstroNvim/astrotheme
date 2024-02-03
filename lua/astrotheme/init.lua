@@ -27,6 +27,7 @@ function M.load(theme)
     theme = M.config.background[vim.o.background]
   end
   M.config.palette = theme
+  M.config.palette = theme:gsub("-", "_")
   util.reload(M.config, theme)
 
   C = util.set_palettes(M.config)
