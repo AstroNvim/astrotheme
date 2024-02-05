@@ -86,7 +86,7 @@ local function callback(opts)
     ["@comment.documentation"] = { link = "@comment" },
 
     ["@comment.error"] = { fg = C.ui.base, bg = C.ui.red },
-    ["@cooment.warning"] = { fg = C.ui.base, bg = C.ui.orange },
+    ["@comment.warning"] = { fg = C.ui.base, bg = C.ui.orange },
     ["@comment.hint"] = { fg = C.ui.base, bg = C.ui.blue },
     ["@comment.info"] = { fg = C.ui.base, bg = C.ui.cyan },
     ["@comment.todo"] = { fg = C.ui.base, bg = C.ui.yellow },
