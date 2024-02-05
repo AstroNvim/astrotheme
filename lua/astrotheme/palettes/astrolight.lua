@@ -9,53 +9,53 @@ local c = {
 --------------------------------
 --- Syntax
 --------------------------------
-c.syntax.red = "#A13F37"
-c.syntax.blue = "#006E89"
-c.syntax.green = "#467118"
-c.syntax.yellow = "#805C00"
-c.syntax.purple = "#90437A"
-c.syntax.cyan = "#007652"
-c.syntax.orange = "#954D00"
+c.syntax.red = "#990000"
+c.syntax.blue = "#00508A"
+c.syntax.green = "#345E00"
+c.syntax.yellow = "#7300B8"
+c.syntax.purple = "#9E007C"
+c.syntax.cyan = "#00615B"
+c.syntax.orange = "#A34500"
 
-c.syntax.comment = "#937C7A"
-c.syntax.text = "#815654"
+c.syntax.comment = "#8B9297"
+c.syntax.text = "#4F4F4F"
 
 --------------------------------
 --- UI
 --------------------------------
-c.ui.red = "#D04F4E"
-c.ui.blue = "#0090A2"
-c.ui.green = "#569400"
-c.ui.yellow = "#AC7300"
-c.ui.purple = "#BD51A4"
-c.ui.cyan = "#00976C"
-c.ui.orange = "#D05312"
+c.ui.red = "#E72F1F"
+c.ui.blue = "#3F8CEA"
+c.ui.green = "#42AD17"
+c.ui.yellow = "#E69400"
+c.ui.purple = "#671FF0"
+c.ui.cyan = "#21B386"
+c.ui.orange = "#F0740A"
 
-c.ui.accent = "#D04F4E"
+c.ui.accent = c.ui.purple
 
-c.ui.tabline = "#D8D6D5"
-c.ui.winbar = "#926461"
-c.ui.tool = "#F9DCD1"
-c.ui.base = "#FEEEEE"
-c.ui.inactive_base = "#F9DCD1"
-c.ui.statusline = "#D8D6D5"
-c.ui.split = "#D8D6D5"
-c.ui.float = "#F9DCD1"
+c.ui.tabline = "#E1E2E4"
+c.ui.winbar = "#999FA3"
+c.ui.tool = "#F0F0F1"
+c.ui.base = "#F7F8F8"
+c.ui.inactive_base = "#EAEBEB"
+c.ui.statusline = "#E1E2E4"
+c.ui.split = "#E8E9EA"
+c.ui.float = "#E1E2E3"
 c.ui.title = c.ui.accent
 c.ui.border = c.ui.accent
-c.ui.current_line = "#F6DDD8"
+c.ui.current_line = "#EAEBEB"
 c.ui.scrollbar = c.ui.accent
-c.ui.selection = "#BBC9D7"
+c.ui.selection = "#E7E9EB"
 -- TODO: combine menu_selection and selection
 c.ui.menu_selection = c.ui.selection
-c.ui.highlight = "#E7CFCA"
-c.ui.none_text = "#D0B6B6"
-c.ui.text = "#9E7876"
-c.ui.text_active = "#815654"
-c.ui.text_inactive = "#937C7A"
-c.ui.text_match = c.ui.accent
+c.ui.highlight = "#DADBDD"
+c.ui.none_text = "#B5B9BD"
+c.ui.text = "#737474"
+c.ui.text_active = "#424446"
+c.ui.text_inactive = "#AEB3B6"
+c.ui.text_match = "#17191C"
 
-c.ui.prompt = "#D8D6D5"
+c.ui.prompt = "#F0F0F1"
 
 --------------------------------
 --- terminal
