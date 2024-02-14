@@ -8,7 +8,6 @@ local function callback(opts)
       or (opts.float and C.ui.float)
       or (opts.transparent and C.none)
       or C.ui.base,
-    blend = vim.o.winblend or 0,
     bold = true,
   }
 
@@ -19,7 +18,6 @@ local function callback(opts)
       or (opts.float and C.ui.float)
       or (opts.transparent and C.none)
       or C.ui.base,
-    blend = vim.o.winblend or 0,
   }
 
   local border = {
@@ -29,7 +27,6 @@ local function callback(opts)
       or (opts.float and C.ui.float)
       or (opts.transparent and C.none)
       or C.ui.base,
-    blend = vim.o.winblend or 0,
   }
 
   return {
@@ -43,7 +40,6 @@ local function callback(opts)
         or (opts.float and C.ui.prompt)
         or (opts.transparent and C.none)
         or C.ui.base,
-      blend = vim.o.winblend or 0,
       bold = true,
     },
     TelescopeResultsTitle = title,
@@ -66,7 +62,6 @@ local function callback(opts)
         or (opts.float and C.ui.prompt)
         or (opts.transparent and C.none)
         or C.ui.base,
-      blend = vim.o.winblend or 0,
     },
     TelescopeResultsNormal = normal,
     TelescopePreviewNormal = normal,
@@ -83,7 +78,6 @@ local function callback(opts)
     TelescopePromptBorder = {
       fg = (opts.border and C.ui.border) or (opts.inactive and C.ui.base) or (opts.float and C.ui.prompt) or C.ui.base,
       bg = (opts.border and opts.inactive and C.ui.base) or (opts.float and C.ui.prompt) or C.ui.prompt,
-      blend = vim.o.winblend or 0,
     },
     TelescopeResultsBorder = border,
     TelescopePreviewBorder = border,
