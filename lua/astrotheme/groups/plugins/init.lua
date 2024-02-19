@@ -27,6 +27,7 @@ return {
   ["spotlight.nvim"] = "spotlight",
   ["symbols-outline.nvim"] = "symbols-outline",
   ["telescope.nvim"] = "telescope",
+  ["todo-comments.nvim"] = "todo-comments",
   ["vim-illuminate"] = "vim-illuminate",
   ["vimwiki"] = "vimwiki",
   ["which-key.nvim"] = "which-key",
