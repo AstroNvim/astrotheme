@@ -1,5 +1,23 @@
 # Changelog
 
+## [3.4.0](https://github.com/AstroNvim/astrotheme/compare/v3.3.1...v3.4.0) (2024-02-19)
+
+
+### Features
+
+* **palette:** add back old `astrolight` as `astromars-light` ([#112](https://github.com/AstroNvim/astrotheme/issues/112)) ([ade0b60](https://github.com/AstroNvim/astrotheme/commit/ade0b60780cf64e624bda8163a80a53a6b41b3a4))
+* **palette:** align `astrolight` with `astrodark` ([#109](https://github.com/AstroNvim/astrotheme/issues/109)) ([dffc812](https://github.com/AstroNvim/astrotheme/commit/dffc812f77f0654caad9ea6d3480e268e302f53e))
+* **palette:** rename `astromars-light` to `astrojupiter` ([#114](https://github.com/AstroNvim/astrotheme/issues/114)) ([bb84325](https://github.com/AstroNvim/astrotheme/commit/bb843259465d606b9fb368ade0416e29471ab6e3))
+* **todo-comments:** add highlight support ([#115](https://github.com/AstroNvim/astrotheme/issues/115)) ([1a16dac](https://github.com/AstroNvim/astrotheme/commit/1a16dac97fe4ebc65edf7ef7119810cd93083330))
+* **treesitter:** change variable.memeber to link to property ([#108](https://github.com/AstroNvim/astrotheme/issues/108)) ([b42a494](https://github.com/AstroNvim/astrotheme/commit/b42a494b1fc5f1c2be084ed05b4c912e4506d639))
+
+
+### Bug Fixes
+
+* remove manual `blend` specifications ([8064465](https://github.com/AstroNvim/astrotheme/commit/806446588d86347ee572948ca5582ac069cbb883))
+* **treesitter:** fix spelling error on coment.warning ([7bc3bc6](https://github.com/AstroNvim/astrotheme/commit/7bc3bc65aebfb6e422d2d23363c7b54516a6a06c))
+* **treesitter:** fix spelling error on comment.warning ([#113](https://github.com/AstroNvim/astrotheme/issues/113)) ([7bc3bc6](https://github.com/AstroNvim/astrotheme/commit/7bc3bc65aebfb6e422d2d23363c7b54516a6a06c))
+
 ## [3.3.1](https://github.com/AstroNvim/astrotheme/compare/v3.3.0...v3.3.1) (2024-01-21)
 
 
