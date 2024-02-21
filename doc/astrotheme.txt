@@ -1,4 +1,4 @@
-*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2024 February 19
+*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2024 February 21
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
