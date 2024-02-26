@@ -1,4 +1,4 @@
-*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2024 February 21
+*astrotheme.txt*       For Neovim >= 0.9.0       Last change: 2024 February 26
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -365,7 +365,7 @@ DEFAULT ~
 USER_CONFIG ~
 
 >lua
-    function M.user_config(opts: AstroThemeOpts)
+    function astrotheme.lib.config.user_config(opts: AstroThemeOpts)
       -> AstroThemeOpts
 <
 

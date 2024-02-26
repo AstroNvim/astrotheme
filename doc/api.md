@@ -61,7 +61,7 @@ AstroThemeOpts
 
 
 ```lua
-function M.user_config(opts: AstroThemeOpts)
+function astrotheme.lib.config.user_config(opts: AstroThemeOpts)
   -> AstroThemeOpts
 ```
 
