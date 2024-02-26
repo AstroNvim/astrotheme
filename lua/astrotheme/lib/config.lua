@@ -6,7 +6,7 @@
 ---
 ---copyright 2023 license GNU General Public License v3.0 @class astrocore
 ---@class astrotheme.lib.config
-M = {}
+local M = {}
 
 ---@type AstroThemeOpts
 M.default = {
