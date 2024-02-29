@@ -39,7 +39,7 @@ local function callback(opts)
 
     -- types
     ["@type"] = { link = "Type" },
-    ["@type.builtin"] = { link = "@type" },
+    ["@type.builtin"] = { fg = C.syntax.yellow },
     ["@type.definition"] = { link = "@type" },
     ["@type.qualifier"] = { link = "@type" },
 

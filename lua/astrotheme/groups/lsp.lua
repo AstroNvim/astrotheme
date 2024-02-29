@@ -1,5 +1,5 @@
 ---@type AstroThemeCallback
-local function callback(opts)
+local function callback()
   local error = C.ui.red
   local hint = C.ui.cyan
   local info = C.ui.blue
@@ -20,47 +20,47 @@ local function callback(opts)
     LspReferenceWrite = { link = "LspReferenceRead" },
     -- LSP Semantic Tokens
     -- Ref: :help lsp-semantics
-    ["@lsp.type.builtinType"] = { fg = C.syntax.yellow, bg = C.none },
-    ["@lsp.type.keyword"] = { link = "Keyword" },
-    ["@lsp.type.operator"] = { link = "Operator" },
+    ["@lsp.type.boolean"] = { link = "@boolean" },
+    ["@lsp.type.builtinType"] = { link = "@type.builtin" },
+    ["@lsp.type.comment"] = { link = "@comment" },
+    ["@lsp.type.enum"] = { link = "@type" },
+    ["@lsp.type.enumMember"] = { link = "@constant" },
+    ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
+    ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
+    ["@lsp.type.interface"] = { link = "@interface" },
+    ["@lsp.type.keyword"] = { link = "@keyword" },
+    ["@lsp.type.namespace"] = { link = "@namespace" },
+    ["@lsp.type.number"] = { link = "@number" },
+    ["@lsp.type.operator"] = { link = "@operator" },
     ["@lsp.type.parameter"] = { link = "@parameter" },
     ["@lsp.type.property"] = { link = "@property" },
-    ["@lsp.type.variable"] = { link = "Identifier" },
-    ["@lsp.typemod.enumMember.defaultLibrary"] = {
-      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
-      bg = C.none,
-    },
-    ["@lsp.typemod.function.defaultLibrary"] = {
-      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
-      bg = C.none,
-    },
-    ["@lsp.typemod.function.global"] = {
-      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
-      bg = C.none,
-    },
-    ["@lsp.typemod.method.defaultLibrary"] = {
-      fg = opts.simple_syntax_colors and C.syntax.blue or C.syntax.cyan,
-      bg = C.none,
-    },
-    ["@lsp.typemod.method.reference"] = { link = "Function" },
-    ["@lsp.typemod.method.trait"] = { link = "Function" },
-    ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "Keyword" },
-    ["@lsp.typemod.variable.defaultLibrary"] = {
-      fg = opts.simple_syntax_colors and C.syntax.cyan or C.syntax.yellow,
-      bg = C.none,
-    },
-    ["@lsp.typemod.variable.readonly"] = { link = "Constant" },
+    ["@lsp.type.selfKeyword"] = { link = "@variable.builtin" },
+    ["@lsp.type.typeAlias"] = { link = "@type.definition" },
+    ["@lsp.type.unresolvedReference"] = { link = "@error" },
+    ["@lsp.type.variable"] = { link = "@variable" },
+    ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
+    ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.function.global"] = { link = "@function.builtin" },
+    ["@lsp.typemod.keyword.async"] = { link = "@keyword.coroutine" },
+    ["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
+    ["@lsp.typemod.method.reference"] = { link = "@function" },
+    ["@lsp.typemod.method.trait"] = { link = "@function" },
+    ["@lsp.typemod.operator.injected"] = { link = "@operator" },
+    ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "@keyword" },
+    ["@lsp.typemod.string.injected"] = { link = "@string" },
+    ["@lsp.typemod.type.defaultLibrary"] = { link = "@type.builtin" },
+    ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+    ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+    ["@lsp.typemod.variable.readonly"] = { link = "@constant" },
 
     -- rust
-    ["@lsp.typemod.enumMember.defaultLibrary.rust"] = { fg = C.syntax.blue, bg = C.none },
-    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = C.syntax.text, bg = C.none },
-    ["@lsp.typemod.method.defaultLibrary.rust"] = { fg = C.syntax.blue, bg = C.none },
-    ["@lsp.typemod.function.global.rust"] = { fg = C.syntax.blue, bg = C.none },
-    ["@lsp.type.macro.rust"] = { fg = C.syntax.red, bg = C.none },
-    ["@lsp.type.function.rust"] = { fg = C.syntax.text, bg = C.none },
+    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = C.syntax.text },
+    ["@lsp.type.macro.rust"] = { link = "@function.macro.rust" },
+    ["@lsp.type.function.rust"] = { fg = C.syntax.text },
     ["@lsp.type.namespace.rust"] = { link = "@namespace.rust" },
-    -- ["@lsp.type.struct.rust"] = { fg = C.syntax.cyan, bg = C.none },
-    -- ["@lsp.type.builtinType.rust"] = { fg = C.syntax.cyan, bg = C.none },
   }
 end
 
