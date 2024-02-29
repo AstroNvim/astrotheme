@@ -18,7 +18,6 @@ return {
   ["nvim-dap-ui"] = "nvim-dap-ui",
   ["nvim-notify"] = "nvim-notify",
   ["nvim-tree.lua"] = "nvim-tree",
-  ["nvim-treesitter"] = "nvim-treesitter",
   ["nvim-ts-rainbow"] = "nvim-ts-rainbow",
   ["nvim-ts-rainbow2"] = "nvim-ts-rainbow2",
   ["nvim-web-devicons"] = "nvim-web-devicons",

@@ -36,6 +36,7 @@ function M.load(theme)
     "base",
     "syntax",
     "lsp",
+    "treesitter",
     "astronvim",
   }, M.config)
 
