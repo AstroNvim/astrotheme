@@ -255,8 +255,6 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
 
   nvim-tree.lua                                            nvim-tree
 
-  nvim-treesitter                                          nvim-treesitter
-
   nvim-ts-rainbow                                          nvim-ts-rainbow
 
   nvim-ts-rainbow2                                         nvim-ts-rainbow2
