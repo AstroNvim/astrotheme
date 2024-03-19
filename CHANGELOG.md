@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.1](https://github.com/AstroNvim/astrotheme/compare/v3.4.0...v3.4.1) (2024-02-29)
+
+
+### Bug Fixes
+
+* **lsp:** fix incorrect link ([7c195fa](https://github.com/AstroNvim/astrotheme/commit/7c195faa0d4dd07c3244c680f03f62972df5f788))
+
 ## [3.4.0](https://github.com/AstroNvim/astrotheme/compare/v3.3.1...v3.4.0) (2024-02-19)
 
 
