@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/AstroNvim/astrotheme/compare/v3.4.1...v3.5.0) (2024-03-27)
+
+
+### Features
+
+* **base:** add colors to spelling undercurls ([5755ea7](https://github.com/AstroNvim/astrotheme/commit/5755ea74ddf181ecd521678c637d1c24d90b1e5c))
+
 ## [3.4.1](https://github.com/AstroNvim/astrotheme/compare/v3.4.0...v3.4.1) (2024-02-29)
 
 
