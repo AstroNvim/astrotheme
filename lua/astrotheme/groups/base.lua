@@ -172,10 +172,10 @@ local function callback(opts)
     --------------------
     --- Spell
     --------------------
-    SpellBad = { undercurl = true },
-    SpellCap = { undercurl = true },
-    SpellLocal = { undercurl = true },
-    SpellRare = { undercurl = true },
+    SpellBad = { sp = C.ui.red, undercurl = true },
+    SpellCap = { sp = C.ui.yellow, undercurl = true },
+    SpellLocal = { sp = C.ui.blue, undercurl = true },
+    SpellRare = { sp = C.ui.green, undercurl = true },
 
     ----------------
     --- Other
