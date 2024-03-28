@@ -40,6 +40,17 @@ function astrotheme.setup(opts: AstroThemeOpts)
  Set up AstroTheme with provided user configured options
 
 
+## astrotheme.lib.color
+
+AstroTheme Configuration
+
+Default configuration of AstroTheme
+
+This module can be loaded with `local astrotheme_config = require "astrotheme.lib.color"`
+
+copyright 2023 license GNU General Public License v3.0 @class astrocore
+
+
 ## astrotheme.lib.config
 
 AstroTheme Configuration
