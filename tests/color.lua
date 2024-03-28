@@ -38,7 +38,7 @@ local p = Color.new "#DD97F1"
 
 local offset = 30
 
-print "DARK / ORIGINAL / LIGHT - ALT "
+print "DARK / ORIGINAL / LIGHT - ALT\n"
 io.write(tostring(bl:darken_2(offset)))
 io.write(tostring(w:darken_2(offset)))
 io.write(tostring(r:darken_2(offset)))
@@ -70,9 +70,9 @@ io.write(tostring(g:lighten_2(offset)))
 io.write(tostring(c:lighten_2(offset)))
 io.write(tostring(b:lighten_2(offset)))
 io.write(tostring(p:lighten_2(offset)))
-io.write "\n\n"
+io.write "\n"
 
-print "DARK / ORIGINAL / LIGHT "
+print "\nDARK / ORIGINAL / LIGHT\n"
 io.write(tostring(bl:darken(offset)))
 io.write(tostring(w:darken(offset)))
 io.write(tostring(r:darken(offset)))
@@ -106,7 +106,7 @@ io.write(tostring(b:lighten(offset)))
 io.write(tostring(p:lighten(offset)))
 io.write "\n"
 
-print "\nBLEND"
+print "\nBLEND\n"
 io.write(tostring(bl:blend(r, 0.5)))
 io.write(tostring(bl:blend(o, 0.5)))
 io.write(tostring(bl:blend(y, 0.5)))
@@ -124,7 +124,7 @@ io.write(tostring(w:blend(b, 0.5)))
 io.write(tostring(w:blend(p, 0.5)))
 io.write "\n"
 
-print "\nDESATURATION"
+print "\nDESATURATION\n"
 io.write(tostring(r:desat(0)))
 io.write(tostring(o:desat(0)))
 io.write(tostring(y:desat(0)))
@@ -152,7 +152,7 @@ io.write(tostring(b:desat(1)))
 io.write(tostring(p:desat(1)))
 io.write "\n"
 
-print "\nSATURATION"
+print "\nSATURATION\n"
 io.write(tostring(r:sat(0)))
 io.write(tostring(o:sat(0)))
 io.write(tostring(y:sat(0)))
@@ -178,3 +178,4 @@ io.write(tostring(g:sat(1)))
 io.write(tostring(c:sat(1)))
 io.write(tostring(b:sat(1)))
 io.write(tostring(p:sat(1)))
+io.write "\n"
