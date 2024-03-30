@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.6.0](https://github.com/AstroNvim/astrotheme/compare/v3.5.0...v3.6.0) (2024-03-30)
+
+
+### Features
+
+* **lib:** initial release of color library ([#118](https://github.com/AstroNvim/astrotheme/issues/118)) ([c179cc3](https://github.com/AstroNvim/astrotheme/commit/c179cc3185df16d54e2d00af37935833883f4183))
+* **term:** add highlights to terminal ([#120](https://github.com/AstroNvim/astrotheme/issues/120)) ([f3b455d](https://github.com/AstroNvim/astrotheme/commit/f3b455d71c8afb6048b9c1ffabc30086e3a3dde8))
+
 ## [3.5.0](https://github.com/AstroNvim/astrotheme/compare/v3.4.1...v3.5.0) (2024-03-27)
 
 
