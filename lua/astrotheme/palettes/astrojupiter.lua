@@ -1,3 +1,5 @@
+local color = require "lua.astrotheme.lib.color"
+
 ---@class AstroThemePalette
 local c = {
   none = "NONE",
@@ -61,28 +63,28 @@ c.ui.prompt = "#D8D6D5"
 --- terminal
 --------------------------------
 c.term.black = c.ui.tabline
-c.term.bright_black = c.ui.base
+c.term.bright_black = color.new(c.ui.tabline):darken(40):tohex()
 
 c.term.red = c.syntax.red
-c.term.bright_red = c.syntax.red
+c.term.bright_red = color.new(c.syntax.red):lighten(40):tohex()
 
 c.term.green = c.syntax.green
-c.term.bright_green = c.syntax.green
+c.term.bright_green = color.new(c.syntax.green):lighten(40):tohex()
 
 c.term.yellow = c.syntax.yellow
-c.term.bright_yellow = c.syntax.yellow
+c.term.bright_yellow = color.new(c.syntax.yellow):lighten(40):tohex()
 
 c.term.blue = c.syntax.blue
-c.term.bright_blue = c.syntax.blue
+c.term.bright_blue = color.new(c.syntax.blue):lighten(40):tohex()
 
 c.term.purple = c.syntax.purple
-c.term.bright_purple = c.syntax.purple
+c.term.bright_purple = color.new(c.syntax.purple):lighten(40):tohex()
 
 c.term.cyan = c.syntax.cyan
-c.term.bright_cyan = c.syntax.cyan
+c.term.bright_cyan = color.new(c.syntax.cyan):lighten(40):tohex()
 
 c.term.white = c.ui.text
-c.term.bright_white = c.ui.text
+c.term.bright_white = color.new(c.syntax.text):lighten(10):tohex()
 
 c.term.background = c.ui.base
 c.term.foreground = c.ui.text
