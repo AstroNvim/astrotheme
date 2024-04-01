@@ -1,4 +1,4 @@
-local color = require "lua.astrotheme.lib.color"
+local color = require "astrotheme.lib.color"
 
 ---@class AstroThemePalette
 local c = {
