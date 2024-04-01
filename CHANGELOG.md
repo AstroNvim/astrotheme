@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.1](https://github.com/AstroNvim/astrotheme/compare/v3.6.0...v3.6.1) (2024-04-01)
+
+
+### Bug Fixes
+
+* **astrojupiter:** fix typo in color import ([2934045](https://github.com/AstroNvim/astrotheme/commit/293404518bf4cc09120a460eaabfc407a432b561))
+
 ## [3.6.0](https://github.com/AstroNvim/astrotheme/compare/v3.5.0...v3.6.0) (2024-03-30)
 
 
