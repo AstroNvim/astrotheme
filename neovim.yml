@@ -8,3 +8,11 @@ globals:
     any: true
   packer_plugins:
     any: true
+  describe:
+    args:
+      - type: string
+      - type: function
+  it:
+    args:
+      - type: string
+      - type: function
