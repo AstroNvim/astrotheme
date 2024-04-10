@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.0](https://github.com/AstroNvim/astrotheme/compare/v3.6.1...v3.7.0) (2024-04-10)
+
+
+### Features
+
+* **plugins:** add `nvcheatsheet.nvim` support ([df9251f](https://github.com/AstroNvim/astrotheme/commit/df9251fcf94b77f9f512191c2666c3dbd882777e))
+
 ## [3.6.1](https://github.com/AstroNvim/astrotheme/compare/v3.6.0...v3.6.1) (2024-04-01)
 
 
