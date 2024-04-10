@@ -1,4 +1,4 @@
-*astrotheme.txt*         For Neovim >= 0.9.0        Last change: 2024 April 04
+*astrotheme.txt*         For Neovim >= 0.9.0        Last change: 2024 April 10
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -248,6 +248,8 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
   neogit                                                   neogit
 
   noice.nvim                                               noice
+
+  nvcheatsheet.nvim                                        nvcheatsheet
 
   nvim-cmp                                                 nvim-cmp
 
