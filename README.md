@@ -246,6 +246,7 @@ term.foreground
 | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)                 | `neo-tree`           |
 | [neogit](https://github.com/NeogitOrg/neogit)                                   | `neogit`             |
 | [noice.nvim](https://github.com/folke/noice.nvim)                               | `noice`              |
+| [nvcheatsheet.nvim](https://github.com/smartinellimarco/nvcheatsheet.nvim)      | `nvcheatsheet`       |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | `nvim-cmp`           |
 | [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)                          | `nvim-dap-ui`        |
 | [nvim-notify](https://github.com/rcarriga/nvim-notify)                          | `nvim-notify`        |

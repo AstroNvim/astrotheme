@@ -14,6 +14,7 @@ return {
   ["neo-tree.nvim"] = "neo-tree",
   ["neogit"] = "neogit",
   ["noice.nvim"] = "noice",
+  ["nvcheatsheet.nvim"] = "nvcheatsheet",
   ["nvim-cmp"] = "nvim-cmp",
   ["nvim-dap-ui"] = "nvim-dap-ui",
   ["nvim-notify"] = "nvim-notify",
