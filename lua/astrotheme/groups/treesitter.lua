@@ -10,6 +10,7 @@ local function callback(opts)
     ["@variable.parameter"] = {
       fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.orange,
     },
+    ["@variable.parameter.builtin"] = { link = "@variable.parameter" },
     ["@variable.member"] = { link = "@property" },
 
     ["@constant"] = { link = "Constant" },
@@ -41,9 +42,9 @@ local function callback(opts)
     ["@type"] = { link = "Type" },
     ["@type.builtin"] = { fg = C.syntax.yellow },
     ["@type.definition"] = { link = "@type" },
-    ["@type.qualifier"] = { link = "@type" },
 
     ["@attribute"] = { fg = C.syntax.yellow },
+    ["@attribute.builtin"] = { link = "@attribute" },
     ["@property"] = { fg = opts.simple_syntax_colors and C.syntax.text or C.syntax.red },
 
     -- function
@@ -64,7 +65,8 @@ local function callback(opts)
     ["@keyword.function"] = { link = "Keyword" },
     ["@keyword.operator"] = { link = "Keyword" },
     ["@keyword.import"] = { link = "Include" },
-    ["@keyword.storage"] = { link = "StorageClass" },
+    ["@keyword.type"] = { link = "Typedef" },
+    ["@keyword.modifier"] = { link = "Structure" },
     ["@keyword.repeat"] = { link = "Repeat" },
     ["@keyword.return"] = { link = "Keyword" },
     ["@keyword.debug"] = { link = "Debug" },
@@ -241,6 +243,7 @@ local function callback(opts)
     ["@method.call"] = { link = "@function.method" },
 
     ["@keyword.export"] = { link = "@keyword" },
+    ["@keyword.storage"] = { link = "StorageClass" },
     ["@storageclass"] = { link = "@keyword.storageclass" },
     ["@conditional"] = { link = "@keyword.conditional" },
     ["@conditional.ternary"] = { link = "@keyword.conditional.ternary" },
@@ -252,6 +255,8 @@ local function callback(opts)
 
     ["@preproc"] = { link = "@keyword.directive" },
     ["@define"] = { link = "@keyword.directive.define" },
+
+    ["@type.qualifier"] = { link = "@type" },
 
     -- semantic tokens
     ["@annotation"] = { fg = C.syntax.yellow },
