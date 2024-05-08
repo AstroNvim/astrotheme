@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.1](https://github.com/AstroNvim/astrotheme/compare/v3.7.0...v3.7.1) (2024-05-08)
+
+
+### Bug Fixes
+
+* **treesitter:** updated highlight groups ([#125](https://github.com/AstroNvim/astrotheme/issues/125)) ([f65074b](https://github.com/AstroNvim/astrotheme/commit/f65074b8b64c43f2e22f45054452c41e84967bb7))
+
 ## [3.7.0](https://github.com/AstroNvim/astrotheme/compare/v3.6.1...v3.7.0) (2024-04-10)
 
 
