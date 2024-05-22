@@ -117,7 +117,7 @@ local function callback(opts)
     FoldColumn = { fg = C.ui.none_text, bg = C.none },
 
     NonText = { fg = C.ui.none_text, bg = C.none },
-    EndOfBuffer = { fg = C.ui.base, bg = C.none },
+    EndOfBuffer = { fg = C.ui.none_text, bg = C.none },
     SignColumn = { fg = C.none, bg = C.none },
 
     --------------------
