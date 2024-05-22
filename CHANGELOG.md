@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.2](https://github.com/AstroNvim/astrotheme/compare/v3.7.1...v3.7.2) (2024-05-22)
+
+
+### Bug Fixes
+
+* **base:** display eob characters as `none_text` ([d9545b3](https://github.com/AstroNvim/astrotheme/commit/d9545b3a168e7beaaede57da801a1e730278abd2))
+
 ## [3.7.1](https://github.com/AstroNvim/astrotheme/compare/v3.7.0...v3.7.1) (2024-05-08)
 
 
