@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.8.0](https://github.com/AstroNvim/astrotheme/compare/v3.7.2...v3.8.0) (2024-05-27)
+
+
+### Features
+
+* **lsp:** add new `Ok` diagnostic highlight ([7a9b5de](https://github.com/AstroNvim/astrotheme/commit/7a9b5de05b381ce1fd2ab13d2fbc2409bfefc9b2))
+
 ## [3.7.2](https://github.com/AstroNvim/astrotheme/compare/v3.7.1...v3.7.2) (2024-05-22)
 
 
