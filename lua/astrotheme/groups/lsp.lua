@@ -4,15 +4,18 @@ local function callback()
   local hint = C.ui.cyan
   local info = C.ui.blue
   local warn = C.ui.yellow
+  local okay = C.ui.green
   return {
     DiagnosticError = { fg = error },
     DiagnosticHint = { fg = hint },
     DiagnosticInfo = { fg = info },
     DiagnosticWarn = { fg = warn },
+    DiagnosticOk = { fg = okay },
     DiagnosticUnderlineError = { sp = error, undercurl = true },
     DiagnosticUnderlineHint = { sp = hint, undercurl = true },
     DiagnosticUnderlineInfo = { sp = info, undercurl = true },
     DiagnosticUnderlineWarn = { sp = warn, undercurl = true },
+    DiagnosticUnderlineOk = { sp = okay, undercurl = true },
     LspCodeLens = { fg = C.ui.none_text },
     LspCodeLensSeparator = { fg = C.ui.none_text },
     LspReferenceRead = { fg = C.none, bg = C.ui.highlight },
