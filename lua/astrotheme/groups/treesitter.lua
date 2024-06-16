@@ -112,9 +112,9 @@ local function callback(opts)
 
     ["@markup.link"] = { fg = C.syntax.yellow, bold = true },
     ["@markup.link.label"] = { link = "String" },
-    ["@markup.link.url"] = { fg = C.syntax.green, italic = true, underline = true },
+    ["@markup.link.url"] = { fg = C.syntax.blue, italic = true, underline = true },
 
-    ["@markup.raw"] = { fg = C.syntax.text },
+    ["@markup.raw"] = { fg = C.syntax.red },
     ["@markup.raw.block"] = { fg = C.syntax.text },
 
     ["@markup.list"] = { link = "Special" },
