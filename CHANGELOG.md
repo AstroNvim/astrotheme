@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.9.0](https://github.com/AstroNvim/astrotheme/compare/v3.8.0...v3.9.0) (2024-06-17)
+
+
+### Features
+
+* modify `[@markup](https://github.com/markup)` highlights to improve distinction and readability ([829dd74](https://github.com/AstroNvim/astrotheme/commit/829dd7440cc675fa51f75fbeee0da6f066b471d4))
+* **treesitter:** modify markup highlights for better color distinction ([#129](https://github.com/AstroNvim/astrotheme/issues/129)) ([829dd74](https://github.com/AstroNvim/astrotheme/commit/829dd7440cc675fa51f75fbeee0da6f066b471d4))
+
 ## [3.8.0](https://github.com/AstroNvim/astrotheme/compare/v3.7.2...v3.8.0) (2024-05-27)
 
 
