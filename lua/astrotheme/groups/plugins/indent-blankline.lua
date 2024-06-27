@@ -9,6 +9,7 @@ local function callback()
     IblIndent = { fg = C.ui.none_text },
     IblWhitespace = { fg = C.ui.none_text },
     IblScope = { fg = C.ui.text },
+    IblCurrentIndent = { fg = C.ui.text },
   }
 end
 
