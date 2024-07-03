@@ -43,7 +43,7 @@ function M.setup(opts)
   M.config = require("astrotheme.lib.config").user_config(opts)
   M.config.plugins = util.get_plugin_list(M.config)
 
-  util.live_reloading(M.config)
+  if opts.dev then util.live_reloading() end
 end
 
 return M
