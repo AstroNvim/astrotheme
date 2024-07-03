@@ -49,6 +49,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 
 return {
   "echasnovski/mini.hipatterns",
+  lazy = false,
   opts = function(_, opts)
     opts.highlighters = opts.highlighters or {}
     opts.highlighters.astrotheme = {
