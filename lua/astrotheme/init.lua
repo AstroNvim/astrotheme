@@ -39,11 +39,6 @@ end
 
 --- Set up AstroTheme with provided user configured options
 ---@param opts AstroThemeOpts
-function M.setup(opts)
-  M.config = require("astrotheme.lib.config").user_config(opts)
-  M.config.plugins = util.get_plugin_list(M.config)
-
-  if opts.dev then util.live_reload() end
-end
+function M.setup(opts) M.config = require("astrotheme.lib.config").user_config(opts) end
 
 return M

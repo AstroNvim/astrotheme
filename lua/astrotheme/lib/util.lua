@@ -8,8 +8,6 @@
 ---@class astrotheme.lib.util
 local M = {}
 
-M.live_reloading = false
-
 --- Reload a given theme
 ---@param opts AstroThemeOpts
 ---@param theme string
@@ -63,7 +61,6 @@ end
 ---@param module string
 ---@return AstroThemeHighlights?
 function M.get_module_highlights(colors, opts, module)
-  if M.live_reloading then package.loaded[module] = nil end
   local file_avail, file = pcall(require, module)
   if type(file) == "function" then file = file(colors, opts.style) end
   if file_avail then
@@ -87,8 +84,8 @@ function M.get_highlights(colors, opts)
     local module_highlights = M.get_module_highlights(colors, opts, "astrotheme.groups." .. base)
     if module_highlights then highlights = vim.tbl_deep_extend("force", module_highlights, highlights) end
   end
-  for _, base in ipairs(opts.plugins) do
-    local module_highlights = M.get_module_highlights(colors, opts, "astrotheme.groups.plugins." .. base)
+  for _, plugin in ipairs(M.get_plugin_list(opts)) do
+    local module_highlights = M.get_module_highlights(colors, opts, "astrotheme.groups.plugins." .. plugin)
     if module_highlights then highlights = vim.tbl_deep_extend("force", module_highlights, highlights) end
   end
 
@@ -107,7 +104,6 @@ end
 ---@return AstroThemePalette
 function M.set_palettes(opts)
   local palette_name = "astrotheme.palettes." .. opts.palette
-  if M.live_reloading then package.loaded[palette_name] = nil end
   local palette = require(palette_name)
   palette = vim.tbl_deep_extend("force", palette, opts.palettes.global)
   palette = vim.tbl_deep_extend("force", palette, opts.palettes[opts.palette])
@@ -122,25 +118,6 @@ function M.set_highlights(highlights)
     -- TODO: optimise in V3 by removing checks.
     if name ~= "modify_hl_groups" then vim.api.nvim_set_hl(0, name, value) end
   end
-end
-
---- Enable live reloading of AstroTheme for development
-function M.live_reload()
-  vim.api.nvim_create_autocmd("BufWritePost", {
-    pattern = "*/lua/astrotheme/**.lua",
-    group = vim.api.nvim_create_augroup("AstroThemeDev", { clear = true }),
-    callback = function()
-      local theme = vim.g.colors_name
-      if string.match(theme, "astro") then vim.cmd.colorscheme(theme) end
-    end,
-  })
-  M.live_reloading = true
-end
-
---- Disable live reloading of AstroTheme
-function M.live_reload_stop()
-  vim.api.nvim_del_augroup_by_name "AstroThemeDev"
-  M.live_reloading = false
 end
 
 --- Set terminal colors based on the currently loaded colors
