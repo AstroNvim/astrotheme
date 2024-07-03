@@ -159,7 +159,7 @@ function astrotheme.lib.util.set_palettes(opts: AstroThemeOpts)
 
 
 ```lua
-function astrotheme.lib.util.set_terminal_colors(colors: any)
+function astrotheme.lib.util.set_terminal_colors(c: AstroThemePalette)
 ```
 
  Set terminal colors based on the currently loaded colors
