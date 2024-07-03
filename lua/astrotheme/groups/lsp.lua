@@ -1,10 +1,10 @@
 ---@type AstroThemeCallback
-local function callback(colors)
-  local error = colors.ui.red
-  local hint = colors.ui.cyan
-  local info = colors.ui.blue
-  local warn = colors.ui.yellow
-  local okay = colors.ui.green
+local function callback(c)
+  local error = c.ui.red
+  local hint = c.ui.cyan
+  local info = c.ui.blue
+  local warn = c.ui.yellow
+  local okay = c.ui.green
   return {
     DiagnosticError = { fg = error },
     DiagnosticHint = { fg = hint },
@@ -16,54 +16,54 @@ local function callback(colors)
     DiagnosticUnderlineInfo = { sp = info, undercurl = true },
     DiagnosticUnderlineWarn = { sp = warn, undercurl = true },
     DiagnosticUnderlineOk = { sp = okay, undercurl = true },
-    LspCodeLens = { fg = colors.ui.none_text },
-    LspCodeLensSeparator = { fg = colors.ui.none_text },
-    LspReferenceRead = { fg = colors.none, bg = colors.ui.highlight },
-    LspReferenceText = { link = "LspReferenceRead" },
-    LspReferenceWrite = { link = "LspReferenceRead" },
+    LspCodeLens = { fg = c.ui.none_text },
+    LspCodeLensSeparator = { fg = c.ui.none_text },
+    LspReferenceRead = { fg = c.none, bg = c.ui.highlight },
+    LspReferenceText = "LspReferenceRead",
+    LspReferenceWrite = "LspReferenceRead",
     -- LSP Semantic Tokens
     -- Ref: :help lsp-semantics
-    ["@lsp.type.boolean"] = { link = "@boolean" },
-    ["@lsp.type.builtinType"] = { link = "@type.builtin" },
-    ["@lsp.type.comment"] = { link = "@comment" },
-    ["@lsp.type.enum"] = { link = "@type" },
-    ["@lsp.type.enumMember"] = { link = "@constant" },
-    ["@lsp.type.escapeSequence"] = { link = "@string.escape" },
-    ["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
-    ["@lsp.type.interface"] = { link = "@interface" },
-    ["@lsp.type.keyword"] = { link = "@keyword" },
-    ["@lsp.type.namespace"] = { link = "@namespace" },
-    ["@lsp.type.number"] = { link = "@number" },
-    ["@lsp.type.operator"] = { link = "@operator" },
-    ["@lsp.type.parameter"] = { link = "@parameter" },
-    ["@lsp.type.property"] = { link = "@property" },
-    ["@lsp.type.selfKeyword"] = { link = "@variable.builtin" },
-    ["@lsp.type.typeAlias"] = { link = "@type.definition" },
-    ["@lsp.type.unresolvedReference"] = { link = "@error" },
-    ["@lsp.type.variable"] = { link = "@variable" },
-    ["@lsp.typemod.class.defaultLibrary"] = { link = "@type.builtin" },
-    ["@lsp.typemod.enum.defaultLibrary"] = { link = "@type.builtin" },
-    ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
-    ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
-    ["@lsp.typemod.function.global"] = { link = "@function.builtin" },
-    ["@lsp.typemod.keyword.async"] = { link = "@keyword.coroutine" },
-    ["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
-    ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
-    ["@lsp.typemod.method.reference"] = { link = "@function" },
-    ["@lsp.typemod.method.trait"] = { link = "@function" },
-    ["@lsp.typemod.operator.injected"] = { link = "@operator" },
-    ["@lsp.typemod.selfKeyword.defaultLibrary"] = { link = "@keyword" },
-    ["@lsp.typemod.string.injected"] = { link = "@string" },
-    ["@lsp.typemod.type.defaultLibrary"] = { link = "@type.builtin" },
-    ["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
-    ["@lsp.typemod.variable.injected"] = { link = "@variable" },
-    ["@lsp.typemod.variable.readonly"] = { link = "@constant" },
+    ["@lsp.type.boolean"] = "@boolean",
+    ["@lsp.type.builtinType"] = "@type.builtin",
+    ["@lsp.type.comment"] = "@comment",
+    ["@lsp.type.enum"] = "@type",
+    ["@lsp.type.enumMember"] = "@constant",
+    ["@lsp.type.escapeSequence"] = "@string.escape",
+    ["@lsp.type.formatSpecifier"] = "@punctuation.special",
+    ["@lsp.type.interface"] = "@interface",
+    ["@lsp.type.keyword"] = "@keyword",
+    ["@lsp.type.namespace"] = "@namespace",
+    ["@lsp.type.number"] = "@number",
+    ["@lsp.type.operator"] = "@operator",
+    ["@lsp.type.parameter"] = "@parameter",
+    ["@lsp.type.property"] = "@property",
+    ["@lsp.type.selfKeyword"] = "@variable.builtin",
+    ["@lsp.type.typeAlias"] = "@type.definition",
+    ["@lsp.type.unresolvedReference"] = "@error",
+    ["@lsp.type.variable"] = "@variable",
+    ["@lsp.typemod.class.defaultLibrary"] = "@type.builtin",
+    ["@lsp.typemod.enum.defaultLibrary"] = "@type.builtin",
+    ["@lsp.typemod.enumMember.defaultLibrary"] = "@constant.builtin",
+    ["@lsp.typemod.function.defaultLibrary"] = "@function.builtin",
+    ["@lsp.typemod.function.global"] = "@function.builtin",
+    ["@lsp.typemod.keyword.async"] = "@keyword.coroutine",
+    ["@lsp.typemod.macro.defaultLibrary"] = "@function.builtin",
+    ["@lsp.typemod.method.defaultLibrary"] = "@function.builtin",
+    ["@lsp.typemod.method.reference"] = "@function",
+    ["@lsp.typemod.method.trait"] = "@function",
+    ["@lsp.typemod.operator.injected"] = "@operator",
+    ["@lsp.typemod.selfKeyword.defaultLibrary"] = "@keyword",
+    ["@lsp.typemod.string.injected"] = "@string",
+    ["@lsp.typemod.type.defaultLibrary"] = "@type.builtin",
+    ["@lsp.typemod.variable.defaultLibrary"] = "@variable.builtin",
+    ["@lsp.typemod.variable.injected"] = "@variable",
+    ["@lsp.typemod.variable.readonly"] = "@constant",
 
     -- rust
-    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = colors.syntax.text },
-    ["@lsp.type.macro.rust"] = { link = "@function.macro.rust" },
-    ["@lsp.type.function.rust"] = { fg = colors.syntax.text },
-    ["@lsp.type.namespace.rust"] = { link = "@namespace.rust" },
+    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = c.syntax.text },
+    ["@lsp.type.macro.rust"] = "@function.macro.rust",
+    ["@lsp.type.function.rust"] = { fg = c.syntax.text },
+    ["@lsp.type.namespace.rust"] = "@namespace.rust",
   }
 end
 

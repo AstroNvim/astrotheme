@@ -16,6 +16,7 @@ local function get_hl_group(hl)
   local group = "AstroThemeDev" .. vim.inspect(hl):gsub("%W+", "_")
   if not hl_groups[group] then
     hl = vim.deepcopy(hl, true)
+    if type(hl) == "string" then hl = { link = hl } end
     if not hl.fg then hl.fg = colors.syntax.text end
     vim.api.nvim_set_hl(0, group, hl)
     hl_groups[group] = true

@@ -1,11 +1,11 @@
 ---@type AstroThemeCallback
-local function callback(colors)
+local function callback(c)
   return {
-    GitSignsAdd = { fg = colors.ui.green, bg = colors.none },
-    GitSignsChange = { fg = colors.ui.orange, bg = colors.none },
-    GitSignsDelete = { fg = colors.ui.red, bg = colors.none },
-    MoreMsg = { fg = colors.ui.text, bold = true },
-    ModeMsg = { fg = colors.ui.text, bold = true },
+    GitSignsAdd = { fg = c.ui.green, bg = c.none },
+    GitSignsChange = { fg = c.ui.orange, bg = c.none },
+    GitSignsDelete = { fg = c.ui.red, bg = c.none },
+    MoreMsg = { fg = c.ui.text, bold = true },
+    ModeMsg = { fg = c.ui.text, bold = true },
   }
 end
 

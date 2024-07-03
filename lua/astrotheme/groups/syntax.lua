@@ -9,54 +9,54 @@
 --
 -- Ref: :help group-name
 ---@type AstroThemeCallback
-local function callback(colors, opts)
+local function callback(c, opts)
   return {
     -- Comment
-    Comment = { fg = colors.syntax.comment, bg = colors.none, italic = opts.italic_comments }, -- any comment
+    Comment = { fg = c.syntax.comment, bg = c.none, italic = opts.italic_comments }, -- any comment
     -- Constant
-    Constant = { fg = opts.simple_syntax_colors and colors.syntax.cyan or colors.syntax.yellow, bg = colors.none }, -- any constant
-    String = { fg = colors.syntax.green, bg = colors.none }, -- a string constant: "this is a string"
-    Character = { fg = colors.syntax.green, bg = colors.none }, -- a character constant: 'c', '\n'
-    Number = { fg = colors.syntax.orange, bg = colors.none }, -- a number constant: 234, 0xff
-    Boolean = { fg = colors.syntax.orange, bg = colors.none }, -- a boolean constant: TRUE, false
-    Float = { fg = colors.syntax.yellow, bg = colors.none }, -- a floating point constant: 2.3e10
+    Constant = { fg = opts.simple_syntax_colors and c.syntax.cyan or c.syntax.yellow, bg = c.none }, -- any constant
+    String = { fg = c.syntax.green, bg = c.none }, -- a string constant: "this is a string"
+    Character = { fg = c.syntax.green, bg = c.none }, -- a character constant: 'c', '\n'
+    Number = { fg = c.syntax.orange, bg = c.none }, -- a number constant: 234, 0xff
+    Boolean = { fg = c.syntax.orange, bg = c.none }, -- a boolean constant: TRUE, false
+    Float = { fg = c.syntax.yellow, bg = c.none }, -- a floating point constant: 2.3e10
     -- Identifier
-    Identifier = { fg = colors.syntax.text, bg = colors.none }, -- any variable name
-    Function = { fg = colors.syntax.blue, bg = colors.none }, -- function name (also: methods for classes)
+    Identifier = { fg = c.syntax.text, bg = c.none }, -- any variable name
+    Function = { fg = c.syntax.blue, bg = c.none }, -- function name (also: methods for classes)
     -- Statement
-    Statement = { fg = colors.syntax.purple, bg = colors.none }, -- any statement
-    Conditional = { fg = colors.syntax.purple, bg = colors.none }, -- if, then, else, endif, switch, etc.
-    Repeat = { fg = colors.syntax.purple, bg = colors.none }, -- for, do, while, etc.
-    Label = { fg = colors.syntax.blue, bg = colors.none }, -- case, default, etc.
-    Operator = { fg = opts.simple_syntax_colors and colors.syntax.purple or colors.syntax.text, bg = colors.none }, -- "sizeof", "+", "*", etc.
-    Keyword = { fg = colors.syntax.purple, bg = colors.none }, -- any other keyword
-    Exception = { fg = colors.syntax.purple, bg = colors.none }, -- try, catch, throw
+    Statement = { fg = c.syntax.purple, bg = c.none }, -- any statement
+    Conditional = { fg = c.syntax.purple, bg = c.none }, -- if, then, else, endif, switch, etc.
+    Repeat = { fg = c.syntax.purple, bg = c.none }, -- for, do, while, etc.
+    Label = { fg = c.syntax.blue, bg = c.none }, -- case, default, etc.
+    Operator = { fg = opts.simple_syntax_colors and c.syntax.purple or c.syntax.text, bg = c.none }, -- "sizeof", "+", "*", etc.
+    Keyword = { fg = c.syntax.purple, bg = c.none }, -- any other keyword
+    Exception = { fg = c.syntax.purple, bg = c.none }, -- try, catch, throw
     -- Preproc
-    PreProc = { fg = colors.syntax.yellow, bg = colors.none }, -- generic Preprocessor
-    Include = { fg = colors.syntax.purple, bg = colors.none }, -- preprocessor #include
-    Define = { fg = colors.syntax.purple, bg = colors.none }, -- preprocessor #define
-    Macro = { fg = colors.syntax.orange, bg = colors.none }, -- same as Define
-    PreCondit = { fg = colors.syntax.blue, bg = colors.none }, -- preprocessor #if, #else, #endif, etc.
+    PreProc = { fg = c.syntax.yellow, bg = c.none }, -- generic Preprocessor
+    Include = { fg = c.syntax.purple, bg = c.none }, -- preprocessor #include
+    Define = { fg = c.syntax.purple, bg = c.none }, -- preprocessor #define
+    Macro = { fg = c.syntax.orange, bg = c.none }, -- same as Define
+    PreCondit = { fg = c.syntax.blue, bg = c.none }, -- preprocessor #if, #else, #endif, etc.
     -- Type
-    Type = { fg = colors.syntax.blue, bg = colors.none }, -- int, long, char, etc.
-    StorageClass = { fg = colors.syntax.blue, bg = colors.none }, -- static, register, volatile, etc.
-    Structure = { fg = colors.syntax.yellow, bg = colors.none }, -- struct, union, enum, etc.
-    Typedef = { fg = colors.syntax.yellow, bg = colors.none }, -- A typedef
+    Type = { fg = c.syntax.blue, bg = c.none }, -- int, long, char, etc.
+    StorageClass = { fg = c.syntax.blue, bg = c.none }, -- static, register, volatile, etc.
+    Structure = { fg = c.syntax.yellow, bg = c.none }, -- struct, union, enum, etc.
+    Typedef = { fg = c.syntax.yellow, bg = c.none }, -- A typedef
     -- Special
-    Special = { fg = colors.syntax.blue, bg = colors.none }, -- any special symbol
-    SpecialChar = { fg = colors.syntax.blue, bg = colors.none }, -- special character in a constant
-    Tag = { fg = colors.syntax.blue, bg = colors.none }, -- you can use CTRL-] on this
-    Delimiter = { fg = colors.syntax.blue, bg = colors.none }, -- character that needs attention
-    SpecialComment = { fg = colors.ui.none_text, bg = colors.none }, -- special things inside a comment
-    Debug = { fg = colors.ui.blue, bg = colors.none }, -- debugging statements
+    Special = { fg = c.syntax.blue, bg = c.none }, -- any special symbol
+    SpecialChar = { fg = c.syntax.blue, bg = c.none }, -- special character in a constant
+    Tag = { fg = c.syntax.blue, bg = c.none }, -- you can use CTRL-] on this
+    Delimiter = { fg = c.syntax.blue, bg = c.none }, -- character that needs attention
+    SpecialComment = { fg = c.ui.none_text, bg = c.none }, -- special things inside a comment
+    Debug = { fg = c.ui.blue, bg = c.none }, -- debugging statements
     -- Underlined
-    Underlined = { fg = colors.syntax.cyan, bg = colors.none, underline = true }, -- text that stands out, HTML links
+    Underlined = { fg = c.syntax.cyan, bg = c.none, underline = true }, -- text that stands out, HTML links
     -- Ignore
-    Ignore = { fg = colors.none, bg = colors.none }, -- left blank, hidden  |hl-Ignore|
+    Ignore = { fg = c.none, bg = c.none }, -- left blank, hidden  |hl-Ignore|
     -- Error
-    Error = { fg = colors.ui.red, bg = colors.none }, -- any erroneous construct
+    Error = { fg = c.ui.red, bg = c.none }, -- any erroneous construct
     -- Todo
-    Todo = { fg = colors.ui.yellow, bg = colors.none }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { fg = c.ui.yellow, bg = c.none }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
   }
 end
 return callback

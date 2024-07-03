@@ -1,9 +1,9 @@
 ---@type AstroThemeCallback
 local function callback()
   return {
-    IlluminatedWordText = { link = "LspReferenceText" },
-    IlluminatedWordRead = { link = "LspReferenceRead" },
-    IlluminatedWordWrite = { link = "LspReferenceWrite" },
+    IlluminatedWordText = "LspReferenceText",
+    IlluminatedWordRead = "LspReferenceRead",
+    IlluminatedWordWrite = "LspReferenceWrite",
   }
 end
 

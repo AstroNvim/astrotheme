@@ -2,13 +2,13 @@
 local function callback()
   return {
     HighlightURL = { underline = true },
-    HeirlineInactive = { link = "StatusInactive" },
-    HeirlineNormal = { link = "StatusNormal" },
-    HeirlineInsert = { link = "StatusInsert" },
-    HeirlineVisual = { link = "StatusVisual" },
-    HeirlineReplace = { link = "StatusReplace" },
-    HeirlineCommand = { link = "StatusCommand" },
-    HeirlineTerminal = { link = "StatusTerminal" },
+    HeirlineInactive = "StatusInactive",
+    HeirlineNormal = "StatusNormal",
+    HeirlineInsert = "StatusInsert",
+    HeirlineVisual = "StatusVisual",
+    HeirlineReplace = "StatusReplace",
+    HeirlineCommand = "StatusCommand",
+    HeirlineTerminal = "StatusTerminal",
   }
 end
 

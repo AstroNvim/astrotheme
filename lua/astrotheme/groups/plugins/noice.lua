@@ -1,7 +1,7 @@
 ---@type AstroThemeCallback
 local function callback()
   return {
-    NoiceCursor = { link = "Cursor" },
+    NoiceCursor = "Cursor",
   }
 end
 

@@ -114,40 +114,44 @@ end
 --- Set highlights in Neovim
 ---@param highlights AstroThemeHighlights
 function M.set_highlights(highlights)
-  for name, value in pairs(highlights) do
+  for name, hl in pairs(highlights) do
     -- TODO: optimise in V3 by removing checks.
-    if name ~= "modify_hl_groups" then vim.api.nvim_set_hl(0, name, value) end
+    if name ~= "modify_hl_groups" then
+      if type(hl) == "string" then hl = { link = hl } end
+      vim.api.nvim_set_hl(0, name, hl)
+    end
   end
 end
 
 --- Set terminal colors based on the currently loaded colors
-function M.set_terminal_colors(colors)
-  vim.g.terminal_color_0 = colors.term.black
-  vim.g.terminal_color_8 = colors.term.bright_black
+---@param c AstroThemePalette
+function M.set_terminal_colors(c)
+  vim.g.terminal_color_0 = c.term.black
+  vim.g.terminal_color_8 = c.term.bright_black
 
-  vim.g.terminal_color_1 = colors.term.red
-  vim.g.terminal_color_9 = colors.term.bright_red
+  vim.g.terminal_color_1 = c.term.red
+  vim.g.terminal_color_9 = c.term.bright_red
 
-  vim.g.terminal_color_2 = colors.term.green
-  vim.g.terminal_color_10 = colors.term.bright_green
+  vim.g.terminal_color_2 = c.term.green
+  vim.g.terminal_color_10 = c.term.bright_green
 
-  vim.g.terminal_color_3 = colors.term.yellow
-  vim.g.terminal_color_11 = colors.term.bright_yellow
+  vim.g.terminal_color_3 = c.term.yellow
+  vim.g.terminal_color_11 = c.term.bright_yellow
 
-  vim.g.terminal_color_4 = colors.term.blue
-  vim.g.terminal_color_12 = colors.term.bright_blue
+  vim.g.terminal_color_4 = c.term.blue
+  vim.g.terminal_color_12 = c.term.bright_blue
 
-  vim.g.terminal_color_5 = colors.term.purple
-  vim.g.terminal_color_13 = colors.term.bright_purple
+  vim.g.terminal_color_5 = c.term.purple
+  vim.g.terminal_color_13 = c.term.bright_purple
 
-  vim.g.terminal_color_6 = colors.term.cyan
-  vim.g.terminal_color_14 = colors.term.bright_cyan
+  vim.g.terminal_color_6 = c.term.cyan
+  vim.g.terminal_color_14 = c.term.bright_cyan
 
-  vim.g.terminal_color_7 = colors.term.white
-  vim.g.terminal_color_15 = colors.term.bright_white
+  vim.g.terminal_color_7 = c.term.white
+  vim.g.terminal_color_15 = c.term.bright_white
 
-  vim.g.terminal_color_background = colors.term.background
-  vim.g.terminal_color_foreground = colors.term.foreground
+  vim.g.terminal_color_background = c.term.background
+  vim.g.terminal_color_foreground = c.term.foreground
 end
 
 return M

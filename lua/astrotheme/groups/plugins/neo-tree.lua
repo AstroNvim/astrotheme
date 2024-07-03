@@ -1,57 +1,57 @@
 ---@type AstroThemeCallback
-local function callback(colors, opts)
+local function callback(c, opts)
   return {
-    NeoTreeDirectoryIcon = { fg = colors.ui.blue },
-    NeoTreeRootName = { fg = colors.ui.text_active, bold = true },
-    NeoTreeFileName = { fg = colors.ui.text },
-    NeoTreeFileIcon = { fg = colors.ui.text },
-    NeoTreeFileNameOpened = { fg = colors.ui.green },
-    NeoTreeFloatBorder = { fg = colors.ui.float },
+    NeoTreeDirectoryIcon = { fg = c.ui.blue },
+    NeoTreeRootName = { fg = c.ui.text_active, bold = true },
+    NeoTreeFileName = { fg = c.ui.text },
+    NeoTreeFileIcon = { fg = c.ui.text },
+    NeoTreeFileNameOpened = { fg = c.ui.green },
+    NeoTreeFloatBorder = { fg = c.ui.float },
     NeoTreeFloatTitle = {
-      fg = opts.title_invert and colors.ui.tool or colors.ui.title,
-      bg = opts.title_invert and colors.ui.title or colors.ui.tool,
+      fg = opts.title_invert and c.ui.tool or c.ui.title,
+      bg = opts.title_invert and c.ui.title or c.ui.tool,
       bold = true,
     },
-    NeoTreeIndentMarker = { fg = colors.ui.none_text },
+    NeoTreeIndentMarker = { fg = c.ui.none_text },
 
-    NeoTreeGitAdded = { fg = colors.ui.green },
-    NeoTreeGitConflict = { fg = colors.ui.red },
-    NeoTreeGitDeleted = { fg = colors.ui.text_inactive },
-    NeoTreeGitIgnored = { fg = colors.ui.text },
-    NeoTreeGitModified = { fg = colors.ui.orange },
-    NeoTreeGitRenamed = { fg = colors.ui.orange },
-    NeoTreeGitStaged = { fg = colors.ui.cyan },
-    NeoTreeGitUntracked = { fg = colors.ui.yellow },
-    NeoTreeGitUnstaged = { fg = colors.ui.yellow },
+    NeoTreeGitAdded = { fg = c.ui.green },
+    NeoTreeGitConflict = { fg = c.ui.red },
+    NeoTreeGitDeleted = { fg = c.ui.text_inactive },
+    NeoTreeGitIgnored = { fg = c.ui.text },
+    NeoTreeGitModified = { fg = c.ui.orange },
+    NeoTreeGitRenamed = { fg = c.ui.orange },
+    NeoTreeGitStaged = { fg = c.ui.cyan },
+    NeoTreeGitUntracked = { fg = c.ui.yellow },
+    NeoTreeGitUnstaged = { fg = c.ui.yellow },
 
     NeoTreeTitleBar = {
-      fg = opts.title_invert and colors.ui.tool or colors.ui.title,
-      bg = (opts.title_invert and colors.ui.title)
-        or (opts.neotree and colors.ui.tool)
-        or (opts.transparent and colors.none)
-        or colors.ui.base,
+      fg = opts.title_invert and c.ui.tool or c.ui.title,
+      bg = (opts.title_invert and c.ui.title)
+        or (opts.neotree and c.ui.tool)
+        or (opts.transparent and c.none)
+        or c.ui.base,
       bold = true,
     },
     NeoTreeNormal = {
-      fg = colors.ui.text,
-      bg = (opts.neotree and colors.ui.tool) or (opts.transparent and colors.none) or colors.ui.base,
+      fg = c.ui.text,
+      bg = (opts.neotree and c.ui.tool) or (opts.transparent and c.none) or c.ui.base,
     },
     NeoTreeNormalNC = {
-      fg = colors.ui.text,
-      bg = (opts.neotree and colors.ui.tool) or (opts.transparent and colors.none) or colors.ui.base,
+      fg = c.ui.text,
+      bg = (opts.neotree and c.ui.tool) or (opts.transparent and c.none) or c.ui.base,
     },
-    NeoTreeSymbolicLinkTarget = { fg = colors.ui.cyan },
+    NeoTreeSymbolicLinkTarget = { fg = c.ui.cyan },
     NeoTreeTabActive = {
-      fg = colors.ui.text_active,
-      bg = opts.transparent and colors.none or colors.ui.tool,
+      fg = c.ui.text_active,
+      bg = opts.transparent and c.none or c.ui.tool,
       bold = true,
     },
-    NeoTreeTabInactive = { fg = colors.ui.text_inactive, bg = colors.ui.tabline },
-    NeoTreeTabSeparatorActive = { fg = colors.ui.tool, bg = colors.ui.tool },
-    NeoTreeTabSeparatorInactive = { fg = colors.ui.tabline, bg = colors.ui.tabline },
-    NeoTreeVertSplit = { fg = colors.ui.split, bg = opts.transparent and colors.none or colors.ui.base },
-    NeoTreeWinSeparator = { fg = colors.ui.split, bg = opts.transparent and colors.none or colors.ui.base, bold = true },
-    NeoTreeCursorLine = { link = "PmenuSel" },
+    NeoTreeTabInactive = { fg = c.ui.text_inactive, bg = c.ui.tabline },
+    NeoTreeTabSeparatorActive = { fg = c.ui.tool, bg = c.ui.tool },
+    NeoTreeTabSeparatorInactive = { fg = c.ui.tabline, bg = c.ui.tabline },
+    NeoTreeVertSplit = { fg = c.ui.split, bg = opts.transparent and c.none or c.ui.base },
+    NeoTreeWinSeparator = { fg = c.ui.split, bg = opts.transparent and c.none or c.ui.base, bold = true },
+    NeoTreeCursorLine = "PmenuSel",
   }
 end
 

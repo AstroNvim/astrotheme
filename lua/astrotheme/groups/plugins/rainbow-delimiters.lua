@@ -1,13 +1,13 @@
 ---@type AstroThemeCallback
-local function callback(colors)
+local function callback(c)
   return {
-    RainbowDelimiterRed = { fg = colors.syntax.red },
-    RainbowDelimiterYellow = { fg = colors.syntax.yellow },
-    RainbowDelimiterBlue = { fg = colors.syntax.blue },
-    RainbowDelimiterOrange = { fg = colors.syntax.orange },
-    RainbowDelimiterGreen = { fg = colors.syntax.green },
-    RainbowDelimiterViolet = { fg = colors.syntax.purple },
-    RainbowDelimiterCyan = { fg = colors.syntax.cyan },
+    RainbowDelimiterRed = { fg = c.syntax.red },
+    RainbowDelimiterYellow = { fg = c.syntax.yellow },
+    RainbowDelimiterBlue = { fg = c.syntax.blue },
+    RainbowDelimiterOrange = { fg = c.syntax.orange },
+    RainbowDelimiterGreen = { fg = c.syntax.green },
+    RainbowDelimiterViolet = { fg = c.syntax.purple },
+    RainbowDelimiterCyan = { fg = c.syntax.cyan },
   }
 end
 
