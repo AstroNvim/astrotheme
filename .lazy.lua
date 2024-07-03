@@ -2,11 +2,14 @@
 --- Basically Copy/Paste (with some adjustments) from folke's tokyonight colorscheme:
 --- https://github.com/folke/tokyonight.nvim/blob/c645c1fe778e1428143beca1908b54b78b0b5c1a/.lazy.lua
 
-local util = require "astrotheme.lib.util"
-
 local colors ---@type AstroThemePalette
 local cache ---@type table<string,string>?
 local hl_groups = {} ---@type { [string]: boolean }
+
+local function is_dev()
+  local plugin = require("lazy.core.config").spec.plugins["astrotheme"]
+  return plugin and require("lazy.core.plugin").values(plugin, "dev")[1]
+end
 
 ---@param hl AstroThemeHighlight
 local function get_hl_group(hl)
@@ -22,6 +25,7 @@ end
 
 local function load_highlights()
   if cache then return end
+  local util = require "astrotheme.lib.util"
   cache = {}
   local opts = require("astrotheme").config
   colors = util.set_palettes(opts)
@@ -31,19 +35,24 @@ local function load_highlights()
   end
 end
 
+local augroup = vim.api.nvim_create_augroup("astrotheme_dev", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePost", {
-  group = vim.api.nvim_create_augroup("astrotheme_dev", { clear = true }),
+  group = augroup,
   pattern = "*/lua/astrotheme/**.lua",
   callback = vim.schedule_wrap(function()
-    local opts = require("astrotheme").config
-    for k in pairs(package.loaded) do
-      if k:find "^astrotheme" then package.loaded[k] = nil end
+    if is_dev() then
+      local opts = require("astrotheme").config
+      for k in pairs(package.loaded) do
+        if k:find "^astrotheme" then package.loaded[k] = nil end
+      end
+      require("astrotheme").setup(opts)
+      if vim.g.colors_name then vim.cmd.colorscheme(vim.g.colors_name) end
+      hl_groups, cache = {}, nil
+      local hi = require "mini.hipatterns"
+      vim.tbl_map(hi.update, hi.get_enabled_buffers())
+    else
+      vim.api.nvim_del_augroup_by_id(augroup)
     end
-    require("astrotheme").setup(opts)
-    if vim.g.colors_name then vim.cmd.colorscheme(vim.g.colors_name) end
-    hl_groups, cache = {}, nil
-    local hi = require "mini.hipatterns"
-    vim.tbl_map(hi.update, hi.get_enabled_buffers())
   end),
 })
 
@@ -51,6 +60,7 @@ return {
   "echasnovski/mini.hipatterns",
   lazy = false,
   opts = function(_, opts)
+    if not is_dev() then return end
     opts.highlighters = opts.highlighters or {}
     opts.highlighters.astrotheme = {
       pattern = function(buf)
@@ -77,7 +87,7 @@ return {
         local t = _G --[[@as table]]
         if parts[1]:sub(1, 1) == "c" then
           table.remove(parts, 1)
-          if not colors then colors = util.set_palettes(require("astrotheme").config) end
+          if not colors then colors = require("astrotheme.lib.util").set_palettes(require("astrotheme").config) end
           t = colors
         end
         local color = vim.tbl_get(t, unpack(parts))
