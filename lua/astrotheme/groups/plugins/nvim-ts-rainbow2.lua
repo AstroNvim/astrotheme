@@ -1,13 +1,13 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    TSRainbowRed = { fg = C.syntax.red },
-    TSRainbowYellow = { fg = C.syntax.yellow },
-    TSRainbowBlue = { fg = C.syntax.blue },
-    TSRainbowOrange = { fg = C.syntax.orange },
-    TSRainbowGreen = { fg = C.syntax.green },
-    TSRainbowViolet = { fg = C.syntax.purple },
-    TSRainbowCyan = { fg = C.syntax.cyan },
+    TSRainbowRed = { fg = colors.syntax.red },
+    TSRainbowYellow = { fg = colors.syntax.yellow },
+    TSRainbowBlue = { fg = colors.syntax.blue },
+    TSRainbowOrange = { fg = colors.syntax.orange },
+    TSRainbowGreen = { fg = colors.syntax.green },
+    TSRainbowViolet = { fg = colors.syntax.purple },
+    TSRainbowCyan = { fg = colors.syntax.cyan },
   }
 end
 

@@ -1,7 +1,7 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    AerialNormal = { fg = C.ui.text },
+    AerialNormal = { fg = colors.ui.text },
     AerialArrayIcon = { link = "@constant" },
     AerialBooleanIcon = { link = "@boolean" },
     AerialClassIcon = { link = "@type" },
@@ -13,10 +13,10 @@ local function callback()
     AerialFieldIcon = { link = "@field" },
     AerialFileIcon = { link = "@text.uri" },
     AerialFunctionIcon = { link = "@function" },
-    AerialGuide = { fg = C.ui.none_text },
+    AerialGuide = { fg = colors.ui.none_text },
     AerialInterfaceIcon = { link = "@type" },
     AerialKeyIcon = { link = "@type" },
-    AerialLine = { fg = C.ui.accent, bg = C.none },
+    AerialLine = { fg = colors.ui.accent, bg = colors.none },
     AerialMethodIcon = { link = "@method" },
     AerialModuleIcon = { link = "@namespace" },
     AerialNamespaceIcon = { link = "@namespace" },

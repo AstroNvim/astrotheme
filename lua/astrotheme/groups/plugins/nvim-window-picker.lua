@@ -1,10 +1,10 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    WindowPickerStatusLine = { fg = C.ui.red, bg = C.none },
-    WindowPickerStatusLineNC = { fg = C.ui.red, bg = C.none },
-    WindowPickerWinBar = { fg = C.ui.red, bg = C.none },
-    WindowPickerWinBarNC = { fg = C.ui.red, bg = C.none },
+    WindowPickerStatusLine = { fg = colors.ui.red, bg = colors.none },
+    WindowPickerStatusLineNC = { fg = colors.ui.red, bg = colors.none },
+    WindowPickerWinBar = { fg = colors.ui.red, bg = colors.none },
+    WindowPickerWinBarNC = { fg = colors.ui.red, bg = colors.none },
   }
 end
 

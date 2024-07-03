@@ -1,4 +1,4 @@
 ---@type AstroThemeCallback
-local function callback() return { Beacon = { bg = C.syntax.blue } } end
+local function callback(colors) return { Beacon = { bg = colors.syntax.blue } } end
 
 return callback

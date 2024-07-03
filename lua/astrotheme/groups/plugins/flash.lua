@@ -1,9 +1,9 @@
 -- this is a test to see what i like
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    FlashBackdrop = { fg = C.syntax.mute },
-    FlashLabel = { fg = C.ui.base, bg = C.ui.orange, bold = true },
+    FlashBackdrop = { fg = colors.syntax.mute },
+    FlashLabel = { fg = colors.ui.base, bg = colors.ui.orange, bold = true },
   }
 end
 

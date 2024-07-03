@@ -3,7 +3,7 @@
 ---@alias AstroThemeColor string
 ---@alias AstroThemeHighlight vim.api.keyset.highlight
 ---@alias AstroThemeHighlights table<string,vim.api.keyset.highlight>
----@alias AstroThemeCallback fun(opts: AstroThemeStyleOpts?): AstroThemeHighlights
+---@alias AstroThemeCallback fun(colors: AstroThemePalette, opts: AstroThemeStyleOpts?): AstroThemeHighlights
 
 ---@class AstroThemePaletteUI
 ---@field red AstroThemeColor?

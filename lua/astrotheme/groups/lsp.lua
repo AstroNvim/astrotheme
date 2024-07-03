@@ -1,10 +1,10 @@
 ---@type AstroThemeCallback
-local function callback()
-  local error = C.ui.red
-  local hint = C.ui.cyan
-  local info = C.ui.blue
-  local warn = C.ui.yellow
-  local okay = C.ui.green
+local function callback(colors)
+  local error = colors.ui.red
+  local hint = colors.ui.cyan
+  local info = colors.ui.blue
+  local warn = colors.ui.yellow
+  local okay = colors.ui.green
   return {
     DiagnosticError = { fg = error },
     DiagnosticHint = { fg = hint },
@@ -16,9 +16,9 @@ local function callback()
     DiagnosticUnderlineInfo = { sp = info, undercurl = true },
     DiagnosticUnderlineWarn = { sp = warn, undercurl = true },
     DiagnosticUnderlineOk = { sp = okay, undercurl = true },
-    LspCodeLens = { fg = C.ui.none_text },
-    LspCodeLensSeparator = { fg = C.ui.none_text },
-    LspReferenceRead = { fg = C.none, bg = C.ui.highlight },
+    LspCodeLens = { fg = colors.ui.none_text },
+    LspCodeLensSeparator = { fg = colors.ui.none_text },
+    LspReferenceRead = { fg = colors.none, bg = colors.ui.highlight },
     LspReferenceText = { link = "LspReferenceRead" },
     LspReferenceWrite = { link = "LspReferenceRead" },
     -- LSP Semantic Tokens
@@ -60,9 +60,9 @@ local function callback()
     ["@lsp.typemod.variable.readonly"] = { link = "@constant" },
 
     -- rust
-    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = C.syntax.text },
+    ["@lsp.typemod.function.defaultLibrary.rust"] = { fg = colors.syntax.text },
     ["@lsp.type.macro.rust"] = { link = "@function.macro.rust" },
-    ["@lsp.type.function.rust"] = { fg = C.syntax.text },
+    ["@lsp.type.function.rust"] = { fg = colors.syntax.text },
     ["@lsp.type.namespace.rust"] = { link = "@namespace.rust" },
   }
 end
