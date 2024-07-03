@@ -117,31 +117,6 @@ function astrotheme.lib.util.get_plugin_list(opts: AstroThemeOpts)
 
  Retrieve a list of all plugins to enable
 
-### live_reload
-
-
-```lua
-function astrotheme.lib.util.live_reload()
-```
-
- Enable live reloading of AstroTheme for development
-
-### live_reload_stop
-
-
-```lua
-function astrotheme.lib.util.live_reload_stop()
-```
-
- Disable live reloading of AstroTheme
-
-### live_reloading
-
-
-```lua
-boolean
-```
-
 ### reload
 
 
