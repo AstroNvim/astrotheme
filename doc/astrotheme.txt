@@ -396,14 +396,24 @@ This module can be loaded with `local astrotheme_utils = require
 copyright 2023 license GNU General Public License v3.0 @class astrocore
 
 
-GET_HL_MODULES ~
+GET_HIGHLIGHTS ~
 
 >lua
-    function astrotheme.lib.util.get_hl_modules(highlights: table<string, vim.api.keyset.highlight>, path: string, modules: string[], opts: AstroThemeOpts)
+    function astrotheme.lib.util.get_highlights(colors: AstroThemePalette, opts: AstroThemeOpts)
       -> table<string, vim.api.keyset.highlight>
 <
 
-Compile all highlights from a list of modules
+Compile all highlights given a configuration
+
+
+GET_MODULE_HIGHLIGHTS ~
+
+>lua
+    function astrotheme.lib.util.get_module_highlights(colors: AstroThemePalette, opts: AstroThemeOpts, module: string)
+      -> table<string, vim.api.keyset.highlight>?
+<
+
+Compile highlights from a module
 
 
 GET_PLUGIN_LIST ~
@@ -416,13 +426,29 @@ GET_PLUGIN_LIST ~
 Retrieve a list of all plugins to enable
 
 
-LIVE_RELOADING ~
+LIVE_RELOAD ~
 
 >lua
-    function astrotheme.lib.util.live_reloading(opts: AstroThemeOpts)
+    function astrotheme.lib.util.live_reload()
 <
 
 Enable live reloading of AstroTheme for development
+
+
+LIVE_RELOAD_STOP ~
+
+>lua
+    function astrotheme.lib.util.live_reload_stop()
+<
+
+Disable live reloading of AstroTheme
+
+
+LIVE_RELOADING ~
+
+>lua
+    boolean
+<
 
 
 RELOAD ~
@@ -447,7 +473,7 @@ Reload a module
 SET_HIGHLIGHTS ~
 
 >lua
-    function astrotheme.lib.util.set_highlights(opts: AstroThemeOpts, highlights: table<string, vim.api.keyset.highlight>, theme: string)
+    function astrotheme.lib.util.set_highlights(highlights: table<string, vim.api.keyset.highlight>)
 <
 
 Set highlights in Neovim
@@ -466,7 +492,7 @@ Set a palette given a AstroTheme options
 SET_TERMINAL_COLORS ~
 
 >lua
-    function astrotheme.lib.util.set_terminal_colors()
+    function astrotheme.lib.util.set_terminal_colors(colors: any)
 <
 
 Set terminal colors based on the currently loaded colors
