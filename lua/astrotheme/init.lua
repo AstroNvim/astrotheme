@@ -11,7 +11,6 @@
 ---@field config AstroThemeOpts
 local M = { config = {} }
 
-C = {}
 local util = require "astrotheme.lib.util"
 
 --- Load a specific theme given a palette name
@@ -29,21 +28,13 @@ function M.load(theme)
   M.config.palette = theme
   util.reload(M.config, theme)
 
-  C = util.set_palettes(M.config)
+  local colors = util.set_palettes(M.config)
 
-  local highlights = {}
-  highlights = util.get_hl_modules(highlights, "astrotheme.groups", {
-    "base",
-    "syntax",
-    "lsp",
-    "treesitter",
-    "astronvim",
-  }, M.config)
+  local highlights = util.get_highlights(colors, M.config)
 
-  highlights = util.get_hl_modules(highlights, "astrotheme.groups.plugins", M.config.plugins, M.config)
+  util.set_highlights(highlights)
 
-  util.set_highlights(M.config, highlights, theme)
-  if M.config.terminal_colors then util.set_terminal_colors() end
+  if M.config.terminal_colors then util.set_terminal_colors(colors) end
 end
 
 --- Set up AstroTheme with provided user configured options

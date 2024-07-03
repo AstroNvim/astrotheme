@@ -1,23 +1,23 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    NvimTreeFolderIcon = { fg = C.syntax.blue },
-    NvimTreeExecFile = { fg = C.syntax.green },
-    NvimTreeOpenedFile = { fg = C.syntax.green },
-    NvimTreeRootFolder = { fg = C.ui.base },
-    NvimTreeEndOfBuffer = { fg = C.ui.base },
-    NvimTreeNormal = { bg = C.ui.tabline },
-    NvimTreeNormalNC = { bg = C.ui.tabline },
-    NvimTreeVertSplit = { fg = C.ui.tabline, bg = C.ui.tabline },
-    NvimTreeImageFile = { fg = C.syntax.purple },
-    NvimTreeSymlink = { fg = C.syntax.cyan },
-    NvimTreeSpecialFile = { fg = C.syntax.yellow },
-    NvimTreeGitDeleted = { fg = C.syntax.red },
-    NvimTreeGitMerge = { fg = C.syntax.orange },
-    NvimTreeGitRenamed = { fg = C.syntax.purple },
-    NvimTreeGitStaged = { fg = C.syntax.green },
-    NvimTreeGitDirty = { fg = C.syntax.red },
-    NvimTreeGitNew = { fg = C.syntax.yellow },
+    NvimTreeFolderIcon = { fg = colors.syntax.blue },
+    NvimTreeExecFile = { fg = colors.syntax.green },
+    NvimTreeOpenedFile = { fg = colors.syntax.green },
+    NvimTreeRootFolder = { fg = colors.ui.base },
+    NvimTreeEndOfBuffer = { fg = colors.ui.base },
+    NvimTreeNormal = { bg = colors.ui.tabline },
+    NvimTreeNormalNC = { bg = colors.ui.tabline },
+    NvimTreeVertSplit = { fg = colors.ui.tabline, bg = colors.ui.tabline },
+    NvimTreeImageFile = { fg = colors.syntax.purple },
+    NvimTreeSymlink = { fg = colors.syntax.cyan },
+    NvimTreeSpecialFile = { fg = colors.syntax.yellow },
+    NvimTreeGitDeleted = { fg = colors.syntax.red },
+    NvimTreeGitMerge = { fg = colors.syntax.orange },
+    NvimTreeGitRenamed = { fg = colors.syntax.purple },
+    NvimTreeGitStaged = { fg = colors.syntax.green },
+    NvimTreeGitDirty = { fg = colors.syntax.red },
+    NvimTreeGitNew = { fg = colors.syntax.yellow },
   }
 end
 

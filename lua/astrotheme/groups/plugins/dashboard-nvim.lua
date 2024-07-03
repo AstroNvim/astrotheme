@@ -1,10 +1,10 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    DashboardHeader = { fg = C.syntax.cyan },
-    DashboardShortcut = { fg = C.syntax.yellow },
-    DashboardFooter = { fg = C.syntax.cyan },
-    DashboardCenter = { fg = C.syntax.blue },
+    DashboardHeader = { fg = colors.syntax.cyan },
+    DashboardShortcut = { fg = colors.syntax.yellow },
+    DashboardFooter = { fg = colors.syntax.cyan },
+    DashboardCenter = { fg = colors.syntax.blue },
   }
 end
 

@@ -1,14 +1,14 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    LightspeedLabel = { fg = C.ui.red, underline = true },
-    LightspeedLabelOverlapped = { fg = C.syntax.blue, underline = true },
-    LightspeedLabelDistant = { fg = C.ui.red, underline = true },
-    LightspeedLabelDistantOverlapped = { fg = C.ui.blue, underline = true },
-    LightspeedShortcut = { fg = C.ui.tool, bg = C.ui.red, bold = true, underline = true },
-    LightspeedShortcutOverlapped = { fg = C.ui.tool, bg = C.syntax.blue, bold = true, underline = true },
-    LightspeedMaskedChar = { fg = C.ui.green },
-    LightspeedUnlabeledMatch = { fg = C.syntax.text, bold = true },
+    LightspeedLabel = { fg = colors.ui.red, underline = true },
+    LightspeedLabelOverlapped = { fg = colors.syntax.blue, underline = true },
+    LightspeedLabelDistant = { fg = colors.ui.red, underline = true },
+    LightspeedLabelDistantOverlapped = { fg = colors.ui.blue, underline = true },
+    LightspeedShortcut = { fg = colors.ui.tool, bg = colors.ui.red, bold = true, underline = true },
+    LightspeedShortcutOverlapped = { fg = colors.ui.tool, bg = colors.syntax.blue, bold = true, underline = true },
+    LightspeedMaskedChar = { fg = colors.ui.green },
+    LightspeedUnlabeledMatch = { fg = colors.syntax.text, bold = true },
     LightspeedUniqueChar = { link = "LightspeedUnlabeledMatch" },
     LightspeedGreyWash = { link = "Comment" },
     LightspeedOneCharMatch = { link = "LightspeedShortcut" },

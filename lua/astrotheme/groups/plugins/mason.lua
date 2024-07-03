@@ -1,23 +1,23 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
     MasonNormal = { link = "NormalFloat" },
     MasonHeader = { link = "FloatTitle" },
-    MasonHeaderSecondary = { bold = true, fg = C.ui.base, bg = C.ui.blue },
+    MasonHeaderSecondary = { bold = true, fg = colors.ui.base, bg = colors.ui.blue },
 
-    MasonHighlight = { fg = C.ui.blue },
-    MasonHighlightBlock = { bg = C.ui.blue, fg = C.ui.base },
-    MasonHighlightBlockBold = { bg = C.ui.accent, fg = C.ui.base, bold = true },
+    MasonHighlight = { fg = colors.ui.blue },
+    MasonHighlightBlock = { bg = colors.ui.blue, fg = colors.ui.base },
+    MasonHighlightBlockBold = { bg = colors.ui.accent, fg = colors.ui.base, bold = true },
 
-    MasonHighlightSecondary = { fg = C.ui.accent },
-    MasonHighlightBlockSecondary = { bg = C.ui.accent, fg = C.ui.base },
-    MasonHighlightBlockBoldSecondary = { bg = C.ui.accent, fg = C.ui.base, bold = true },
+    MasonHighlightSecondary = { fg = colors.ui.accent },
+    MasonHighlightBlockSecondary = { bg = colors.ui.accent, fg = colors.ui.base },
+    MasonHighlightBlockBoldSecondary = { bg = colors.ui.accent, fg = colors.ui.base, bold = true },
 
     MasonLink = { link = "MasonHighlight" },
 
-    MasonMuted = { fg = C.ui.red },
+    MasonMuted = { fg = colors.ui.red },
     MasonMutedBlock = { link = "CursorLine" },
-    MasonMutedBlockBold = { bg = C.ui.blue, fg = C.ui.base, bold = true },
+    MasonMutedBlockBold = { bg = colors.ui.blue, fg = colors.ui.base, bold = true },
 
     MasonError = { link = "ErrorMsg" },
     MasonWarning = { link = "WarningMsg" },

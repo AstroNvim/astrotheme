@@ -1,19 +1,19 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    BufferLineBufferVisible = { fg = C.ui.text_inactive, bg = C.ui.base },
-    BufferLineBufferSelected = { fg = C.ui.text_active, bg = C.ui.base, bold = true },
-    BufferLineTab = { fg = C.ui.text_inactve, bg = C.ui.tabline },
-    BufferLineTabSelected = { fg = C.ui.text, bg = C.ui.tabline },
-    BufferLineTabClose = { fg = C.ui.red, bg = C.ui.tabline },
-    BufferLineIndicatorSelected = { fg = C.ui.base, bg = C.ui.base },
-    BufferLineCloseButtonVisible = { fg = C.ui.red, bg = C.tableline },
-    BufferLineCloseButtonSelected = { fg = C.ui.red, bg = C.ui.tabline },
-    BufferLineModifiedVisible = { fg = C.ui.text, bg = C.ui.base },
-    BufferLineModifiedSelected = { fg = C.ui.green, bg = C.ui.base },
-    BufferLineModified = { fg = C.ui.green, bg = C.ui.tabline },
-    BufferLineError = { fg = C.ui.red, bg = C.ui.red },
-    BufferLineErrorDiagnostic = { fg = C.ui.red, bg = C.ui.red },
+    BufferLineBufferVisible = { fg = colors.ui.text_inactive, bg = colors.ui.base },
+    BufferLineBufferSelected = { fg = colors.ui.text_active, bg = colors.ui.base, bold = true },
+    BufferLineTab = { fg = colors.ui.text_inactive, bg = colors.ui.tabline },
+    BufferLineTabSelected = { fg = colors.ui.text, bg = colors.ui.tabline },
+    BufferLineTabClose = { fg = colors.ui.red, bg = colors.ui.tabline },
+    BufferLineIndicatorSelected = { fg = colors.ui.base, bg = colors.ui.base },
+    BufferLineCloseButtonVisible = { fg = colors.ui.red, bg = colors.ui.tabline },
+    BufferLineCloseButtonSelected = { fg = colors.ui.red, bg = colors.ui.tabline },
+    BufferLineModifiedVisible = { fg = colors.ui.text, bg = colors.ui.base },
+    BufferLineModifiedSelected = { fg = colors.ui.green, bg = colors.ui.base },
+    BufferLineModified = { fg = colors.ui.green, bg = colors.ui.tabline },
+    BufferLineError = { fg = colors.ui.red, bg = colors.ui.red },
+    BufferLineErrorDiagnostic = { fg = colors.ui.red, bg = colors.ui.red },
   }
 end
 

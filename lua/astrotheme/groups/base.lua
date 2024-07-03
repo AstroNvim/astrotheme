@@ -1,188 +1,188 @@
 ---@type AstroThemeCallback
-local function callback(opts)
+local function callback(colors, opts)
   return {
     --------------------
     --- Normal
     --------------------
-    Normal = { fg = C.syntax.text, bg = opts.transparent and C.none or C.ui.base },
+    Normal = { fg = colors.syntax.text, bg = opts.transparent and colors.none or colors.ui.base },
     NormalNC = {
-      fg = C.syntax.text,
-      bg = (opts.transparent and opts.inactive and C.ui.inactive_base)
-        or (opts.transparent and C.none)
-        or (opts.inactive and C.ui.inactive_base)
-        or C.ui.base,
+      fg = colors.syntax.text,
+      bg = (opts.transparent and opts.inactive and colors.ui.inactive_base)
+        or (opts.transparent and colors.none)
+        or (opts.inactive and colors.ui.inactive_base)
+        or colors.ui.base,
     },
 
     --------------------
     --- Float
     --------------------
     FloatTitle = {
-      fg = (opts.title_invert and C.ui.tool) or C.ui.title,
-      bg = (opts.title_invert and C.ui.title)
-        or (opts.inactive and C.ui.float)
-        or (opts.transparent and opts.float and C.ui.base)
-        or (opts.float and C.ui.float)
-        or (opts.transparent and C.none)
-        or C.ui.base,
+      fg = (opts.title_invert and colors.ui.tool) or colors.ui.title,
+      bg = (opts.title_invert and colors.ui.title)
+        or (opts.inactive and colors.ui.float)
+        or (opts.transparent and opts.float and colors.ui.base)
+        or (opts.float and colors.ui.float)
+        or (opts.transparent and colors.none)
+        or colors.ui.base,
       bold = true,
     },
     FloatBorder = {
-      fg = (opts.border and opts.float and C.ui.border)
-        or (opts.transparent and opts.float and C.ui.base)
-        or (opts.float and C.ui.float)
-        or C.ui.base,
-      bg = (opts.inactive and C.ui.float)
-        or (opts.transparent and opts.float and C.ui.base)
-        or (opts.float and C.ui.float)
-        or (opts.transparent and C.none)
-        or C.ui.base,
+      fg = (opts.border and opts.float and colors.ui.border)
+        or (opts.transparent and opts.float and colors.ui.base)
+        or (opts.float and colors.ui.float)
+        or colors.ui.base,
+      bg = (opts.inactive and colors.ui.float)
+        or (opts.transparent and opts.float and colors.ui.base)
+        or (opts.float and colors.ui.float)
+        or (opts.transparent and colors.none)
+        or colors.ui.base,
     },
     NormalFloat = {
-      fg = C.ui.text,
-      bg = (opts.inactive and C.ui.float)
-        or (opts.transparent and opts.float and C.ui.base)
-        or (opts.float and C.ui.float)
-        or (opts.transparent and C.none)
-        or C.ui.base,
+      fg = colors.ui.text,
+      bg = (opts.inactive and colors.ui.float)
+        or (opts.transparent and opts.float and colors.ui.base)
+        or (opts.float and colors.ui.float)
+        or (opts.transparent and colors.none)
+        or colors.ui.base,
     },
 
     --------------------
     --- Text
     --------------------
     Title = {
-      fg = (opts.title_invert and C.ui.tool) or C.ui.title,
-      bg = (opts.title_invert and C.ui.title) or C.ui.tool,
+      fg = (opts.title_invert and colors.ui.tool) or colors.ui.title,
+      bg = (opts.title_invert and colors.ui.title) or colors.ui.tool,
       bold = true,
     },
 
     Italic = { italic = true },
     Bold = { bold = true },
 
-    Conceal = { fg = C.ui.text_inactive, bg = C.none },
-    SpecialKey = { fg = C.ui.text, bg = C.none },
+    Conceal = { fg = colors.ui.text_inactive, bg = colors.none },
+    SpecialKey = { fg = colors.ui.text, bg = colors.none },
 
     ----------------
     --- Tab
     ----------------
-    TabLine = { fg = C.ui.text_inactive, bg = C.ui.tabline },
-    TabLineSel = { fg = C.ui.text_active, bg = C.ui.base, bold = true, italic = true },
-    TabLineFill = { fg = C.none, bg = C.ui.tabline },
+    TabLine = { fg = colors.ui.text_inactive, bg = colors.ui.tabline },
+    TabLineSel = { fg = colors.ui.text_active, bg = colors.ui.base, bold = true, italic = true },
+    TabLineFill = { fg = colors.none, bg = colors.ui.tabline },
 
     ----------------
     --- Winbar
     ----------------
-    WinBar = { fg = C.ui.winbar, bg = C.none },
+    WinBar = { fg = colors.ui.winbar, bg = colors.none },
     WinBarNC = {
-      fg = C.ui.text_inactive,
-      bg = (opts.transparent and opts.inactive and C.ui.inactive_base)
-        or (opts.transparent and C.none)
-        or (opts.inactive and C.ui.inactive_base)
-        or C.ui.base,
+      fg = colors.ui.text_inactive,
+      bg = (opts.transparent and opts.inactive and colors.ui.inactive_base)
+        or (opts.transparent and colors.none)
+        or (opts.inactive and colors.ui.inactive_base)
+        or colors.ui.base,
     },
 
     --------------------
     --- Status
     --------------------
-    StatusLine = { fg = C.ui.text, bg = C.ui.statusline },
-    StatusLineNC = { fg = C.ui.text_inactive, bg = C.none },
-    StatusInactive = { fg = C.ui.tabline, bg = C.ui.text_inactive }, -- TODO: find better inactive color
-    StatusNormal = { fg = C.ui.tabline, bg = C.ui.blue },
-    StatusInsert = { fg = C.ui.tabline, bg = C.ui.green },
-    StatusVisual = { fg = C.ui.tabline, bg = C.ui.purple },
-    StatusReplace = { fg = C.ui.tabline, bg = C.ui.red },
-    StatusCommand = { fg = C.ui.tabline, bg = C.ui.yellow },
+    StatusLine = { fg = colors.ui.text, bg = colors.ui.statusline },
+    StatusLineNC = { fg = colors.ui.text_inactive, bg = colors.none },
+    StatusInactive = { fg = colors.ui.tabline, bg = colors.ui.text_inactive }, -- TODO: find better inactive color
+    StatusNormal = { fg = colors.ui.tabline, bg = colors.ui.blue },
+    StatusInsert = { fg = colors.ui.tabline, bg = colors.ui.green },
+    StatusVisual = { fg = colors.ui.tabline, bg = colors.ui.purple },
+    StatusReplace = { fg = colors.ui.tabline, bg = colors.ui.red },
+    StatusCommand = { fg = colors.ui.tabline, bg = colors.ui.yellow },
     StatusTerminal = { link = "StatusInsert" },
 
     --------------------
     --- UI
     --------------------
-    Cursor = { fg = C.ui.base, bg = C.ui.text },
+    Cursor = { fg = colors.ui.base, bg = colors.ui.text },
     CursorIM = { link = "Cursor" },
     lCursor = { link = "Cursor" },
 
-    CursorLineNr = { fg = C.ui.text_active, bg = C.none }, -- Active line number
-    LineNr = { fg = C.ui.none_text, bg = C.none }, -- Line numbers
+    CursorLineNr = { fg = colors.ui.text_active, bg = colors.none }, -- Active line number
+    LineNr = { fg = colors.ui.none_text, bg = colors.none }, -- Line numbers
 
     WinSeparator = {
-      fg = C.ui.split,
-      bg = opts.transparent and C.none or C.ui.base,
+      fg = colors.ui.split,
+      bg = opts.transparent and colors.none or colors.ui.base,
       bold = false,
     },
     VertSplit = {
-      fg = C.ui.split,
-      bg = opts.transparent and C.none or C.ui.base,
+      fg = colors.ui.split,
+      bg = opts.transparent and colors.none or colors.ui.base,
     },
 
-    Folded = { fg = C.ui.none_text, bg = C.none },
-    FoldColumn = { fg = C.ui.none_text, bg = C.none },
+    Folded = { fg = colors.ui.none_text, bg = colors.none },
+    FoldColumn = { fg = colors.ui.none_text, bg = colors.none },
 
-    NonText = { fg = C.ui.none_text, bg = C.none },
-    EndOfBuffer = { fg = C.ui.none_text, bg = C.none },
-    SignColumn = { fg = C.none, bg = C.none },
+    NonText = { fg = colors.ui.none_text, bg = colors.none },
+    EndOfBuffer = { fg = colors.ui.none_text, bg = colors.none },
+    SignColumn = { fg = colors.none, bg = colors.none },
 
     --------------------
     --- Diagnostics
     --------------------
-    DiffAdd = { fg = C.ui.base, bg = C.syntax.green },
-    DiffChange = { fg = C.ui.base, bg = C.syntax.yellow },
-    DiffDelete = { fg = C.ui.base, bg = C.syntax.red },
-    DiffText = { fg = C.ui.base, bg = C.syntax.yellow },
-    DiffAdded = { fg = C.syntax.green },
-    DiffRemoved = { fg = C.syntax.red },
-    DiffChanged = { fg = C.syntax.blue },
-    DiffOldFile = { fg = C.syntax.orange },
-    DiffNewFile = { fg = C.syntax.green },
-    DiffFile = { fg = C.syntax.blue },
-    DiffLine = { fg = C.syntax.text }, -- NOTE: Find better color
-    DiffIndexLine = { fg = C.syntax.cyan },
+    DiffAdd = { fg = colors.ui.base, bg = colors.syntax.green },
+    DiffChange = { fg = colors.ui.base, bg = colors.syntax.yellow },
+    DiffDelete = { fg = colors.ui.base, bg = colors.syntax.red },
+    DiffText = { fg = colors.ui.base, bg = colors.syntax.yellow },
+    DiffAdded = { fg = colors.syntax.green },
+    DiffRemoved = { fg = colors.syntax.red },
+    DiffChanged = { fg = colors.syntax.blue },
+    DiffOldFile = { fg = colors.syntax.orange },
+    DiffNewFile = { fg = colors.syntax.green },
+    DiffFile = { fg = colors.syntax.blue },
+    DiffLine = { fg = colors.syntax.text }, -- NOTE: Find better color
+    DiffIndexLine = { fg = colors.syntax.cyan },
 
-    ErrorMsg = { fg = C.syntax.red, bg = C.none },
-    WarningMsg = { fg = C.ui.yellow, bg = C.none },
-    Question = { fg = C.ui.purple, bg = C.none },
+    ErrorMsg = { fg = colors.syntax.red, bg = colors.none },
+    WarningMsg = { fg = colors.ui.yellow, bg = colors.none },
+    Question = { fg = colors.ui.purple, bg = colors.none },
 
     --------------------
     --- Menu
     --------------------
-    Pmenu = { fg = C.ui.text, bg = C.ui.float },
+    Pmenu = { fg = colors.ui.text, bg = colors.ui.float },
     -- TODO: move `menu_selection` -> `selection`
-    PmenuSel = { bg = C.ui.menu_selection, bold = true, blend = 0 },
-    PmenuSbar = { fg = C.none, bg = C.ui.float },
-    PmenuThumb = { fg = C.none, bg = C.ui.scrollbar, blend = 0 },
+    PmenuSel = { bg = colors.ui.menu_selection, bold = true, blend = 0 },
+    PmenuSbar = { fg = colors.none, bg = colors.ui.float },
+    PmenuThumb = { fg = colors.none, bg = colors.ui.scrollbar, blend = 0 },
 
-    WildMenu = { fg = C.ui.base, bg = C.ui.accent },
+    WildMenu = { fg = colors.ui.base, bg = colors.ui.accent },
 
     --------------------
     --- Search & Select
     --------------------
-    Search = { fg = C.none, bg = C.ui.selection },
-    IncSearch = { fg = C.ui.base, bg = C.ui.purple },
-    Substitute = { fg = C.ui.base, bg = C.ui.red, bold = true },
+    Search = { fg = colors.none, bg = colors.ui.selection },
+    IncSearch = { fg = colors.ui.base, bg = colors.ui.purple },
+    Substitute = { fg = colors.ui.base, bg = colors.ui.red, bold = true },
     CurSearch = { link = "IncSearch" },
-    Visual = { fg = C.none, bg = C.ui.selection },
-    VisualNOS = { fg = C.ui.selection, bg = C.none },
+    Visual = { fg = colors.none, bg = colors.ui.selection },
+    VisualNOS = { fg = colors.ui.selection, bg = colors.none },
 
     --------------------
     --- Highlights
     --------------------
-    CursorColumn = { fg = C.none, bg = C.ui.current_line },
-    ColorColumn = { fg = C.none, bg = C.ui.current_line }, -- NOTE: Find better color
-    CursorLine = { fg = C.none, bg = opts.transparent and C.none or C.ui.current_line },
-    MatchParen = { fg = C.ui.orange, bg = C.none, bold = true },
+    CursorColumn = { fg = colors.none, bg = colors.ui.current_line },
+    ColorColumn = { fg = colors.none, bg = colors.ui.current_line }, -- NOTE: Find better color
+    CursorLine = { fg = colors.none, bg = opts.transparent and colors.none or colors.ui.current_line },
+    MatchParen = { fg = colors.ui.orange, bg = colors.none, bold = true },
 
     --------------------
     --- Spell
     --------------------
-    SpellBad = { sp = C.ui.red, undercurl = true },
-    SpellCap = { sp = C.ui.yellow, undercurl = true },
-    SpellLocal = { sp = C.ui.blue, undercurl = true },
-    SpellRare = { sp = C.ui.green, undercurl = true },
+    SpellBad = { sp = colors.ui.red, undercurl = true },
+    SpellCap = { sp = colors.ui.yellow, undercurl = true },
+    SpellLocal = { sp = colors.ui.blue, undercurl = true },
+    SpellRare = { sp = colors.ui.green, undercurl = true },
 
     ----------------
     --- Other
     ----------------
-    Terminal = { fg = C.ui.text, bg = C.ui.base },
-    Directory = { fg = C.ui.blue, bg = C.none },
-    QuickFixLine = { fg = C.ui.base, bg = C.ui.yellow },
+    Terminal = { fg = colors.ui.text, bg = colors.ui.base },
+    Directory = { fg = colors.ui.blue, bg = colors.none },
+    QuickFixLine = { fg = colors.ui.base, bg = colors.ui.yellow },
   }
 end
 

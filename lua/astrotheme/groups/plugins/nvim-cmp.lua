@@ -1,11 +1,11 @@
 ---@type AstroThemeCallback
-local function callback()
+local function callback(colors)
   return {
-    CmpItemAbbr = { fg = C.ui.text },
-    CmpItemAbbrDeprecated = { fg = C.syntax.red, strikethrough = true },
-    CmpItemAbbrMatch = { fg = C.ui.text_match, bold = true },
-    CmpItemAbbrMatchFuzzy = { fg = C.ui.text_match, bold = true },
-    CmpItemKind = { fg = C.syntax.yellow },
+    CmpItemAbbr = { fg = colors.ui.text },
+    CmpItemAbbrDeprecated = { fg = colors.syntax.red, strikethrough = true },
+    CmpItemAbbrMatch = { fg = colors.ui.text_match, bold = true },
+    CmpItemAbbrMatchFuzzy = { fg = colors.ui.text_match, bold = true },
+    CmpItemKind = { fg = colors.syntax.yellow },
     CmpItemKindClass = { link = "@type" },
     CmpItemKindColor = { link = "@constant" },
     CmpItemKindConstant = { link = "@constant" },
