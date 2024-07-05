@@ -1,5 +1,27 @@
 # Changelog
 
+## [4.0.0](https://github.com/AstroNvim/astrotheme/compare/v3.9.0...v4.0.0) (2024-07-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove `dev` mode and move to automatic dev detection using `mini.hipatterns`
+
+### Features
+
+* add syntactic sugar to links ([b4a6355](https://github.com/AstroNvim/astrotheme/commit/b4a6355bd60d062c729bf800a3df4ae839c788c7))
+* only enable dev mode if `dev` mode enabled in Lazy ([36c57b4](https://github.com/AstroNvim/astrotheme/commit/36c57b442a0abe36e753343976212e884a9e8158))
+* **plugins:** add `mini.icons` support ([a551c24](https://github.com/AstroNvim/astrotheme/commit/a551c248eac4fd8cd6e1c7a62540fc7e9209960f))
+* remove `dev` mode and move to automatic dev detection using `mini.hipatterns` ([1b6ee72](https://github.com/AstroNvim/astrotheme/commit/1b6ee72619dc475fbbe96bc3df9ebae71d211db5))
+* **util:** allow adhoc toggling of live reloading ([92cbe2e](https://github.com/AstroNvim/astrotheme/commit/92cbe2efe4f239bd419cc2e182f54d07e2580d28))
+
+
+### Bug Fixes
+
+* disable lazy loading of `mini.hipatterns` in AstroTheme project ([dac0ccf](https://github.com/AstroNvim/astrotheme/commit/dac0ccf6dc6e87c09bfc3c7dffe891b155694674))
+* fix typo ([d83b89c](https://github.com/AstroNvim/astrotheme/commit/d83b89cd495e72d682259a2952066cd74df98fd1))
+* **palettes:** add missing tables ([110ab34](https://github.com/AstroNvim/astrotheme/commit/110ab34c642399a0fe0ad65839113068a9eb0900))
+
 ## [3.9.0](https://github.com/AstroNvim/astrotheme/compare/v3.8.0...v3.9.0) (2024-06-17)
 
 
