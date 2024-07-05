@@ -1,4 +1,4 @@
-*astrotheme.txt*         For Neovim >= 0.9.0         Last change: 2024 July 04
+*astrotheme.txt*         For Neovim >= 0.9.0         Last change: 2024 July 05
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -239,9 +239,19 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
 
   indent_blankline.nvim                                    indent-blankline
 
+  lazy.nvim                                                lazy
+
   lightspeed.nvim                                          lightspeed
 
   lualine.nvim                                             lualine
+
+  mason.nvim                                               mason
+
+  mini.nvim                                                mini
+
+  mini.icons                                               miniicons
+
+  mini.starter                                             ministarter
 
   neo-tree.nvim                                            neo-tree
 
