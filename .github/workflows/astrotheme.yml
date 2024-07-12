@@ -1,0 +1,39 @@
+name: AstroTheme
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nvim-version: ["stable", "nightly"]
+    name: Test Neovim ${{ matrix.nvim-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: ${{ matrix.nvim-version }}
+      - run: make test
+  build:
+    runs-on: ubuntu-latest
+    name: Build Extras
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+      - run: make extras
+      - name: Push changes
+        if: ${{ github.event_name == 'push' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: "extras/*"
+          commit_message: "chore(extras): auto-generate extras"
+          commit_user_name: "astronvimbot"
+          commit_user_email: "github@astronvim.com"
+          commit_author: "AstroNvim Bot <github@astronvim.com>"
