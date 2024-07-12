@@ -20,6 +20,7 @@ M.extras = {
   foot             = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
   gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
   helix            = { ext = "toml", url = "https://helix-editor.com/", label = "Helix" },
+  iterm            = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
 }
 
 function M.setup()
