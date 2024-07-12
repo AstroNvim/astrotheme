@@ -40,7 +40,6 @@ function M.setup()
       local fname = extra .. (info.subdir and "/" .. info.subdir or "") .. "/" .. palette .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/AstroNvim/astrotheme/raw/main/extras/" .. fname
       colors["_style_name"] = "AstroTheme " .. palette_name
-      colors["_name"] = "astrotheme_" .. palette
       colors["_style"] = palette
       print("[write] " .. fname)
       M.write("extras/" .. fname, plugin.generate(colors, highlights, config))

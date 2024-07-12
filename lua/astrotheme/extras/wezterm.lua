@@ -49,7 +49,7 @@ bg_color = "${ui.base}"
 [metadata]
 aliases = []
 author = "AstroNvim"
-name = "${_name}"]],
+name = "${_style}"]],
     colors
   )
 end
