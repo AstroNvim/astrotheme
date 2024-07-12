@@ -1,0 +1,24 @@
+    # AstroDark
+
+    # Syntax Highlighting Colors
+    fish_color_normal ADB0BB
+    fish_color_command 4AC2B8
+    fish_color_keyword DD97F1
+    fish_color_quote DFAB25
+    fish_color_redirection ADB0BB
+    fish_color_end F5983A
+    fish_color_error FF838B
+    fish_color_param DD97F1
+    fish_color_comment 696C76
+    fish_color_selection --background=26343F
+    fish_color_search_match --background=26343F
+    fish_color_operator 87C05F
+    fish_color_escape DD97F1
+    fish_color_autosuggestion 696C76
+
+    # Completion Pager Colors
+    fish_pager_color_progress 696C76
+    fish_pager_color_prefix 4AC2B8
+    fish_pager_color_completion ADB0BB
+    fish_pager_color_description 696C76
+    fish_pager_color_selected_background --background=26343F

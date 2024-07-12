@@ -1,0 +1,22 @@
+! AstroMars colors for Xresources
+
+*background: #1E1517
+*foreground: #A5B2BC
+
+*color0: #281E22
+*color1: #DF8489
+*color2: #84A860
+*color3: #C3963D
+*color4: #4FA9C6
+*color5: #CD87BA
+*color6: #4FAD97
+*color7: #8B7079
+
+*color8: #41383A
+*color9: #FFA7AC
+*color10: #A7CB83
+*color11: #E6B960
+*color12: #72CCE9
+*color13: #F0AADD
+*color14: #72D0BA
+*color15: #C8D5DF

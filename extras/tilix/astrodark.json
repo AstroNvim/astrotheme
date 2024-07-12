@@ -1,0 +1,25 @@
+{
+    "name": "AstroDark",
+    "comment": "",
+    "use-theme-colors": false,
+    "foreground-color": "#ADB0BB",
+    "background-color": "#1A1D23",
+    "palette": [
+        "#111317",
+        "#FF838B",
+        "#87C05F",
+        "#DFAB25",
+        "#5EB7FF",
+        "#DD97F1",
+        "#4AC2B8",
+        "#9B9FA9",
+        "#34363A",
+        "#FFA6AE",
+        "#AAE382",
+        "#FFCE48",
+        "#81DAFF",
+        "#FFBAFF",
+        "#6DE5DB",
+        "#D0D3DE"
+    ]
+}

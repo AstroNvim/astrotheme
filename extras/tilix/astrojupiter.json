@@ -1,0 +1,25 @@
+{
+    "name": "AstroJupiter",
+    "comment": "",
+    "use-theme-colors": false,
+    "foreground-color": "#815654",
+    "background-color": "#FEEEEE",
+    "palette": [
+        "#D8D6D5",
+        "#A13F37",
+        "#467118",
+        "#805C00",
+        "#006E89",
+        "#90437A",
+        "#007652",
+        "#9E7876",
+        "#B0AEAD",
+        "#C9675F",
+        "#6E9940",
+        "#A88428",
+        "#2896B1",
+        "#B86BA2",
+        "#289E7A",
+        "#8B605E"
+    ]
+}

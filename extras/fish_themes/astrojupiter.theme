@@ -1,0 +1,24 @@
+    # AstroJupiter
+
+    # Syntax Highlighting Colors
+    fish_color_normal 815654
+    fish_color_command 007652
+    fish_color_keyword 90437A
+    fish_color_quote 805C00
+    fish_color_redirection 815654
+    fish_color_end 954D00
+    fish_color_error A13F37
+    fish_color_param 90437A
+    fish_color_comment 937C7A
+    fish_color_selection --background=BBC9D7
+    fish_color_search_match --background=BBC9D7
+    fish_color_operator 467118
+    fish_color_escape 90437A
+    fish_color_autosuggestion 937C7A
+
+    # Completion Pager Colors
+    fish_pager_color_progress 937C7A
+    fish_pager_color_prefix 007652
+    fish_pager_color_completion 815654
+    fish_pager_color_description 937C7A
+    fish_pager_color_selected_background --background=BBC9D7

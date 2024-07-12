@@ -1,0 +1,19 @@
+// AstroMars Zellij Colors
+// Add this file to your `CONFIG_DIR/themes` directory as described here:
+// https://zellij.dev/documentation/themes#getting-zellij-to-pick-up-the-theme
+
+themes {
+    AstroMars {
+        fg "#A5B2BC"
+        bg "#1E1517"
+        black "#281E22"
+        red "#DF8489"
+        green "#84A860"
+        yellow "#C3963D"
+        blue "#4FA9C6"
+        magenta "#CD87BA"
+        cyan "#4FAD97"
+        white "#8B7079"
+        orange "#EF9474"
+    }
+}

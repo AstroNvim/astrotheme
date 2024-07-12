@@ -1,0 +1,17 @@
+# AstroMars colors for dunst
+# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
+[urgency_low]
+    background = "#1A1113"
+    foreground = "#A5B2BC"
+    frame_color = "#736468"
+
+[urgency_normal]
+    background = "#1E1517"
+    foreground = "#A5B2BC"
+    frame_color = "#736468"
+
+[urgency_critical]
+    background = "#251D1F"
+    foreground = "#DF8489"
+    frame_color = "#DF8489"

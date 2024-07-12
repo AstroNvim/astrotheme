@@ -1,0 +1,19 @@
+// AstroLight Zellij Colors
+// Add this file to your `CONFIG_DIR/themes` directory as described here:
+// https://zellij.dev/documentation/themes#getting-zellij-to-pick-up-the-theme
+
+themes {
+    AstroLight {
+        fg "#4F4F4F"
+        bg "#F7F8F8"
+        black "#E1E2E4"
+        red "#990000"
+        green "#345E00"
+        yellow "#7300B8"
+        blue "#00508A"
+        magenta "#9E007C"
+        cyan "#00615B"
+        white "#737474"
+        orange "#A34500"
+    }
+}

@@ -1,0 +1,22 @@
+! AstroLight colors for Xresources
+
+*background: #F7F8F8
+*foreground: #4F4F4F
+
+*color0: #E1E2E4
+*color1: #990000
+*color2: #345E00
+*color3: #7300B8
+*color4: #00508A
+*color5: #9E007C
+*color6: #00615B
+*color7: #737474
+
+*color8: #B9BABC
+*color9: #C12828
+*color10: #5C8628
+*color11: #9B28E0
+*color12: #2878B2
+*color13: #C628A4
+*color14: #288983
+*color15: #595959

@@ -1,0 +1,24 @@
+    # AstroMars
+
+    # Syntax Highlighting Colors
+    fish_color_normal A5B2BC
+    fish_color_command 4FAD97
+    fish_color_keyword CD87BA
+    fish_color_quote C3963D
+    fish_color_redirection A5B2BC
+    fish_color_end EF9474
+    fish_color_error DF8489
+    fish_color_param CD87BA
+    fish_color_comment 63646A
+    fish_color_selection --background=1B282C
+    fish_color_search_match --background=1B282C
+    fish_color_operator 84A860
+    fish_color_escape CD87BA
+    fish_color_autosuggestion 63646A
+
+    # Completion Pager Colors
+    fish_pager_color_progress 63646A
+    fish_pager_color_prefix 4FAD97
+    fish_pager_color_completion A5B2BC
+    fish_pager_color_description 63646A
+    fish_pager_color_selected_background --background=1B282C

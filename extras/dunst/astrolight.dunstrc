@@ -1,0 +1,17 @@
+# AstroLight colors for dunst
+# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
+[urgency_low]
+    background = "#EAEBEB"
+    foreground = "#4F4F4F"
+    frame_color = "#671FF0"
+
+[urgency_normal]
+    background = "#F7F8F8"
+    foreground = "#4F4F4F"
+    frame_color = "#671FF0"
+
+[urgency_critical]
+    background = "#DADBDD"
+    foreground = "#990000"
+    frame_color = "#990000"

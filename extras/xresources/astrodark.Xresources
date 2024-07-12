@@ -1,0 +1,22 @@
+! AstroDark colors for Xresources
+
+*background: #1A1D23
+*foreground: #ADB0BB
+
+*color0: #111317
+*color1: #FF838B
+*color2: #87C05F
+*color3: #DFAB25
+*color4: #5EB7FF
+*color5: #DD97F1
+*color6: #4AC2B8
+*color7: #9B9FA9
+
+*color8: #34363A
+*color9: #FFA6AE
+*color10: #AAE382
+*color11: #FFCE48
+*color12: #81DAFF
+*color13: #FFBAFF
+*color14: #6DE5DB
+*color15: #D0D3DE

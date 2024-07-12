@@ -1,0 +1,17 @@
+# AstroJupiter colors for dunst
+# For more configuration options see https://github.com/dunst-project/dunst/blob/master/dunstrc
+
+[urgency_low]
+    background = "#F9DCD1"
+    foreground = "#815654"
+    frame_color = "#D04F4E"
+
+[urgency_normal]
+    background = "#FEEEEE"
+    foreground = "#815654"
+    frame_color = "#D04F4E"
+
+[urgency_critical]
+    background = "#E7CFCA"
+    foreground = "#A13F37"
+    frame_color = "#A13F37"

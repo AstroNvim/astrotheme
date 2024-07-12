@@ -1,0 +1,22 @@
+! AstroJupiter colors for Xresources
+
+*background: #FEEEEE
+*foreground: #815654
+
+*color0: #D8D6D5
+*color1: #A13F37
+*color2: #467118
+*color3: #805C00
+*color4: #006E89
+*color5: #90437A
+*color6: #007652
+*color7: #9E7876
+
+*color8: #B0AEAD
+*color9: #C9675F
+*color10: #6E9940
+*color11: #A88428
+*color12: #2896B1
+*color13: #B86BA2
+*color14: #289E7A
+*color15: #8B605E
