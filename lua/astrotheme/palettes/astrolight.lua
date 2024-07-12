@@ -20,8 +20,9 @@ c.syntax.purple = "#9E007C"
 c.syntax.cyan = "#00615B"
 c.syntax.orange = "#A34500"
 
-c.syntax.comment = "#8B9297"
 c.syntax.text = "#4F4F4F"
+c.syntax.comment = "#8B9297"
+c.syntax.mute = "#8B9297"
 
 --------------------------------
 --- UI
