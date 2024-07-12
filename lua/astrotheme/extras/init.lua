@@ -14,6 +14,7 @@ M.extras = {
   wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
   alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
   delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
+  dunst            = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
 }
 
 function M.setup()
