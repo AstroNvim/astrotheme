@@ -24,6 +24,7 @@ M.extras = {
   lazygit          = { ext = "yml", url = "https://github.com/jesseduffield/lazygit", label = "Lazygit" },
   lua              = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
   slack            = {ext = "txt", url = "https://slack.com", label = "Slack"},
+  spotify_player   = {ext = "toml", url = "https://github.com/aome510/spotify-player", label = "Spotify Player"},
 }
 
 function M.setup()
