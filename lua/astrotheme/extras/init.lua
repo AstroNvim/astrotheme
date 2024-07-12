@@ -12,6 +12,7 @@ M.extras = {
   lua     = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
   vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
   wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
+  alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
 }
 
 function M.setup()
