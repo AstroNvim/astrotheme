@@ -38,10 +38,10 @@ function M.setup()
 
   -- map of style to style name
   local palettes = {
-    astrodark = "Dark",
-    astrolight = "Light",
-    astromars = "Mars",
-    astrojupiter = "Jupiter",
+    astrodark = "AstroDark",
+    astrolight = "AstroLight",
+    astromars = "AstroMars",
+    astrojupiter = "AstroJupiter",
   }
 
   ---@type string[]
@@ -58,7 +58,7 @@ function M.setup()
       local highlights = util.get_highlights(colors, config)
       local fname = extra .. (info.subdir and "/" .. info.subdir or "") .. "/" .. palette .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/AstroNvim/astrotheme/raw/main/extras/" .. fname
-      colors["_style_name"] = "AstroTheme " .. palette_name
+      colors["_style_name"] = palette_name
       colors["_style"] = palette
       print("[write] " .. fname)
       M.write("extras/" .. fname, plugin.generate(colors, highlights, config))
