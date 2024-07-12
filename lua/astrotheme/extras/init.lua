@@ -13,6 +13,7 @@ M.extras = {
   vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
   wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
   alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
+  delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
 }
 
 function M.setup()
