@@ -26,6 +26,7 @@ M.extras = {
   slack            = {ext = "txt", url = "https://slack.com", label = "Slack"},
   spotify_player   = {ext = "toml", url = "https://github.com/aome510/spotify-player", label = "Spotify Player"},
   terminator       = { ext = "conf", url = "https://gnome-terminator.readthedocs.io/en/latest/config.html", label = "Terminator" },
+  tilix            = { ext = "json", url = "https://github.com/gnunn1/tilix", label = "Tilix" },
 }
 
 function M.setup()
