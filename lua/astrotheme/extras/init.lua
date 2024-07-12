@@ -9,8 +9,6 @@ local M = {}
 -- stylua: ignore
 M.extras = {
   -- Keep all entries here aligned by the first `=` sign
-  vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
-  wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
   alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
   delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
   dunst            = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
@@ -27,6 +25,9 @@ M.extras = {
   spotify_player   = {ext = "toml", url = "https://github.com/aome510/spotify-player", label = "Spotify Player"},
   terminator       = { ext = "conf", url = "https://gnome-terminator.readthedocs.io/en/latest/config.html", label = "Terminator" },
   tilix            = { ext = "json", url = "https://github.com/gnunn1/tilix", label = "Tilix" },
+  vim              = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
+  wezterm          = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
+  windows_terminal = { ext = "json", url = "https://aka.ms/terminal-documentation", label = "Windows Terminal" },
 }
 
 function M.setup()
