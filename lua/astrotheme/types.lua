@@ -73,6 +73,10 @@
 ---@field syntax AstroThemePaletteSyntax? Colors that control syntax related highlight groups
 ---@field term AstroThemePaletteTerm? Colors that control colors set for in-editor terminals
 ---@field ui AstroThemePaletteUI? Colors that are used throughout the general user interface
+---@field _upstream_url string?
+---@field _style_name string?
+---@field _name string?
+---@field _style string?
 
 ---@class AstroThemeHighlightOpts
 ---@field modify_hl_groups fun(hl: AstroThemeHighlights, c: AstroThemePalette)? Function for fine control over highlight setting. The first parameter is the table of highlights to modify directly, the second is the current palette of colors

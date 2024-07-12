@@ -5,15 +5,16 @@
 local M = {}
 
 -- map of plugin name to plugin extension
---- @type table<string, {ext:string, url:string, label:string, subdir?: string, sep?:string}>
+--- @type table<string, {ext:string, url:string, label:string, subdir?: string}>
 -- stylua: ignore
 M.extras = {
   -- Keep all entries here aligned by the first `=` sign
   wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
+  vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
 }
 
 function M.setup()
-  local config, util = require("astrotheme").config, require "astrotheme.lib.util"
+  local util = require "astrotheme.lib.util"
 
   -- map of style to style name
   local palettes = {
@@ -31,16 +32,11 @@ function M.setup()
     local info = M.extras[extra]
     local plugin = require("astrotheme.extras." .. extra)
     for palette, palette_name in pairs(palettes) do
+      local config = require("astrotheme.lib.config").default
       config.palette, config.plugin_default = palette, true
       local colors = util.set_palettes(config)
       local highlights = util.get_highlights(colors, config)
-      local fname = extra
-        .. (info.subdir and "/" .. info.subdir .. "/" or "")
-        .. "/astrotheme"
-        .. (info.sep or "_")
-        .. palette
-        .. "."
-        .. info.ext
+      local fname = extra .. (info.subdir and "/" .. info.subdir or "") .. "/" .. palette .. "." .. info.ext
       colors["_upstream_url"] = "https://github.com/AstroNvim/astrotheme/raw/main/extras/" .. fname
       colors["_style_name"] = "AstroTheme " .. palette_name
       colors["_name"] = "astrotheme_" .. palette
