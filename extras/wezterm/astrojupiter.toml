@@ -1,0 +1,44 @@
+[colors]
+foreground = "#815654"
+background = "#FEEEEE"
+cursor_bg = "#815654"
+cursor_border = "#815654"
+cursor_fg = "#FEEEEE"
+selection_bg = "#BBC9D7"
+selection_fg = "#815654"
+split = "#0090A2"
+compose_cursor = "#D05312"
+scrollbar_thumb = "#937C7A"
+
+ansi = ["#D8D6D5", "#A13F37", "#467118", "#805C00", "#006E89", "#90437A", "#007652", "#9E7876"]
+brights = ["#B0AEAD", "#C9675F", "#6E9940", "#A88428", "#2896B1", "#B86BA2", "#289E7A", "#8B605E"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#D04F4E"
+background = "#FEEEEE"
+
+[colors.tab_bar.active_tab]
+fg_color = "#815654"
+bg_color = "#D04F4E"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#937C7A"
+bg_color = "#F9DCD1"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#D04F4E"
+bg_color = "#F9DCD1"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#D04F4E"
+bg_color = "#FEEEEE"
+
+[colors.tab_bar.new_tab]
+fg_color = "#D04F4E"
+bg_color = "#FEEEEE"
+
+[metadata]
+aliases = []
+author = "AstroNvim"
+name = "astrojupiter"

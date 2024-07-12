@@ -1,0 +1,44 @@
+[colors]
+foreground = "#A5B2BC"
+background = "#1E1517"
+cursor_bg = "#A5B2BC"
+cursor_border = "#A5B2BC"
+cursor_fg = "#1E1517"
+selection_bg = "#1B282C"
+selection_fg = "#A5B2BC"
+split = "#9CBDC9"
+compose_cursor = "#FAA27F"
+scrollbar_thumb = "#63646A"
+
+ansi = ["#281E22", "#DF8489", "#84A860", "#C3963D", "#4FA9C6", "#CD87BA", "#4FAD97", "#8B7079"]
+brights = ["#41383A", "#FFA7AC", "#A7CB83", "#E6B960", "#72CCE9", "#F0AADD", "#72D0BA", "#C8D5DF"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#736468"
+background = "#1E1517"
+
+[colors.tab_bar.active_tab]
+fg_color = "#A5B2BC"
+bg_color = "#9CBDC9"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#68545B"
+bg_color = "#1A1113"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#9CBDC9"
+bg_color = "#1A1113"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#9CBDC9"
+bg_color = "#1E1517"
+
+[colors.tab_bar.new_tab]
+fg_color = "#9CBDC9"
+bg_color = "#1E1517"
+
+[metadata]
+aliases = []
+author = "AstroNvim"
+name = "astromars"
