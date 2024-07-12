@@ -284,3 +284,13 @@ Packer:
 ## 🚀 Contributing
 
 If you plan to contribute, please check the [contribution guidelines](https://github.com/AstroNvim/.github/blob/main/CONTRIBUTING.md) first.
+
+When contributing to the extras, we use a templating system for automatically generating extra files for all of the different color palettes. Here are some steps to get started:
+
+1. Create a file like `lua/astrotheme/extras/cool-app.lua`
+2. Add the name and output file extension to the `extras` table in `lua/astrotheme/extra/init.lua`
+3. Generate the new extra theme files by running the following command in the root of the repository:
+   ```sh
+   make extras
+   ```
+4. Verify the new templates are working by checking the generated files in the `extras/` directory. Please **DO NOT** commit them, as they get automatically built by the CI.
