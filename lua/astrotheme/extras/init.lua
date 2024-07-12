@@ -9,8 +9,9 @@ local M = {}
 -- stylua: ignore
 M.extras = {
   -- Keep all entries here aligned by the first `=` sign
-  wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
+  lua     = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
   vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
+  wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
 }
 
 function M.setup()
