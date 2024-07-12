@@ -25,6 +25,7 @@ M.extras = {
   lua              = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
   slack            = {ext = "txt", url = "https://slack.com", label = "Slack"},
   spotify_player   = {ext = "toml", url = "https://github.com/aome510/spotify-player", label = "Spotify Player"},
+  terminator       = { ext = "conf", url = "https://gnome-terminator.readthedocs.io/en/latest/config.html", label = "Terminator" },
 }
 
 function M.setup()
