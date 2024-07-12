@@ -9,7 +9,6 @@ local M = {}
 -- stylua: ignore
 M.extras = {
   -- Keep all entries here aligned by the first `=` sign
-  lua     = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
   vim     = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
   wezterm = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
   alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
@@ -23,6 +22,8 @@ M.extras = {
   iterm            = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
   kitty            = { ext = "conf", url = "https://sw.kovidgoyal.net/kitty/conf.html", label = "Kitty" },
   lazygit          = { ext = "yml", url = "https://github.com/jesseduffield/lazygit", label = "Lazygit" },
+  lua              = { ext = "lua", url = "https://www.lua.org", label = "Lua Table for testing" },
+  slack            = {ext = "txt", url = "https://slack.com", label = "Slack"},
 }
 
 function M.setup()
