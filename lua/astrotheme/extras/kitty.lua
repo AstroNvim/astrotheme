@@ -9,7 +9,6 @@ function M.generate(colors)
 # vim:ft=kitty
 
 ## name: ${_style_name}
-## license: MIT
 ## author: AstroNvim
 ## upstream: ${_upstream_url}
 
