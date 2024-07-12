@@ -19,6 +19,7 @@ M.extras = {
   fish_themes      = { ext = "theme", url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting", label = "Fish Themes" },
   foot             = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
   gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
+  helix            = { ext = "toml", url = "https://helix-editor.com/", label = "Helix" },
 }
 
 function M.setup()
