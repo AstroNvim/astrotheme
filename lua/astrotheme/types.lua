@@ -75,7 +75,6 @@
 ---@field ui AstroThemePaletteUI? Colors that are used throughout the general user interface
 ---@field _upstream_url string?
 ---@field _style_name string?
----@field _name string?
 ---@field _style string?
 
 ---@class AstroThemeHighlightOpts

@@ -5,6 +5,6 @@
 
 ```lua
 return {
-  color_scheme = "astrotheme_astrodark", -- or whichever palette you want
+  color_scheme = "astrodark", -- or whichever palette you want
 }
 ```
