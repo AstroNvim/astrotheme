@@ -21,6 +21,7 @@ M.extras = {
   gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
   helix            = { ext = "toml", url = "https://helix-editor.com/", label = "Helix" },
   iterm            = { ext = "itermcolors", url = "https://iterm2.com/", label = "iTerm" },
+  kitty            = { ext = "conf", url = "https://sw.kovidgoyal.net/kitty/conf.html", label = "Kitty" },
 }
 
 function M.setup()
