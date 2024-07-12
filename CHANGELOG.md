@@ -1,5 +1,39 @@
 # Changelog
 
+## [4.1.0](https://github.com/AstroNvim/astrotheme/compare/v4.0.0...v4.1.0) (2024-07-12)
+
+
+### Features
+
+* **extras:** add  Alacritty theme ([304a662](https://github.com/AstroNvim/astrotheme/commit/304a66287d6a09d693bb04437abbfd1658bf1a05))
+* **extras:** add `lua` to extras ([6bdac76](https://github.com/AstroNvim/astrotheme/commit/6bdac766cde6ae65eebd7b94af1841d5722f0032))
+* **extras:** add `vim` colorscheme to extras ([35eba15](https://github.com/AstroNvim/astrotheme/commit/35eba15d5b2e0f3e25482eeb7c0e2b3468c27fb9))
+* **extras:** add automatic generation of extras with templating ([aabb735](https://github.com/AstroNvim/astrotheme/commit/aabb7352748fcca1bc799da74b3577fa6beb6cd8))
+* **extras:** add Delta theme ([c547361](https://github.com/AstroNvim/astrotheme/commit/c547361a9010ca539e85497e6952bf4510ce3fb7))
+* **extras:** add Dunst theme ([ff1c5a0](https://github.com/AstroNvim/astrotheme/commit/ff1c5a0ca204ce86cc1576fe8b32e6e30da65385))
+* **extras:** add Fish themes ([98313e9](https://github.com/AstroNvim/astrotheme/commit/98313e9f39aa6245496463cdeb7c00d513b7c436))
+* **extras:** add Foot theme ([bc07be5](https://github.com/AstroNvim/astrotheme/commit/bc07be50ab9f81e22be79cef8bacb7ec6520d1ca))
+* **extras:** add GitUI theme ([a543d01](https://github.com/AstroNvim/astrotheme/commit/a543d0157e636db5798372cfb3ef0a616cff1f3f))
+* **extras:** add Helix theme ([a4629f0](https://github.com/AstroNvim/astrotheme/commit/a4629f075b1cb52e0e1fe110bbac103c867e9c79))
+* **extras:** add iTerm theme ([a985053](https://github.com/AstroNvim/astrotheme/commit/a9850537ea8bc56adb3adefbe349237320504fda))
+* **extras:** add Kitty theme ([705a03d](https://github.com/AstroNvim/astrotheme/commit/705a03dd5c058f5ca6b7248e7ff86cac4f3bc674))
+* **extras:** add LazyGit theme ([60c3763](https://github.com/AstroNvim/astrotheme/commit/60c37634f451cb45fb130ff06a159d33fb9bca86))
+* **extras:** add Slack theme ([67198bb](https://github.com/AstroNvim/astrotheme/commit/67198bb5e4d47b169fc867b078bb5e0ce1fb898e))
+* **extras:** add Spotify Player theme ([f77b768](https://github.com/AstroNvim/astrotheme/commit/f77b7680c27e1944dd2f4cb6efa8b2d915366232))
+* **extras:** add Terminator theme ([c071a93](https://github.com/AstroNvim/astrotheme/commit/c071a934d315f8e2e224165d02cfdeee9b2fba0d))
+* **extras:** add Tilix theme ([0c7adf2](https://github.com/AstroNvim/astrotheme/commit/0c7adf20b91d9dc1e281a28eb132ecfa27fe6346))
+* **extras:** add Windows Terminal theme ([6e92bf7](https://github.com/AstroNvim/astrotheme/commit/6e92bf776eb2e7387e7ae590442efb1e940f7d15))
+* **extras:** add XFCE Terminal theme ([655a345](https://github.com/AstroNvim/astrotheme/commit/655a3456dab1031c1cc65ffb191ae18a1da527a8))
+* **extras:** add XResources theme ([376ca09](https://github.com/AstroNvim/astrotheme/commit/376ca09e1527d547a5c7cc83cd0894658ad27495))
+* **extras:** add zellij theme ([1d3bd42](https://github.com/AstroNvim/astrotheme/commit/1d3bd42ea1628541ec8249f138935bc2bc9fc31a))
+
+
+### Bug Fixes
+
+* **extras:** fix style name ([9f1db05](https://github.com/AstroNvim/astrotheme/commit/9f1db05bef9833514e31e4362c2804a024ac3682))
+* **extras:** improve palette style names ([0e7f5e2](https://github.com/AstroNvim/astrotheme/commit/0e7f5e2bec6410a3213de4a890c8b18b7d8903ed))
+* **palettes:** add missing colors ([1c49d0d](https://github.com/AstroNvim/astrotheme/commit/1c49d0df0ec2a6b45be3c0152019e954fe8a70a1))
+
 ## [4.0.0](https://github.com/AstroNvim/astrotheme/compare/v3.9.0...v4.0.0) (2024-07-05)
 
 
