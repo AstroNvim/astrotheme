@@ -1,0 +1,38 @@
+# AstroDark color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# AstroDark color theme
+#
+set notification-error-bg "#F8747E"
+set notification-error-fg "#1A1D23"
+set notification-warning-bg "#EB8332"
+set notification-warning-fg "#1A1D23"
+set notification-bg "#1A1D23"
+set notification-fg "#ADB0BB"
+set completion-bg "#1A1D23"
+set completion-fg "#696C76"
+set completion-group-bg "#1A1D23"
+set completion-group-fg "#696C76"
+set completion-highlight-bg "#16181D"
+set completion-highlight-fg "#ADB0BB"
+set index-bg "#1A1D23"
+set index-fg "#ADB0BB"
+set index-active-bg "#16181D"
+set index-active-fg "#ADB0BB"
+set inputbar-bg "#1A1D23"
+set inputbar-fg "#ADB0BB"
+set statusbar-bg "#1A1D23"
+set statusbar-fg "#ADB0BB"
+set highlight-color "#D09214"
+set highlight-active-color "#75AD47"
+set default-bg "#1A1D23"
+set default-fg "#ADB0BB"
+set render-loading true
+set render-loading-fg "#1A1D23"
+set render-loading-bg "#ADB0BB"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#1A1D23"
+set recolor-darkcolor "#ADB0BB"

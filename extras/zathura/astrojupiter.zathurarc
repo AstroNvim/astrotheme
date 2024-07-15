@@ -1,0 +1,38 @@
+# AstroJupiter color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# AstroJupiter color theme
+#
+set notification-error-bg "#D04F4E"
+set notification-error-fg "#FEEEEE"
+set notification-warning-bg "#D05312"
+set notification-warning-fg "#FEEEEE"
+set notification-bg "#FEEEEE"
+set notification-fg "#815654"
+set completion-bg "#FEEEEE"
+set completion-fg "#937C7A"
+set completion-group-bg "#FEEEEE"
+set completion-group-fg "#937C7A"
+set completion-highlight-bg "#F9DCD1"
+set completion-highlight-fg "#815654"
+set index-bg "#FEEEEE"
+set index-fg "#815654"
+set index-active-bg "#F9DCD1"
+set index-active-fg "#815654"
+set inputbar-bg "#FEEEEE"
+set inputbar-fg "#815654"
+set statusbar-bg "#FEEEEE"
+set statusbar-fg "#815654"
+set highlight-color "#AC7300"
+set highlight-active-color "#569400"
+set default-bg "#FEEEEE"
+set default-fg "#815654"
+set render-loading true
+set render-loading-fg "#FEEEEE"
+set render-loading-bg "#815654"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#FEEEEE"
+set recolor-darkcolor "#815654"

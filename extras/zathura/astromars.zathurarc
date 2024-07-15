@@ -1,0 +1,38 @@
+# AstroMars color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# AstroMars color theme
+#
+set notification-error-bg "#E77777"
+set notification-error-fg "#1E1517"
+set notification-warning-bg "#FAA27F"
+set notification-warning-fg "#1E1517"
+set notification-bg "#1E1517"
+set notification-fg "#A5B2BC"
+set completion-bg "#1E1517"
+set completion-fg "#63646A"
+set completion-group-bg "#1E1517"
+set completion-group-fg "#63646A"
+set completion-highlight-bg "#1A1113"
+set completion-highlight-fg "#A5B2BC"
+set index-bg "#1E1517"
+set index-fg "#A5B2BC"
+set index-active-bg "#1A1113"
+set index-active-fg "#A5B2BC"
+set inputbar-bg "#1E1517"
+set inputbar-fg "#A5B2BC"
+set statusbar-bg "#1E1517"
+set statusbar-fg "#A5B2BC"
+set highlight-color "#FFA31A"
+set highlight-active-color "#9AC374"
+set default-bg "#1E1517"
+set default-fg "#A5B2BC"
+set render-loading true
+set render-loading-fg "#1E1517"
+set render-loading-bg "#A5B2BC"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#1E1517"
+set recolor-darkcolor "#A5B2BC"
