@@ -988,6 +988,15 @@ local highlights = {
     bg = "NONE",
     fg = "#00508A"
   },
+  FzfLuaBorder = {
+    bg = "#F7F8F8",
+    fg = "#671FF0"
+  },
+  FzfLuaTitle = {
+    bg = "#F7F8F8",
+    bold = true,
+    fg = "#671FF0"
+  },
   GitSignsAdd = {
     bg = "NONE",
     fg = "#42AD17"
