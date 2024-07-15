@@ -34,6 +34,7 @@ M.extras = {
   windows_terminal = { ext = "json", url = "https://aka.ms/terminal-documentation", label = "Windows Terminal" },
   xfceterm         = { ext = "theme", url = "https://docs.xfce.org/apps/terminal/advanced", label = "Xfce Terminal" },
   xresources       = { ext = "Xresources", url = "https://wiki.archlinux.org/title/X_resources", label = "Xresources" },
+  yazi             = { ext = "toml", url = "https://github.com/sxyazi/yazi", label = "Yazi" },
   zathura          = { ext = "zathurarc", url = "https://pwmt.org/projects/zathura/", label = "Zathura" },
   zellij           = { ext = "kdl", url = "https://zellij.dev/", label = "Zellij" },
 }
