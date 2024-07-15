@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.2.0](https://github.com/AstroNvim/astrotheme/compare/v4.1.0...v4.2.0) (2024-07-15)
+
+
+### Features
+
+* add `fzf-lua` support and `fzf` extra theme ([c94f756](https://github.com/AstroNvim/astrotheme/commit/c94f756ad14fe2bcdc35462d9348e4b206255c63))
+* **extras:** add `prism` colorscheme ([a6c8fe1](https://github.com/AstroNvim/astrotheme/commit/a6c8fe1bb079b6a22b49d6d11a027f906a1a7b7b))
+* **extras:** add `st` colorscheme ([28f2a1d](https://github.com/AstroNvim/astrotheme/commit/28f2a1d5f1885f12d294fc5ef2c42164ca77c238))
+* **extras:** add `sublime` colorscheme ([fc00d62](https://github.com/AstroNvim/astrotheme/commit/fc00d627fddc0e1cf2afd3eebf40ebe4801fc1ca))
+* **extras:** add `yazi` colorscheme ([4a5caf2](https://github.com/AstroNvim/astrotheme/commit/4a5caf20193e9df3d3c6a807c1b863981d322790))
+* **extras:** add `zathura` colorscheme ([9413aca](https://github.com/AstroNvim/astrotheme/commit/9413acac980fb75adc5b83e9d52d189b0b9e4554))
+* **extras:** add Ghostty ([824f866](https://github.com/AstroNvim/astrotheme/commit/824f866c45e5ad013e6153924e5412c2cc534412))
+
 ## [4.1.0](https://github.com/AstroNvim/astrotheme/compare/v4.0.0...v4.1.0) (2024-07-12)
 
 
