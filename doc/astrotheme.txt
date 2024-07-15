@@ -1,4 +1,4 @@
-*astrotheme.txt*         For Neovim >= 0.9.0         Last change: 2024 July 12
+*astrotheme.txt*         For Neovim >= 0.9.0         Last change: 2024 July 15
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -232,6 +232,8 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
   dashboard-nvim                                           dashboard-nvim
 
   flash.nvim                                               flash
+
+  fzf-lua                                                  fzf
 
   gitsigns.nvim                                            gitsigns
 
