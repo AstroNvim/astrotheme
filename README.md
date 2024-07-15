@@ -238,6 +238,7 @@ term.foreground
 | [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                   | `bufferline`         |
 | [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)                     | `dashboard-nvim`     |
 | [flash.nvim](https://github.com/folke/flash.nvim)                               | `flash`              |
+| [fzf-lua](https://github.com/ibhagwan/fzf-lua)                                  | `fzf`                |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)                     | `gitsigns`           |
 | [hop.nvim](https://github.com/phaazon/hop.nvim)                                 | `hop`                |
 | [indent_blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim) | `indent-blankline`   |

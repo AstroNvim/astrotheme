@@ -4,6 +4,7 @@ return {
   ["bufferline.nvim"] = "bufferline",
   ["dashboard-nvim"] = "dashboard-nvim",
   ["flash.nvim"] = "flash",
+  ["fzf-lua"] = "fzf",
   ["gitsigns.nvim"] = "gitsigns",
   ["hop.nvim"] = "hop",
   ["indent-blankline.nvim"] = "indent-blankline",
