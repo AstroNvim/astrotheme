@@ -332,7 +332,7 @@ function M.pairsByKeys(t, f)
   end
   table.sort(a, f)
   local i = 0 -- iterator variable
-  local iter = function() -- iterator function
+  local function iter() -- iterator function
     i = i + 1
     if a[i] == nil then
       return nil

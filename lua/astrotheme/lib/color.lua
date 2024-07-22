@@ -32,7 +32,7 @@ local Color = {}
 
 Color.__index = Color
 
-Color.__add = function(lhs, rhs)
+function Color.__add(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   return setmetatable({
@@ -42,7 +42,7 @@ Color.__add = function(lhs, rhs)
   }, Color)
 end
 
-Color.__sub = function(lhs, rhs)
+function Color.__sub(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   return setmetatable({
@@ -52,7 +52,7 @@ Color.__sub = function(lhs, rhs)
   }, Color)
 end
 
-Color.__div = function(lhs, rhs)
+function Color.__div(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   return setmetatable({
@@ -62,7 +62,7 @@ Color.__div = function(lhs, rhs)
   }, Color)
 end
 
-Color.__mul = function(lhs, rhs)
+function Color.__mul(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   return setmetatable({
@@ -72,7 +72,7 @@ Color.__mul = function(lhs, rhs)
   }, Color)
 end
 
-Color.__eq = function(lhs, rhs)
+function Color.__eq(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   local bool = false
@@ -80,7 +80,7 @@ Color.__eq = function(lhs, rhs)
   return bool
 end
 
-Color.__lt = function(lhs, rhs)
+function Color.__lt(lhs, rhs)
   lhs = _to_rgb(lhs)
   rhs = _to_rgb(rhs)
   local y1 = 0.2126 * lhs.r + 0.7152 * lhs.g + 0.0722 * lhs.b
@@ -89,7 +89,7 @@ Color.__lt = function(lhs, rhs)
   return y1 < y2
 end
 
-Color.__tostring = function(rgb)
+function Color.__tostring(rgb)
   -- local text = string.format("{%f, %f, %f}", rgb.r, rgb.g, rgb.b)
   local text = " " .. rgb:tohex() .. " "
   local text_color = "0;0;0"
@@ -102,7 +102,7 @@ end
 --- a hex value, or neovim raw value.
 ---@param color table | string | number
 ---@return Color
-Color.new = function(color)
+function Color.new(color)
   if type(color) == "string" then
     local hex = color:gsub("#", "")
 
@@ -127,7 +127,7 @@ end
 ---Clamps RGB values between 0 and 255.
 ---@param self Color
 ---@return Color
-Color.clamp = function(self)
+function Color.clamp(self)
   local function clamp(num) return math.max(0, math.min(255, num)) end
 
   return setmetatable({
@@ -140,7 +140,7 @@ end
 ---Rounds RGB values to the nearest integer.
 ---@param self Color
 ---@return Color
-Color.round = function(self)
+function Color.round(self)
   return setmetatable({
     r = math.floor(self.r + 0.5),
     g = math.floor(self.g + 0.5),
@@ -151,7 +151,7 @@ end
 ---Converts negative values to positive.
 ---@param self Color
 ---@return Color
-Color.abs = function(self)
+function Color.abs(self)
   return setmetatable({
     r = math.abs(self.r),
     g = math.abs(self.g),
@@ -164,7 +164,7 @@ end
 ---@param self Color
 ---@param value number lightness
 ---@return boolean
-Color.less = function(self, value)
+function Color.less(self, value)
   local y1 = 0.2126 * self.r + 0.7152 * self.g + 0.0722 * self.b
   return y1 < value
 end
@@ -174,7 +174,7 @@ end
 ---@param self Color
 ---@param value number lightness
 ---@return boolean
-Color.more = function(self, value)
+function Color.more(self, value)
   local y1 = 0.2126 * self.r + 0.7152 * self.g + 0.0722 * self.b
   return y1 > value
 end
@@ -182,7 +182,7 @@ end
 ---Sorts color from min to max in a dictionary.
 ---@param self Color
 ---@return string[]
-Color.sort = function(self)
+function Color.sort(self)
   local keys = {}
   for k, _ in pairs(self) do
     table.insert(keys, k)
@@ -198,7 +198,7 @@ end
 ---@param color Color | string | number
 ---@param amount number
 ---@return Color
-Color.blend = function(self, color, amount)
+function Color.blend(self, color, amount)
   self = (self + (color - self) * amount):round():clamp()
   return self
 end
@@ -207,7 +207,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.darken = function(self, amount)
+function Color.darken(self, amount)
   self = (self - amount):clamp()
   return self
 end
@@ -216,7 +216,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.lighten = function(self, amount)
+function Color.lighten(self, amount)
   self = (self + amount):clamp()
   return self
 end
@@ -225,7 +225,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.darken_2 = function(self, amount)
+function Color.darken_2(self, amount)
   self = (self - { amount * 0.6, amount * 0.8, amount * 0.6 }):clamp()
   return self
 end
@@ -234,7 +234,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.lighten_2 = function(self, amount)
+function Color.lighten_2(self, amount)
   self = (self + { amount, amount * 0.6, amount * 0.6 }):clamp()
   return self
 end
@@ -243,7 +243,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.desat = function(self, amount)
+function Color.desat(self, amount)
   local y1 = 0.2126 * self.r + 0.7152 * self.g + 0.0722 * self.b
   self = self:blend(y1, amount)
   return self
@@ -279,7 +279,7 @@ end
 ---@param self Color
 ---@param amount number
 ---@return Color
-Color.sat = function(self, amount)
+function Color.sat(self, amount)
   local min, mid, max = unpack(self:sort())
   local sat = Color.new { self.r, self.g, self.b }
 
@@ -304,18 +304,18 @@ end
 ---@param self Color
 ---@param color Color
 ---@return number
-Color.dif = function(self, color)
+function Color.dif(self, color)
   local y1 = 0.2126 * self.r + 0.7152 * self.g + 0.0722 * self.b
   local y2 = 0.2126 * color.r + 0.7152 * color.g + 0.0722 * color.b
   return math.abs(math.floor((y1 - y2) + 0.5))
 end
 
-Color.di = function(self, color) return Color.abs(color - self) end
+function Color.di(self, color) return Color.abs(color - self) end
 
 ---Converts Color object to a hex string.
 ---@param self Color
 ---@return string
-Color.tohex = function(self)
+function Color.tohex(self)
   local r = string.format("%02X", self.r)
   local g = string.format("%02X", self.g)
   local b = string.format("%02X", self.b)
@@ -327,7 +327,7 @@ end
 ---terminal color support.
 ---@param self Color
 ---@return string
-Color.debug = function(self)
+function Color.debug(self)
   local text = string.format("{ %.2f, %.2f, %.2f }", self.r, self.g, self.b)
   local text_color = "0;0;0"
   if self:less(127) then text_color = "255;255;255" end
