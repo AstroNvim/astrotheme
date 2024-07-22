@@ -15,6 +15,7 @@ M.extras = {
   fish             = { ext = "fish", url = "https://fishshell.com/docs/current/index.html", label = "Fish" },
   fish_themes      = { ext = "theme", url = "https://fishshell.com/docs/current/interactive.html#syntax-highlighting", label = "Fish Themes" },
   foot             = { ext = "ini", url = "https://codeberg.org/dnkl/foot", label = "Foot" },
+  fuzzel           = { ext = "ini", url = "https://codeberg.org/dnkl/fuzzel", label = "Fuzzel" },
   fzf              = { ext = "sh", url = "https://github.com/junegunn/fzf", label = "Fzf" },
   ghostty          = { ext = "config", url = "https://github.com/ghostty-org", label = "Ghostty" },
   gitui            = { ext = "ron", url = "https://github.com/extrawurst/gitui", label = "GitUI" },
