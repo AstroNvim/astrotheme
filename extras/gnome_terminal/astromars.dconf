@@ -1,0 +1,17 @@
+# Import this theme as follows:
+# 1. Create a new profile for GNOME Terminal
+# 2. Copy the UUID of the new profile (bottom right corner of the preferences window)
+# 3. Replace <PROFILE_UUID> below with the copied UUID
+# 4. Execute `dconf load /org/gnome/terminal/legacy/profiles:/ < astromars.dconf`
+[:<PROFILE_UUID>]
+background-color='rgb(30, 21, 23)'
+cursor-background-color='rgb(139, 112, 121)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(30, 21, 23)'
+foreground-color='rgb(165, 178, 188)'
+highlight-background-color='rgb(27, 40, 44)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(165, 178, 188)'
+palette=['rgb(40, 30, 34)', 'rgb(223, 132, 137)', 'rgb(132, 168, 96)', 'rgb(195, 150, 61)', 'rgb(79, 169, 198)', 'rgb(205, 135, 186)', 'rgb(79, 173, 151)', 'rgb(139, 112, 121)', 'rgb(65, 56, 58)', 'rgb(255, 167, 172)', 'rgb(167, 203, 131)', 'rgb(230, 185, 96)', 'rgb(114, 204, 233)', 'rgb(240, 170, 221)', 'rgb(114, 208, 186)', 'rgb(200, 213, 223)']
+use-theme-colors=false
+visible-name='AstroMars'

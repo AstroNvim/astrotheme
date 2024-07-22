@@ -1,0 +1,17 @@
+# Import this theme as follows:
+# 1. Create a new profile for GNOME Terminal
+# 2. Copy the UUID of the new profile (bottom right corner of the preferences window)
+# 3. Replace <PROFILE_UUID> below with the copied UUID
+# 4. Execute `dconf load /org/gnome/terminal/legacy/profiles:/ < astrodark.dconf`
+[:<PROFILE_UUID>]
+background-color='rgb(26, 29, 35)'
+cursor-background-color='rgb(155, 159, 169)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(26, 29, 35)'
+foreground-color='rgb(173, 176, 187)'
+highlight-background-color='rgb(38, 52, 63)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(173, 176, 187)'
+palette=['rgb(17, 19, 23)', 'rgb(255, 131, 139)', 'rgb(135, 192, 95)', 'rgb(223, 171, 37)', 'rgb(94, 183, 255)', 'rgb(221, 151, 241)', 'rgb(74, 194, 184)', 'rgb(155, 159, 169)', 'rgb(52, 54, 58)', 'rgb(255, 166, 174)', 'rgb(170, 227, 130)', 'rgb(255, 206, 72)', 'rgb(129, 218, 255)', 'rgb(255, 186, 255)', 'rgb(109, 229, 219)', 'rgb(208, 211, 222)']
+use-theme-colors=false
+visible-name='AstroDark'

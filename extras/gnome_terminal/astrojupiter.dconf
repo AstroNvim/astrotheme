@@ -1,0 +1,17 @@
+# Import this theme as follows:
+# 1. Create a new profile for GNOME Terminal
+# 2. Copy the UUID of the new profile (bottom right corner of the preferences window)
+# 3. Replace <PROFILE_UUID> below with the copied UUID
+# 4. Execute `dconf load /org/gnome/terminal/legacy/profiles:/ < astrojupiter.dconf`
+[:<PROFILE_UUID>]
+background-color='rgb(254, 238, 238)'
+cursor-background-color='rgb(158, 120, 118)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(254, 238, 238)'
+foreground-color='rgb(129, 86, 84)'
+highlight-background-color='rgb(187, 201, 215)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(129, 86, 84)'
+palette=['rgb(216, 214, 213)', 'rgb(161, 63, 55)', 'rgb(70, 113, 24)', 'rgb(128, 92, 0)', 'rgb(0, 110, 137)', 'rgb(144, 67, 122)', 'rgb(0, 118, 82)', 'rgb(158, 120, 118)', 'rgb(176, 174, 173)', 'rgb(201, 103, 95)', 'rgb(110, 153, 64)', 'rgb(168, 132, 40)', 'rgb(40, 150, 177)', 'rgb(184, 107, 162)', 'rgb(40, 158, 122)', 'rgb(139, 96, 94)']
+use-theme-colors=false
+visible-name='AstroJupiter'
