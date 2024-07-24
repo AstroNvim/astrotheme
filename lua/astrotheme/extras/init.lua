@@ -9,6 +9,7 @@ local M = {}
 -- stylua: ignore
 M.extras = {
   -- Keep all entries here aligned by the first `=` sign
+  aerc             = { ext = "ini", url = "https://git.sr.ht/~rjarry/aerc/", label = "Aerc" },
   alacritty        = { ext = "toml", url = "https://github.com/alacritty/alacritty", label = "Alacritty" },
   delta            = { ext = "gitconfig", url = "https://github.com/dandavison/delta", label = "Delta" },
   dunst            = { ext = "dunstrc", url = "https://dunst-project.org/", label = "Dunst" },
