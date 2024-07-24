@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.3.0](https://github.com/AstroNvim/astrotheme/compare/v4.2.0...v4.3.0) (2024-07-24)
+
+
+### Features
+
+* **extras:** add `fuzzel` theme ([e72a6b8](https://github.com/AstroNvim/astrotheme/commit/e72a6b8b75d19cc8d973bea7de8095ea3e54ee7f))
+* **extras:** add aerc theme ([8d76040](https://github.com/AstroNvim/astrotheme/commit/8d76040a4fc57c65767cb9a06f3b28ee5cee53ad))
+* **extras:** add Gnome Terminal theme ([7a8e826](https://github.com/AstroNvim/astrotheme/commit/7a8e8268b83d08670f0d421dfcfb73abb3752210))
+* **extras:** add proccess_compose theme ([c03d782](https://github.com/AstroNvim/astrotheme/commit/c03d782ecc79609f65e0ebd870e0843cf8b77039))
+* **extras:** add tmux theme ([1c8d80d](https://github.com/AstroNvim/astrotheme/commit/1c8d80d096359ff9feeea6d033c21217289e0bc0))
+* **extras:** add Vimium theme ([8d1a1d9](https://github.com/AstroNvim/astrotheme/commit/8d1a1d9c1847c57f6b8a156f602e708e9b0b1b88))
+
 ## [4.2.0](https://github.com/AstroNvim/astrotheme/compare/v4.1.0...v4.2.0) (2024-07-15)
 
 
