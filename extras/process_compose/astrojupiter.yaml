@@ -1,0 +1,36 @@
+style:
+  name: AstroJupiter
+  body:
+    fgColor: '#815654'
+    bgColor: '#FEEEEE'
+    secondaryTextColor: '#937C7A'
+    tertiaryTextColor: '#937C7A'
+    borderColor: '#D04F4E'
+  stat_table:
+    keyFgColor: '#AC7300'
+    valueFgColor: '#9E7876'
+    logoColor: '#AC7300'
+  proc_table:
+    fgColor: '#0090A2'
+    fgWarning: '#AC7300'
+    fgPending: '#937C7A'
+    fgCompleted: '#569400'
+    fgError: '#D04F4E'
+    headerFgColor: '#9E7876'
+  help:
+    fgColor: '#0090A2'
+    keyColor: '#9E7876'
+    hlColor: '#569400'
+    categoryFgColor: '#D04F4E'
+  dialog:
+    fgColor: '#0090A2'
+    bgColor: '#F9DCD1'
+    contrastBgColor: '#E7CFCA'
+    attentionBgColor: '#D04F4E'
+    buttonFgColor: '#9E7876'
+    buttonBgColor: '#E7CFCA'
+    buttonFocusFgColor: '#815654'
+    buttonFocusBgColor: '#D04F4E'
+    labelFgColor: '#AC7300'
+    fieldFgColor: '#9E7876'
+    fieldBgColor: '#BBC9D7'

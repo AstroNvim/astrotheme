@@ -1,0 +1,36 @@
+style:
+  name: AstroDark
+  body:
+    fgColor: '#ADB0BB'
+    bgColor: '#1A1D23'
+    secondaryTextColor: '#696C76'
+    tertiaryTextColor: '#595C66'
+    borderColor: '#3A3E47'
+  stat_table:
+    keyFgColor: '#D09214'
+    valueFgColor: '#9B9FA9'
+    logoColor: '#D09214'
+  proc_table:
+    fgColor: '#50A4E9'
+    fgWarning: '#D09214'
+    fgPending: '#494D56'
+    fgCompleted: '#75AD47'
+    fgError: '#F8747E'
+    headerFgColor: '#9B9FA9'
+  help:
+    fgColor: '#50A4E9'
+    keyColor: '#9B9FA9'
+    hlColor: '#75AD47'
+    categoryFgColor: '#50A4E9'
+  dialog:
+    fgColor: '#50A4E9'
+    bgColor: '#14161B'
+    contrastBgColor: '#23272F'
+    attentionBgColor: '#F8747E'
+    buttonFgColor: '#9B9FA9'
+    buttonBgColor: '#23272F'
+    buttonFocusFgColor: '#ADB0BB'
+    buttonFocusBgColor: '#50A4E9'
+    labelFgColor: '#D09214'
+    fieldFgColor: '#9B9FA9'
+    fieldBgColor: '#26343F'

@@ -1,0 +1,36 @@
+style:
+  name: AstroMars
+  body:
+    fgColor: '#A5B2BC'
+    bgColor: '#1E1517'
+    secondaryTextColor: '#63646A'
+    tertiaryTextColor: '#444145'
+    borderColor: '#736468'
+  stat_table:
+    keyFgColor: '#FFA31A'
+    valueFgColor: '#8B7079'
+    logoColor: '#FFA31A'
+  proc_table:
+    fgColor: '#9CBDC9'
+    fgWarning: '#FFA31A'
+    fgPending: '#68545B'
+    fgCompleted: '#9AC374'
+    fgError: '#E77777'
+    headerFgColor: '#8B7079'
+  help:
+    fgColor: '#9CBDC9'
+    keyColor: '#8B7079'
+    hlColor: '#9AC374'
+    categoryFgColor: '#9CBDC9'
+  dialog:
+    fgColor: '#9CBDC9'
+    bgColor: '#1A1113'
+    contrastBgColor: '#251D1F'
+    attentionBgColor: '#E77777'
+    buttonFgColor: '#8B7079'
+    buttonBgColor: '#251D1F'
+    buttonFocusFgColor: '#A5B2BC'
+    buttonFocusBgColor: '#9CBDC9'
+    labelFgColor: '#FFA31A'
+    fieldFgColor: '#8B7079'
+    fieldBgColor: '#1B282C'

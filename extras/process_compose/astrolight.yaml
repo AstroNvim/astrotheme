@@ -1,0 +1,36 @@
+style:
+  name: AstroLight
+  body:
+    fgColor: '#4F4F4F'
+    bgColor: '#F7F8F8'
+    secondaryTextColor: '#8B9297'
+    tertiaryTextColor: '#8B9297'
+    borderColor: '#671FF0'
+  stat_table:
+    keyFgColor: '#E69400'
+    valueFgColor: '#737474'
+    logoColor: '#E69400'
+  proc_table:
+    fgColor: '#3F8CEA'
+    fgWarning: '#E69400'
+    fgPending: '#AEB3B6'
+    fgCompleted: '#42AD17'
+    fgError: '#E72F1F'
+    headerFgColor: '#737474'
+  help:
+    fgColor: '#3F8CEA'
+    keyColor: '#737474'
+    hlColor: '#42AD17'
+    categoryFgColor: '#671FF0'
+  dialog:
+    fgColor: '#3F8CEA'
+    bgColor: '#E1E2E3'
+    contrastBgColor: '#DADBDD'
+    attentionBgColor: '#E72F1F'
+    buttonFgColor: '#737474'
+    buttonBgColor: '#DADBDD'
+    buttonFocusFgColor: '#424446'
+    buttonFocusBgColor: '#671FF0'
+    labelFgColor: '#E69400'
+    fieldFgColor: '#737474'
+    fieldBgColor: '#E7E9EB'
