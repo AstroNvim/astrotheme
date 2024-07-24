@@ -34,6 +34,7 @@ M.extras = {
   sublime          = { ext = "tmTheme", url = "https://www.sublimetext.com/docs/themes", label = "Sublime Text" },
   terminator       = { ext = "conf", url = "https://gnome-terminator.readthedocs.io/en/latest/config.html", label = "Terminator" },
   tilix            = { ext = "json", url = "https://github.com/gnunn1/tilix", label = "Tilix" },
+  tmux             = { ext = "tmux", url = "https://github.com/tmux/tmux/wiki", label = "Tmux" },
   vim              = { ext = "vim", url = "https://vimhelp.org/", label = "Vim", subdir = "colors"},
   vimium           = { ext = "css", url = "https://vimium.github.io/", label = "Vimium" },
   wezterm          = { ext = "toml", url = "https://wezfurlong.org/wezterm/config/files.html", label = "WezTerm" },
