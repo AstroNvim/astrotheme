@@ -1,0 +1,13 @@
+/* AstroMars MonkeyType Colors */
+:root {
+    --bg-color: #1E1517;
+    --caret-color: #8B7079;
+    --main-color: #9CBDC9;
+    --sub-color: #63646A;
+    --sub-alt-color: #1A1113;
+    --text-color: #A5B2BC;
+    --error-color: #DF8489;
+    --error-extra-color: #E77777;
+    --colorful-error-color: #DF8489;
+    --colorful-error-extra-color: #E77777;
+   }

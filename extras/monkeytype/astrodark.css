@@ -1,0 +1,13 @@
+/* AstroDark MonkeyType Colors */
+:root {
+    --bg-color: #1A1D23;
+    --caret-color: #9B9FA9;
+    --main-color: #50A4E9;
+    --sub-color: #696C76;
+    --sub-alt-color: #16181D;
+    --text-color: #ADB0BB;
+    --error-color: #FF838B;
+    --error-extra-color: #F8747E;
+    --colorful-error-color: #FF838B;
+    --colorful-error-extra-color: #F8747E;
+   }

@@ -1,0 +1,13 @@
+/* AstroLight MonkeyType Colors */
+:root {
+    --bg-color: #F7F8F8;
+    --caret-color: #737474;
+    --main-color: #671FF0;
+    --sub-color: #8B9297;
+    --sub-alt-color: #EAEBEB;
+    --text-color: #4F4F4F;
+    --error-color: #990000;
+    --error-extra-color: #E72F1F;
+    --colorful-error-color: #990000;
+    --colorful-error-extra-color: #E72F1F;
+   }

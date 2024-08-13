@@ -1,0 +1,13 @@
+/* AstroJupiter MonkeyType Colors */
+:root {
+    --bg-color: #FEEEEE;
+    --caret-color: #9E7876;
+    --main-color: #D04F4E;
+    --sub-color: #937C7A;
+    --sub-alt-color: #F9DCD1;
+    --text-color: #815654;
+    --error-color: #A13F37;
+    --error-extra-color: #D04F4E;
+    --colorful-error-color: #A13F37;
+    --colorful-error-extra-color: #D04F4E;
+   }
