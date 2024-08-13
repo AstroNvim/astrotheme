@@ -1,8 +1,11 @@
-/* AstroDark MonkeyType Colors */
+/* ${_style_name} MonkeyType Colors */
+/* Apply the theme easily with the link below
+ * https://monkeytype.com?customTheme=eyJjIjpbIiMxQTFEMjMiLCIjNTBBNEU5IiwiIzlCOUZBOSIsIiM2OTZDNzYiLCIjMTYxODFEIiwiI0FEQjBCQiIsIiNGRjgzOEIiLCIjRjg3NDdFIiwiI0ZGODM4QiIsIiNGODc0N0UiXX0=
+ */
 :root {
     --bg-color: #1A1D23;
-    --caret-color: #9B9FA9;
     --main-color: #50A4E9;
+    --caret-color: #9B9FA9;
     --sub-color: #696C76;
     --sub-alt-color: #16181D;
     --text-color: #ADB0BB;
