@@ -4,23 +4,54 @@ local M = {}
 
 --- @param colors AstroThemePalette
 function M.generate(colors)
+  -- build the color palette
+  local monkeytype_colors = {
+    bg = colors.ui.base,
+    main = colors.ui.accent,
+    caret = colors.ui.text,
+    sub = colors.syntax.comment,
+    sub_alt = colors.ui.inactive_base,
+    text = colors.syntax.text,
+    error = colors.syntax.red,
+    error_extra = colors.ui.red,
+    colorful_error = colors.syntax.red,
+    colorful_error_extra = colors.ui.red,
+  }
+  -- encode the palette into a base64 string for URL
+  monkeytype_colors.encoded = vim.base64.encode(vim.json.encode {
+    c = {
+      monkeytype_colors.bg,
+      monkeytype_colors.main,
+      monkeytype_colors.caret,
+      monkeytype_colors.sub,
+      monkeytype_colors.sub_alt,
+      monkeytype_colors.text,
+      monkeytype_colors.error,
+      monkeytype_colors.error_extra,
+      monkeytype_colors.colorful_error,
+      monkeytype_colors.colorful_error_extra,
+    },
+  })
   return util.template(
     [=[
 /* ${_style_name} MonkeyType Colors */
+/* Apply the theme easily with the link below
+ * https://monkeytype.com?customTheme=${encoded}
+ */
 :root {
-    --bg-color: ${ui.base};
-    --caret-color: ${ui.text};
-    --main-color: ${ui.accent};
-    --sub-color: ${syntax.comment};
-    --sub-alt-color: ${ui.inactive_base};
-    --text-color: ${syntax.text};
-    --error-color: ${syntax.red};
-    --error-extra-color: ${ui.red};
-    --colorful-error-color: ${syntax.red};
-    --colorful-error-extra-color: ${ui.red};
+    --bg-color: ${bg};
+    --main-color: ${main};
+    --caret-color: ${caret};
+    --sub-color: ${sub};
+    --sub-alt-color: ${sub_alt};
+    --text-color: ${text};
+    --error-color: ${error};
+    --error-extra-color: ${error_extra};
+    --colorful-error-color: ${colorful_error};
+    --colorful-error-extra-color: ${colorful_error_extra};
    }
 ]=],
-    colors
+    monkeytype_colors
   )
 end
 
