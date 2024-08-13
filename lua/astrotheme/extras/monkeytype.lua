@@ -6,6 +6,7 @@ local M = {}
 function M.generate(colors)
   -- build the color palette
   local monkeytype_colors = {
+    name = colors._style_name,
     bg = colors.ui.base,
     main = colors.ui.accent,
     caret = colors.ui.text,
@@ -34,10 +35,13 @@ function M.generate(colors)
   })
   return util.template(
     [=[
-/* ${_style_name} MonkeyType Colors */
-/* Apply the theme easily with the link below
- * https://monkeytype.com?customTheme=${encoded}
- */
+# ${name} MonkeyType Theme
+
+[Click here to apply ${name} in MonkeyType](https://monkeytype.com?customTheme=${encoded})
+
+Here is the CSS that gets applied when clicking the link above:
+
+```css
 :root {
     --bg-color: ${bg};
     --main-color: ${main};
@@ -50,6 +54,7 @@ function M.generate(colors)
     --colorful-error-color: ${colorful_error};
     --colorful-error-extra-color: ${colorful_error_extra};
    }
+```
 ]=],
     monkeytype_colors
   )
