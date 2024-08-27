@@ -26,18 +26,18 @@ hi DiagnosticUnderlineInfo gui=undercurl guibg=NONE guisp=#50A4E9
 hi DiagnosticUnderlineOk gui=undercurl guibg=NONE guisp=#75AD47
 hi DiagnosticUnderlineWarn gui=undercurl guibg=NONE guisp=#D09214
 hi DiagnosticWarn guibg=NONE guifg=#D09214
-hi DiffAdd guibg=#87C05F guifg=#1A1D23
+hi DiffAdd guibg=#354632
 hi DiffAdded guibg=NONE guifg=#87C05F
-hi DiffChange guibg=#DFAB25 guifg=#1A1D23
+hi DiffChange guibg=#4B4124
 hi DiffChanged guibg=NONE guifg=#5EB7FF
-hi DiffDelete guibg=#FF838B guifg=#1A1D23
+hi DiffDelete guibg=#53373D
 hi DiffFile guibg=NONE guifg=#5EB7FF
 hi DiffIndexLine guibg=NONE guifg=#4AC2B8
 hi DiffLine guibg=NONE guifg=#ADB0BB
 hi DiffNewFile guibg=NONE guifg=#87C05F
 hi DiffOldFile guibg=NONE guifg=#F5983A
 hi DiffRemoved guibg=NONE guifg=#FF838B
-hi DiffText guibg=#DFAB25 guifg=#1A1D23
+hi DiffText guibg=#554824
 hi Directory guibg=NONE guifg=#50A4E9
 hi EndOfBuffer guibg=NONE guifg=#3A3E47
 hi Error guibg=NONE guifg=#F8747E

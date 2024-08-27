@@ -900,22 +900,19 @@ local highlights = {
     fg = "#E69400"
   },
   DiffAdd = {
-    bg = "#345E00",
-    fg = "#F7F8F8"
+    bg = "#C6D2BA"
   },
   DiffAdded = {
     fg = "#345E00"
   },
   DiffChange = {
-    bg = "#7300B8",
-    fg = "#F7F8F8"
+    bg = "#D6BAE8"
   },
   DiffChanged = {
     fg = "#00508A"
   },
   DiffDelete = {
-    bg = "#990000",
-    fg = "#F7F8F8"
+    bg = "#E0BABA"
   },
   DiffFile = {
     fg = "#00508A"
@@ -936,8 +933,7 @@ local highlights = {
     fg = "#990000"
   },
   DiffText = {
-    bg = "#7300B8",
-    fg = "#F7F8F8"
+    bg = "#CFAEE5"
   },
   Directory = {
     bg = "NONE",
