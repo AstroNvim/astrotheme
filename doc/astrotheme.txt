@@ -225,6 +225,8 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
   -------------------------------------------------------- --------------------
   aerial.nvim                                              aerial
 
+  avante.nvim                                              avante
+
   beacon.nvim                                              beacon
 
   bufferline.nvim                                          bufferline
