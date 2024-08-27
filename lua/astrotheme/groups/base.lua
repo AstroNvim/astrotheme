@@ -1,5 +1,7 @@
 ---@type AstroThemeCallback
 local function callback(c, opts)
+  local color = require "astrotheme.lib.color"
+  local base = color.new(c.ui.base)
   return {
     --------------------
     --- Normal
@@ -123,10 +125,10 @@ local function callback(c, opts)
     --------------------
     --- Diagnostics
     --------------------
-    DiffAdd = { fg = c.ui.base, bg = c.syntax.green },
-    DiffChange = { fg = c.ui.base, bg = c.syntax.yellow },
-    DiffDelete = { fg = c.ui.base, bg = c.syntax.red },
-    DiffText = { fg = c.ui.base, bg = c.syntax.yellow },
+    DiffAdd = { bg = color.new(c.syntax.green):blend(base, 0.75):tohex() },
+    DiffChange = { bg = color.new(c.syntax.yellow):blend(base, 0.75):tohex() },
+    DiffDelete = { bg = color.new(c.syntax.red):blend(base, 0.75):tohex() },
+    DiffText = { bg = color.new(c.syntax.yellow):blend(base, 0.7):tohex() },
     DiffAdded = { fg = c.syntax.green },
     DiffRemoved = { fg = c.syntax.red },
     DiffChanged = { fg = c.syntax.blue },
