@@ -536,6 +536,29 @@ local highlights = {
   AerialTypeIcon = "@type",
   AerialTypeParameterIcon = "@parameter",
   AerialVariableIcon = "@variable",
+  AvanteConflictCurrent = "DiffText",
+  AvanteConflictIncoming = "DiffAdd",
+  AvanteReversedSubtitle = {
+    fg = "#1E1517"
+  },
+  AvanteReversedThirdTitle = {
+    fg = "#1E1517"
+  },
+  AvanteReversedTitle = {
+    fg = "#1E1517"
+  },
+  AvanteSubtitle = {
+    bg = "#1E1517",
+    fg = "#9AC374"
+  },
+  AvanteThirdTitle = {
+    bg = "#1E1517",
+    fg = "#FFA31A"
+  },
+  AvanteTitle = {
+    bg = "#1E1517",
+    fg = "#9CBDC9"
+  },
   Beacon = {
     bg = "#4FA9C6"
   },
