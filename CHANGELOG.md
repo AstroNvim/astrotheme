@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.4.0](https://github.com/AstroNvim/astrotheme/compare/v4.3.0...v4.4.0) (2024-08-27)
+
+
+### Features
+
+* **extras:** add MonkeyType theme ([bb53e34](https://github.com/AstroNvim/astrotheme/commit/bb53e348f0a80e11f5a8d40767dd439f90722dd3))
+* **extras:** add URL for applying MonkeyType themes ([00d6c39](https://github.com/AstroNvim/astrotheme/commit/00d6c39880a37c0e0eaddae35f6da2df0113ecd6))
+* **plugins:** support avante.nvim ([#139](https://github.com/AstroNvim/astrotheme/issues/139)) ([199a2ab](https://github.com/AstroNvim/astrotheme/commit/199a2ab78bbbfbbeaa58689df9fab41731589f51))
+
+
+### Bug Fixes
+
+* **base:** improve diff highlights ([3426ac6](https://github.com/AstroNvim/astrotheme/commit/3426ac652d520a3975858a2d33ecf4cf9aa08ce8))
+* **extras:** move to a more usable version of delivering MonkeyType themes ([f1e8bb6](https://github.com/AstroNvim/astrotheme/commit/f1e8bb63b17df318024c4e05b2b004cf94d42985))
+
 ## [4.3.0](https://github.com/AstroNvim/astrotheme/compare/v4.2.0...v4.3.0) (2024-07-24)
 
 
