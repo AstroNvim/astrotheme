@@ -7,7 +7,7 @@ return function(c)
     AvanteReversedSubtitle = { fg = c.ui.base },
     AvanteThirdTitle = { fg = c.ui.yellow, bg = c.ui.base },
     AvanteReversedThirdTitle = { fg = c.ui.base },
-    AvanteConflictCurrent = { bg = "#005500" },
-    AvanteConflictIncoming = { bg = "#555500" },
+    AvanteConflictCurrent = { bg = c.ui.selection },
+    AvanteConflictIncoming = { bg = c.ui.highlight },
   }
 end
