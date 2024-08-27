@@ -1,5 +1,6 @@
 return {
   ["aerial.nvim"] = "aerial",
+  ["avante.nvim"] = "avante",
   ["beacon.nvim"] = "beacon",
   ["bufferline.nvim"] = "bufferline",
   ["dashboard-nvim"] = "dashboard-nvim",

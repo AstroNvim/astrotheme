@@ -234,6 +234,7 @@ term.foreground
 | Plugin                                                                          | Key                  |
 | ------------------------------------------------------------------------------- | -------------------- |
 | [aerial.nvim](https://github.com/stevearc/aerial.nvim)                          | `aerial`             |
+| [avante.nvim](https://github.com/yetone/avante.nvim)                            | `avante`             |
 | [beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)                    | `beacon`             |
 | [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                   | `bufferline`         |
 | [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)                     | `dashboard-nvim`     |
