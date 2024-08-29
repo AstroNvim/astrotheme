@@ -35,7 +35,7 @@ label = { fg = "#5EB7FF" }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.heading" = { fg = "#ADB0BB", modifiers = ["bold"] }
 "markup.heading.completion" = { bg = "#14161B", fg = "#9B9FA9" }
-"markup.heading.hover" = { bg = "#26343F", modifiers = ["bold"] }
+"markup.heading.hover" = { bg = "#9B9FA9", fg = "#26343F", modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.link" = { fg = "#DFAB25", modifiers = ["bold"] }
 "markup.link.label" = { fg = "#87C05F" }
@@ -62,7 +62,7 @@ type = { fg = "#5EB7FF" }
 "ui.linenr.select" = { fg = "#ADB0BB" }
 "ui.menu" = { bg = "#14161B", fg = "#9B9FA9" }
 "ui.menu.scroll" = { bg = "#14161B", fg = "#50A4E9" }
-"ui.menu.selected" = { bg = "#26343F", modifiers = ["bold"] }
+"ui.menu.selected" = { bg = "#9B9FA9", fg = "#26343F", modifiers = ["bold"] }
 "ui.selection" = { bg = "bg_highlight" }
 "ui.statusline" = { bg = "#111317", fg = "#9B9FA9" }
 "ui.statusline.normal" = { bg = "blue", fg = "black" }
