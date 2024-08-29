@@ -1718,11 +1718,9 @@ local highlights = {
     fg = "NONE"
   },
   PmenuSel = {
-    bg = "#9B9FA9",
+    bg = "#26343F",
     blend = 0,
-    bold = true,
-    fg = "#26343F",
-    reverse = true
+    bold = true
   },
   PmenuThumb = {
     bg = "#50A4E9",

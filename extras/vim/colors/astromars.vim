@@ -78,7 +78,7 @@ hi Number guibg=NONE guifg=#EF9474
 hi Operator guibg=NONE guifg=#A5B2BC
 hi Pmenu guibg=#1A1113 guifg=#8B7079
 hi PmenuSbar guibg=#1A1113 guifg=NONE
-hi PmenuSel gui=bold guibg=#8B7079 guifg=#1B282C
+hi PmenuSel gui=bold guibg=#1B282C
 hi PmenuThumb guibg=#9CBDC9 guifg=NONE
 hi PreCondit guibg=NONE guifg=#4FA9C6
 hi PreProc guibg=NONE guifg=#C3963D
