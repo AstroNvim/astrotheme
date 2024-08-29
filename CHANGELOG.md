@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.4.1](https://github.com/AstroNvim/astrotheme/compare/v4.4.0...v4.4.1) (2024-08-29)
+
+
+### Bug Fixes
+
+* **base:** update `PmenuSel` to work with 0.11 changes ([0576aa8](https://github.com/AstroNvim/astrotheme/commit/0576aa839619788746847c0eb3c2fb4a8997d650))
+
+
+### Reverts
+
+* **base:** go back to non-reverse highlight, this breaks other stuff ([7320096](https://github.com/AstroNvim/astrotheme/commit/732009638cc1ad79c440430c3606a0167c662874))
+
 ## [4.4.0](https://github.com/AstroNvim/astrotheme/compare/v4.3.0...v4.4.0) (2024-08-27)
 
 
