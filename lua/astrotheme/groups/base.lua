@@ -147,7 +147,7 @@ local function callback(c, opts)
     --------------------
     Pmenu = { fg = c.ui.text, bg = c.ui.float },
     -- TODO: move `menu_selection` -> `selection`
-    PmenuSel = { bg = c.ui.menu_selection, bold = true, blend = 0 },
+    PmenuSel = { fg = c.ui.menu_selection, bg = c.ui.text, reverse = true, bold = true, blend = 0 },
     PmenuSbar = { fg = c.none, bg = c.ui.float },
     PmenuThumb = { fg = c.none, bg = c.ui.scrollbar, blend = 0 },
 
