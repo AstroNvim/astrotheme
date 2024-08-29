@@ -439,7 +439,7 @@ GET_HIGHLIGHTS ~
 
 >lua
     function astrotheme.lib.util.get_highlights(colors: AstroThemePalette, opts: AstroThemeOpts)
-      -> table<string, vim.api.keyset.highlight>
+      -> AstroThemeHighlights
 <
 
 Compile all highlights given a configuration
@@ -449,7 +449,7 @@ GET_MODULE_HIGHLIGHTS ~
 
 >lua
     function astrotheme.lib.util.get_module_highlights(colors: AstroThemePalette, opts: AstroThemeOpts, module: string)
-      -> table<string, vim.api.keyset.highlight>?
+      -> AstroThemeHighlights?
 <
 
 Compile highlights from a module
@@ -487,7 +487,7 @@ Reload a module
 SET_HIGHLIGHTS ~
 
 >lua
-    function astrotheme.lib.util.set_highlights(highlights: table<string, vim.api.keyset.highlight>)
+    function astrotheme.lib.util.set_highlights(highlights: AstroThemeHighlights)
 <
 
 Set highlights in Neovim
