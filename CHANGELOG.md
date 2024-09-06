@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.2](https://github.com/AstroNvim/astrotheme/compare/v4.4.1...v4.4.2) (2024-09-06)
+
+
+### Bug Fixes
+
+* **tmux:** fix 24h clock support ([c4c0e1d](https://github.com/AstroNvim/astrotheme/commit/c4c0e1d6ce907fda2bf4ad23c4f69ef064b8ecda))
+
 ## [4.4.1](https://github.com/AstroNvim/astrotheme/compare/v4.4.0...v4.4.1) (2024-08-29)
 
 
