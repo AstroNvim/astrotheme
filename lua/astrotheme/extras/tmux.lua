@@ -31,7 +31,7 @@ set -g status-right-style ${none}
 
 set -g status-left "#[fg=${ui.base},bg=${ui.accent},bold] #S #[fg=${ui.accent},bg=${ui.statusline},nobold,nounderscore,noitalics]"
 set -g status-right "#[fg=${ui.statusline},bg=${ui.statusline},nobold,nounderscore,noitalics]#[fg=${ui.accent},bg=${ui.statusline}] #{prefix_highlight} #[fg=${ui.selection},bg=${ui.statusline},nobold,nounderscore,noitalics]#[fg=${ui.accent},bg=${ui.selection}] %Y-%m-%d  %I:%M %p #[fg=${ui.accent},bg=${ui.selection},nobold,nounderscore,noitalics]#[fg=${ui.base},bg=${ui.accent},bold] #h "
-if-shell '[ "$(tmux show-option -gqv "clock-mode-style")" == "24" ]' {
+if-shell '[ "$(tmux show-option -gqv "clock-mode-style")" = "24" ]' {
   set -g status-right "#[fg=${ui.statusline},bg=${ui.statusline},nobold,nounderscore,noitalics]#[fg=${ui.accent},bg=${ui.statusline}] #{prefix_highlight} #[fg=${ui.selection},bg=${ui.statusline},nobold,nounderscore,noitalics]#[fg=${ui.accent},bg=${ui.selection}] %Y-%m-%d  %H:%M #[fg=${ui.accent},bg=${ui.selection},nobold,nounderscore,noitalics]#[fg=${ui.base},bg=${ui.accent},bold] #h "
 }
 
