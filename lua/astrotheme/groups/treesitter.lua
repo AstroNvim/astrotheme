@@ -82,6 +82,7 @@ local function callback(c, opts)
     ["@punctuation.delimiter"] = { fg = c.syntax.text },
     ["@punctuation.bracket"] = { fg = c.syntax.text },
     ["@punctuation.special"] = { fg = c.syntax.text },
+    ["@punctuation.bracket.php"] = { link = "@keyword.function", bold = true },
 
     -- comment
     ["@comment"] = "Comment",
