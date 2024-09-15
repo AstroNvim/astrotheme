@@ -383,6 +383,10 @@ local highlights = {
   ["@punctuation.bracket"] = {
     fg = "#ADB0BB"
   },
+  ["@punctuation.bracket.php"] = {
+    bold = true,
+    fg = "#DD97F1"
+  },
   ["@punctuation.delimiter"] = {
     fg = "#ADB0BB"
   },
