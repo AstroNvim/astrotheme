@@ -4,16 +4,6 @@ astrotheme API documentation
 
 ## astrotheme
 
-AstroTheme
-
- The default colorscheme used by AstroNvim an aesthetically pleasing and
- feature-rich neovim config that is extensible and easy to use with a great
- set of plugins
-
-This module can be loaded with `local astrotheme = require "astrotheme"`
-
-copyright 2023 license GNU General Public License v3.0 @class astrocore
-
 ### config
 
 
@@ -42,24 +32,8 @@ function astrotheme.setup(opts: AstroThemeOpts)
 
 ## astrotheme.lib.color
 
-AstroTheme Configuration
-
-Default configuration of AstroTheme
-
-This module can be loaded with `local astrotheme_config = require "astrotheme.lib.color"`
-
-copyright 2023 license GNU General Public License v3.0 @class astrocore
-
 
 ## astrotheme.lib.config
-
-AstroTheme Configuration
-
-Default configuration of AstroTheme
-
-This module can be loaded with `local astrotheme_config = require "astrotheme.lib.config"`
-
-copyright 2023 license GNU General Public License v3.0 @class astrocore
 
 ### default
 
@@ -78,14 +52,6 @@ function astrotheme.lib.config.user_config(opts: AstroThemeOpts)
 
 
 ## astrotheme.lib.util
-
-AstroTheme Utilities
-
-Various utilities for use within AstroTheme
-
-This module can be loaded with `local astrotheme_utils = require "astrotheme.lib.util"`
-
-copyright 2023 license GNU General Public License v3.0 @class astrocore
 
 ### get_highlights
 
