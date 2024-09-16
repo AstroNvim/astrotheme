@@ -14,7 +14,7 @@ local M = { config = {} }
 local util = require "astrotheme.lib.util"
 
 --- Load a specific theme given a palette name
----@param theme string?
+---@param theme? string
 function M.load(theme)
   if
     not theme
