@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.1](https://github.com/AstroNvim/astrotheme/compare/v4.5.0...v4.5.1) (2024-09-16)
+
+
+### Bug Fixes
+
+* **treesitter:** improve comment and list highlights ([a7bdde1](https://github.com/AstroNvim/astrotheme/commit/a7bdde1866bcd7b16e7054a278f4e9ca6aeca2eb))
+
 ## [4.5.0](https://github.com/AstroNvim/astrotheme/compare/v4.4.2...v4.5.0) (2024-09-15)
 
 
