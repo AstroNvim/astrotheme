@@ -114,26 +114,13 @@ local highlights = {
   },
   ["@comment"] = "Comment",
   ["@comment.documentation"] = "@comment",
-  ["@comment.error"] = {
-    bg = "#E77777",
-    fg = "#1E1517"
-  },
-  ["@comment.hint"] = {
-    bg = "#9CBDC9",
-    fg = "#1E1517"
-  },
-  ["@comment.info"] = {
-    bg = "#88C3AB",
-    fg = "#1E1517"
-  },
+  ["@comment.error"] = "DiagnosticError",
+  ["@comment.hint"] = "DiagnosticHint",
+  ["@comment.info"] = "DiagnosticInfo",
   ["@comment.todo"] = {
-    bg = "#FFA31A",
-    fg = "#1E1517"
+    fg = "#FFA31A"
   },
-  ["@comment.warning"] = {
-    bg = "#FAA27F",
-    fg = "#1E1517"
-  },
+  ["@comment.warning"] = "DiagnosticWarn",
   ["@conditional"] = "@keyword.conditional",
   ["@conditional.ternary"] = "@keyword.conditional.ternary",
   ["@constant"] = "Constant",
@@ -305,12 +292,10 @@ local highlights = {
   },
   ["@markup.list"] = "Special",
   ["@markup.list.checked"] = {
-    bg = "#9AC374",
-    fg = "#1E1517"
+    fg = "#9AC374"
   },
   ["@markup.list.unchecked"] = {
-    bg = "#E8A1D7",
-    fg = "#1E1517"
+    fg = "#E8A1D7"
   },
   ["@markup.math"] = {
     fg = "#4FA9C6"

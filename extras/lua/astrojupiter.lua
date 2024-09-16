@@ -114,26 +114,13 @@ local highlights = {
   },
   ["@comment"] = "Comment",
   ["@comment.documentation"] = "@comment",
-  ["@comment.error"] = {
-    bg = "#D04F4E",
-    fg = "#FEEEEE"
-  },
-  ["@comment.hint"] = {
-    bg = "#0090A2",
-    fg = "#FEEEEE"
-  },
-  ["@comment.info"] = {
-    bg = "#00976C",
-    fg = "#FEEEEE"
-  },
+  ["@comment.error"] = "DiagnosticError",
+  ["@comment.hint"] = "DiagnosticHint",
+  ["@comment.info"] = "DiagnosticInfo",
   ["@comment.todo"] = {
-    bg = "#AC7300",
-    fg = "#FEEEEE"
+    fg = "#AC7300"
   },
-  ["@comment.warning"] = {
-    bg = "#D05312",
-    fg = "#FEEEEE"
-  },
+  ["@comment.warning"] = "DiagnosticWarn",
   ["@conditional"] = "@keyword.conditional",
   ["@conditional.ternary"] = "@keyword.conditional.ternary",
   ["@constant"] = "Constant",
@@ -305,12 +292,10 @@ local highlights = {
   },
   ["@markup.list"] = "Special",
   ["@markup.list.checked"] = {
-    bg = "#569400",
-    fg = "#FEEEEE"
+    fg = "#569400"
   },
   ["@markup.list.unchecked"] = {
-    bg = "#BD51A4",
-    fg = "#FEEEEE"
+    fg = "#BD51A4"
   },
   ["@markup.math"] = {
     fg = "#006E89"

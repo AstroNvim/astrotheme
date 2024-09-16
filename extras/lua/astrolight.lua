@@ -114,26 +114,13 @@ local highlights = {
   },
   ["@comment"] = "Comment",
   ["@comment.documentation"] = "@comment",
-  ["@comment.error"] = {
-    bg = "#E72F1F",
-    fg = "#F7F8F8"
-  },
-  ["@comment.hint"] = {
-    bg = "#3F8CEA",
-    fg = "#F7F8F8"
-  },
-  ["@comment.info"] = {
-    bg = "#21B386",
-    fg = "#F7F8F8"
-  },
+  ["@comment.error"] = "DiagnosticError",
+  ["@comment.hint"] = "DiagnosticHint",
+  ["@comment.info"] = "DiagnosticInfo",
   ["@comment.todo"] = {
-    bg = "#E69400",
-    fg = "#F7F8F8"
+    fg = "#E69400"
   },
-  ["@comment.warning"] = {
-    bg = "#F0740A",
-    fg = "#F7F8F8"
-  },
+  ["@comment.warning"] = "DiagnosticWarn",
   ["@conditional"] = "@keyword.conditional",
   ["@conditional.ternary"] = "@keyword.conditional.ternary",
   ["@constant"] = "Constant",
@@ -305,12 +292,10 @@ local highlights = {
   },
   ["@markup.list"] = "Special",
   ["@markup.list.checked"] = {
-    bg = "#42AD17",
-    fg = "#F7F8F8"
+    fg = "#42AD17"
   },
   ["@markup.list.unchecked"] = {
-    bg = "#671FF0",
-    fg = "#F7F8F8"
+    fg = "#671FF0"
   },
   ["@markup.math"] = {
     fg = "#00508A"
