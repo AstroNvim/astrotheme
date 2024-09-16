@@ -88,11 +88,11 @@ local function callback(c, opts)
     ["@comment"] = "Comment",
     ["@comment.documentation"] = "@comment",
 
-    ["@comment.error"] = { fg = c.ui.base, bg = c.ui.red },
-    ["@comment.warning"] = { fg = c.ui.base, bg = c.ui.orange },
-    ["@comment.hint"] = { fg = c.ui.base, bg = c.ui.blue },
-    ["@comment.info"] = { fg = c.ui.base, bg = c.ui.cyan },
-    ["@comment.todo"] = { fg = c.ui.base, bg = c.ui.yellow },
+    ["@comment.error"] = "DiagnosticError",
+    ["@comment.warning"] = "DiagnosticWarn",
+    ["@comment.hint"] = "DiagnosticHint",
+    ["@comment.info"] = "DiagnosticInfo",
+    ["@comment.todo"] = { fg = c.ui.yellow },
 
     -- markup
     ["@markup.strong"] = { fg = c.syntax.text, bold = true },
@@ -119,8 +119,8 @@ local function callback(c, opts)
     ["@markup.raw.block"] = { fg = c.syntax.text },
 
     ["@markup.list"] = "Special",
-    ["@markup.list.unchecked"] = { fg = c.ui.base, bg = c.ui.purple },
-    ["@markup.list.checked"] = { fg = c.ui.base, bg = c.ui.green },
+    ["@markup.list.unchecked"] = { fg = c.ui.purple },
+    ["@markup.list.checked"] = { fg = c.ui.green },
 
     ["@diff.plus"] = "DiffAdded",
     ["@diff.minus"] = "DiffDelete",
