@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.0](https://github.com/AstroNvim/astrotheme/compare/v4.4.2...v4.5.0) (2024-09-15)
+
+
+### Features
+
+* **treesitter:** add `&lt;?php ... ?&gt;` highlights ([#144](https://github.com/AstroNvim/astrotheme/issues/144)) ([4ef753c](https://github.com/AstroNvim/astrotheme/commit/4ef753cec74b42ad81867e2eddb48bcfb31f0a72))
+
 ## [4.4.2](https://github.com/AstroNvim/astrotheme/compare/v4.4.1...v4.4.2) (2024-09-06)
 
 
