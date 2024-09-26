@@ -10,12 +10,11 @@ local M = {}
 
 --- Reload a given theme
 ---@param opts AstroThemeOpts
----@param theme string
-function M.reload(opts, theme)
+function M.reload(opts)
   if vim.g.colors_name then vim.cmd.highlight "clear" end
   if vim.fn.exists "syntax_on" then vim.cmd.syntax "reset" end
   vim.o.termguicolors = opts.termguicolors
-  vim.g.colors_name = theme
+  vim.g.colors_name = opts.palette
 end
 
 --- Reload a module

@@ -13,20 +13,32 @@ local M = { config = {} }
 
 local util = require "astrotheme.lib.util"
 
+local style_background = {
+  astrodark = "dark",
+  astrolight = "light",
+  astromars = "dark",
+  astrojupiter = "light",
+}
+
+local invert_style = {
+  astrodark = "astrolight",
+  astrolight = "astrodark",
+  astromars = "astrojupiter",
+  astrojupiter = "astromars",
+}
+
 --- Load a specific theme given a palette name
 ---@param theme? string
 function M.load(theme)
-  if
-    not theme
-    or (
-      theme == M.config.palette
-      and vim.o.background ~= (M.config.palette == M.config.background["light"] and "light" or "dark")
-    )
-  then
+  if not theme then
     theme = M.config.background[vim.o.background]
+  elseif theme == M.config.palette then
+    if vim.o.background ~= style_background[theme] then theme = invert_style[theme] end
+  else
+    vim.o.background = style_background[theme]
   end
   M.config.palette = theme
-  util.reload(M.config, theme)
+  util.reload(M.config)
 
   local colors = util.set_palettes(M.config)
 
