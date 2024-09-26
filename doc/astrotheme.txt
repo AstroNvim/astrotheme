@@ -1,4 +1,4 @@
-*astrotheme.txt*       For Neovim >= 0.9.0      Last change: 2024 September 16
+*astrotheme.txt*       For Neovim >= 0.9.0      Last change: 2024 September 26
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -430,7 +430,7 @@ Retrieve a list of all plugins to enable
 RELOAD ~
 
 >lua
-    function astrotheme.lib.util.reload(opts: AstroThemeOpts, theme: string)
+    function astrotheme.lib.util.reload(opts: AstroThemeOpts)
 <
 
 Reload a given theme

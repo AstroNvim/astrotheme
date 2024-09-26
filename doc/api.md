@@ -87,7 +87,7 @@ function astrotheme.lib.util.get_plugin_list(opts: AstroThemeOpts)
 
 
 ```lua
-function astrotheme.lib.util.reload(opts: AstroThemeOpts, theme: string)
+function astrotheme.lib.util.reload(opts: AstroThemeOpts)
 ```
 
  Reload a given theme
