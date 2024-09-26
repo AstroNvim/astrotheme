@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.5.2](https://github.com/AstroNvim/astrotheme/compare/v4.5.1...v4.5.2) (2024-09-26)
+
+
+### Bug Fixes
+
+* correctly maintain `background` setting when changing colorscheme styles ([7673bbe](https://github.com/AstroNvim/astrotheme/commit/7673bbe847bda6cb6d0b70d981eed60bd1039aaf))
+
 ## [4.5.1](https://github.com/AstroNvim/astrotheme/compare/v4.5.0...v4.5.1) (2024-09-16)
 
 
