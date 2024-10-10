@@ -106,6 +106,7 @@ local function callback(c, opts)
     ["@markup.heading.3.markdown"] = { fg = c.syntax.cyan, bold = true },
     ["@markup.heading.4.markdown"] = { fg = c.syntax.green, bold = true },
     ["@markup.heading.5.markdown"] = { fg = c.syntax.yellow, bold = true },
+    ["@markup.heading.6.markdown"] = { fg = c.syntax.yellow, bold = true },
 
     ["@markup.quote"] = { fg = c.syntax.text, italic = true },
     ["@markup.math"] = { fg = c.syntax.blue },
@@ -119,8 +120,9 @@ local function callback(c, opts)
     ["@markup.raw.block"] = { fg = c.syntax.text },
 
     ["@markup.list"] = "Special",
-    ["@markup.list.unchecked"] = { fg = c.ui.purple },
-    ["@markup.list.checked"] = { fg = c.ui.green },
+    ["@markup.list.markdown"] = { fg = c.syntax.orange, bold = true },
+    ["@markup.list.unchecked"] = { fg = c.ui.blue, bold = true },
+    ["@markup.list.checked"] = { fg = c.ui.cyan, bold = true },
 
     ["@diff.plus"] = "DiffAdded",
     ["@diff.minus"] = "DiffDelete",
