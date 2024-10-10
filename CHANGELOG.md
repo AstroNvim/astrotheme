@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.6.0](https://github.com/AstroNvim/astrotheme/compare/v4.5.2...v4.6.0) (2024-10-10)
+
+
+### Features
+
+* **plugins:** render-markdown.nvim support ([#149](https://github.com/AstroNvim/astrotheme/issues/149)) ([ad44453](https://github.com/AstroNvim/astrotheme/commit/ad444535e20c9fcbd79690a0ea61965d5e682f03))
+* **treesitter:** markdown modifications ([#148](https://github.com/AstroNvim/astrotheme/issues/148)) ([e70a534](https://github.com/AstroNvim/astrotheme/commit/e70a534f454454884a51d983a83693927690b975))
+
 ## [4.5.2](https://github.com/AstroNvim/astrotheme/compare/v4.5.1...v4.5.2) (2024-09-26)
 
 
