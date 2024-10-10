@@ -28,6 +28,7 @@ return {
   ["nvim-web-devicons"] = "nvim-web-devicons",
   ["nvim-window-picker"] = "nvim-window-picker",
   ["rainbow-delimiters.nvim"] = "rainbow-delimiters",
+  ["render-markdown.nvim"] = "render-markdown",
   ["spotlight.nvim"] = "spotlight",
   ["symbols-outline.nvim"] = "symbols-outline",
   ["telescope.nvim"] = "telescope",
