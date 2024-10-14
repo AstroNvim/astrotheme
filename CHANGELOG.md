@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.0](https://github.com/AstroNvim/astrotheme/compare/v4.6.0...v4.7.0) (2024-10-14)
+
+
+### Features
+
+* **plugins:** add `blink.cmp` support ([46e8c5b](https://github.com/AstroNvim/astrotheme/commit/46e8c5bdf285be5b02a0d0ae4c3babe0a19833c6))
+
 ## [4.6.0](https://github.com/AstroNvim/astrotheme/compare/v4.5.2...v4.6.0) (2024-10-10)
 
 
