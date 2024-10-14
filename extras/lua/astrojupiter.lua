@@ -561,6 +561,45 @@ local highlights = {
   Beacon = {
     bg = "#006E89"
   },
+  BlinkCmpKimdStruct = "@type",
+  BlinkCmpKind = {
+    fg = "#805C00"
+  },
+  BlinkCmpKindClass = "@type",
+  BlinkCmpKindColor = "@constant",
+  BlinkCmpKindConstant = "@constant",
+  BlinkCmpKindConstructor = "@constructor",
+  BlinkCmpKindEnum = "@type",
+  BlinkCmpKindEnumMember = "@field",
+  BlinkCmpKindEvent = "@type",
+  BlinkCmpKindField = "@field",
+  BlinkCmpKindFile = "@text.uri",
+  BlinkCmpKindFolder = "@constant",
+  BlinkCmpKindFunction = "@function",
+  BlinkCmpKindInterface = "@type",
+  BlinkCmpKindKeyword = "@keyword",
+  BlinkCmpKindMethod = "@method",
+  BlinkCmpKindModule = "@namespace",
+  BlinkCmpKindOperator = "@operator",
+  BlinkCmpKindProperty = "@property",
+  BlinkCmpKindReference = "@type",
+  BlinkCmpKindSnippet = "@constant",
+  BlinkCmpKindText = "@text",
+  BlinkCmpKindTypeParameter = "@type",
+  BlinkCmpKindUnit = "@constant",
+  BlinkCmpKindValue = "@constant",
+  BlinkCmpKindVariable = "@variable",
+  BlinkCmpLabel = {
+    fg = "#9E7876"
+  },
+  BlinkCmpLabelDeprecated = {
+    fg = "#A13F37",
+    strikethrough = true
+  },
+  BlinkCmpLabelMatch = {
+    bold = true,
+    fg = "#D04F4E"
+  },
   Bold = {
     bold = true
   },
