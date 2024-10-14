@@ -2,6 +2,7 @@ return {
   ["aerial.nvim"] = "aerial",
   ["avante.nvim"] = "avante",
   ["beacon.nvim"] = "beacon",
+  ["blink.cmp"] = "blink-cmp",
   ["bufferline.nvim"] = "bufferline",
   ["dashboard-nvim"] = "dashboard-nvim",
   ["flash.nvim"] = "flash",

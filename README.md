@@ -236,6 +236,7 @@ term.foreground
 | [aerial.nvim](https://github.com/stevearc/aerial.nvim)                          | `aerial`             |
 | [avante.nvim](https://github.com/yetone/avante.nvim)                            | `avante`             |
 | [beacon.nvim](https://github.com/DanilaMihailov/beacon.nvim)                    | `beacon`             |
+| [blink.cmp](https://github.com/Saghen/blink.cmp)                                | `blink-cmp`          |
 | [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)                   | `bufferline`         |
 | [dashboard-nvim](https://github.com/glepnir/dashboard-nvim)                     | `dashboard-nvim`     |
 | [flash.nvim](https://github.com/folke/flash.nvim)                               | `flash`              |
