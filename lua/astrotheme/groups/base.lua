@@ -115,7 +115,7 @@ local function callback(c, opts)
       bg = opts.transparent and c.none or c.ui.base,
     },
 
-    Folded = { fg = c.ui.none_text, bg = c.none },
+    Folded = { fg = c.ui.text_inactive, bg = opts.transparent and c.none or c.ui.selection },
     FoldColumn = { fg = c.ui.none_text, bg = c.none },
 
     NonText = { fg = c.ui.none_text, bg = c.none },
