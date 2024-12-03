@@ -1038,8 +1038,8 @@ local highlights = {
     fg = "#393337"
   },
   Folded = {
-    bg = "NONE",
-    fg = "#393337"
+    bg = "#1B282C",
+    fg = "#68545B"
   },
   Function = {
     bg = "NONE",

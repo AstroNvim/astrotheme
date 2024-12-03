@@ -47,7 +47,7 @@ hi Float guibg=NONE guifg=#805C00
 hi FloatBorder guibg=#F9DCD1 guifg=#D04F4E
 hi FloatTitle gui=bold guibg=#F9DCD1 guifg=#D04F4E
 hi FoldColumn guibg=NONE guifg=#D0B6B6
-hi Folded guibg=NONE guifg=#D0B6B6
+hi Folded guibg=#BBC9D7 guifg=#937C7A
 hi Function guibg=NONE guifg=#006E89
 hi HighlightURL gui=underline guibg=NONE
 hi Identifier guibg=NONE guifg=#815654
