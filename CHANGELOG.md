@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.1](https://github.com/AstroNvim/astrotheme/compare/v4.7.0...v4.7.1) (2024-12-03)
+
+
+### Bug Fixes
+
+* **base:** improve folded text appearance ([4280c07](https://github.com/AstroNvim/astrotheme/commit/4280c07cb683394ef35a26aca17040ff6145bdf4))
+
 ## [4.7.0](https://github.com/AstroNvim/astrotheme/compare/v4.6.0...v4.7.0) (2024-10-14)
 
 
