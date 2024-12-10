@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.2](https://github.com/AstroNvim/astrotheme/compare/v4.7.1...v4.7.2) (2024-12-10)
+
+
+### Bug Fixes
+
+* **base:** add new diff highlight groups ([e90c63e](https://github.com/AstroNvim/astrotheme/commit/e90c63e375142b6608e29669acac9f170ba8bdce))
+
 ## [4.7.1](https://github.com/AstroNvim/astrotheme/compare/v4.7.0...v4.7.1) (2024-12-03)
 
 
