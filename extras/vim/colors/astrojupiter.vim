@@ -1,8 +1,10 @@
 let g:colors_name = "astrojupiter"
 hi clear
   
+hi Added guibg=NONE guifg=#467118
 hi Bold gui=bold guibg=NONE
 hi Boolean guibg=NONE guifg=#954D00
+hi Changed guibg=NONE guifg=#954D00
 hi Character guibg=NONE guifg=#467118
 hi ColorColumn guibg=#F6DDD8 guifg=NONE
 hi Comment gui=italic guibg=NONE guifg=#937C7A
@@ -29,7 +31,7 @@ hi DiagnosticWarn guibg=NONE guifg=#AC7300
 hi DiffAdd guibg=#D0CFB9
 hi DiffAdded guibg=NONE guifg=#467118
 hi DiffChange guibg=#DFCAB3
-hi DiffChanged guibg=NONE guifg=#006E89
+hi DiffChanged guibg=NONE guifg=#954D00
 hi DiffDelete guibg=#E7C2C0
 hi DiffFile guibg=NONE guifg=#006E89
 hi DiffIndexLine guibg=NONE guifg=#007652
@@ -84,6 +86,7 @@ hi PreCondit guibg=NONE guifg=#006E89
 hi PreProc guibg=NONE guifg=#805C00
 hi Question guibg=NONE guifg=#BD51A4
 hi QuickFixLine guibg=#AC7300 guifg=#FEEEEE
+hi Removed guibg=NONE guifg=#A13F37
 hi Repeat guibg=NONE guifg=#90437A
 hi Search guibg=#BBC9D7 guifg=NONE
 hi SignColumn guibg=NONE guifg=NONE

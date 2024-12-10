@@ -498,6 +498,9 @@ local highlights = {
     fg = "#EF9474"
   },
   ["@variable.parameter.builtin"] = "@variable.parameter",
+  Added = {
+    fg = "#84A860"
+  },
   AerialArrayIcon = "@constant",
   AerialBooleanIcon = "@boolean",
   AerialClassIcon = "@type",
@@ -659,6 +662,9 @@ local highlights = {
   BufferLineTabSelected = {
     bg = "#281E22",
     fg = "#8B7079"
+  },
+  Changed = {
+    fg = "#EF9474"
   },
   Character = {
     bg = "NONE",
@@ -970,7 +976,7 @@ local highlights = {
     bg = "#473521"
   },
   DiffChanged = {
-    fg = "#4FA9C6"
+    fg = "#EF9474"
   },
   DiffDelete = {
     bg = "#4E3134"
@@ -1801,6 +1807,9 @@ local highlights = {
   },
   RainbowDelimiterYellow = {
     fg = "#C3963D"
+  },
+  Removed = {
+    fg = "#DF8489"
   },
   RenderMarkDownBullet = {
     link = "@markup.list.markdown"

@@ -1,8 +1,10 @@
 let g:colors_name = "astromars"
 hi clear
   
+hi Added guibg=NONE guifg=#84A860
 hi Bold gui=bold guibg=NONE
 hi Boolean guibg=NONE guifg=#EF9474
+hi Changed guibg=NONE guifg=#EF9474
 hi Character guibg=NONE guifg=#84A860
 hi ColorColumn guibg=#22191B guifg=NONE
 hi Comment gui=italic guibg=NONE guifg=#63646A
@@ -29,7 +31,7 @@ hi DiagnosticWarn guibg=NONE guifg=#FFA31A
 hi DiffAdd guibg=#383A29
 hi DiffAdded guibg=NONE guifg=#84A860
 hi DiffChange guibg=#473521
-hi DiffChanged guibg=NONE guifg=#4FA9C6
+hi DiffChanged guibg=NONE guifg=#EF9474
 hi DiffDelete guibg=#4E3134
 hi DiffFile guibg=NONE guifg=#4FA9C6
 hi DiffIndexLine guibg=NONE guifg=#4FAD97
@@ -84,6 +86,7 @@ hi PreCondit guibg=NONE guifg=#4FA9C6
 hi PreProc guibg=NONE guifg=#C3963D
 hi Question guibg=NONE guifg=#E8A1D7
 hi QuickFixLine guibg=#FFA31A guifg=#1E1517
+hi Removed guibg=NONE guifg=#DF8489
 hi Repeat guibg=NONE guifg=#CD87BA
 hi Search guibg=#1B282C guifg=NONE
 hi SignColumn guibg=NONE guifg=NONE
