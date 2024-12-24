@@ -1022,6 +1022,14 @@ local highlights = {
     bg = "NONE",
     fg = "#CD87BA"
   },
+  FlashBackdrop = {
+    fg = "#444145"
+  },
+  FlashLabel = {
+    bg = "#FAA27F",
+    bold = true,
+    fg = "#1E1517"
+  },
   Float = {
     bg = "NONE",
     fg = "#C3963D"
@@ -2105,6 +2113,31 @@ local highlights = {
   Todo = {
     bg = "NONE",
     fg = "#FFA31A"
+  },
+  TodoBgBUG = {
+    bg = "#E77777",
+    bold = true,
+    fg = "#1E1517"
+  },
+  TodoBgHACK = {
+    bg = "#FFA31A",
+    bold = true,
+    fg = "#1E1517"
+  },
+  TodoBgNOTE = {
+    bg = "#88C3AB",
+    bold = true,
+    fg = "#1E1517"
+  },
+  TodoBgTODO = {
+    bg = "#9CBDC9",
+    bold = true,
+    fg = "#1E1517"
+  },
+  TodoBgWARNING = {
+    bg = "#FFA31A",
+    bold = true,
+    fg = "#1E1517"
   },
   Type = {
     bg = "NONE",
