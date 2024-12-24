@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.7.3](https://github.com/AstroNvim/astrotheme/compare/v4.7.2...v4.7.3) (2024-12-24)
+
+
+### Bug Fixes
+
+* **plugins:** fix callbacks ([#154](https://github.com/AstroNvim/astrotheme/issues/154)) ([a7f0266](https://github.com/AstroNvim/astrotheme/commit/a7f0266ec91d2d938e19b43e804c32b94f0ea530))
+
 ## [4.7.2](https://github.com/AstroNvim/astrotheme/compare/v4.7.1...v4.7.2) (2024-12-10)
 
 
