@@ -7,4 +7,4 @@ local function callback(c)
   }
 end
 
-return callback()
+return callback
