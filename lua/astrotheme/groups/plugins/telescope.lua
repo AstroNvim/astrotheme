@@ -1,33 +1,12 @@
 ---@type AstroThemeCallback
 local function callback(c, opts)
-  local title = {
-    fg = (opts.title_invert and c.ui.float) or c.ui.title,
-    bg = (opts.title_invert and c.ui.title)
-      or (opts.inactive and c.ui.base)
-      or (opts.transparent and opts.float and c.ui.base)
-      or (opts.float and c.ui.float)
-      or (opts.transparent and c.none)
-      or c.ui.base,
-    bold = true,
-  }
-
-  local normal = {
-    fg = c.ui.text,
-    bg = (opts.inactive and c.ui.base)
-      or (opts.transparent and opts.float and c.ui.base)
-      or (opts.float and c.ui.float)
-      or (opts.transparent and c.none)
-      or c.ui.base,
-  }
-
-  local border = {
-    fg = (opts.border and c.ui.border) or (opts.inactive and c.ui.base) or (opts.float and c.ui.float) or c.ui.base,
-    bg = (opts.border and opts.inactive and c.ui.base)
-      or (opts.transparent and opts.float and c.ui.base)
-      or (opts.float and c.ui.float)
-      or (opts.transparent and c.none)
-      or c.ui.base,
-  }
+  local prompt_bg = (opts.border and opts.float and opts.inactive and c.ui.float)
+    or (opts.border and opts.float and opts.transparent and c.ui.base)
+    or (opts.border and opts.float and c.ui.float)
+    or (opts.border and opts.inactive and c.ui.base)
+    or (opts.border and opts.transparent and c.none)
+    or (opts.border and c.ui.base)
+    or c.ui.prompt
 
   return {
     ----------------
@@ -36,14 +15,11 @@ local function callback(c, opts)
 
     TelescopePromptTitle = {
       fg = (opts.title_invert and c.ui.float) or c.ui.title,
-      bg = (opts.title_invert and c.ui.title)
-        or (opts.float and c.ui.prompt)
-        or (opts.transparent and c.none)
-        or c.ui.base,
+      bg = (opts.title_invert and c.ui.title) or prompt_bg,
       bold = true,
     },
-    TelescopeResultsTitle = title,
-    TelescopePreviewTitle = title,
+    TelescopeResultsTitle = { link = "FloatTitle" },
+    TelescopePreviewTitle = { link = "FloatTitle" },
 
     -- TelescopeTitle = "FloatTitle",
     -- TelescopePromptTitle = "TelescopeTitle",
@@ -56,15 +32,10 @@ local function callback(c, opts)
 
     TelescopePromptNormal = {
       fg = c.ui.text,
-      bg = (opts.border and opts.inactive and c.ui.base)
-        or (opts.border and opts.float and c.ui.base)
-        or (opts.inactive and c.ui.prompt)
-        or (opts.float and c.ui.prompt)
-        or (opts.transparent and c.none)
-        or c.ui.base,
+      bg = prompt_bg,
     },
-    TelescopeResultsNormal = normal,
-    TelescopePreviewNormal = normal,
+    TelescopeResultsNormal = { link = "NormalFloat" },
+    TelescopePreviewNormal = { link = "NormalFloat" },
 
     -- TelescopeNormal = "NormalFloat",
     -- TelescopePromptNormal = "TelescopeNormal",
@@ -76,11 +47,16 @@ local function callback(c, opts)
     ----------------
 
     TelescopePromptBorder = {
-      fg = (opts.border and c.ui.border) or (opts.inactive and c.ui.base) or (opts.float and c.ui.prompt) or c.ui.base,
-      bg = (opts.border and opts.inactive and c.ui.base) or (opts.float and c.ui.prompt) or c.ui.prompt,
+      fg = (opts.border and opts.float and c.ui.border)
+        or (opts.border and opts.inactive and c.ui.border)
+        or (opts.border and opts.transparent and c.ui.base)
+        or (opts.border and c.ui.border)
+        or c.ui.prompt,
+      bg = prompt_bg,
     },
-    TelescopeResultsBorder = border,
-    TelescopePreviewBorder = border,
+    -- TelescopePromptBorder = border,
+    TelescopeResultsBorder = { link = "FloatBorder" },
+    TelescopePreviewBorder = { link = "FloatBorder" },
 
     -- TelescopeBorder = "FloatBorder",
     -- TelescopePromptBorder = "TelescopeBorder",
