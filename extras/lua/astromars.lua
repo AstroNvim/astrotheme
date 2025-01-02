@@ -2056,46 +2056,38 @@ local highlights = {
     fg = "#4FA9C6"
   },
   TelescopePreviewBorder = {
-    bg = "#1E1517",
-    fg = "#736468"
+    link = "FloatBorder"
   },
   TelescopePreviewNormal = {
-    bg = "#1E1517",
-    fg = "#8B7079"
+    link = "NormalFloat"
   },
   TelescopePreviewTitle = {
-    bg = "#1E1517",
-    bold = true,
-    fg = "#9CBDC9"
+    link = "FloatTitle"
   },
   TelescopePromptBorder = {
-    bg = "#1E1517",
+    bg = "#1A1113",
     fg = "#736468"
   },
   TelescopePromptNormal = {
-    bg = "#1E1517",
+    bg = "#1A1113",
     fg = "#8B7079"
   },
   TelescopePromptPrefix = {
     fg = "#9CBDC9"
   },
   TelescopePromptTitle = {
-    bg = "#281E22",
+    bg = "#1A1113",
     bold = true,
     fg = "#9CBDC9"
   },
   TelescopeResultsBorder = {
-    bg = "#1E1517",
-    fg = "#736468"
+    link = "FloatBorder"
   },
   TelescopeResultsNormal = {
-    bg = "#1E1517",
-    fg = "#8B7079"
+    link = "NormalFloat"
   },
   TelescopeResultsTitle = {
-    bg = "#1E1517",
-    bold = true,
-    fg = "#9CBDC9"
+    link = "FloatTitle"
   },
   TelescopeSelection = "PmenuSel",
   TelescopeSelectionCaret = {
