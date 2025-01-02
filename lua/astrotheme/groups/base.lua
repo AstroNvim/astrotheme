@@ -2,6 +2,17 @@
 local function callback(c, opts)
   local color = require "astrotheme.lib.color"
   local base = color.new(c.ui.base)
+
+  local float_bg = (opts.border and opts.float and opts.inactive and c.ui.float)
+    or (opts.border and opts.float and opts.transparent and c.ui.base)
+    or (opts.border and opts.float and c.ui.float)
+    or (opts.border and opts.inactive and c.ui.base)
+    or (opts.border and opts.transparent and c.none)
+    or (opts.float and c.ui.float)
+    or (opts.inactive and c.ui.base)
+    or (opts.border and c.ui.base)
+    or c.ui.base
+
   return {
     --------------------
     --- Normal
@@ -20,32 +31,21 @@ local function callback(c, opts)
     --------------------
     FloatTitle = {
       fg = (opts.title_invert and c.ui.tool) or c.ui.title,
-      bg = (opts.title_invert and c.ui.title)
-        or (opts.inactive and c.ui.float)
-        or (opts.transparent and opts.float and c.ui.base)
-        or (opts.float and c.ui.float)
-        or (opts.transparent and c.none)
-        or c.ui.base,
+      bg = (opts.title_invert and c.ui.title) or float_bg,
       bold = true,
     },
     FloatBorder = {
       fg = (opts.border and opts.float and c.ui.border)
-        or (opts.transparent and opts.float and c.ui.base)
+        or (opts.border and opts.inactive and c.ui.border)
         or (opts.float and c.ui.float)
+        or (opts.transparent and c.ui.base)
+        or (opts.border and c.ui.border)
         or c.ui.base,
-      bg = (opts.inactive and c.ui.float)
-        or (opts.transparent and opts.float and c.ui.base)
-        or (opts.float and c.ui.float)
-        or (opts.transparent and c.none)
-        or c.ui.base,
+      bg = float_bg,
     },
     NormalFloat = {
       fg = c.ui.text,
-      bg = (opts.inactive and c.ui.float)
-        or (opts.transparent and opts.float and c.ui.base)
-        or (opts.float and c.ui.float)
-        or (opts.transparent and c.none)
-        or c.ui.base,
+      bg = float_bg,
     },
 
     --------------------
