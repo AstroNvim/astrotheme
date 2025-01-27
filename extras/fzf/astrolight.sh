@@ -7,6 +7,7 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --color=bg+:#EAEBEB \
   --color=bg:#F7F8F8 \
   --color=border:#671FF0 \
+  --color=fg+:#4F4F4F \
   --color=fg:#4F4F4F \
   --color=gutter:#F7F8F8 \
   --color=header:#671FF0 \
