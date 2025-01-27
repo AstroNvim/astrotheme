@@ -20,6 +20,7 @@ function M.generate(_, highlights)
   }
 
   local spec = {
+    -- fg and bg are hard requirements
     ["fg"] = { "fg", "FzfLuaNormal" },
     ["bg"] = { "bg", "FzfLuaNormal" },
     ["hl"] = { "fg", "FzfLuaFzfMatch" },
@@ -40,19 +41,24 @@ function M.generate(_, highlights)
   }
   local ret = {}
 
-  for c, v in pairs(spec) do
-    local hl_group = v[2]
+  local resolve_color
+  resolve_color = function(property, raw_hl_group)
+    local hl_group = raw_hl_group
     while hl_group and not highlights[hl_group] do
       hl_group = links[hl_group]
     end
-    assert(hl_group, "hl_group not found for " .. v[2])
+    assert(hl_group, "hl_group not found for " .. raw_hl_group)
     local hl = highlights[hl_group]
     while hl and (type(hl) == "string" or hl.link) do
       hl = highlights[type(hl) == "string" and hl or hl.link]
     end
     assert(hl, "hl not found for " .. hl_group)
-    local color = hl[v[1]]
-    assert(color, "color not found for " .. c .. ":" .. hl_group)
+    local color = hl[property] or "NONE"
+    return color == "NONE" and resolve_color(unpack(spec[property])) or color
+  end
+
+  for c, v in pairs(spec) do
+    local color = resolve_color(unpack(v))
     if type(color) == "number" then color = string.format("#%06x", color) end
     if color:lower() ~= "none" then
       local line = string.format("--color=%s:%s", c, color)
