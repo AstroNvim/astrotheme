@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.7.4](https://github.com/AstroNvim/astrotheme/compare/v4.7.3...v4.7.4) (2025-01-30)
+
+
+### Bug Fixes
+
+* **extras:** fix fallback for fzf theme generation ([a63a4fe](https://github.com/AstroNvim/astrotheme/commit/a63a4fe1fefb86d1b99f9b205055318091740c98))
+* **plugins:** improve fzf colors for light theme readability ([#161](https://github.com/AstroNvim/astrotheme/issues/161)) ([304879f](https://github.com/AstroNvim/astrotheme/commit/304879f7c5a56a1b836a3bf4639dd06d3a524820))
+
 ## [4.7.3](https://github.com/AstroNvim/astrotheme/compare/v4.7.2...v4.7.3) (2024-12-24)
 
 
