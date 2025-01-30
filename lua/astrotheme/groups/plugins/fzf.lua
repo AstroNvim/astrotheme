@@ -16,6 +16,15 @@ local function callback(c, opts)
         or c.ui.base,
       bold = true,
     },
+    FzfLuaHeaderBind = {
+      fg = c.ui.cyan,
+    },
+    FzfLuaPathLineNr = {
+      fg = c.ui.green,
+    },
+    FzfLuaHeaderText = {
+      fg = c.ui.red,
+    },
   }
 end
 
