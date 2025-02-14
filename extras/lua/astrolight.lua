@@ -1063,6 +1063,15 @@ local highlights = {
     bg = "#F7F8F8",
     fg = "#671FF0"
   },
+  FzfLuaHeaderBind = {
+    fg = "#21B386"
+  },
+  FzfLuaHeaderText = {
+    fg = "#E72F1F"
+  },
+  FzfLuaPathLineNr = {
+    fg = "#42AD17"
+  },
   FzfLuaTitle = {
     bg = "#F7F8F8",
     bold = true,
@@ -1898,6 +1907,18 @@ local highlights = {
   SignColumn = {
     bg = "NONE",
     fg = "NONE"
+  },
+  SnacksDashboardFooter = {
+    fg = "#00615B"
+  },
+  SnacksDashboardHeader = {
+    fg = "#00615B"
+  },
+  SnacksDashboardKey = {
+    fg = "#7300B8"
+  },
+  SnacksDashboardSpecial = {
+    fg = "#00615B"
   },
   Special = {
     bg = "NONE",
