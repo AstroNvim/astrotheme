@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.8.0](https://github.com/AstroNvim/astrotheme/compare/v4.7.3...v4.8.0) (2025-02-14)
+
+
+### Features
+
+* **plugins:** add `snacks.nvim` support ([7a48528](https://github.com/AstroNvim/astrotheme/commit/7a48528b22db228fd0463b7a7cdf253b58256223))
+
+
+### Bug Fixes
+
+* **extras:** fix fallback for fzf theme generation ([a63a4fe](https://github.com/AstroNvim/astrotheme/commit/a63a4fe1fefb86d1b99f9b205055318091740c98))
+* **plugins:** improve fzf colors for light theme readability ([#161](https://github.com/AstroNvim/astrotheme/issues/161)) ([304879f](https://github.com/AstroNvim/astrotheme/commit/304879f7c5a56a1b836a3bf4639dd06d3a524820))
+
 ## [4.7.3](https://github.com/AstroNvim/astrotheme/compare/v4.7.2...v4.7.3) (2024-12-24)
 
 
