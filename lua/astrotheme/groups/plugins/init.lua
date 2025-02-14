@@ -30,6 +30,7 @@ return {
   ["nvim-window-picker"] = "nvim-window-picker",
   ["rainbow-delimiters.nvim"] = "rainbow-delimiters",
   ["render-markdown.nvim"] = "render-markdown",
+  ["snacks.nvim"] = "snacks",
   ["spotlight.nvim"] = "spotlight",
   ["symbols-outline.nvim"] = "symbols-outline",
   ["telescope.nvim"] = "telescope",
