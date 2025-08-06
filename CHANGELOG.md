@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.9.0](https://github.com/AstroNvim/astrotheme/compare/v4.8.0...v4.9.0) (2025-08-06)
+
+
+### Features
+
+* **lualine:** add support for lualine automatic theme detection ([#165](https://github.com/AstroNvim/astrotheme/issues/165)) ([09192a2](https://github.com/AstroNvim/astrotheme/commit/09192a204577e2c08e91b463b9eea0b74f74c346))
+
 ## [4.8.0](https://github.com/AstroNvim/astrotheme/compare/v4.7.3...v4.8.0) (2025-02-14)
 
 
