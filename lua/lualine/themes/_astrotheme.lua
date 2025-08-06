@@ -1,44 +1,45 @@
 local M = {}
 
 function M.get(style)
-  if not style then style = require("astrotheme").config.palette end
-  local colors = require("astrotheme.palettes." .. style)
+  local config = require("astrotheme").config
+  if style and config.palette ~= style then config = vim.tbl_deep_extend("force", config, { palette = style }) end
+  local c = require("astrotheme.lib.util").set_palettes(config)
 
   return {
     normal = {
-      a = { bg = colors.ui.blue, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.blue },
-      c = { bg = colors.ui.tabline, fg = colors.ui.text_inactive },
+      a = { bg = c.ui.blue, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.blue },
+      c = { bg = c.ui.tabline, fg = c.ui.text_inactive },
     },
 
     insert = {
-      a = { bg = colors.ui.green, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.green },
+      a = { bg = c.ui.green, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.green },
     },
 
     command = {
-      a = { bg = colors.ui.yellow, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.yellow },
+      a = { bg = c.ui.yellow, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.yellow },
     },
 
     visual = {
-      a = { bg = colors.ui.magenta, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.magenta },
+      a = { bg = c.ui.purple, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.purple },
     },
     replace = {
-      a = { bg = colors.ui.red, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.red },
+      a = { bg = c.ui.red, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.red },
     },
 
     terminal = {
-      a = { bg = colors.ui.green, fg = colors.ui.tabline, gui = "bold" },
-      b = { bg = colors.ui.tabline, fg = colors.ui.green },
+      a = { bg = c.ui.green, fg = c.ui.tabline, gui = "bold" },
+      b = { bg = c.ui.tabline, fg = c.ui.green },
     },
 
     inactive = {
-      a = { bg = colors.ui.tabline, fg = colors.ui.blue },
-      b = { bg = colors.ui.tabline, fg = colors.ui.tabline, gui = "bold" },
-      c = { bg = colors.ui.tabline, fg = colors.ui.tabline },
+      a = { bg = c.ui.tabline, fg = c.ui.blue },
+      b = { bg = c.ui.tabline, fg = c.ui.tabline, gui = "bold" },
+      c = { bg = c.ui.tabline, fg = c.ui.tabline },
     },
   }
 end
