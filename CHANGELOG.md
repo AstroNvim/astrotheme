@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.9.1](https://github.com/AstroNvim/astrotheme/compare/v4.9.0...v4.9.1) (2025-08-07)
+
+
+### Bug Fixes
+
+* **lualine:** revert to old color schema for lualine theme ([f852f7a](https://github.com/AstroNvim/astrotheme/commit/f852f7a313fe4efff3b98177398677942b2c1b9a))
+
 ## [4.9.0](https://github.com/AstroNvim/astrotheme/compare/v4.8.0...v4.9.0) (2025-08-06)
 
 
