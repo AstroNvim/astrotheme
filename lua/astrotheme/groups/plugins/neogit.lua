@@ -28,6 +28,14 @@ local function callback(c)
       bg = c.ui.text_inactive,
       fg = c.ui.text_active,
     },
+    NeogitHunkHeaderHighlight = {
+      bg = c.ui.purple,
+      fg = c.ui.base,
+    },
+    NeogitHunkHeaderCursor = {
+      bg = c.ui.purple,
+      fg = c.ui.base,
+    },
   }
 end
 
