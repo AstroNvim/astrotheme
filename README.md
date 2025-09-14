@@ -253,6 +253,7 @@ term.foreground
 | [mini.starter](https://github.com/echasnovski/mini.starter)                     | `ministarter`        |
 | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)                 | `neo-tree`           |
 | [neogit](https://github.com/NeogitOrg/neogit)                                   | `neogit`             |
+| [neotest](https://github.com/nvim-neotest/neotest)                              | `neotest`            |
 | [noice.nvim](https://github.com/folke/noice.nvim)                               | `noice`              |
 | [nvcheatsheet.nvim](https://github.com/smartinellimarco/nvcheatsheet.nvim)      | `nvcheatsheet`       |
 | [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)                                 | `nvim-cmp`           |
