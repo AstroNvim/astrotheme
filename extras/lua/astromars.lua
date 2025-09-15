@@ -1562,6 +1562,37 @@ local highlights = {
     bg = "#E8A1D7",
     fg = "#1E1517"
   },
+  NeotestAdapterName = "Title",
+  NeotestBorder = {
+    fg = "#736468"
+  },
+  NeotestDir = "Directory",
+  NeotestExpandMarker = "Conceal",
+  NeotestFailed = "ErrorMsg",
+  NeotestFile = "DiffFile",
+  NeotestFocused = {
+    underline = true
+  },
+  NeotestIndent = "Conceal",
+  NeotestMarked = {
+    fg = "#88C3AB"
+  },
+  NeotestNamespace = {
+    bold = true,
+    fg = "#8B7079"
+  },
+  NeotestPassed = "DiagnosticOk",
+  NeotestRunning = "DiagnosticWarn",
+  NeotestSkipped = "DiagnosticHint",
+  NeotestTarget = "DiagnosticInfo",
+  NeotestTest = {
+    fg = "#8B7079"
+  },
+  NeotestUnknown = {
+    fg = "#8B7079"
+  },
+  NeotestWatching = "DiagnosticInfo",
+  NeotestWinSelect = "PmenuSel",
   NoiceCursor = "Cursor",
   NonText = {
     bg = "NONE",

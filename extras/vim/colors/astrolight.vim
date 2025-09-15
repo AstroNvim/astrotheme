@@ -74,6 +74,12 @@ hi NeogitDiffDeleteHighlight guibg=#F7F8F8 guifg=#990000
 hi NeogitHunkHeader guibg=#AEB3B6 guifg=#424446
 hi NeogitHunkHeaderCursor guibg=#671FF0 guifg=#F7F8F8
 hi NeogitHunkHeaderHighlight guibg=#671FF0 guifg=#F7F8F8
+hi NeotestBorder guibg=NONE guifg=#671FF0
+hi NeotestFocused gui=underline guibg=NONE
+hi NeotestMarked guibg=NONE guifg=#21B386
+hi NeotestNamespace gui=bold guibg=NONE guifg=#737474
+hi NeotestTest guibg=NONE guifg=#737474
+hi NeotestUnknown guibg=NONE guifg=#737474
 hi NonText guibg=NONE guifg=#B5B9BD
 hi Normal guibg=#F7F8F8 guifg=#4F4F4F
 hi NormalFloat guibg=#E1E2E3 guifg=#737474
@@ -158,5 +164,17 @@ hi! link HeirlineVisual StatusVisual
 hi! link IlluminatedWordRead LspReferenceRead
 hi! link LspReferenceText LspReferenceRead
 hi! link LspReferenceWrite LspReferenceRead
+hi! link NeotestAdapterName Title
+hi! link NeotestDir Directory
+hi! link NeotestExpandMarker Conceal
+hi! link NeotestFailed ErrorMsg
+hi! link NeotestFile DiffFile
+hi! link NeotestIndent Conceal
+hi! link NeotestPassed DiagnosticOk
+hi! link NeotestRunning DiagnosticWarn
+hi! link NeotestSkipped DiagnosticHint
+hi! link NeotestTarget DiagnosticInfo
+hi! link NeotestWatching DiagnosticInfo
+hi! link NeotestWinSelect PmenuSel
 hi! link StatusTerminal StatusInsert
 hi! link lCursor Cursor
