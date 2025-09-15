@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.10.0](https://github.com/AstroNvim/astrotheme/compare/v4.9.1...v4.10.0) (2025-09-15)
+
+
+### Features
+
+* **neogit:** update hunk header colors ([#170](https://github.com/AstroNvim/astrotheme/issues/170)) ([ac3a221](https://github.com/AstroNvim/astrotheme/commit/ac3a221f513f08afb025e35ff0c604c36750edb1))
+* **plugins:** add neotest support ([#169](https://github.com/AstroNvim/astrotheme/issues/169)) ([4366dce](https://github.com/AstroNvim/astrotheme/commit/4366dce036a6dd0517417fcad3a57bcd35166c3f))
+
 ## [4.9.1](https://github.com/AstroNvim/astrotheme/compare/v4.9.0...v4.9.1) (2025-08-07)
 
 
