@@ -1554,6 +1554,14 @@ local highlights = {
     bg = "#937C7A",
     fg = "#815654"
   },
+  NeogitHunkHeaderCursor = {
+    bg = "#BD51A4",
+    fg = "#FEEEEE"
+  },
+  NeogitHunkHeaderHighlight = {
+    bg = "#BD51A4",
+    fg = "#FEEEEE"
+  },
   NoiceCursor = "Cursor",
   NonText = {
     bg = "NONE",

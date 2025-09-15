@@ -72,6 +72,8 @@ hi NeogitDiffContextHighlight guibg=#F9DCD1
 hi NeogitDiffDelete guibg=#FEEEEE guifg=#A13F37
 hi NeogitDiffDeleteHighlight guibg=#FEEEEE guifg=#A13F37
 hi NeogitHunkHeader guibg=#937C7A guifg=#815654
+hi NeogitHunkHeaderCursor guibg=#BD51A4 guifg=#FEEEEE
+hi NeogitHunkHeaderHighlight guibg=#BD51A4 guifg=#FEEEEE
 hi NonText guibg=NONE guifg=#D0B6B6
 hi Normal guibg=#FEEEEE guifg=#815654
 hi NormalFloat guibg=#F9DCD1 guifg=#9E7876
