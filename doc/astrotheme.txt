@@ -262,6 +262,8 @@ SUPPORTED PLUGINS                               *astrotheme-supported-plugins*
 
   neogit                                                   neogit
 
+  neotest                                                  neotest
+
   noice.nvim                                               noice
 
   nvcheatsheet.nvim                                        nvcheatsheet
