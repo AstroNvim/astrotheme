@@ -18,6 +18,7 @@ return {
   ["mini.icons"] = "miniicons",
   ["neo-tree.nvim"] = "neo-tree",
   ["neogit"] = "neogit",
+  ["neotest"] = "neotest",
   ["noice.nvim"] = "noice",
   ["nvcheatsheet.nvim"] = "nvcheatsheet",
   ["nvim-cmp"] = "nvim-cmp",
