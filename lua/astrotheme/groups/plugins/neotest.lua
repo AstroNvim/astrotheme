@@ -4,7 +4,7 @@ local function callback(c)
     NeotestAdapterName = "Title",
     NeotestBorder = { fg = c.ui.border },
     NeotestDir = "Directory",
-    NeotestExpandMarker = "Folded",
+    NeotestExpandMarker = "Conceal",
     NeotestFailed = "ErrorMsg",
     NeotestFile = "DiffFile",
     NeotestFocused = { underline = true },
