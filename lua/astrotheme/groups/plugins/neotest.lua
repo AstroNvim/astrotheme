@@ -1,24 +1,24 @@
 ---@type AstroThemeCallback
 local function callback(c)
   return {
-    NeotestAdapterName = { fg = c.ui.title, bold = true },
+    NeotestAdapterName = "Title",
     NeotestBorder = { fg = c.ui.border },
-    NeotestDir = { fg = c.ui.blue },
-    NeotestExpandMarker = { fg = c.ui.text_inactive },
-    NeotestFailed = { fg = c.ui.red },
-    NeotestFile = { fg = c.ui.blue },
+    NeotestDir = "Directory",
+    NeotestExpandMarker = "Folded",
+    NeotestFailed = "ErrorMsg",
+    NeotestFile = "DiffFile",
     NeotestFocused = { underline = true },
-    NeotestIndent = { fg = c.ui.text_inactive },
+    NeotestIndent = "Conceal",
     NeotestMarked = { fg = c.ui.cyan },
     NeotestNamespace = { fg = c.ui.text, bold = true },
-    NeotestPassed = { fg = c.ui.green },
-    NeotestRunning = { fg = c.ui.yellow },
-    NeotestSkipped = { fg = c.ui.blue },
-    NeotestTarget = { fg = c.ui.blue },
+    NeotestPassed = "DiagnosticOk",
+    NeotestRunning = "DiagnosticWarn",
+    NeotestSkipped = "DiagnosticHint",
+    NeotestTarget = "DiagnosticInfo",
     NeotestTest = { fg = c.ui.text },
     NeotestUnknown = { fg = c.ui.text },
-    NeotestWatching = { fg = c.ui.cyan },
-    NeotestWinSelect = { fg = c.ui.blue },
+    NeotestWatching = "DiagnosticInfo",
+    NeotestWinSelect = "PmenuSel",
   }
 end
 
