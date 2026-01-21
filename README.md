@@ -84,7 +84,7 @@ require("astrotheme").setup({
 
   termguicolors = true, -- Bool value, toggles if termguicolors are set by AstroTheme.
 
-  terminal_color = true, -- Bool value, toggles if terminal_colors are set by AstroTheme.
+  terminal_colors = true, -- Bool value, toggles if terminal_colors are set by AstroTheme.
 
   plugin_default = "auto", -- Sets how all plugins will be loaded
                            -- "auto": Uses lazy / packer enabled plugins to load highlights.
