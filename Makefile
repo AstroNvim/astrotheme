@@ -2,7 +2,7 @@ TESTS_DIR=tests/
 
 .PHONY: test
 test:
-	@nvim -l ${TESTS_DIR}/minit.lua --minitest -o utfTerminal
+	@nvim -l ${TESTS_DIR}/minit.lua --minitest
 
 .PHONY: extras
 extras:
