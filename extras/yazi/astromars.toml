@@ -1,16 +1,17 @@
-[manager]
-# NOTE: can combined with tmTheme (sublime colorshceme file) for preview code highlight
-# highlight = "path/to/tmTheme"
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
+[app]
+overall = { bg = "#1E1517" }
+
+[mgr]
 cwd = { fg = "#68545B", italic = true }
-
-# Hovered
-hovered         = { bg = "#1B282C" }
-preview_hovered = { bg = "#1B282C" }
 
 # Find
 find_keyword  = { fg = "#1E1517", bg = "#FAA27F", bold = true }
 find_position = { fg = "#9CBDC9", bg = "#1B282C", bold = true }
+
+# Symlink
+symlink_target = { italic = true }
 
 # Marker
 marker_copied   = { fg = "#9AC374", bg = "#9AC374" }
@@ -18,28 +19,45 @@ marker_cut      = { fg = "#E77777", bg = "#E77777" }
 marker_marked   = { fg = "#E8A1D7", bg = "#E8A1D7" }
 marker_selected = { fg = "#9CBDC9", bg = "#9CBDC9" }
 
-# Tab
-tab_active   = { fg = "#A5B2BC", bg = "#1E1517" }
-tab_inactive = { fg = "#68545B", bg = "#281E22" }
-tab_width    = 1
-
 # Count
 count_copied   = { fg = "#8B7079", bg = "#9AC374" }
 count_cut      = { fg = "#8B7079", bg = "#E77777" }
 count_selected = { fg = "#8B7079", bg = "#9CBDC9" }
+
 # Border
 border_symbol = "│"
 border_style  = { fg = "#736468" }
 
-[status]
-separator_open  = ""
-separator_close = ""
-separator_style = { fg = "#393337", bg = "#393337" }
+# NOTE: can be combined with tmTheme (sublime colorshceme file) for preview code highlight
+# syntect_theme = "path/to/tmTheme"
+
+# Tab
+[tabs]
+active   = { fg = "#A5B2BC", bg = "#1E1517" }
+inactive = { fg = "#68545B", bg = "#281E22" }
 
 # Mode
-mode_normal = { fg = "#1E1517", bg = "#9CBDC9", bold = true }
-mode_select = { fg = "#1E1517", bg = "#E8A1D7", bold = true }
-mode_unset  = { fg = "#1E1517", bg = "#E77777", bold = true }
+[mode]
+normal_main = { fg = "#1E1517", bg = "#9CBDC9", bold = true }
+normal_alt  = { fg = "#9CBDC9", bg = "#1A1113" }
+
+select_main = { fg = "#1E1517", bg = "#E8A1D7", bold = true }
+select_alt  = { fg = "#E8A1D7", bg = "#1A1113" }
+
+unset_main  = { fg = "#1E1517", bg = "#E77777", bold = true }
+unset_alt   = { fg = "#E77777", bg = "#1A1113" }
+
+# Indicator
+[indicator]
+parent  = { bg = "#1B282C" }
+current = { bg = "#1B282C" }
+preview = { bg = "#1B282C" }
+
+# Status
+[status]
+sep_right  = { open = "", close = "" }
+sep_left   = { open = "", close = "" }
+overall    = { fg = "#393337", bg = "#393337" }
 
 # Progress
 progress_label  = { fg = "#68545B", bold = true }
@@ -47,16 +65,11 @@ progress_normal = { fg = "#1E1517" }
 progress_error  = { fg = "#E77777" }
 
 # Permissions
-permissions_t = { fg = "#9CBDC9" }
-permissions_r = { fg = "#FFA31A" }
-permissions_w = { fg = "#E77777" }
-permissions_x = { fg = "#9AC374" }
-permissions_s = { fg = "#393337" }
-
-[select]
-border   = { fg = "#736468" }
-active   = { fg = "#8B7079",  bg = "#1B282C" }
-inactive = { fg = "#8B7079" }
+perm_type = { fg = "#9CBDC9" }
+perm_read = { fg = "#FFA31A" }
+perm_write = { fg = "#E77777" }
+perm_exec = { fg = "#9AC374" }
+perm_sep = { fg = "#393337" }
 
 # Input
 [input]
@@ -66,10 +79,15 @@ value    = { fg = "#E8A1D7" }
 selected = { bg = "#1B282C" }
 
 # Completion
-[completion]
+[cmp]
 border   = { fg = "#9CBDC9" }
 active   = { fg = "#8B7079", bg = "#1B282C" }
 inactive = { fg = "#8B7079" }
+
+# Icons
+icon_file    = ""
+icon_folder  = ""
+icon_command = ""
 
 # Tasks
 [tasks]
@@ -77,9 +95,24 @@ border  = { fg = "#736468" }
 title   = { fg = "#9CBDC9" }
 hovered = { fg = "#8B7079", bg="#1B282C" }
 
+# Confirm
+[confirm]
+border  = { fg = "#9CBDC9" }
+title   = { fg = "#9CBDC9" }
+content = {}
+body = {}
+list    = {}
+btn_yes = { reversed = true }
+btn_no  = {}
+
+# Spot
+[spot]
+border = { fg = "#736468" }
+title = { fg = "#736468" }
+
 # Which
 [which]
-cols = 3
+cols            = 3
 mask            = { bg = "#1A1113" }
 cand            = { fg = "#88C3AB" }
 rest            = { fg = "#9CBDC9" }
@@ -93,15 +126,26 @@ title_info  = { fg = "#9CBDC9" }
 title_warn  = { fg = "#FFA31A" }
 title_error = { fg = "#E77777" }
 
+# Icons
+icon_info = ""
+icon_warn = ""
+icon_error = ""
+
+# Pick
+[pick]
+border   = { fg = "#736468" }
+active   = { fg = "#8B7079",  bg = "#1B282C" }
+inactive = { fg = "#8B7079" }
+
 # Help
 [help]
 on      = { fg = "#9AC374" }
 run     = { fg = "#E8A1D7" }
+desc    = { fg = "#9CBDC9" }
 hovered = { bg = "#1B282C" }
 footer  = { fg = "#8B7079", bg = "#1E1517" }
 
 [filetype]
-
 rules = [
 	# Images
 	{ mime = "image/*", fg = "#C3963D" },
@@ -120,9 +164,10 @@ rules = [
 	# { mime = "inode/x-empty", fg = "#DF8489" },
 
 	# Special files
-	{ name = "*", is = "orphan", bg = "#DF8489" },
-	{ name = "*", is = "exec"  , fg = "#84A860" },
+	{ url = "*", is = "orphan", bg = "#DF8489" },
+	{ url = "*", is = "exec"  , fg = "#84A860" },
 
 	# Fallback
-	{ name = "*/", fg = "#4FA9C6" }
+	{ url = "*/", fg = "#4FA9C6" }
+	{ url = "*", fg = "#8B7079" }
 ]
