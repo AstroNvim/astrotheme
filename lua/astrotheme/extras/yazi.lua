@@ -63,8 +63,8 @@ preview = { bg = "${ui.selection}" }
 
 # Status
 [status]
-sep_right  = { open = "", close = "" }
-sep_left   = { open = "", close = "" }
+sep_right  = { open = "", close = "" }
+sep_left   = { open = "", close = "" }
 overall    = { fg = "${ui.none_text}", bg = "${ui.none_text}" }
 
 # Progress
