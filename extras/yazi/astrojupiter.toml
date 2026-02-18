@@ -55,8 +55,8 @@ preview = { bg = "#BBC9D7" }
 
 # Status
 [status]
-sep_right  = { open = "", close = "" }
-sep_left   = { open = "", close = "" }
+sep_right  = { open = "", close = "" }
+sep_left   = { open = "", close = "" }
 overall    = { fg = "#D0B6B6", bg = "#D0B6B6" }
 
 # Progress
