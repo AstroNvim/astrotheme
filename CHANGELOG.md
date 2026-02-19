@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.10.1](https://github.com/AstroNvim/astrotheme/compare/v4.10.0...v4.10.1) (2026-02-19)
+
+
+### Bug Fixes
+
+* **extras:** add in missing comma to yazi extras ([510b9d1](https://github.com/AstroNvim/astrotheme/commit/510b9d10d45d47ffb0534ba37f94c241cdde73ee))
+* **extras:** improve yazi status separators ([50c3614](https://github.com/AstroNvim/astrotheme/commit/50c36146d496656fc772c77dacbcc80aaa7d93ee))
+* **extras:** update Yazi extra for latest release breaking changes ([ba8a858](https://github.com/AstroNvim/astrotheme/commit/ba8a85881ed708b3d245342db920479d252e7949))
+
 ## [4.10.0](https://github.com/AstroNvim/astrotheme/compare/v4.9.1...v4.10.0) (2025-09-15)
 
 
