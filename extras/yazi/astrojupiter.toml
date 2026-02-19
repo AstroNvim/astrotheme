@@ -168,6 +168,6 @@ rules = [
 	{ url = "*", is = "exec"  , fg = "#467118" },
 
 	# Fallback
-	{ url = "*/", fg = "#006E89" }
+	{ url = "*/", fg = "#006E89" },
 	{ url = "*", fg = "#9E7876" }
 ]
