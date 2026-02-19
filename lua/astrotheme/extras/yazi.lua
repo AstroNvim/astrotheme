@@ -176,7 +176,7 @@ rules = [
 	{ url = "*", is = "exec"  , fg = "${syntax.green}" },
 
 	# Fallback
-	{ url = "*/", fg = "${syntax.blue}" }
+	{ url = "*/", fg = "${syntax.blue}" },
 	{ url = "*", fg = "${ui.text}" }
 ]
 ]],
