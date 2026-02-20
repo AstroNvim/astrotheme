@@ -92,7 +92,7 @@ copyright 2023 license GNU General Public License v3.0 @class astrocore
 
 ```lua
 function astrotheme.lib.util.get_highlights(colors: AstroThemePalette, opts: AstroThemeOpts)
-  -> table<string, vim.api.keyset.highlight>
+  -> AstroThemeHighlights
 ```
 
  Compile all highlights given a configuration
@@ -102,7 +102,7 @@ function astrotheme.lib.util.get_highlights(colors: AstroThemePalette, opts: Ast
 
 ```lua
 function astrotheme.lib.util.get_module_highlights(colors: AstroThemePalette, opts: AstroThemeOpts, module: string)
-  -> table<string, vim.api.keyset.highlight>?
+  -> AstroThemeHighlights?
 ```
 
  Compile highlights from a module
@@ -140,7 +140,7 @@ function astrotheme.lib.util.reload_module(module: string, bool: boolean)
 
 
 ```lua
-function astrotheme.lib.util.set_highlights(highlights: table<string, vim.api.keyset.highlight>)
+function astrotheme.lib.util.set_highlights(highlights: AstroThemeHighlights)
 ```
 
  Set highlights in Neovim
