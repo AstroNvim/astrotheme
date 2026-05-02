@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.11.0](https://github.com/AstroNvim/astrotheme/compare/v4.10.1...v4.11.0) (2026-05-02)
+
+
+### Features
+
+* **extras:** add Konsole ([#175](https://github.com/AstroNvim/astrotheme/issues/175)) ([7466cde](https://github.com/AstroNvim/astrotheme/commit/7466cde08cadbbcabf99b3c101948c5c8d06aab4))
+
 ## [4.10.1](https://github.com/AstroNvim/astrotheme/compare/v4.10.0...v4.10.1) (2026-02-19)
 
 
