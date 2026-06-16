@@ -6,7 +6,7 @@ local M = {}
 function M.generate(colors)
   return util.template(
     [[
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+#:schema https://yazi-rs.github.io/schemas/theme.json
 
 [app]
 overall = { bg = "${ui.base}" }
