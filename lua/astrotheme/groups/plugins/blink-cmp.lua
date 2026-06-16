@@ -24,7 +24,7 @@ local function callback(c)
     BlinkCmpKindProperty = "@property",
     BlinkCmpKindReference = "@type",
     BlinkCmpKindSnippet = "@constant",
-    BlinkCmpKimdStruct = "@type",
+    BlinkCmpKindStruct = "@type",
     BlinkCmpKindText = "@text",
     BlinkCmpKindTypeParameter = "@type",
     BlinkCmpKindUnit = "@constant",
