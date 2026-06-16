@@ -28,9 +28,9 @@ marker_marked   = { fg = "${ui.purple}", bg = "${ui.purple}" }
 marker_selected = { fg = "${ui.blue}", bg = "${ui.blue}" }
 
 # Count
-count_copied   = { fg = "${ui.text}", bg = "${ui.green}" }
-count_cut      = { fg = "${ui.text}", bg = "${ui.red}" }
-count_selected = { fg = "${ui.text}", bg = "${ui.accent}" }
+count_copied   = { fg = "${ui.base}", bg = "${ui.green}" }
+count_cut      = { fg = "${ui.base}", bg = "${ui.red}" }
+count_selected = { fg = "${ui.base}", bg = "${ui.accent}" }
 
 # Border
 border_symbol = "│"
