@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.12.0](https://github.com/AstroNvim/astrotheme/compare/v4.11.0...v4.12.0) (2026-06-16)
+
+
+### Features
+
+* **yazi:** improve counter foreground visibility ([#178](https://github.com/AstroNvim/astrotheme/issues/178)) ([d07aa38](https://github.com/AstroNvim/astrotheme/commit/d07aa38cb181c962cb991bc77420238e141c93fe))
+
+
+### Bug Fixes
+
+* **blink-cmp:** correct typo in BlinkCmpKindStruct ([#177](https://github.com/AstroNvim/astrotheme/issues/177)) ([07ad638](https://github.com/AstroNvim/astrotheme/commit/07ad638be9808d06ec8a29d5010a7edd8c5b1e69))
+
 ## [4.11.0](https://github.com/AstroNvim/astrotheme/compare/v4.10.1...v4.11.0) (2026-05-02)
 
 
