@@ -1,4 +1,4 @@
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+#:schema https://yazi-rs.github.io/schemas/theme.json
 
 [app]
 overall = { bg = "#FEEEEE" }
@@ -20,9 +20,9 @@ marker_marked   = { fg = "#BD51A4", bg = "#BD51A4" }
 marker_selected = { fg = "#0090A2", bg = "#0090A2" }
 
 # Count
-count_copied   = { fg = "#9E7876", bg = "#569400" }
-count_cut      = { fg = "#9E7876", bg = "#D04F4E" }
-count_selected = { fg = "#9E7876", bg = "#D04F4E" }
+count_copied   = { fg = "#FEEEEE", bg = "#569400" }
+count_cut      = { fg = "#FEEEEE", bg = "#D04F4E" }
+count_selected = { fg = "#FEEEEE", bg = "#D04F4E" }
 
 # Border
 border_symbol = "│"

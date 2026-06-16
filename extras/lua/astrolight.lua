@@ -564,7 +564,6 @@ local highlights = {
   Beacon = {
     bg = "#00508A"
   },
-  BlinkCmpKimdStruct = "@type",
   BlinkCmpKind = {
     fg = "#7300B8"
   },
@@ -587,6 +586,7 @@ local highlights = {
   BlinkCmpKindProperty = "@property",
   BlinkCmpKindReference = "@type",
   BlinkCmpKindSnippet = "@constant",
+  BlinkCmpKindStruct = "@type",
   BlinkCmpKindText = "@text",
   BlinkCmpKindTypeParameter = "@type",
   BlinkCmpKindUnit = "@constant",
