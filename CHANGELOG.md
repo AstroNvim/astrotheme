@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.13.0](https://github.com/AstroNvim/astrotheme/compare/v4.12.0...v4.13.0) (2026-08-19)
+
+
+### Features
+
+* **extras:** add vscode port ([#181](https://github.com/AstroNvim/astrotheme/issues/181)) ([d622df1](https://github.com/AstroNvim/astrotheme/commit/d622df1b02766f8b10f58e122da0412251397dc0))
+
 ## [4.12.0](https://github.com/AstroNvim/astrotheme/compare/v4.11.0...v4.12.0) (2026-06-16)
 
 
