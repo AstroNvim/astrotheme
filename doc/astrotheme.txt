@@ -1,5 +1,5 @@
 *astrotheme.txt*
-                            For Neovim >= 0.8.0    Last change: 2026 August 27
+                            For Neovim >= 0.10.0    Last change: 2026 August 27
 
 ==============================================================================
 Table of Contents                               *astrotheme-table-of-contents*
@@ -216,7 +216,7 @@ modifiable palette names ~
 
 REQUIREMENTS                                         *astrotheme-requirements*
 
-- Neovim >= 0.8
+- Neovim >= 0.10
 
 
 SUPPORTED PLUGINS                               *astrotheme-supported-plugins*

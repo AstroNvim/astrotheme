@@ -124,7 +124,7 @@ local function callback(c, opts)
     ["@markup.list.unchecked"] = { fg = c.ui.blue, bold = true },
     ["@markup.list.checked"] = { fg = c.ui.cyan, bold = true },
 
-    ["@diff.plus"] = "DiffAdded",
+    ["@diff.plus"] = "Added",
     ["@diff.minus"] = "DiffDelete",
     ["@diff.delta"] = "DiffChange",
 

@@ -128,9 +128,6 @@ local function callback(c, opts)
     Added = { fg = c.syntax.green },
     Removed = { fg = c.syntax.red },
     Changed = { fg = c.syntax.orange },
-    DiffAdded = { fg = c.syntax.green }, -- NOTE: DEPRECATED IN v0.10
-    DiffRemoved = { fg = c.syntax.red }, -- NOTE: DEPRECATED IN v0.10
-    DiffChanged = { fg = c.syntax.orange }, -- NOTE: DEPRECATED IN v0.10
     DiffAdd = { bg = color.new(c.syntax.green):blend(base, 0.75):tohex() },
     DiffChange = { bg = color.new(c.syntax.yellow):blend(base, 0.75):tohex() },
     DiffDelete = { bg = color.new(c.syntax.red):blend(base, 0.75):tohex() },

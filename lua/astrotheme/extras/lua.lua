@@ -10,7 +10,7 @@ function M.generate(colors, highlights)
   local ret = "local colors = "
     .. vim.inspect(colors)
     .. "\n\nlocal highlights = "
-    .. vim.inspect(vim.deepcopy(highlights))
+    .. vim.inspect(vim.deepcopy(highlights, true))
     .. "\n"
   return ret
 end

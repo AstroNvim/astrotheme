@@ -146,7 +146,7 @@ local highlights = {
   ["@define"] = "@keyword.directive.define",
   ["@diff.delta"] = "DiffChange",
   ["@diff.minus"] = "DiffDelete",
-  ["@diff.plus"] = "DiffAdded",
+  ["@diff.plus"] = "Added",
   ["@enum"] = {
     fg = "#4AC2B8"
   },
@@ -969,14 +969,8 @@ local highlights = {
   DiffAdd = {
     bg = "#354632"
   },
-  DiffAdded = {
-    fg = "#87C05F"
-  },
   DiffChange = {
     bg = "#4B4124"
-  },
-  DiffChanged = {
-    fg = "#F5983A"
   },
   DiffDelete = {
     bg = "#53373D"
@@ -995,9 +989,6 @@ local highlights = {
   },
   DiffOldFile = {
     fg = "#F5983A"
-  },
-  DiffRemoved = {
-    fg = "#FF838B"
   },
   DiffText = {
     bg = "#554824"
