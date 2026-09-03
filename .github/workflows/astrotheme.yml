@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        nvim-version: ["stable", "nightly"]
+        nvim-version: ["v0.10.0", "stable", "nightly"]
     name: Test Neovim ${{ matrix.nvim-version }}
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.RELEASE_TOKEN != null && secrets.RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.RELEASE_TOKEN || secrets.GITHUB_TOKEN }}
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
