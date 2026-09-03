@@ -2,6 +2,33 @@ local util = require "astrotheme.extras"
 
 local M = {}
 
+local encode_base64
+if vim.base64 then
+  encode_base64 = vim.base64.encode
+else
+  -- TODO: Remove this fallback when the minimum Neovim version is 0.10.
+  local alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+  encode_base64 = function(data)
+    return (
+      (data:gsub(".", function(char)
+        local byte = char:byte()
+        local bits = ""
+        for i = 8, 1, -1 do
+          bits = bits .. (byte % 2 ^ i - byte % 2 ^ (i - 1) > 0 and "1" or "0")
+        end
+        return bits
+      end) .. "0000"):gsub("%d%d%d?%d?%d?%d?", function(bits)
+        if #bits < 6 then return "" end
+        local value = 0
+        for i = 1, 6 do
+          value = value + (bits:sub(i, i) == "1" and 2 ^ (6 - i) or 0)
+        end
+        return alphabet:sub(value + 1, value + 1)
+      end) .. ({ "", "==", "=" })[#data % 3 + 1]
+    )
+  end
+end
+
 --- @param colors AstroThemePalette
 function M.generate(colors)
   -- build the color palette
@@ -19,7 +46,7 @@ function M.generate(colors)
     colorful_error_extra = colors.ui.red,
   }
   -- encode the palette into a base64 string for URL
-  monkeytype_colors.encoded = vim.base64.encode(vim.json.encode {
+  monkeytype_colors.encoded = encode_base64(vim.json.encode {
     c = {
       monkeytype_colors.bg,
       monkeytype_colors.main,
