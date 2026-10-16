@@ -59,6 +59,7 @@ local function callback(c, opts)
 
     Italic = { italic = true },
     Bold = { bold = true },
+    Dimmed = { fg = c.ui.text_inactive, bg = c.none },
 
     Conceal = { fg = c.ui.text_inactive, bg = c.none },
     SpecialKey = { fg = c.ui.text, bg = c.none },
