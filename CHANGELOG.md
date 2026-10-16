@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.13.1](https://github.com/AstroNvim/astrotheme/compare/v4.13.0...v4.13.1) (2026-10-15)
+
+
+### Bug Fixes
+
+* **extras:** improve legibility of delta extra (closes [#184](https://github.com/AstroNvim/astrotheme/issues/184)) ([fe3e47d](https://github.com/AstroNvim/astrotheme/commit/fe3e47d2eefd3b0e2aaf33b956d86f6abfdb1e36))
+
 ## [4.13.0](https://github.com/AstroNvim/astrotheme/compare/v4.12.0...v4.13.0) (2026-08-19)
 
 
