@@ -1002,6 +1002,10 @@ local highlights = {
   DiffText = {
     bg = "#503C22"
   },
+  Dimmed = {
+    bg = "NONE",
+    fg = "#68545B"
+  },
   Directory = {
     bg = "NONE",
     fg = "#9CBDC9"

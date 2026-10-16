@@ -40,6 +40,7 @@ hi DiffNewFile guibg=NONE guifg=#345E00
 hi DiffOldFile guibg=NONE guifg=#A34500
 hi DiffRemoved guibg=NONE guifg=#990000
 hi DiffText guibg=#CFAEE5
+hi Dimmed guibg=NONE guifg=#AEB3B6
 hi Directory guibg=NONE guifg=#3F8CEA
 hi EndOfBuffer guibg=NONE guifg=#B5B9BD
 hi Error guibg=NONE guifg=#E72F1F
