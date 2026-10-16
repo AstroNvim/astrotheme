@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.14.0](https://github.com/AstroNvim/astrotheme/compare/v4.13.1...v4.14.0) (2026-10-16)
+
+
+### Features
+
+* add new Dimmed highlight group ([b839ab4](https://github.com/AstroNvim/astrotheme/commit/b839ab483906bee6fbf251130076023cf1d2aa77))
+
 ## [4.13.1](https://github.com/AstroNvim/astrotheme/compare/v4.13.0...v4.13.1) (2026-10-15)
 
 
