@@ -227,7 +227,7 @@ term.foreground
 
 ## ⚡ Requirements
 
-- Neovim >= 0.8
+- Neovim >= 0.10
 
 ## 🔌 Supported Plugins
 
