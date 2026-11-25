@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/AstroNvim/astrotheme/compare/v4.14.0...v5.0.0) (2026-11-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* require Neovim 0.10 ([#183](https://github.com/AstroNvim/astrotheme/issues/183))
+
+### Features
+
+* require Neovim 0.10 ([#183](https://github.com/AstroNvim/astrotheme/issues/183)) ([c85b334](https://github.com/AstroNvim/astrotheme/commit/c85b334af13d45209dec3a65321443df13c3daaf))
+
 ## [4.14.0](https://github.com/AstroNvim/astrotheme/compare/v4.13.1...v4.14.0) (2026-10-16)
 
 
